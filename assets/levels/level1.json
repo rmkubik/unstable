@@ -1,0 +1,23 @@
+{
+  "assets": {
+    "test": {
+      "type": "tilemap",
+      "source": "assets/levels/test.json"
+    },
+    "tilesheet": {
+      "type": "spritesheet",
+      "source": "assets/images/tilesheet.png",
+      "frame_width": 32,
+      "frame_height": 32,
+      "frames": 1,
+      "spacing": 0,
+      "margin": 0
+    }
+  },
+  "map": {
+      "key": "test",
+      "tileset": "tilesheet"
+  },
+  "groups": [],
+  "prefabs": []
+}
