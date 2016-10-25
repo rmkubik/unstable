@@ -11,7 +11,9 @@ Unstable.Player = function(game_state, position, properties) {
   this.game_state.game.physics.arcade.enable(this);
   this.body.collideWorldBounds = true;
 
-  this.anchor.setTo(0.5);
+  this.body.height = 16;
+  this.body.halfHeight = 8;
+  this.anchor.setTo(0, 1);
 
   this.cursors = this.game_state.game.input.keyboard.createCursorKeys();
 }
