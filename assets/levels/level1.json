@@ -1,6 +1,6 @@
 {
   "assets": {
-    "test": {
+    "lvl_test": {
       "type": "tilemap",
       "source": "assets/levels/test.json"
     },
@@ -12,12 +12,27 @@
       "frames": 1,
       "spacing": 0,
       "margin": 0
+    },
+    "img_player": {
+      "type": "image",
+      "source": "assets/images/player.png"
     }
   },
   "map": {
-      "key": "test",
+      "key": "lvl_test",
       "tileset": "tilesheet"
   },
-  "groups": [],
-  "prefabs": []
+  "groups": [
+    "player"
+  ],
+  "prefabs": {
+    "player": {
+      "type": "player",
+      "properties": {
+        "texture": "img_player",
+        "group": "player"
+      },
+      "position": {"x": 0, "y": 0}
+    }
+  }
 }
