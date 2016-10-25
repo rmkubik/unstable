@@ -18,11 +18,13 @@ Unstable.TiledState.prototype.init = function (level_data) {
 
     // start physics system
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
-    this.game.physics.arcade.gravity.y = 1000;
+    //this.game.physics.arcade.gravity.y = 1000;
 
     // create map and set tileset
     this.map = this.game.add.tilemap(level_data.map.key);
+    console.log(this.map);
     this.map.addTilesetImage(this.map.tilesets[0].name, level_data.map.tileset);
+    this.map.addTilesetImage(this.map.tilesets[2].name, "collision");
 };
 
 Unstable.TiledState.prototype.create = function () {
