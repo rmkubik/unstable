@@ -24,7 +24,6 @@ Unstable.TiledState.prototype.init = function (level_data) {
     this.map = this.game.add.tilemap(level_data.map.key);
     this.map.addTilesetImage(this.map.tilesets[1].name, level_data.map.tileset);
     this.map.addTilesetImage(this.map.tilesets[2].name, "collision");
-    //test
 };
 
 Unstable.TiledState.prototype.create = function () {
@@ -34,20 +33,23 @@ Unstable.TiledState.prototype.create = function () {
     // create map layers
     this.layers = {};
     this.map.layers.forEach(function (layer) {
+      if (!layer.properties.collision) {
         this.layers[layer.name] = this.map.createLayer(layer.name);
-        if (layer.properties.collision) { // collision layer
-            collision_tiles = [];
-            layer.data.forEach(function (data_row) { // find tiles used in the layer
-                data_row.forEach(function (tile) {
-                    // check if it's a valid tile index and isn't already in the list
-                    if (tile.index > 0 && collision_tiles.indexOf(tile.index) === -1) {
-                        collision_tiles.push(tile.index);
-                    }
-                }, this);
-            }, this);
-            this.map.setCollision(collision_tiles, true, layer.name);
-        }
+      } else { // collision layer
+          collision_tiles = [];
+          layer.visible = false;
+          layer.data.forEach(function (data_row) { // find tiles used in the layer
+              data_row.forEach(function (tile) {
+                  // check if it's a valid tile index and isn't already in the list
+                  if (tile.index > 0 && collision_tiles.indexOf(tile.index) === -1) {
+                      collision_tiles.push(tile.index);
+                  }
+              }, this);
+          }, this);
+          this.map.setCollision(collision_tiles, true, layer.name);
+      }
     }, this);
+    console.log(this.map);
     // resize the world to be the size of the current layer
     this.layers[this.map.layer.name].resizeWorld();
 
