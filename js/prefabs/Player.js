@@ -42,16 +42,20 @@ Unstable.Player.prototype.update = function() {
   } else {
       // stop
       this.body.velocity.x = 0;
-      this.animations.play("player_idle");
   }
   if (this.cursors.down.isDown && this.body.velocity.y >= 0) {
     //move down
     this.body.velocity.y = this.walking_speed;
+    this.animations.play("player_run");
   } else if (this.cursors.up.isDown && this.body.velocity.y <= 0) {
     //move up
     this.body.velocity.y = -this.walking_speed;
+    this.animations.play("player_run");
   } else {
     //stop
     this.body.velocity.y = 0;
+  }
+  if (this.body.velocity.x == 0 && this.body.velocity.y == 0) {
+    this.animations.play("player_idle");
   }
 }
