@@ -15,9 +15,10 @@ Unstable.Player = function(game_state, position, properties) {
   this.body.halfHeight = 8;
   this.anchor.setTo(0, 1);
 
-  this.animations.add("img_player_run", [0, 1, 2, 3], 6, true);
-  this.frame = 3;
-  this.animations.play("img_player_run");
+  this.animations.add("player_run", [2, 3, 4, 5], 10, true);
+  this.animations.add("player_idle", [0, 1], 1, true);
+  //this.frame = 3;
+  this.animations.play("player_idle");
 
   this.cursors = this.game_state.game.input.keyboard.createCursorKeys();
 }
@@ -31,12 +32,17 @@ Unstable.Player.prototype.update = function() {
   if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
       // move right
       this.body.velocity.x = this.walking_speed;
+      this.animations.play("player_run");
+      this.scale.setTo(1, 1);
   } else if (this.cursors.left.isDown && this.body.velocity.x <= 0) {
       // move left
       this.body.velocity.x = -this.walking_speed;
+      this.animations.play("player_run");
+      this.scale.setTo(-1, 1);
   } else {
       // stop
       this.body.velocity.x = 0;
+      this.animations.play("player_idle");
   }
   if (this.cursors.down.isDown && this.body.velocity.y >= 0) {
     //move down

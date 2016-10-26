@@ -13,10 +13,6 @@
       "spacing": 0,
       "margin": 0
     },
-    "img_player": {
-      "type": "image",
-      "source": "assets/images/player.png"
-    },
     "collision": {
       "type": "spritesheet",
       "source": "assets/images/collision.png",
@@ -26,12 +22,12 @@
       "spacing": 0,
       "margin": 0
     },
-    "img_player_run": {
+    "img_player": {
       "type": "spritesheet",
-      "source": "assets/images/player_run.png",
+      "source": "assets/images/player_sheet.png",
       "frame_width": 32,
       "frame_height": 32,
-      "frames": 4,
+      "frames": 6,
       "spacing": 0,
       "margin": 0
     }
