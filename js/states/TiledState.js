@@ -23,8 +23,10 @@ Unstable.TiledState.prototype.init = function (level_data) {
     // create map and set tileset
     this.map = this.game.add.tilemap(level_data.map.key);
     console.log(this.map);
-    this.map.addTilesetImage(this.map.tilesets[0].name, level_data.map.tileset);
+    this.map.addTilesetImage(this.map.tilesets[1].name, level_data.map.tileset);
+    console.log("test");
     this.map.addTilesetImage(this.map.tilesets[2].name, "collision");
+    console.log("test");
 };
 
 Unstable.TiledState.prototype.create = function () {
