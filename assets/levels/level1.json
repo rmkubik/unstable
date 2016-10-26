@@ -25,8 +25,8 @@
     "img_player": {
       "type": "spritesheet",
       "source": "assets/images/player_sheet.png",
-      "frame_width": 32,
-      "frame_height": 32,
+      "frame_width": 16,
+      "frame_height": 24,
       "frames": 6,
       "spacing": 0,
       "margin": 0
