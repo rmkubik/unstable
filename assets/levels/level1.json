@@ -25,6 +25,15 @@
       "frames": 1,
       "spacing": 0,
       "margin": 0
+    },
+    "img_player_run": {
+      "type": "spritesheet",
+      "source": "assets/images/player_run.png",
+      "frame_width": 32,
+      "frame_height": 32,
+      "frames": 4,
+      "spacing": 0,
+      "margin": 0
     }
   },
   "map": {

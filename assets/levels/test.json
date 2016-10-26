@@ -39,7 +39,7 @@
                  "properties":
                     {
                      "group":"player",
-                     "texture":"img_player"
+                     "texture":"img_player_run"
                     },
                  "rotation":0,
                  "type":"player",
