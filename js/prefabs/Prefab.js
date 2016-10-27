@@ -2,6 +2,7 @@ var Unstable = Unstable || {};
 
 Unstable.Prefab = function (game_state, position, properties) {
     "use strict";
+    console.log(this);
     if (properties.texture != null)
       Phaser.Sprite.call(this, game_state.game, position.x, position.y, properties.texture);
     else

@@ -33,8 +33,9 @@ Unstable.TiledState.prototype.create = function () {
     // create map layers
     this.layers = {};
     this.map.layers.forEach(function (layer) {
-        this.layers[layer.name] = this.map.createLayer(layer.name);
-        if (layer.properties.collision) { // collision layer
+        if (!layer.properties.collision) {
+          this.layers[layer.name] = this.map.createLayer(layer.name);
+        } else { // collision layer
             collision_tiles = [];
             layer.data.forEach(function (data_row) { // find tiles used in the layer
                 data_row.forEach(function (tile) {
@@ -56,6 +57,8 @@ Unstable.TiledState.prototype.create = function () {
         this.groups[group_name] = this.game.add.group();
     }, this);
 
+    new Unstable.Collider(this, {x:130,y:150}, {"group":"colliders","width":24,"height":24})
+
     this.prefabs = {};
 
     for (object_layer in this.map.objects) {
@@ -64,20 +67,6 @@ Unstable.TiledState.prototype.create = function () {
             this.map.objects[object_layer].forEach(this.create_object, this);
         }
     }
-
-
-    var colliderTest = new Unstable.Prefab(this, {x:130, y:150}, {"group":"colliders"});
-    this.game.physics.arcade.enable(colliderTest);
-    colliderTest.body.immovable = true;
-    colliderTest.body.x = 24;
-    colliderTest.body.y = 24;
-    //this.game.physics.arcade.collide()
-    //colliderTest.body.enable = true;
-    //colliderTest.visible = false;
-    console.log(colliderTest);
-
-
-
 };
 
 Unstable.TiledState.prototype.create_object = function (object) {
