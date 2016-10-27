@@ -64,6 +64,20 @@ Unstable.TiledState.prototype.create = function () {
             this.map.objects[object_layer].forEach(this.create_object, this);
         }
     }
+
+
+    var colliderTest = new Unstable.Prefab(this, {x:130, y:150}, {"group":"colliders"});
+    this.game.physics.arcade.enable(colliderTest);
+    colliderTest.body.immovable = true;
+    colliderTest.body.x = 24;
+    colliderTest.body.y = 24;
+    //this.game.physics.arcade.collide()
+    //colliderTest.body.enable = true;
+    //colliderTest.visible = false;
+    console.log(colliderTest);
+
+
+
 };
 
 Unstable.TiledState.prototype.create_object = function (object) {

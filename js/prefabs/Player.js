@@ -28,6 +28,7 @@ Unstable.Player.prototype.constructor = Unstable.Player;
 
 Unstable.Player.prototype.update = function() {
   this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
+  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
 
   if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
       // move right
