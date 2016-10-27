@@ -46,8 +46,7 @@
       "tileset": "tilesheet"
   },
   "groups": [
-    "player",
-    "colliders"
+    "player"
   ],
   "prefabs": {
     "player": {
