@@ -39,6 +39,15 @@
       "frames": 6,
       "spacing": 0,
       "margin": 0
+    },
+    "img_objects": {
+      "type": "spritesheet",
+      "source": "assets/images/object_sheet.png",
+      "frame_width": 24,
+      "frame_height": 24,
+      "frames": 1,
+      "spacing": 0,
+      "margin": 0
     }
   },
   "map": {
@@ -46,7 +55,8 @@
       "tileset": "tilesheet"
   },
   "groups": [
-    "player"
+    "player",
+    "goal"
   ],
   "prefabs": {
     "player": {

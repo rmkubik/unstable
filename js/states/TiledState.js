@@ -74,8 +74,11 @@ Unstable.TiledState.prototype.create_object = function (object) {
     // create object according to its type
     switch (object.type) {
     case "player":
-        prefab = new Unstable.Player(this, position, object.properties);
-        break;
+      prefab = new Unstable.Player(this, position, object.properties);
+      break;
+    case "goal":
+      prefab = new Unstable.Goal(this, position, object.properties);
+      break;
     }
     this.prefabs[object.name] = prefab;
 };
