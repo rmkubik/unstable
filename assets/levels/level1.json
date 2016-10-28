@@ -45,7 +45,7 @@
       "source": "assets/images/object_sheet.png",
       "frame_width": 24,
       "frame_height": 24,
-      "frames": 1,
+      "frames": 2,
       "spacing": 0,
       "margin": 0
     }
