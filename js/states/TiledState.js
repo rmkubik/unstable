@@ -79,6 +79,9 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "goal":
       prefab = new Unstable.Goal(this, position, object.properties);
       break;
+    case "coin":
+      prefab = new Unstable.Coin(this, position, object.properties);
+      break;
     }
     this.prefabs[object.name] = prefab;
 };

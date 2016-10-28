@@ -56,7 +56,8 @@
   },
   "groups": [
     "player",
-    "goal"
+    "goal",
+    "coins"
   ],
   "prefabs": {
     "player": {

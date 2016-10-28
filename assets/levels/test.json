@@ -55,6 +55,7 @@
                  "name":"",
                  "properties":
                     {
+                     "frame":"0",
                      "group":"goal",
                      "texture":"img_objects"
                     },
@@ -64,6 +65,132 @@
                  "width":24,
                  "x":360,
                  "y":336
+                }, 
+                {
+                 "gid":7,
+                 "height":24,
+                 "id":8,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":225,
+                 "y":86
+                }, 
+                {
+                 "gid":7,
+                 "height":24,
+                 "id":10,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":372,
+                 "y":85
+                }, 
+                {
+                 "gid":7,
+                 "height":24,
+                 "id":12,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":372,
+                 "y":108
+                }, 
+                {
+                 "gid":7,
+                 "height":24,
+                 "id":13,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":373,
+                 "y":133
+                }, 
+                {
+                 "gid":7,
+                 "height":24,
+                 "id":14,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":191.5,
+                 "y":382
+                }, 
+                {
+                 "gid":7,
+                 "height":24,
+                 "id":15,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":107.5,
+                 "y":84
+                }, 
+                {
+                 "gid":7,
+                 "height":24,
+                 "id":16,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":192.5,
+                 "y":407
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -72,7 +199,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":8,
+ "nextobjectid":17,
  "orientation":"orthogonal",
  "properties":
     {
@@ -133,11 +260,11 @@
          "tilewidth":24
         }, 
         {
-         "columns":1,
+         "columns":2,
          "firstgid":6,
          "image":"..\/images\/object_sheet.png",
          "imageheight":24,
-         "imagewidth":24,
+         "imagewidth":48,
          "margin":0,
          "name":"object_sheet",
          "properties":
@@ -145,7 +272,7 @@
 
             },
          "spacing":0,
-         "tilecount":1,
+         "tilecount":2,
          "tileheight":24,
          "tilewidth":24
         }],
