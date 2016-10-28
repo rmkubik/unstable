@@ -8,6 +8,8 @@ Unstable.Player = function(game_state, position, properties) {
   this.jumping_speed = 30;
   this.bouncing = 5;
 
+  this.score = 0;
+
   this.game_state.game.physics.arcade.enable(this);
   this.body.collideWorldBounds = true;
 
@@ -29,6 +31,7 @@ Unstable.Player.prototype.update = function() {
   this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.goal, this.goalCollide, null, this);
+  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.coins, this.coinCollide, null, this);
 
   if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
       // move right
@@ -64,4 +67,11 @@ Unstable.Player.prototype.update = function() {
 Unstable.Player.prototype.goalCollide = function(player, goal) {
   "use strict";
   this.game_state.restart_level();
+}
+
+Unstable.Player.prototype.coinCollide = function(player, coin) {
+  "use strict";
+  coin.kill();
+  this.score += 1;
+  console.log("score: " + this.score);
 }

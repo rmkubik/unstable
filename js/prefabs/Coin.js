@@ -5,6 +5,7 @@ Unstable.Coin = function (game_state, position, properties) {
     Unstable.Prefab.call(this, game_state, position, properties);
     game_state.game.physics.arcade.enable(this);
     this.body.immovable = true;
+    this.body.setSize(9, 9, 12, 12);
     //colliderTest.visible = false;
 };
 
