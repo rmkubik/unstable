@@ -70,7 +70,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
     "use strict";
     var position, prefab;
     // tiled coordinates starts in the bottom left corner
-    position = {"x": object.x + (this.map.tileHeight / 2), "y": object.y - (this.map.tileHeight / 2)};
+    position = {"x": object.x, "y": object.y - (this.map.tileHeight)};
     // create object according to its type
     switch (object.type) {
     case "player":
