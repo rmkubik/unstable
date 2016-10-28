@@ -13,11 +13,10 @@ Unstable.Player = function(game_state, position, properties) {
 
   this.anchor.setTo(0.5);
   this.body.setSize(16, 12, 0, 12);
-  //this.body.halfHeight = 6;
 
   this.animations.add("player_run", [2, 3, 4, 5], 10, true);
   this.animations.add("player_idle", [0, 1], 1, true);
-  //this.frame = 3;
+
   this.animations.play("player_idle");
 
   this.cursors = this.game_state.game.input.keyboard.createCursorKeys();

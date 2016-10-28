@@ -55,9 +55,9 @@
       "tileset": "tilesheet"
   },
   "groups": [
-    "player",
+    "coins",
     "goal",
-    "coins"
+    "player"
   ],
   "prefabs": {
     "player": {

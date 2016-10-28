@@ -56,6 +56,8 @@ Unstable.TiledState.prototype.create = function () {
         this.groups[group_name] = this.game.add.group();
     }, this);
 
+    console.log(this.groups);
+
     this.prefabs = {};
 
     for (object_layer in this.map.objects) {
@@ -65,6 +67,10 @@ Unstable.TiledState.prototype.create = function () {
         }
     }
 };
+
+Unstable.TiledState.prototype.update = function() {
+  //this.groups.sort('y', Phaser.Group.SORT_ASCENDING); //depth sorting
+}
 
 Unstable.TiledState.prototype.create_object = function (object) {
     "use strict";
