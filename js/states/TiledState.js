@@ -42,7 +42,7 @@ Unstable.TiledState.prototype.create = function () {
             layer.data.forEach(function (data_row) { // find tiles used in the layer
                 data_row.forEach(function (tile) {
                   if (tile.index > 0) {
-                    new Unstable.Collider(this, {x:tile.x * 24,y:tile.y * 24}, {group:"colliders",texture:"collision",width:24,height:24});
+                    new Unstable.Collider(this, {x:tile.x * 24,y:tile.y * 24}, {group:"colliders",width:24,height:24});
                   }
                 }, this);
             }, this);
