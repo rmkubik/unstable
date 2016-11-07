@@ -10,7 +10,7 @@
       "frame_width": 24,
       "frame_height": 24,
       "frames": 1,
-      "spacing": 0,
+      "spacing": 1,
       "margin": 0
     },
     "collision": {
@@ -37,7 +37,7 @@
       "frame_width": 16,
       "frame_height": 24,
       "frames": 6,
-      "spacing": 0,
+      "spacing": 1,
       "margin": 0
     },
     "img_objects": {
@@ -46,7 +46,7 @@
       "frame_width": 24,
       "frame_height": 24,
       "frames": 2,
-      "spacing": 0,
+      "spacing": 1,
       "margin": 0
     }
   },

@@ -230,14 +230,14 @@
          "firstgid":2,
          "image":"..\/images\/tilesheet.png",
          "imageheight":24,
-         "imagewidth":72,
+         "imagewidth":74,
          "margin":0,
          "name":"base",
          "properties":
             {
 
             },
-         "spacing":0,
+         "spacing":1,
          "tilecount":3,
          "tileheight":24,
          "tilewidth":24
@@ -264,7 +264,7 @@
          "firstgid":6,
          "image":"..\/images\/object_sheet.png",
          "imageheight":24,
-         "imagewidth":48,
+         "imagewidth":49,
          "margin":0,
          "name":"object_sheet",
          "properties":
