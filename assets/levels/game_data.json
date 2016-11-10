@@ -4,6 +4,10 @@
       "type": "tilemap",
       "source": "assets/levels/test.json"
     },
+    "lvl_level2": {
+      "type": "tilemap",
+      "source": "assets/levels/level2.json"
+    },
     "tilesheet": {
       "type": "spritesheet",
       "source": "assets/images/tilesheet.png",
@@ -50,10 +54,18 @@
       "margin": 0
     }
   },
-  "map": {
+  "levels": [
+    {
+      "name":"Test Level",
       "key": "lvl_test",
       "tileset": "tilesheet"
-  },
+    },
+    {
+      "name":"Level 2",
+      "key": "lvl_level2",
+      "tileset": "tilesheet"
+    }
+  ],
   "groups": [
     "coins",
     "goal",

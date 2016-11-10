@@ -20,7 +20,7 @@ Unstable.TiledState.prototype.init = function (level_data) {
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
     //this.game.physics.arcade.gravity.y = 1000;
 
-    // create map and set tileset
+    // create map and set tilesets
     this.map = this.game.add.tilemap(level_data.map.key);
     this.map.addTilesetImage(this.map.tilesets[1].name, level_data.map.tileset);
     this.map.addTilesetImage(this.map.tilesets[2].name, "collision");

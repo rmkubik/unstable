@@ -34,6 +34,7 @@ Unstable.LoadingState.prototype.preload = function () {
             }
         }
     }
+    this.level_data.map = this.level_data.levels[0];
 };
 
 Unstable.LoadingState.prototype.create = function () {
