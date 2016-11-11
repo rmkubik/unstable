@@ -11,6 +11,8 @@ Unstable.prototype.constructor = Unstable.BootState;
 Unstable.BootState.prototype.init = function (level_file) {
     "use strict";
     this.level_file = level_file;
+    /* init global vars */
+    Unstable.current_level = 0;
 };
 
 Unstable.BootState.prototype.preload = function () {

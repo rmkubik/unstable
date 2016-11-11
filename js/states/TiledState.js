@@ -55,9 +55,7 @@ Unstable.TiledState.prototype.create = function () {
     this.level_data.groups.forEach(function (group_name) {
         this.groups[group_name] = this.game.add.group();
     }, this);
-
-    console.log(this.groups);
-
+    
     this.prefabs = {};
 
     for (object_layer in this.map.objects) {

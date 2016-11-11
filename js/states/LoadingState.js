@@ -34,10 +34,12 @@ Unstable.LoadingState.prototype.preload = function () {
             }
         }
     }
-    this.level_data.map = this.level_data.levels[0];
+    //this.game.levelManager = new Unstable.LevelManager(this, this.level_data);
+    //this.level_data.map = this.level_data.levels[0];
 };
 
 Unstable.LoadingState.prototype.create = function () {
     "use strict";
-    this.game.state.start("GameState", true, false, this.level_data);
+    //this.game.levelManager.nextLevel();
+    this.game.state.start("LevelManager", true, false, this.level_data);
 };
