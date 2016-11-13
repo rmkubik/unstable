@@ -55,7 +55,7 @@ Unstable.TiledState.prototype.create = function () {
     this.level_data.groups.forEach(function (group_name) {
         this.groups[group_name] = this.game.add.group();
     }, this);
-    
+
     this.prefabs = {};
 
     for (object_layer in this.map.objects) {
@@ -64,6 +64,9 @@ Unstable.TiledState.prototype.create = function () {
             this.map.objects[object_layer].forEach(this.create_object, this);
         }
     }
+
+    this.prefabs["proj_test"] = new Unstable.Projectile(this, {x:150, y:150}, {
+      texture:"collision", group:"projectiles"});
 };
 
 Unstable.TiledState.prototype.update = function() {
