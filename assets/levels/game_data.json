@@ -69,7 +69,7 @@
   "groups": [
     "coins",
     "goal",
-    "projectiles",
+    "hazards",
     "player"
   ],
   "prefabs": {

@@ -65,8 +65,10 @@ Unstable.TiledState.prototype.create = function () {
         }
     }
 
-    this.prefabs["proj_test"] = new Unstable.Projectile(this, {x:150, y:150}, {
-      texture:"collision", group:"projectiles"});
+    this.prefabs["proj_test"] = new Unstable.Hazard(this, {x:150, y:150}, {
+      texture:"collision", group:"hazards"});
+
+    console.log(this.prefabs);
 };
 
 Unstable.TiledState.prototype.update = function() {
@@ -89,6 +91,8 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "coin":
       prefab = new Unstable.Coin(this, position, object.properties);
       break;
+    case "hazard":
+      prefab = new Unstable.Hazard(this, position, object.properties);
     }
     this.prefabs[object.name] = prefab;
 };

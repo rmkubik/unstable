@@ -23,8 +23,6 @@ Unstable.LevelManagerState.prototype.create = function () {
 }
 
 Unstable.LevelManagerState.prototype.nextLevel = function() {
-  console.log(Unstable.current_level);
-  console.log(this.levels);
   this.game_data.map = this.levels[Unstable.current_level++];
   this.game.state.start("GameState", true, false, this.game_data);
 }
