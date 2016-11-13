@@ -65,8 +65,8 @@ Unstable.TiledState.prototype.create = function () {
         }
     }
 
-    this.prefabs["proj_test"] = new Unstable.Hazard(this, {x:150, y:150}, {
-      texture:"collision", group:"hazards"});
+    this.prefabs["proj_test"] = new Unstable.BouncerHazard(this, {x:150, y:150}, {
+      texture:"collision", group:"hazards", speed:10, velocity:{x:10,y:0}});
 
     console.log(this.prefabs);
 };
