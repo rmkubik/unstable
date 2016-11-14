@@ -223,7 +223,7 @@
                      "group":"hazards",
                      "texture":"collision",
                      "velocityX":"50",
-                     "velocityY":"0"
+                     "velocityY":"50"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -250,6 +250,86 @@
                  "width":24,
                  "x":299,
                  "y":81
+                }, 
+                {
+                 "gid":10,
+                 "height":48,
+                 "id":23,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":238,
+                 "y":56
+                }, 
+                {
+                 "gid":10,
+                 "height":48,
+                 "id":24,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":191,
+                 "y":56
+                }, 
+                {
+                 "gid":10,
+                 "height":48,
+                 "id":25,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":335,
+                 "y":54
+                }, 
+                {
+                 "gid":10,
+                 "height":48,
+                 "id":26,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":312,
+                 "y":246
+                }, 
+                {
+                 "gid":10,
+                 "height":48,
+                 "id":27,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":168,
+                 "y":368
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -258,7 +338,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":21,
+ "nextobjectid":28,
  "orientation":"orthogonal",
  "properties":
     {
@@ -333,6 +413,27 @@
          "spacing":0,
          "tilecount":2,
          "tileheight":24,
+         "tilewidth":24
+        }, 
+        {
+         "columns":0,
+         "firstgid":8,
+         "margin":0,
+         "name":"test",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":1,
+         "tileheight":48,
+         "tiles":
+            {
+             "2":
+                {
+                 "image":"..\/images\/tree1.png"
+                }
+            },
          "tilewidth":24
         }],
  "tilewidth":24,

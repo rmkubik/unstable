@@ -52,6 +52,10 @@
       "frames": 2,
       "spacing": 1,
       "margin": 0
+    },
+    "tree1": {
+      "type":"image",
+      "source":"assets/images/tree1.png"
     }
   },
   "levels": [
@@ -70,7 +74,8 @@
     "coins",
     "goal",
     "hazards",
-    "player"
+    "player",
+    "scenery"
   ],
   "prefabs": {
     "player": {

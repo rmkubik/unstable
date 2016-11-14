@@ -31,6 +31,8 @@ Unstable.LoadingState.prototype.preload = function () {
             case "tilemap":
                 this.load.tilemap(asset_key, asset.source, null, Phaser.Tilemap.TILED_JSON);
                 break;
+            case "imageCollection":
+                //this.load.
             }
         }
     }
