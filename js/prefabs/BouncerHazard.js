@@ -7,7 +7,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
     game_state.game.physics.arcade.enable(this);
 
     this.speed = properties.speed;
-    this.body.velocity.setTo(properties.velocity.x, properties.velocity.y);
+    this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
     this.body.bounce.set(1);
 };
 

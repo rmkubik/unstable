@@ -64,11 +64,6 @@ Unstable.TiledState.prototype.create = function () {
             this.map.objects[object_layer].forEach(this.create_object, this);
         }
     }
-
-    this.prefabs["proj_test"] = new Unstable.BouncerHazard(this, {x:150, y:150}, {
-      texture:"collision", group:"hazards", speed:10, velocity:{x:10,y:0}});
-
-    console.log(this.prefabs);
 };
 
 Unstable.TiledState.prototype.update = function() {
@@ -93,6 +88,8 @@ Unstable.TiledState.prototype.create_object = function (object) {
       break;
     case "hazard":
       prefab = new Unstable.Hazard(this, position, object.properties);
+    case "bouncer":
+      prefab = new Unstable.BouncerHazard(this, position, object.properties);
     }
     this.prefabs[object.name] = prefab;
 };

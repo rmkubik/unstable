@@ -202,10 +202,12 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"collision"
+                     "texture":"collision",
+                     "velocityX":"0",
+                     "velocityY":"50"
                     },
                  "rotation":0,
-                 "type":"hazard",
+                 "type":"bouncer",
                  "visible":true,
                  "width":24,
                  "x":207,
@@ -219,10 +221,12 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"collision"
+                     "texture":"collision",
+                     "velocityX":"50",
+                     "velocityY":"0"
                     },
                  "rotation":0,
-                 "type":"hazard",
+                 "type":"bouncer",
                  "visible":true,
                  "width":24,
                  "x":273,
@@ -236,10 +240,12 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"collision"
+                     "texture":"collision",
+                     "velocityX":"0",
+                     "velocityY":"50"
                     },
                  "rotation":0,
-                 "type":"hazard",
+                 "type":"bouncer",
                  "visible":true,
                  "width":24,
                  "x":299,
