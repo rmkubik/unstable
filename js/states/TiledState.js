@@ -88,10 +88,14 @@ Unstable.TiledState.prototype.create_object = function (object) {
       break;
     case "hazard":
       prefab = new Unstable.Hazard(this, position, object.properties);
+      break;
     case "bouncer":
       prefab = new Unstable.BouncerHazard(this, position, object.properties);
+      break;
     case "tree":
       prefab = new Unstable.Prefab(this, position, {texture:"tree1",group:"scenery"});
+      prefab.anchor.setTo(0, 0.5);
+      break;
     }
     this.prefabs[object.name] = prefab;
 };

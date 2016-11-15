@@ -313,7 +313,7 @@
                  "visible":true,
                  "width":24,
                  "x":312,
-                 "y":246
+                 "y":257
                 }, 
                 {
                  "gid":10,
@@ -330,6 +330,22 @@
                  "width":24,
                  "x":168,
                  "y":368
+                }, 
+                {
+                 "gid":10,
+                 "height":48,
+                 "id":30,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":148,
+                 "y":307
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -338,7 +354,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":28,
+ "nextobjectid":31,
  "orientation":"orthogonal",
  "properties":
     {
