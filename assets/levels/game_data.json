@@ -13,7 +13,7 @@
       "source": "assets/images/tilesheet.png",
       "frame_width": 24,
       "frame_height": 24,
-      "frames": 1,
+      "frames": 7,
       "spacing": 1,
       "margin": 0
     },
@@ -56,6 +56,30 @@
     "tree1": {
       "type":"image",
       "source":"assets/images/tree1.png"
+    },
+    "tree2": {
+      "type":"image",
+      "source":"assets/images/tree2.png"
+    },
+    "tree3": {
+      "type":"image",
+      "source":"assets/images/tree3.png"
+    },
+    "tree4": {
+      "type":"image",
+      "source":"assets/images/tree4.png"
+    },
+    "bush1": {
+      "type":"image",
+      "source":"assets/images/bush1.png"
+    },
+    "bush2": {
+      "type":"image",
+      "source":"assets/images/bush2.png"
+    },
+    "bush3": {
+      "type":"image",
+      "source":"assets/images/bush3.png"
     }
   },
   "levels": [
