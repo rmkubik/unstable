@@ -429,7 +429,7 @@
                  "type":"bush",
                  "visible":true,
                  "width":24,
-                 "x":380,
+                 "x":365,
                  "y":359
                 }, 
                 {
@@ -485,7 +485,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
