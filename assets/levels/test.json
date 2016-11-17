@@ -213,7 +213,7 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"enemy_fire",
+                     "texture":"enemy_blade",
                      "velocityX":"0",
                      "velocityY":"50"
                     },
@@ -232,7 +232,7 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"enemy_fire",
+                     "texture":"enemy_blade",
                      "velocityX":"50",
                      "velocityY":"50"
                     },
@@ -251,7 +251,7 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"enemy_fire",
+                     "texture":"enemy_blade",
                      "velocityX":"0",
                      "velocityY":"50"
                     },
@@ -259,8 +259,8 @@
                  "type":"bouncer",
                  "visible":true,
                  "width":24,
-                 "x":299,
-                 "y":81
+                 "x":304,
+                 "y":88
                 }, 
                 {
                  "gid":14,
