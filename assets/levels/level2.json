@@ -262,11 +262,11 @@
          "tilewidth":24
         }, 
         {
-         "columns":2,
+         "columns":3,
          "firstgid":10,
          "image":"..\/images\/object_sheet.png",
          "imageheight":24,
-         "imagewidth":49,
+         "imagewidth":74,
          "margin":0,
          "name":"object_sheet",
          "properties":
@@ -274,7 +274,7 @@
 
             },
          "spacing":0,
-         "tilecount":2,
+         "tilecount":3,
          "tileheight":24,
          "tilewidth":24
         }],

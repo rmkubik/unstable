@@ -101,6 +101,8 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "crate":
       prefab = new Unstable.Prefab(this, position, object.properties);
       break;
+    case "turret":
+      prefab = new Unstable.Turret(this, position, object.properties);
     }
     this.prefabs[object.name] = prefab;
 };
