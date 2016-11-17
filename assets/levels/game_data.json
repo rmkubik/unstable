@@ -67,7 +67,7 @@
       "source": "assets/images/enemy_turret.png",
       "frame_width": 24,
       "frame_height": 24,
-      "frames": 2,
+      "frames": 3,
       "spacing": 1,
       "margin": 0
     },

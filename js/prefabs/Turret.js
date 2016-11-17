@@ -7,11 +7,15 @@ Unstable.Turret = function (game_state, position, properties) {
     game_state.game.physics.arcade.enable(this);
 
     this.turret = game.add.sprite(position.x, position.y, properties.texture, 1);
+    this.range = 50;
+    this.cooldown = 1000;
+    this.coolingDown = false;
 };
 
 Unstable.Turret.prototype = Object.create(Unstable.Prefab.prototype);
 Unstable.Turret.prototype.constructor = Unstable.Turret;
 
 Unstable.Turret.prototype.update = function() {
-
+  //if player in range && not coolingDown
+  //create hazard with velocity directly at player
 }
