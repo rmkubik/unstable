@@ -213,7 +213,7 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"collision",
+                     "texture":"enemy_fire",
                      "velocityX":"0",
                      "velocityY":"50"
                     },
@@ -232,7 +232,7 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"collision",
+                     "texture":"enemy_fire",
                      "velocityX":"50",
                      "velocityY":"50"
                     },
@@ -251,7 +251,7 @@
                  "properties":
                     {
                      "group":"hazards",
-                     "texture":"collision",
+                     "texture":"enemy_fire",
                      "velocityX":"0",
                      "velocityY":"50"
                     },

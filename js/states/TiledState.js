@@ -18,7 +18,6 @@ Unstable.TiledState.prototype.init = function (level_data) {
 
     // start physics system
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
-    //this.game.physics.arcade.gravity.y = 1000;
 
     // create map and set tilesets
     this.map = this.game.add.tilemap(level_data.map.key);

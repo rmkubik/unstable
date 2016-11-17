@@ -9,6 +9,9 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
     this.speed = properties.speed;
     this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
     this.body.bounce.set(1);
+
+    this.animations.add("fire_burn", [0, 1, 2, 3], 2, true);
+    this.animations.play("fire_burn");
 };
 
 Unstable.BouncerHazard.prototype = Object.create(Unstable.Hazard.prototype);

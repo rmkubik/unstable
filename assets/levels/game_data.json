@@ -53,6 +53,15 @@
       "spacing": 1,
       "margin": 0
     },
+    "enemy_fire": {
+      "type": "spritesheet",
+      "source": "assets/images/enemy_fire.png",
+      "frame_width": 8,
+      "frame_height": 8,
+      "frames": 4,
+      "spacing": 1,
+      "margin": 0
+    },
     "tree1": {
       "type":"image",
       "source":"assets/images/tree1.png"
