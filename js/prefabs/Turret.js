@@ -18,7 +18,7 @@ Unstable.Turret.prototype.constructor = Unstable.Turret;
 
 Unstable.Turret.prototype.update = function() {
   //rotate turret
-  var rot = this.game_state.game.physics.arcade.angleBetween(this, this.game_state.groups["player"].getTop());
+  var rot = this.game_state.game.physics.arcade.angleBetween(this.turret, this.game_state.groups["player"].getTop());
   this.turret.rotation = rot;
 
   //shoot Projectile

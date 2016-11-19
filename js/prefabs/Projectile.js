@@ -18,5 +18,5 @@ Unstable.Projectile.prototype = Object.create(Unstable.Hazard.prototype);
 Unstable.Projectile.prototype.constructor = Unstable.Projectile;
 
 Unstable.Projectile.prototype.update = function() {
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
 }
