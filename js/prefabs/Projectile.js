@@ -7,7 +7,7 @@ Unstable.Projectile = function (game_state, position, turret, properties) {
     game_state.game.physics.arcade.enable(this);
 
     this.anchor.setTo(0.5);
-    this.body.setSize(4, 7, 10, 9);
+    this.body.setSize(7, 4, 9, 10);
 
     this.rotation = turret.rotation;
     game.physics.arcade.velocityFromRotation(this.rotation, properties.speed, this.body.velocity);

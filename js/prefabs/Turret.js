@@ -19,7 +19,7 @@ Unstable.Turret.prototype.update = function() {
   //if player in range && not coolingDown
   //create hazard with velocity directly at player
   if (!this.coolingDown) {
-    new Unstable.Projectile(this.game_state, this.position, this.turret, {group:"hazards", texture:"enemy_turret", frame:"2", speed:75});
+    new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, this.turret, {group:"hazards", texture:"enemy_turret", frame:"2", speed:75});
     this.coolingDown = true;
     game.time.events.add(Phaser.Timer.SECOND * this.cooldown, this.resetCooldown, this);
   }
