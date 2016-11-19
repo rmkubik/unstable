@@ -8,7 +8,7 @@ Unstable.Turret = function (game_state, position, properties) {
 
     this.turret = game.add.sprite(position.x, position.y, properties.texture, 1);
     this.range = 50;
-    this.cooldown = 1000;
+    this.cooldown = 5;
     this.coolingDown = false;
 };
 
@@ -18,4 +18,13 @@ Unstable.Turret.prototype.constructor = Unstable.Turret;
 Unstable.Turret.prototype.update = function() {
   //if player in range && not coolingDown
   //create hazard with velocity directly at player
+  if (!this.coolingDown) {
+    new Unstable.Projectile(this.game_state, this.position, this.turret, {group:"hazards", texture:"enemy_turret", frame:"2", speed:75});
+    this.coolingDown = true;
+    game.time.events.add(Phaser.Timer.SECOND * this.cooldown, this.resetCooldown, this);
+  }
+}
+
+Unstable.Turret.prototype.resetCooldown = function() {
+  this.coolingDown = false;
 }
