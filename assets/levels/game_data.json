@@ -71,6 +71,10 @@
       "spacing": 1,
       "margin": 0
     },
+    "enemy_tower": {
+      "type": "image",
+      "source": "assets/images/enemy_tower.png"
+    },
     "enemy": {
       "type":"image",
       "source":"assets/images/enemy.png"

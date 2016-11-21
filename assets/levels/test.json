@@ -482,6 +482,23 @@
                  "width":24,
                  "x":120,
                  "y":407
+                }, 
+                {
+                 "gid":22,
+                 "height":24,
+                 "id":49,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"turrets",
+                     "texture":"enemy_tower"
+                    },
+                 "rotation":0,
+                 "type":"turret",
+                 "visible":true,
+                 "width":24,
+                 "x":97,
+                 "y":308
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -490,7 +507,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":49,
+ "nextobjectid":50,
  "orientation":"orthogonal",
  "properties":
     {
@@ -613,19 +630,19 @@
          "tilewidth":24
         }, 
         {
-         "columns":3,
+         "columns":1,
          "firstgid":22,
-         "image":"..\/images\/enemy_turret.png",
+         "image":"..\/images\/enemy_tower.png",
          "imageheight":24,
-         "imagewidth":74,
+         "imagewidth":24,
          "margin":0,
-         "name":"enemy_turret",
+         "name":"enemy_tower",
          "properties":
             {
 
             },
          "spacing":1,
-         "tilecount":3,
+         "tilecount":1,
          "tileheight":24,
          "tilewidth":24
         }],
