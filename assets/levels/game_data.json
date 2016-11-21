@@ -80,8 +80,13 @@
       "source":"assets/images/enemy_blade.png"
     },
     "enemy_bomb": {
-      "type":"image",
-      "source":"assets/images/enemy_bomb.png"
+      "type":"spritesheet",
+      "source":"assets/images/enemy_bomb.png",
+      "frame_width": 24,
+      "frame_height": 24,
+      "frames": 4,
+      "spacing": 1,
+      "margin": 0
     },
     "tree1": {
       "type":"image",

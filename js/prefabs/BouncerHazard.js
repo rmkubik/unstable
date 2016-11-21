@@ -12,8 +12,8 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
 
     this.anchor.setTo(0.5);
 
-    // this.animations.add("fire_burn", [0, 1, 2, 3], 2, true);
-    // this.animations.play("fire_burn");
+    this.animations.add("bomb_move", [0, 1, 2, 3], 8, true);
+    this.animations.play("bomb_move");
 };
 
 Unstable.BouncerHazard.prototype = Object.create(Unstable.Hazard.prototype);

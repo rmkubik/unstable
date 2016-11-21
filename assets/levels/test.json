@@ -482,42 +482,6 @@
                  "width":24,
                  "x":120,
                  "y":407
-                }, 
-                {
-                 "gid":12,
-                 "height":24,
-                 "id":46,
-                 "name":"",
-                 "properties":
-                    {
-                     "frame":"2",
-                     "group":"crates",
-                     "texture":"img_objects"
-                    },
-                 "rotation":0,
-                 "type":"crate",
-                 "visible":true,
-                 "width":24,
-                 "x":168,
-                 "y":216
-                }, 
-                {
-                 "gid":22,
-                 "height":24,
-                 "id":48,
-                 "name":"",
-                 "properties":
-                    {
-                     "frame":"0",
-                     "group":"turrets",
-                     "texture":"enemy_turret"
-                    },
-                 "rotation":0,
-                 "type":"turret",
-                 "visible":true,
-                 "width":24,
-                 "x":97,
-                 "y":310
                 }],
          "opacity":1,
          "type":"objectgroup",
