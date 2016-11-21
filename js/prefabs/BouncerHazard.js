@@ -22,4 +22,9 @@ Unstable.BouncerHazard.prototype.constructor = Unstable.BouncerHazard;
 Unstable.BouncerHazard.prototype.update = function() {
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
   //this.angle += 4;
+  if (this.body.velocity.x > 0) {
+    this.scale.x = 1;
+  } else {
+    this.scale.x = -1;
+  }
 }
