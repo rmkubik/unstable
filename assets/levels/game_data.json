@@ -79,6 +79,10 @@
       "type":"image",
       "source":"assets/images/enemy_blade.png"
     },
+    "enemy_bomb": {
+      "type":"image",
+      "source":"assets/images/enemy_bomb.png"
+    },
     "tree1": {
       "type":"image",
       "source":"assets/images/tree1.png"
