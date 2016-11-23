@@ -72,8 +72,13 @@
       "margin": 0
     },
     "enemy_tower": {
-      "type": "image",
-      "source": "assets/images/enemy_tower.png"
+      "type": "spritesheet",
+      "source": "assets/images/enemy_tower.png",
+      "frame_width": 24,
+      "frame_height": 24,
+      "frames": 2,
+      "spacing": 1,
+      "margin": 0
     },
     "enemy": {
       "type":"image",
