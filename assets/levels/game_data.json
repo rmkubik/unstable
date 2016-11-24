@@ -97,6 +97,15 @@
       "spacing": 1,
       "margin": 0
     },
+    "enemy_sheet": {
+      "type":"spritesheet",
+      "source":"assets/images/enemy_sheet.png",
+      "frame_width": 24,
+      "frame_height": 24,
+      "frames": 5,
+      "spacing": 1,
+      "margin": 0
+    },
     "tree1": {
       "type":"image",
       "source":"assets/images/tree1.png"

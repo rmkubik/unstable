@@ -6,11 +6,17 @@ Unstable.Turret = function (game_state, position, properties) {
 
     game_state.game.physics.arcade.enable(this);
 
-    this.turret = game.add.sprite(position.x + 12, position.y + 12, properties.texture, 0);
-    this.turret.anchor.setTo(0.5);
+    // this.turret = game.add.sprite(position.x + 12, position.y + 12, properties.texture, 0);
+    // this.turret.anchor.setTo(0.5);
     this.range = 50;
     this.cooldown = 5;
     this.coolingDown = false;
+    this.active = false;
+
+    this.animations.add("turret_rise", [0, 1, 2, 3], 8);
+    this.animations.add("turret_sink", [3, 2, 1, 0], 8);
+    //this.animations.play("turret_rise");
+
 };
 
 Unstable.Turret.prototype = Object.create(Unstable.Prefab.prototype);
@@ -21,9 +27,17 @@ Unstable.Turret.prototype.update = function() {
   // var rot = this.game_state.game.physics.arcade.angleBetween(this.turret, this.game_state.groups["player"].getTop());
   // this.turret.rotation = rot;
 
+  if (this.game_state.game.physics.arcade.distanceBetween(this, this.game_state.groups["player"].getTop()) < this.range) {
+    if (!this.active) this.animations.play("turret_rise");
+    this.active = true;
+  } else {
+    if (this.active) this.animations.play("turret_sink");
+    this.active = false;
+  }
+
   //shoot Projectile
   if (!this.coolingDown) {
-    new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, this.turret, {group:"hazards", texture:"enemy_tower", frame:"1", speed:75});
+    // new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, this.turret, {group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
     this.coolingDown = true;
     game.time.events.add(Phaser.Timer.SECOND * this.cooldown, this.resetCooldown, this);
   }

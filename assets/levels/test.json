@@ -491,7 +491,7 @@
                  "properties":
                     {
                      "group":"turrets",
-                     "texture":"enemy_tower",
+                     "texture":"enemy_sheet",
                      "frame":"0"
                     },
                  "rotation":0,
