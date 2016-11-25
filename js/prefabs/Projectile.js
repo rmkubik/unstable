@@ -1,6 +1,6 @@
 var Unstable = Unstable || {};
 
-Unstable.Projectile = function (game_state, position, turret, properties) {
+Unstable.Projectile = function (game_state, position, velocity, properties) {
     "use strict";
     Unstable.Prefab.call(this, game_state, position, properties);
 
@@ -10,8 +10,9 @@ Unstable.Projectile = function (game_state, position, turret, properties) {
     this.body.setSize(7, 4, 9, 10);
 
     //this.rotation = turret.rotation;
-    game.physics.arcade.velocityFromRotation(this.rotation, properties.speed, this.body.velocity);
-
+    //game.physics.arcade.velocityFromRotation(this.rotation, properties.speed, this.body.velocity);
+    this.body.velocity.x = velocity.x;
+    this.body.velocity.y = velocity.y;
 };
 
 Unstable.Projectile.prototype = Object.create(Unstable.Hazard.prototype);
