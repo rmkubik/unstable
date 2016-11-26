@@ -9,3 +9,7 @@ Unstable.Hazard = function (game_state, position, properties) {
 
 Unstable.Hazard.prototype = Object.create(Unstable.Prefab.prototype);
 Unstable.Hazard.prototype.constructor = Unstable.Hazard;
+
+Unstable.Hazard.prototype.die = function() {
+  this.kill();
+}

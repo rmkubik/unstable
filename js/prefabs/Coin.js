@@ -8,15 +8,33 @@ Unstable.Coin = function (game_state, position, properties) {
     this.body.setSize(9, 9, 7.5, 7.5);
     //colliderTest.visible = false;
 
-    this.shadowOffset = 2;
+    this.bounce = {};
+    this.bounce.top = 1;
+    this.bounce.bottom = -2;
+
+    this.shadowOffset = -1;
     this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow");
     this.shadow.anchor.setTo(0);
     this.shadow.alpha = 0.4;
     this.game_state.groups["shadows"].add(this.shadow);
+
+    var bounceUpTween = this.game_state.game.add.tween(this).to({x:this.x, y:this.y+this.bounce.top},700);
+    var bounceDownTween = this.game_state.game.add.tween(this).to({x:this.x, y:this.y+this.bounce.bottom},700);
+    bounceUpTween.onComplete.add(function() {
+      bounceDownTween.start();
+    })
+    bounceDownTween.onComplete.add(function() {
+      bounceUpTween.start();
+    })
+    bounceUpTween.start();
 };
 
 Unstable.Coin.prototype = Object.create(Unstable.Prefab.prototype);
 Unstable.Coin.prototype.constructor = Unstable.Coin;
+
+Unstable.Coin.prototype.update = function() {
+
+}
 
 Unstable.Coin.prototype.die = function() {
   this.kill();
