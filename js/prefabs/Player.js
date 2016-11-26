@@ -16,6 +16,12 @@ Unstable.Player = function(game_state, position, properties) {
   this.anchor.setTo(0.5);
   this.body.setSize(16, 12, 0, 12);
 
+  this.shadowOffset = 2;
+  this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow");
+  this.shadow.anchor.setTo(0.5,0.5);
+  this.shadow.alpha = 0.6;
+  this.game_state.groups["shadows"].add(this.shadow);
+
   this.animations.add("player_run", [2, 3, 4, 5], 10, true);
   this.animations.add("player_idle", [0, 1], 1, true);
 
@@ -63,6 +69,9 @@ Unstable.Player.prototype.update = function() {
   if (this.body.velocity.x == 0 && this.body.velocity.y == 0) {
     this.animations.play("player_idle");
   }
+
+  this.shadow.x = this.x;
+  this.shadow.y = this.y + this.shadowOffset;
 }
 
 Unstable.Player.prototype.goalCollide = function(player, goal) {
@@ -80,6 +89,11 @@ Unstable.Player.prototype.coinCollide = function(player, coin) {
 
 Unstable.Player.prototype.hazardCollide = function(player, projectile) {
   "use strict";
-  player.kill();
+  player.die();
   projectile.kill();
+}
+
+Unstable.Player.prototype.die = function() {
+  this.kill();
+  this.shadow.kill();
 }

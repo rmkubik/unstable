@@ -53,24 +53,6 @@
       "spacing": 1,
       "margin": 0
     },
-    "enemy_fire": {
-      "type": "spritesheet",
-      "source": "assets/images/enemy_fire.png",
-      "frame_width": 8,
-      "frame_height": 8,
-      "frames": 4,
-      "spacing": 1,
-      "margin": 0
-    },
-    "enemy_turret": {
-      "type": "spritesheet",
-      "source": "assets/images/enemy_turret.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 3,
-      "spacing": 1,
-      "margin": 0
-    },
     "enemy_tower": {
       "type": "spritesheet",
       "source": "assets/images/enemy_tower.png",
@@ -79,14 +61,6 @@
       "frames": 2,
       "spacing": 1,
       "margin": 0
-    },
-    "enemy": {
-      "type":"image",
-      "source":"assets/images/enemy.png"
-    },
-    "enemy_blade": {
-      "type":"image",
-      "source":"assets/images/enemy_blade.png"
     },
     "enemy_bomb": {
       "type":"spritesheet",
@@ -133,6 +107,10 @@
     "bush3": {
       "type":"image",
       "source":"assets/images/bush3.png"
+    },
+    "shadow": {
+      "type":"image",
+      "source":"assets/images/shadow.png"
     }
   },
   "levels": [
@@ -148,6 +126,7 @@
     }
   ],
   "groups": [
+    "shadows",
     "coins",
     "goal",
     "hazards",
