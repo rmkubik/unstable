@@ -80,6 +80,15 @@
       "spacing": 1,
       "margin": 0
     },
+    "shadow": {
+      "type":"spritesheet",
+      "source":"assets/images/shadow.png",
+      "frame_width": 24,
+      "frame_height": 24,
+      "frames": 3,
+      "spacing": 1,
+      "margin": 0
+    },
     "tree1": {
       "type":"image",
       "source":"assets/images/tree1.png"
@@ -107,10 +116,6 @@
     "bush3": {
       "type":"image",
       "source":"assets/images/bush3.png"
-    },
-    "shadow": {
-      "type":"image",
-      "source":"assets/images/shadow.png"
     }
   },
   "levels": [

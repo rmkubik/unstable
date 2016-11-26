@@ -13,7 +13,7 @@ Unstable.Coin = function (game_state, position, properties) {
     this.bounce.bottom = -2;
 
     this.shadowOffset = -1;
-    this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow");
+    this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow", 1);
     this.shadow.anchor.setTo(0);
     this.shadow.alpha = 0.4;
     this.game_state.groups["shadows"].add(this.shadow);

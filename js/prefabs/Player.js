@@ -17,7 +17,7 @@ Unstable.Player = function(game_state, position, properties) {
   this.body.setSize(16, 12, 0, 12);
 
   this.shadowOffset = 2;
-  this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow");
+  this.shadow = game.add.sprite(position.x - 1, position.y + this.shadowOffset, "shadow", 1);
   this.shadow.anchor.setTo(0.5,0.5);
   this.shadow.alpha = 0.4;
   this.game_state.groups["shadows"].add(this.shadow);
@@ -70,7 +70,7 @@ Unstable.Player.prototype.update = function() {
     this.animations.play("player_idle");
   }
 
-  this.shadow.x = this.x;
+  this.shadow.x = this.x- 1;
   this.shadow.y = this.y + this.shadowOffset;
 }
 
