@@ -10,6 +10,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
     this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
     this.body.bounce.set(1);
 
+    this.body.setSize(18, 20, 3, 4);
     this.anchor.setTo(0.5);
 
     this.animations.add("bomb_move", [0, 1, 2, 3], 8, true);
