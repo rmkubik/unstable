@@ -38,12 +38,15 @@ Unstable.Turret.prototype.update = function() {
   //shoot Projectile
   if (!this.coolingDown && this.active) {
     // new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
-    new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:75, y:0} ,{group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
-    new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:-75, y:0} ,{group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
-    new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:0, y:75} ,{group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
-    new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:0, y:-75} ,{group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
-    this.coolingDown = true;
-    game.time.events.add(Phaser.Timer.SECOND * this.cooldown, this.resetCooldown, this);
+    if (!this.animations.currentAnim.isPlaying) {
+      console.log(this.animations.currentAnim)
+      new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:75, y:0} ,{group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
+      new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:-75, y:0} ,{group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
+      new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:0, y:75} ,{group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
+      new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:0, y:-75} ,{group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
+      this.coolingDown = true;
+      game.time.events.add(Phaser.Timer.SECOND * this.cooldown, this.resetCooldown, this);
+    }
   }
 }
 
