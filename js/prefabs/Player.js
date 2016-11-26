@@ -19,7 +19,7 @@ Unstable.Player = function(game_state, position, properties) {
   this.shadowOffset = 2;
   this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow");
   this.shadow.anchor.setTo(0.5,0.5);
-  this.shadow.alpha = 0.6;
+  this.shadow.alpha = 0.4;
   this.game_state.groups["shadows"].add(this.shadow);
 
   this.animations.add("player_run", [2, 3, 4, 5], 10, true);
@@ -82,15 +82,15 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
 
 Unstable.Player.prototype.coinCollide = function(player, coin) {
   "use strict";
-  coin.kill();
+  coin.die();
   this.score += 1;
   console.log("score: " + this.score);
 }
 
-Unstable.Player.prototype.hazardCollide = function(player, projectile) {
+Unstable.Player.prototype.hazardCollide = function(player, hazard) {
   "use strict";
   player.die();
-  projectile.kill();
+  hazard.die();
 }
 
 Unstable.Player.prototype.die = function() {

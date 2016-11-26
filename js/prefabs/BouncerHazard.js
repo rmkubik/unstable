@@ -13,6 +13,12 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
     this.body.setSize(18, 20, 3, 4);
     this.anchor.setTo(0.5);
 
+    this.shadowOffset = 2;
+    this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow");
+    this.shadow.anchor.setTo(0.5,0.5);
+    this.shadow.alpha = 0.4;
+    this.game_state.groups["shadows"].add(this.shadow);
+
     this.animations.add("bomb_move", [0, 1, 2, 3], 8, true);
     this.animations.play("bomb_move");
 };
@@ -28,4 +34,12 @@ Unstable.BouncerHazard.prototype.update = function() {
   } else {
     this.scale.x = -1;
   }
+
+  this.shadow.x = this.x;
+  this.shadow.y = this.y + this.shadowOffset;
+}
+
+Unstable.BouncerHazard.prototype.die = function() {
+  this.kill();
+  this.shadow.kill();
 }

@@ -9,7 +9,7 @@ Unstable.Turret = function (game_state, position, properties) {
     // this.turret = game.add.sprite(position.x + 12, position.y + 12, properties.texture, 0);
     // this.turret.anchor.setTo(0.5);
     this.range = 75;
-    this.cooldown = 5;
+    this.cooldown = 3;
     this.coolingDown = false;
     this.active = false;
 
