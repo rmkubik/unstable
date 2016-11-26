@@ -29,3 +29,8 @@ Unstable.Projectile.prototype.update = function() {
   this.shadow.x = this.x;
   this.shadow.y = this.y + this.shadowOffset;
 }
+
+Unstable.Projectile.prototype.die = function() {
+  this.kill();
+  this.shadow.kill();
+}
