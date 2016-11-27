@@ -17,10 +17,11 @@ Unstable.Player = function(game_state, position, properties) {
   this.body.setSize(16, 12, 0, 12);
 
   this.shadowOffset = 2;
-  this.shadow = game.add.sprite(position.x - 1, position.y + this.shadowOffset, "shadow", 1);
+  this.shadow = game.make.sprite(-1, this.shadowOffset, "shadow", 1);
   this.shadow.anchor.setTo(0.5,0.5);
   this.shadow.alpha = 0.4;
-  this.game_state.groups["shadows"].add(this.shadow);
+  //this.game_state.groups["shadows"].add(this.shadow);
+  this.addChild(this.shadow);
 
   this.animations.add("player_run", [2, 3, 4, 5], 10, true);
   this.animations.add("player_idle", [0, 1], 1, true);
@@ -70,8 +71,8 @@ Unstable.Player.prototype.update = function() {
     this.animations.play("player_idle");
   }
 
-  this.shadow.x = this.x- 1;
-  this.shadow.y = this.y + this.shadowOffset;
+  // this.shadow.x = this.x - 1;
+  // this.shadow.y = this.y + this.shadowOffset;
 }
 
 Unstable.Player.prototype.goalCollide = function(player, goal) {
