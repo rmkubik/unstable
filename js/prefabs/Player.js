@@ -17,11 +17,11 @@ Unstable.Player = function(game_state, position, properties) {
   this.body.setSize(16, 12, 0, 12);
 
   this.shadowOffset = 2;
-  this.shadow = game.make.sprite(-1, this.shadowOffset, "shadow", 1);
+  this.shadow = game.add.sprite(-1, this.shadowOffset, "shadow", 1);
   this.shadow.anchor.setTo(0.5,0.5);
   this.shadow.alpha = 0.4;
-  //this.game_state.groups["shadows"].add(this.shadow);
-  this.addChild(this.shadow);
+  this.game_state.groups["shadows"].add(this.shadow);
+  //this.addChild(this.shadow);
 
   this.animations.add("player_run", [2, 3, 4, 5], 10, true);
   this.animations.add("player_idle", [0, 1], 1, true);
@@ -58,21 +58,23 @@ Unstable.Player.prototype.update = function() {
   if (this.cursors.down.isDown && this.body.velocity.y >= 0) {
     //move down
     this.body.velocity.y = this.walking_speed;
+    this.shadow.y = this.y + this.shadowOffset * 2;
     this.animations.play("player_run");
   } else if (this.cursors.up.isDown && this.body.velocity.y <= 0) {
     //move up
     this.body.velocity.y = -this.walking_speed;
+    this.shadow.y = this.y + this.shadowOffset * 2;
     this.animations.play("player_run");
   } else {
     //stop
     this.body.velocity.y = 0;
+    this.shadow.y = this.y + this.shadowOffset;
   }
   if (this.body.velocity.x == 0 && this.body.velocity.y == 0) {
     this.animations.play("player_idle");
   }
 
-  // this.shadow.x = this.x - 1;
-  // this.shadow.y = this.y + this.shadowOffset;
+  this.shadow.x = this.x - 1;
 }
 
 Unstable.Player.prototype.goalCollide = function(player, goal) {

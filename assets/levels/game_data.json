@@ -8,6 +8,10 @@
       "type": "tilemap",
       "source": "assets/levels/level2.json"
     },
+    "lvl_level3": {
+      "type":"tilemap",
+      "source":"assets/levels/level3.json"
+    },
     "tilesheet": {
       "type": "spritesheet",
       "source": "assets/images/tilesheet.png",
@@ -128,6 +132,11 @@
       "name":"Level 2",
       "key": "lvl_level2",
       "tileset": "tilesheet"
+    },
+    {
+      "name":"Level 3",
+      "key":"lvl_level3",
+      "tileset":"tilesheet"
     }
   ],
   "groups": [
