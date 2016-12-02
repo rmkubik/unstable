@@ -12,6 +12,14 @@
       "type":"tilemap",
       "source":"assets/levels/level3.json"
     },
+    "lvl_level4": {
+      "type":"tilemap",
+      "source":"assets/levels/level4.json"
+    },
+    "lvl_level5": {
+      "type":"tilemap",
+      "source":"assets/levels/level5.json"
+    },
     "tilesheet": {
       "type": "spritesheet",
       "source": "assets/images/tilesheet.png",
@@ -134,10 +142,21 @@
       "tileset": "tilesheet"
     },
     {
+      "name": "Level 5",
+      "key": "lvl_level5",
+      "tileset": "tilesheet"
+    },
+    {
       "name":"Level 3",
       "key":"lvl_level3",
       "tileset":"tilesheet"
+    },
+    {
+      "name": "Level 4",
+      "key": "lvl_level4",
+      "tileset": "tilesheet"
     }
+
   ],
   "groups": [
     "shadows",
