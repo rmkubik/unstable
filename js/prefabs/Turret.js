@@ -27,13 +27,13 @@ Unstable.Turret.prototype.update = function() {
   // var rot = this.game_state.game.physics.arcade.angleBetween(this.turret, this.game_state.groups["player"].getTop());
   // this.turret.rotation = rot;
 
-  if (this.game_state.game.physics.arcade.distanceBetween(this, this.game_state.groups["player"].getTop()) < this.range) {
-    if (!this.active) this.animations.play("turret_rise");
-    this.active = true;
-  } else {
-    if (this.active) this.animations.play("turret_sink");
-    this.active = false;
-  }
+  // if (this.game_state.game.physics.arcade.distanceBetween(this, this.game_state.groups["player"].getTop()) < this.range) {
+  //   if (!this.active) this.animations.play("turret_rise");
+  //   this.active = true;
+  // } else {
+  //   if (this.active) this.animations.play("turret_sink");
+  //   this.active = false;
+  // }
 
   //shoot Projectile
   if (!this.coolingDown && this.active) {

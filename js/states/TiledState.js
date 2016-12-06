@@ -30,6 +30,18 @@ Unstable.TiledState.prototype.create = function () {
     "use strict";
     var group_name, object_layer, collision_tiles;
 
+    //create collision groups
+    this.collision_groups = {};
+    this.level_data.collision_groups.forEach(function (group_name) {
+        this.collision_groups[group_name] = this.game.physics.p2.createCollisionGroup();
+    }, this);
+
+    //create render groups
+    this.render_groups = {};
+    this.level_data.render_groups.forEach(function (group_name) {
+        this.render_groups[group_name] = this.game.add.group();
+    }, this);
+
     this.groups = {};
     this.groups["colliders"] = this.game.add.group();
 

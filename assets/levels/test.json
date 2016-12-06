@@ -52,7 +52,7 @@
                      "group":"player",
                      "texture":"img_player_white",
                      "rgroup":"objects",
-                     "pgroup":"players"
+                     "cgroup":"players"
                     },
                  "rotation":0,
                  "type":"player",
@@ -74,7 +74,7 @@
                      "texture":"img_objects",
                      "width":"8",
                      "rgroup":"objects",
-                     "pgroup":"goals"
+                     "cgroup":"goals"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -94,7 +94,7 @@
                      "group":"coins",
                      "texture":"img_objects",
                      "rgroup":"objects",
-                     "pgroup":"coins"
+                     "cgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -114,7 +114,7 @@
                      "group":"coins",
                      "texture":"img_objects",
                      "rgroup":"objects",
-                     "pgroup":"coins"
+                     "cgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -134,7 +134,7 @@
                      "group":"coins",
                      "texture":"img_objects",
                      "rgroup":"objects",
-                     "pgroup":"coins"
+                     "cgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -154,7 +154,7 @@
                      "group":"coins",
                      "texture":"img_objects",
                      "rgroup":"objects",
-                     "pgroup":"coins"
+                     "cgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -174,7 +174,7 @@
                      "group":"coins",
                      "texture":"img_objects",
                      "rgroup":"objects",
-                     "pgroup":"coins"
+                     "cgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -194,7 +194,7 @@
                      "group":"coins",
                      "texture":"img_objects",
                      "rgroup":"objects",
-                     "pgroup":"coins"
+                     "cgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -214,7 +214,7 @@
                      "group":"coins",
                      "texture":"img_objects",
                      "rgroup":"objects",
-                     "pgroup":"coins"
+                     "cgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -254,7 +254,7 @@
                      "velocityX":"50",
                      "velocityY":"50",
                      "rgroup":"objects",
-                     "pgroup":"hazards"
+                     "cgroup":"hazards"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -275,7 +275,7 @@
                      "velocityX":"0",
                      "velocityY":"50",
                      "rgroup":"objects",
-                     "pgroup":"hazards"
+                     "cgroup":"hazards"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -294,7 +294,7 @@
                      "group":"scenery",
                      "texture":"tree1",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -313,7 +313,7 @@
                      "group":"scenery",
                      "texture":"tree1",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -332,7 +332,7 @@
                      "group":"scenery",
                      "texture":"tree1",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -351,7 +351,7 @@
                      "group":"scenery",
                      "texture":"tree1",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -370,7 +370,7 @@
                      "group":"scenery",
                      "texture":"tree2",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -389,7 +389,7 @@
                      "group":"scenery",
                      "texture":"tree2",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -408,7 +408,7 @@
                      "group":"scenery",
                      "texture":"tree3",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -427,7 +427,7 @@
                      "group":"scenery",
                      "texture":"tree3",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -446,7 +446,7 @@
                      "group":"scenery",
                      "texture":"tree4",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -465,7 +465,7 @@
                      "group":"scenery",
                      "texture":"bush1",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"bush",
@@ -484,7 +484,7 @@
                      "group":"scenery",
                      "texture":"bush1",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"bush",
@@ -503,7 +503,7 @@
                      "group":"scenery",
                      "texture":"bush1",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"bush",
@@ -522,7 +522,7 @@
                      "group":"scenery",
                      "texture":"bush3",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"bush",
@@ -542,7 +542,7 @@
                      "group":"turrets",
                      "texture":"enemy_sheet",
                      "rgroup":"objects",
-                     "pgroup":"blockers"
+                     "cgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"turret",

@@ -10,11 +10,11 @@ Unstable.Player = function(game_state, position, properties) {
 
   this.score = 0;
 
-  this.game_state.game.physics.arcade.enable(this);
-  this.body.collideWorldBounds = true;
+  // this.game_state.game.physics.arcade.enable(this);
+  // this.body.collideWorldBounds = true;
 
   this.anchor.setTo(0.5);
-  this.body.setSize(16, 12, 0, 12);
+  // this.body.setSize(16, 12, 0, 12);
 
   this.shadowOffset = 2;
   this.shadow = game.add.sprite(-1, this.shadowOffset, "shadow", 1);
@@ -29,6 +29,10 @@ Unstable.Player = function(game_state, position, properties) {
   this.animations.play("player_idle");
 
   this.cursors = this.game_state.game.input.keyboard.createCursorKeys();
+
+  this.game_state.game.physics.p2.enable(this);
+  this.body.setCollisionGroup(this.game_state.collision_groups[properties.cgroup]);
+  this.game_state.render_groups[properties.rgroup].add(this);
 }
 
 Unstable.Player.prototype = Object.create(Unstable.Prefab.prototype);
