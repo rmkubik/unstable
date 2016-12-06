@@ -168,6 +168,16 @@
     "crates",
     "turrets"
   ],
+  "render_groups": [
+    "objects"
+  ],
+  "physics_groups": [
+    "coins",
+    "players",
+    "hazards",
+    "blockers",
+    "goals"
+  ],
   "prefabs": {
     "player": {
       "type": "player",

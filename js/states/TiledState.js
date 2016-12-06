@@ -18,6 +18,7 @@ Unstable.TiledState.prototype.init = function (level_data) {
 
     // start physics system
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
+    this.game.physics.startSystem(Phaser.Physics.P2JS);
 
     // create map and set tilesets
     this.map = this.game.add.tilemap(level_data.map.key);
