@@ -33,17 +33,19 @@ Unstable.Player = function(game_state, position, properties) {
   this.game_state.game.physics.p2.enable(this);
   this.body.setCollisionGroup(this.game_state.collision_groups[properties.cgroup]);
   this.game_state.render_groups[properties.rgroup].add(this);
+  this.body.collides(this.game_state.collision_groups["coins"], this.coinCollide, this);
+  this.body.fixedRotation = true;
 }
 
 Unstable.Player.prototype = Object.create(Unstable.Prefab.prototype);
 Unstable.Player.prototype.constructor = Unstable.Player;
 
 Unstable.Player.prototype.update = function() {
-  this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.goal, this.goalCollide, null, this);
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.coins, this.coinCollide, null, this);
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.hazards, this.hazardCollide, null, this);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.goal, this.goalCollide, null, this);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.coins, this.coinCollide, null, this);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.hazards, this.hazardCollide, null, this);
 
   if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
       // move right
@@ -87,9 +89,9 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
   this.game.state.start("LevelManager", true, false, this.game_state.level_data);
 }
 
-Unstable.Player.prototype.coinCollide = function(player, coin) {
+Unstable.Player.prototype.coinCollide = function(playerBody, coinBody) {
   "use strict";
-  coin.die();
+  coinBody.sprite.die();
   this.score += 1;
   console.log("score: " + this.score);
 }
