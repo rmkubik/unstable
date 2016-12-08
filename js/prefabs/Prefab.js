@@ -12,6 +12,7 @@ Unstable.Prefab = function (game_state, position, properties) {
     }
 
     this.game_state = game_state;
+    if (properties.group != "player" && properties.group != "coins")
     this.game_state.groups[properties.group].add(this);
 
     // if (properties.hasOwnProperty("cgroup") && properties.cgroup != null) {

@@ -5,6 +5,7 @@ Unstable.Hazard = function (game_state, position, properties) {
     Unstable.Prefab.call(this, game_state, position, properties);
 
     game_state.game.physics.arcade.enable(this);
+    game_state.game.physics.p2.enable(this);
 };
 
 Unstable.Hazard.prototype = Object.create(Unstable.Prefab.prototype);

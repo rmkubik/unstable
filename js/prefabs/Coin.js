@@ -18,11 +18,13 @@ Unstable.Coin = function (game_state, position, properties) {
     this.shadow.alpha = 0.4;
     this.game_state.groups["shadows"].add(this.shadow);
 
+    this.collided = false;
     this.game_state.game.physics.p2.enable(this);
     this.body.setCollisionGroup(this.game_state.collision_groups[properties.cgroup]);
     this.game_state.render_groups[properties.rgroup].add(this);
     this.body.collides(this.game_state.collision_groups["players"]);
     this.body.fixedRotation = true;
+    this.body.kinematic = true;
 
     var bounceUpTween = this.game_state.game.add.tween(this).to({x:this.x, y:this.y+this.bounce.top},700);
     var bounceDownTween = this.game_state.game.add.tween(this).to({x:this.x, y:this.y+this.bounce.bottom},700);

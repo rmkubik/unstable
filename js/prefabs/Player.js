@@ -34,6 +34,7 @@ Unstable.Player = function(game_state, position, properties) {
   this.body.setCollisionGroup(this.game_state.collision_groups[properties.cgroup]);
   this.game_state.render_groups[properties.rgroup].add(this);
   this.body.collides(this.game_state.collision_groups["coins"], this.coinCollide, this);
+  this.body.collides(this.game_state.collision_groups["colliders"]);
   this.body.fixedRotation = true;
 }
 
@@ -91,9 +92,12 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
 
 Unstable.Player.prototype.coinCollide = function(playerBody, coinBody) {
   "use strict";
-  coinBody.sprite.die();
-  this.score += 1;
-  console.log("score: " + this.score);
+  if (!coinBody.sprite.collided) {
+    coinBody.sprite.collided = true;
+    coinBody.sprite.die();
+    this.score += 1;
+    console.log("score: " + this.score);
+  }
 }
 
 Unstable.Player.prototype.hazardCollide = function(player, hazard) {

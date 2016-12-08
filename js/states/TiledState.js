@@ -31,20 +31,14 @@ Unstable.TiledState.prototype.create = function () {
     "use strict";
     var group_name, object_layer, collision_tiles;
 
+    this.groups = {};
+    this.groups["colliders"] = this.game.add.group();
+
     //create collision groups
     this.collision_groups = {};
     this.level_data.collision_groups.forEach(function (group_name) {
         this.collision_groups[group_name] = this.game.physics.p2.createCollisionGroup();
     }, this);
-
-    //create render groups
-    this.render_groups = {};
-    this.level_data.render_groups.forEach(function (group_name) {
-        this.render_groups[group_name] = this.game.add.group();
-    }, this);
-
-    this.groups = {};
-    this.groups["colliders"] = this.game.add.group();
 
     // create map layers
     this.layers = {};
@@ -55,7 +49,7 @@ Unstable.TiledState.prototype.create = function () {
             layer.data.forEach(function (data_row) { // find tiles used in the layer
                 data_row.forEach(function (tile) {
                   if (tile.index > 0) {
-                    new Unstable.Collider(this, {x:tile.x * 24,y:tile.y * 24}, {group:"colliders",texture:"",width:24,height:24});
+                    new Unstable.Collider(this, {x:tile.x * 24 + 12,y:tile.y * 24 + 12}, {group:"colliders",texture:"",width:24,height:24,cgroup:"colliders"});
                   }
                 }, this);
             }, this);
@@ -69,6 +63,12 @@ Unstable.TiledState.prototype.create = function () {
         this.groups[group_name] = this.game.add.group();
     }, this);
 
+    //create render groups
+    this.render_groups = {};
+    this.level_data.render_groups.forEach(function (group_name) {
+        this.render_groups[group_name] = this.game.add.group();
+    }, this);
+
     this.prefabs = {};
 
     for (object_layer in this.map.objects) {
@@ -77,6 +77,13 @@ Unstable.TiledState.prototype.create = function () {
             this.map.objects[object_layer].forEach(this.create_object, this);
         }
     }
+
+    var test = this.game.add.sprite(17, 17, "collision");
+    this.game.physics.p2.enable(test);
+    test.body.x = test.x;
+    test.body.y = test.y;
+    console.log(test.body.data.position);
+    console.log(test.x + ":" + test.y + "::" + test.body.x + ":" + test.body.y);
 };
 
 Unstable.TiledState.prototype.update = function() {

@@ -175,6 +175,7 @@
     "coins",
     "players",
     "hazards",
+    "colliders",
     "blockers",
     "goals"
   ],
