@@ -233,7 +233,9 @@
                      "group":"hazards",
                      "texture":"enemy_bomb",
                      "velocityX":"0",
-                     "velocityY":"50"
+                     "velocityY":"50",
+                     "rgroup":"objects",
+                     "cgroup":"hazards"
                     },
                  "rotation":0,
                  "type":"bouncer",

@@ -2,15 +2,18 @@ var Unstable = Unstable || {};
 
 Unstable.BouncerHazard = function (game_state, position, properties) {
     "use strict";
-    Unstable.Prefab.call(this, game_state, position, properties);
+    Unstable.Hazard.call(this, game_state, position, properties);
 
-    game_state.game.physics.arcade.enable(this);
+    // game_state.game.physics.arcade.enable(this);
 
     this.speed = properties.speed;
-    this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
-    this.body.bounce.set(1);
+    // this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
+    // this.body.bounce.set(1);
+    this.body.collides(this.game_state.collision_groups["colliders"]);
+    this.body.collides(this.game_state.collision_groups["players"]);
+    this.body.fixedRotation = true;
 
-    this.body.setSize(18, 20, 3, 4);
+    // this.body.setSize(18, 20, 3, 4);
     this.anchor.setTo(0.5);
 
     this.shadowOffset = 2;
