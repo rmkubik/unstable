@@ -7,6 +7,7 @@ Unstable.Coin = function (game_state, position, properties) {
     this.body.immovable = true;
     this.body.setSize(9, 9, 7.5, 7.5);
     //colliderTest.visible = false;
+    //test comment for commit
 
     this.bounce = {};
     this.bounce.top = 1;
