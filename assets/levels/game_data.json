@@ -160,6 +160,7 @@
   ],
   "groups": [
     "shadows",
+    "objects",
     "coins",
     "goal",
     "hazards",

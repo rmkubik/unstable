@@ -56,6 +56,7 @@ Unstable.TiledState.prototype.create = function () {
     }, this);
 
     this.prefabs = {};
+    this.player;
 
     for (object_layer in this.map.objects) {
         if (this.map.objects.hasOwnProperty(object_layer)) {
@@ -66,7 +67,7 @@ Unstable.TiledState.prototype.create = function () {
 };
 
 Unstable.TiledState.prototype.update = function() {
-  //this.groups.sort('y', Phaser.Group.SORT_ASCENDING); //depth sorting
+  this.groups["objects"].sort('y', Phaser.Group.SORT_ASCENDING); //depth sorting
 }
 
 Unstable.TiledState.prototype.create_object = function (object) {
@@ -78,6 +79,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
     switch (object.type) {
     case "player":
       prefab = new Unstable.Player(this, position, object.properties);
+      this.player = prefab;
       break;
     case "goal":
       prefab = new Unstable.Goal(this, position, object.properties);

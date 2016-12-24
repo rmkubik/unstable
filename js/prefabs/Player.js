@@ -37,9 +37,10 @@ Unstable.Player.prototype.constructor = Unstable.Player;
 Unstable.Player.prototype.update = function() {
   this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.goal, this.goalCollide, null, this);
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.coins, this.coinCollide, null, this);
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.hazards, this.hazardCollide, null, this);
+  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.objects, this.collideObjects, null, this);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.goal, this.goalCollide, null, this);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.coins, this.coinCollide, null, this);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.hazards, this.hazardCollide, null, this);
 
   if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
       // move right
@@ -75,6 +76,22 @@ Unstable.Player.prototype.update = function() {
   }
 
   this.shadow.x = this.x - 1;
+}
+
+Unstable.Player.prototype.collideObjects = function(player, object) {
+  "use strict";
+  console.log(object.pgroup);
+  switch(object.pgroup) {
+    case "hazards":
+      this.hazardCollide(player, object);
+      break;
+    case "coins":
+      this.coinCollide(player, object);
+      break;
+    case "goals":
+      this.goalCollide(player, object);
+      break;
+  }
 }
 
 Unstable.Player.prototype.goalCollide = function(player, goal) {

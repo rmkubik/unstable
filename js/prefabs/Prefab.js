@@ -13,7 +13,15 @@ Unstable.Prefab = function (game_state, position, properties) {
 
     this.game_state = game_state;
 
-    this.game_state.groups[properties.group].add(this);
+    console.log(properties.rgroup + ":" + properties.group);
+    if (properties.rgroup != null)
+      this.game_state.groups[properties.rgroup].add(this);
+    else {
+      this.game_state.groups[properties.group].add(this);
+    }
+
+    if (properties.pgroup != null)
+      this.pgroup = properties.pgroup;
 };
 
 Unstable.Prefab.prototype = Object.create(Phaser.Sprite.prototype);
