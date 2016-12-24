@@ -64,7 +64,7 @@ Unstable.Player.prototype.update = function() {
   } else if (this.cursors.up.isDown && this.body.velocity.y <= 0) {
     //move up
     this.body.velocity.y = -this.walking_speed;
-    this.shadow.y = this.y + this.shadowOffset * 2;
+    this.shadow.y = this.y;
     this.animations.play("player_run");
   } else {
     //stop
