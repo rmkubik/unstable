@@ -45,17 +45,21 @@ Unstable.Player.prototype.update = function() {
   if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
       // move right
       this.body.velocity.x = this.walking_speed;
+      this.shadow.x = this.x + 1;
       this.animations.play("player_run");
       this.scale.setTo(1, 1);
   } else if (this.cursors.left.isDown && this.body.velocity.x <= 0) {
       // move left
       this.body.velocity.x = -this.walking_speed;
+      this.shadow.x = this.x - 1;
       this.animations.play("player_run");
       this.scale.setTo(-1, 1);
   } else {
       // stop
       this.body.velocity.x = 0;
+      this.shadow.x = this.x;
   }
+
   if (this.cursors.down.isDown && this.body.velocity.y >= 0) {
     //move down
     this.body.velocity.y = this.walking_speed;
@@ -74,8 +78,6 @@ Unstable.Player.prototype.update = function() {
   if (this.body.velocity.x == 0 && this.body.velocity.y == 0) {
     this.animations.play("player_idle");
   }
-
-  this.shadow.x = this.x - 1;
 }
 
 Unstable.Player.prototype.collideObjects = function(player, object) {
