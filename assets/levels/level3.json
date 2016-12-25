@@ -10,7 +10,7 @@
          "width":20,
          "x":0,
          "y":0
-        }, 
+        },
         {
          "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":20,
@@ -21,7 +21,7 @@
          "width":20,
          "x":0,
          "y":0
-        }, 
+        },
         {
          "data":[9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0, 9, 9, 9, 9, 9, 0, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 9, 0, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 9, 0, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 9, 9, 0, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 0, 9, 9, 9, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 0, 9, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9, 9, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
          "height":20,
@@ -36,7 +36,7 @@
          "width":20,
          "x":0,
          "y":0
-        }, 
+        },
         {
          "draworder":"topdown",
          "height":20,
@@ -50,7 +50,9 @@
                  "properties":
                     {
                      "group":"player",
-                     "texture":"img_player_white"
+                     "texture":"img_player_white",
+                     "rgroup":"objects",
+                     "pgroup":"players"
                     },
                  "rotation":0,
                  "type":"player",
@@ -58,7 +60,7 @@
                  "width":32,
                  "x":38,
                  "y":72
-                }, 
+                },
                 {
                  "gid":10,
                  "height":24,
@@ -70,7 +72,9 @@
                      "group":"goal",
                      "height":"8",
                      "texture":"img_objects",
-                     "width":"8"
+                     "width":"8",
+                     "rgroup":"objects",
+                     "pgroup":"goals"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -78,7 +82,7 @@
                  "width":24,
                  "x":60,
                  "y":253
-                }, 
+                },
                 {
                  "gid":11,
                  "height":24,
@@ -88,7 +92,9 @@
                     {
                      "frame":"1",
                      "group":"coins",
-                     "texture":"img_objects"
+                     "texture":"img_objects",
+                     "rgroup":"objects",
+                     "pgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -96,7 +102,7 @@
                  "width":24,
                  "x":215,
                  "y":455
-                }, 
+                },
                 {
                  "gid":11,
                  "height":24,
@@ -106,7 +112,9 @@
                     {
                      "frame":"1",
                      "group":"coins",
-                     "texture":"img_objects"
+                     "texture":"img_objects",
+                     "rgroup":"objects",
+                     "pgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -114,7 +122,7 @@
                  "width":24,
                  "x":433,
                  "y":432
-                }, 
+                },
                 {
                  "gid":11,
                  "height":24,
@@ -124,7 +132,9 @@
                     {
                      "frame":"1",
                      "group":"coins",
-                     "texture":"img_objects"
+                     "texture":"img_objects",
+                     "rgroup":"objects",
+                     "pgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -132,7 +142,7 @@
                  "width":24,
                  "x":407,
                  "y":71
-                }, 
+                },
                 {
                  "gid":11,
                  "height":24,
@@ -142,7 +152,9 @@
                     {
                      "frame":"1",
                      "group":"coins",
-                     "texture":"img_objects"
+                     "texture":"img_objects",
+                     "rgroup":"objects",
+                     "pgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -150,7 +162,7 @@
                  "width":24,
                  "x":383,
                  "y":73
-                }, 
+                },
                 {
                  "gid":11,
                  "height":24,
@@ -160,7 +172,9 @@
                     {
                      "frame":"1",
                      "group":"coins",
-                     "texture":"img_objects"
+                     "texture":"img_objects",
+                     "rgroup":"objects",
+                     "pgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -168,7 +182,7 @@
                  "width":24,
                  "x":432.5,
                  "y":408
-                }, 
+                },
                 {
                  "gid":11,
                  "height":24,
@@ -178,7 +192,9 @@
                     {
                      "frame":"1",
                      "group":"coins",
-                     "texture":"img_objects"
+                     "texture":"img_objects",
+                     "rgroup":"objects",
+                     "pgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -186,7 +202,7 @@
                  "width":24,
                  "x":193.5,
                  "y":456
-                }, 
+                },
                 {
                  "gid":11,
                  "height":24,
@@ -196,7 +212,9 @@
                     {
                      "frame":"1",
                      "group":"coins",
-                     "texture":"img_objects"
+                     "texture":"img_objects",
+                     "rgroup":"objects",
+                     "pgroup":"coins"
                     },
                  "rotation":0,
                  "type":"coin",
@@ -204,7 +222,7 @@
                  "width":24,
                  "x":431.5,
                  "y":455
-                }, 
+                },
                 {
                  "gid":21,
                  "height":24,
@@ -214,7 +232,9 @@
                     {
                      "frame":"0",
                      "group":"turrets",
-                     "texture":"enemy_sheet"
+                     "texture":"enemy_sheet",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"turret",
@@ -222,7 +242,7 @@
                  "width":24,
                  "x":335,
                  "y":96
-                }, 
+                },
                 {
                  "gid":26,
                  "height":24,
@@ -233,7 +253,9 @@
                      "group":"hazards",
                      "texture":"enemy_bomb",
                      "velocityX":"50",
-                     "velocityY":"50"
+                     "velocityY":"50",
+                     "rgroup":"objects",
+                     "pgroup":"hazards"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -241,7 +263,7 @@
                  "width":24,
                  "x":360,
                  "y":311
-                }, 
+                },
                 {
                  "gid":17,
                  "height":48,
@@ -250,7 +272,9 @@
                  "properties":
                     {
                      "group":"scenery",
-                     "texture":"tree3"
+                     "texture":"tree3",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -258,7 +282,7 @@
                  "width":24,
                  "x":438,
                  "y":35
-                }, 
+                },
                 {
                  "gid":20,
                  "height":48,
@@ -267,7 +291,9 @@
                  "properties":
                     {
                      "group":"scenery",
-                     "texture":"tree1"
+                     "texture":"tree1",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -275,7 +301,7 @@
                  "width":24,
                  "x":412,
                  "y":94
-                }, 
+                },
                 {
                  "gid":15,
                  "height":24,
@@ -284,7 +310,9 @@
                  "properties":
                     {
                      "group":"scenery",
-                     "texture":"bush2"
+                     "texture":"bush2",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"bush",
@@ -292,7 +320,7 @@
                  "width":24,
                  "x":71,
                  "y":120
-                }, 
+                },
                 {
                  "gid":14,
                  "height":24,
@@ -301,7 +329,9 @@
                  "properties":
                     {
                      "group":"scenery",
-                     "texture":"bush3"
+                     "texture":"bush3",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"bush",
@@ -309,7 +339,7 @@
                  "width":24,
                  "x":146,
                  "y":119
-                }, 
+                },
                 {
                  "gid":18,
                  "height":48,
@@ -318,7 +348,9 @@
                  "properties":
                     {
                      "group":"scenery",
-                     "texture":"tree4"
+                     "texture":"tree4",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -326,7 +358,7 @@
                  "width":24,
                  "x":123,
                  "y":120
-                }, 
+                },
                 {
                  "gid":19,
                  "height":48,
@@ -335,7 +367,9 @@
                  "properties":
                     {
                      "group":"scenery",
-                     "texture":"tree2"
+                     "texture":"tree2",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -343,7 +377,7 @@
                  "width":24,
                  "x":22,
                  "y":226
-                }, 
+                },
                 {
                  "gid":20,
                  "height":48,
@@ -352,7 +386,9 @@
                  "properties":
                     {
                      "group":"scenery",
-                     "texture":"tree1"
+                     "texture":"tree1",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"tree",
@@ -360,7 +396,7 @@
                  "width":24,
                  "x":338,
                  "y":37
-                }, 
+                },
                 {
                  "gid":21,
                  "height":24,
@@ -370,7 +406,9 @@
                     {
                      "frame":"0",
                      "group":"turrets",
-                     "texture":"enemy_sheet"
+                     "texture":"enemy_sheet",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"turret",
@@ -378,7 +416,7 @@
                  "width":24,
                  "x":313,
                  "y":191
-                }, 
+                },
                 {
                  "gid":21,
                  "height":24,
@@ -388,7 +426,9 @@
                     {
                      "frame":"0",
                      "group":"turrets",
-                     "texture":"enemy_sheet"
+                     "texture":"enemy_sheet",
+                     "rgroup":"objects",
+                     "pgroup":"blockers"
                     },
                  "rotation":0,
                  "type":"turret",
@@ -396,7 +436,7 @@
                  "width":24,
                  "x":457,
                  "y":215
-                }, 
+                },
                 {
                  "gid":26,
                  "height":24,
@@ -407,7 +447,9 @@
                      "group":"hazards",
                      "texture":"enemy_bomb",
                      "velocityX":"-50",
-                     "velocityY":"0"
+                     "velocityY":"0",
+                     "rgroup":"objects",
+                     "pgroup":"hazards"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -415,7 +457,7 @@
                  "width":24,
                  "x":97,
                  "y":287
-                }, 
+                },
                 {
                  "gid":26,
                  "height":24,
@@ -426,7 +468,9 @@
                      "group":"hazards",
                      "texture":"enemy_bomb",
                      "velocityX":"50",
-                     "velocityY":"0"
+                     "velocityY":"0",
+                     "rgroup":"objects",
+                     "pgroup":"hazards"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -434,7 +478,7 @@
                  "width":24,
                  "x":23,
                  "y":336
-                }, 
+                },
                 {
                  "gid":26,
                  "height":24,
@@ -445,7 +489,9 @@
                      "group":"hazards",
                      "texture":"enemy_bomb",
                      "velocityX":"-50",
-                     "velocityY":"0"
+                     "velocityY":"0",
+                     "rgroup":"objects",
+                     "pgroup":"hazards"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -453,7 +499,7 @@
                  "width":24,
                  "x":98,
                  "y":385
-                }, 
+                },
                 {
                  "gid":26,
                  "height":24,
@@ -464,7 +510,9 @@
                      "group":"hazards",
                      "texture":"enemy_bomb",
                      "velocityX":"50",
-                     "velocityY":"50"
+                     "velocityY":"50",
+                     "rgroup":"objects",
+                     "pgroup":"hazards"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -505,7 +553,7 @@
          "tilecount":1,
          "tileheight":32,
          "tilewidth":32
-        }, 
+        },
         {
          "columns":7,
          "firstgid":2,
@@ -522,7 +570,7 @@
          "tilecount":7,
          "tileheight":24,
          "tilewidth":24
-        }, 
+        },
         {
          "columns":1,
          "firstgid":9,
@@ -539,7 +587,7 @@
          "tilecount":1,
          "tileheight":24,
          "tilewidth":24
-        }, 
+        },
         {
          "columns":4,
          "firstgid":10,
@@ -556,7 +604,7 @@
          "tilecount":4,
          "tileheight":24,
          "tilewidth":24
-        }, 
+        },
         {
          "columns":0,
          "firstgid":14,
@@ -601,7 +649,7 @@
                 }
             },
          "tilewidth":24
-        }, 
+        },
         {
          "columns":5,
          "firstgid":21,
@@ -618,7 +666,7 @@
          "tilecount":5,
          "tileheight":24,
          "tilewidth":24
-        }, 
+        },
         {
          "columns":4,
          "firstgid":26,
