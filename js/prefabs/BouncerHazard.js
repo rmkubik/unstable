@@ -22,7 +22,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
     this.animations.add("bomb_move", [0, 1, 2, 3], 8, true);
     this.animations.play("bomb_move");
 
-    this.emitter = new Unstable.Emitter(game_state,{x:'0',y:'0'},{});
+    this.emitter = new Unstable.Emitter(game_state,{x:this.x,y:this.y},{offset:{x:10,y:-7}});
 };
 
 Unstable.BouncerHazard.prototype = Object.create(Unstable.Hazard.prototype);
@@ -33,8 +33,10 @@ Unstable.BouncerHazard.prototype.update = function() {
   //this.angle += 4;
   if (this.body.velocity.x > 0) {
     this.scale.x = 1;
+    this.emitter.flipDirection(-1);
   } else {
     this.scale.x = -1;
+    this.emitter.flipDirection(1);
   }
 
   this.shadow.x = this.x;
