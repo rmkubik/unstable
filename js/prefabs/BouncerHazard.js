@@ -31,7 +31,8 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
       gravity: 5,
       burst: false,
       lifetime: 150,
-      frequency: 65
+      frequency: 65,
+      particleClass: "fuse"
     });
 
     this.explosionEmitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
@@ -43,8 +44,9 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
       gravity: 0,
       burst: true,
       lifetime: 0,
-      frequency: 30
-    })
+      frequency: 30,
+      particleClass: "fuse"
+    });
 };
 
 Unstable.BouncerHazard.prototype = Object.create(Unstable.Hazard.prototype);

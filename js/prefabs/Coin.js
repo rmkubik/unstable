@@ -9,6 +9,8 @@ Unstable.Coin = function (game_state, position, properties) {
     //colliderTest.visible = false;
     //test comment for commit
 
+    this.game_state = game_state;
+
     this.bounce = {};
     this.bounce.top = 1;
     this.bounce.bottom = -2;
@@ -42,6 +44,9 @@ Unstable.Coin.prototype.update = function() {
 }
 
 Unstable.Coin.prototype.die = function() {
+  this.game_state.goals.forEach(function(goal){
+    goal.emit();
+  })
   this.kill();
   this.shadow.kill();
 }

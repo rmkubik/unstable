@@ -31,6 +31,8 @@ Unstable.TiledState.prototype.create = function () {
     "use strict";
     var group_name, object_layer, collision_tiles;
 
+    this.goals = [];
+
     this.groups = {};
     this.groups["colliders"] = this.game.add.group();
 
@@ -87,6 +89,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
       break;
     case "goal":
       prefab = new Unstable.Goal(this, position, object.properties);
+      this.goals.push(prefab);
       break;
     case "coin":
       prefab = new Unstable.Coin(this, position, object.properties);

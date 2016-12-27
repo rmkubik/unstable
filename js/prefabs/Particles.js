@@ -6,7 +6,17 @@ Unstable.Emitter = function (game_state, position, properties) {
     this.emitter = game_state.game.add.emitter(position.x + this.offset.x, position.y + this.offset.y, properties.maxParticles);
 
     this.emitter.width = properties.width;
-    this.emitter.particleClass = Unstable.FuseParticle;
+    switch (properties.particleClass) {
+      case "fuse":
+        this.emitter.particleClass = Unstable.FuseParticle;
+        break;
+      case "coin":
+        this.emitter.particleClass = Unstable.CoinParticle;
+        break;
+      default:
+        console.log("invalid particle class");
+        break;
+    }
     this.emitter.makeParticles();
 
     this.minParticleSpeed = properties.minParticleSpeed;
@@ -35,6 +45,12 @@ Unstable.Emitter.init = function() {
   bmd.context.fillRect(0, 0, 4, 4);
   //  Put the bitmapData into the cache
   game.cache.addBitmapData('particleFuse', bmd);
+
+  var bmd2 = game.add.bitmapData(8, 8);
+  bmd2.context.fillStyle = "#E7CE2F";
+  bmd2.context.fillRect(0, 0, 4, 4);
+  //  Put the bitmapData into the cache
+  game.cache.addBitmapData('particleCoin', bmd2);
 };
 
 Unstable.Emitter.prototype = Object.create(Unstable.Prefab.prototype);
@@ -66,3 +82,10 @@ Unstable.FuseParticle = function (game, x, y) {
 
 Unstable.FuseParticle.prototype = Object.create(Phaser.Particle.prototype);
 Unstable.FuseParticle.prototype.constructor = Unstable.FuseParticle;
+
+Unstable.CoinParticle = function (game, x, y) {
+    Phaser.Particle.call(this, game, x, y, game.cache.getBitmapData('particleCoin'));
+};
+
+Unstable.CoinParticle.prototype = Object.create(Phaser.Particle.prototype);
+Unstable.CoinParticle.prototype.constructor = Unstable.CoinParticle;
