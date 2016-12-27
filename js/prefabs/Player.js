@@ -99,13 +99,15 @@ Unstable.Player.prototype.collideObjects = function(player, object) {
 Unstable.Player.prototype.goalCollide = function(player, goal) {
   "use strict";
   //this.game_state.restart_level();
-  this.game.state.start("LevelManager", true, false, this.game_state.level_data);
+  if (goal.ready())
+    this.game.state.start("LevelManager", true, false, this.game_state.level_data);
 }
 
 Unstable.Player.prototype.coinCollide = function(player, coin) {
   "use strict";
   coin.die();
   this.score += 1;
+  this.game_state.coins += 1;
   console.log("score: " + this.score);
 }
 

@@ -74,7 +74,8 @@
                      "texture":"img_objects",
                      "width":"8",
                      "rgroup":"objects",
-                     "pgroup":"goals"
+                     "pgroup":"goals",
+                     "threshold":7
                     },
                  "rotation":0,
                  "type":"goal",

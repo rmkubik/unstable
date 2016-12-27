@@ -66,6 +66,8 @@ Unstable.TiledState.prototype.create = function () {
             this.map.objects[object_layer].forEach(this.create_object, this);
         }
     }
+
+    this.coins = 0;
 };
 
 Unstable.TiledState.prototype.update = function() {
