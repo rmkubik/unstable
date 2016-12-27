@@ -27,7 +27,11 @@ Unstable.Coin = function (game_state, position, properties) {
     bounceDownTween.onComplete.add(function() {
       bounceUpTween.start();
     })
-    bounceUpTween.start();
+    var upOrDown = game_state.game.rnd.integerInRange(0, 1);
+    if (upOrDown === 0)
+      bounceUpTween.start();
+    else
+      bounceDownTween.start();
 };
 
 Unstable.Coin.prototype = Object.create(Unstable.Prefab.prototype);
