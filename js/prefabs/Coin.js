@@ -44,9 +44,10 @@ Unstable.Coin.prototype.update = function() {
 }
 
 Unstable.Coin.prototype.die = function() {
-  this.game_state.goals.forEach(function(goal){
-    goal.emit();
-  })
+  var emitGoals = function(goal) {
+    goal.emit(this);
+  }
+  this.game_state.goals.forEach(emitGoals, this);
   this.kill();
   this.shadow.kill();
 }

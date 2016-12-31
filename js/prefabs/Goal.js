@@ -29,8 +29,8 @@ Unstable.Goal = function (game_state, position, properties) {
 Unstable.Goal.prototype = Object.create(Unstable.Prefab.prototype);
 Unstable.Goal.prototype.constructor = Unstable.Goal;
 
-Unstable.Goal.prototype.emit = function() {
-  this.emitter.burst(this.x, this.y);
+Unstable.Goal.prototype.emit = function(coin) {
+  this.emitter.burst(coin.x, coin.y);
 }
 
 Unstable.Goal.prototype.ready = function() {

@@ -27,7 +27,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
       maxParticles:10,
       width: 2,
       minParticleSpeed: {x: 60, y: -10},
-      maxParticleSpeed: {x: 80, y: -20},
+      maxParticleSpeed: {x: 80, y: -30},
       gravity: 5,
       burst: false,
       lifetime: 150,
