@@ -37,6 +37,7 @@ Unstable.Turret.prototype.update = function() {
   }
 
   //shoot Projectile
+  console.log(this.coolingDown + " : " + this.active);
   if (!this.coolingDown && this.active) {
     // new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
     if (!this.animations.currentAnim.isPlaying) {

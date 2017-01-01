@@ -20,7 +20,7 @@ Unstable.Goal = function (game_state, position, properties) {
       maxParticleSpeed: {x: 40, y: 40},
       gravity: 0,
       burst: true,
-      lifetime: 450,
+      lifetime: 0, //450
       frequency: 10,
       particleClass: "coin"
     });
@@ -31,6 +31,10 @@ Unstable.Goal.prototype.constructor = Unstable.Goal;
 
 Unstable.Goal.prototype.emit = function(coin) {
   this.emitter.burst(coin.x, coin.y);
+  var partsToGoal = function(goal) {
+
+  }
+  // game.time.events.add(Phaser.Timer.SECOND * this.cooldown, partsToGoal, this);
 }
 
 Unstable.Goal.prototype.ready = function() {

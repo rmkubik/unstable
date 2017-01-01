@@ -13,6 +13,9 @@ Unstable.Emitter = function (game_state, position, properties) {
       case "coin":
         this.emitter.particleClass = Unstable.CoinParticle;
         break;
+      case "player":
+        this.emitter.particleClass = Unstable.PlayerParticle;
+        break;
       default:
         console.log("invalid particle class");
         break;
@@ -51,6 +54,12 @@ Unstable.Emitter.init = function() {
   bmd2.context.fillRect(0, 0, 4, 4);
   //  Put the bitmapData into the cache
   game.cache.addBitmapData('particleCoin', bmd2);
+
+  var bmd3 = game.add.bitmapData(8, 8);
+  bmd3.context.fillStyle = "#FFFFFF";
+  bmd3.context.fillRect(0, 0, 4, 4);
+  //  Put the bitmapData into the cache
+  game.cache.addBitmapData('particlePlayer', bmd3);
 };
 
 Unstable.Emitter.prototype = Object.create(Unstable.Prefab.prototype);
@@ -89,3 +98,10 @@ Unstable.CoinParticle = function (game, x, y) {
 
 Unstable.CoinParticle.prototype = Object.create(Phaser.Particle.prototype);
 Unstable.CoinParticle.prototype.constructor = Unstable.CoinParticle;
+
+Unstable.PlayerParticle = function (game, x, y) {
+    Phaser.Particle.call(this, game, x, y, game.cache.getBitmapData('particlePlayer'));
+};
+
+Unstable.PlayerParticle.prototype = Object.create(Phaser.Particle.prototype);
+Unstable.PlayerParticle.prototype.constructor = Unstable.PlayerParticle;
