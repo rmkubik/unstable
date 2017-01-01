@@ -32,9 +32,12 @@ Unstable.Goal.prototype.constructor = Unstable.Goal;
 Unstable.Goal.prototype.emit = function(coin) {
   this.emitter.burst(coin.x, coin.y);
   var partsToGoal = function(goal) {
-
+    goal.emitter.updateParticles(function(particle) {
+      var seekGoalTween = this.game_state.game.add.tween(particle).to({x:goal.x, y:goal.y}, Phaser.Timer.SECOND);
+      seekGoalTween.start();
+    })
   }
-  // game.time.events.add(Phaser.Timer.SECOND * this.cooldown, partsToGoal, this);
+  game.time.events.add(Phaser.Timer.SECOND * 2, partsToGoal, this, this);
 }
 
 Unstable.Goal.prototype.ready = function() {

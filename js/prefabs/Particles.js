@@ -2,6 +2,7 @@ var Unstable = Unstable || {};
 
 Unstable.Emitter = function (game_state, position, properties) {
     "use strict";
+    this.game_state = game_state;
     this.offset = properties.offset;
     this.emitter = game_state.game.add.emitter(position.x + this.offset.x, position.y + this.offset.y, properties.maxParticles);
 
@@ -79,6 +80,10 @@ Unstable.Emitter.prototype.flipDirection = function(direction) {
 Unstable.Emitter.prototype.burst = function(x, y) {
   this.updatePos(x, y);
   this.emitter.start(true, this.lifetime, 0, this.frequency);
+}
+
+Unstable.Emitter.prototype.updateParticles = function(updateFunc) {
+  this.emitter.forEach(updateFunc, this);
 }
 
 Unstable.Emitter.prototype.destroy = function() {
