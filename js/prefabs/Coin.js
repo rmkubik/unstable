@@ -34,6 +34,19 @@ Unstable.Coin = function (game_state, position, properties) {
       bounceUpTween.start();
     else
       bounceDownTween.start();
+
+    this.emitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
+      offset:{x:-12,y:12},
+      maxParticles:100,
+      width: 2,
+      minParticleSpeed: {x: -40, y: -40},
+      maxParticleSpeed: {x: 40, y: 40},
+      gravity: 0,
+      burst: true,
+      lifetime: 0, //450
+      frequency: 10,
+      particleClass: "coin"
+    });
 };
 
 Unstable.Coin.prototype = Object.create(Unstable.Prefab.prototype);
@@ -44,10 +57,23 @@ Unstable.Coin.prototype.update = function() {
 }
 
 Unstable.Coin.prototype.die = function() {
-  var emitGoals = function(goal) {
-    goal.emit(this);
+  // var emitGoals = function(goal) {
+  //   goal.emit(this);
+  // }
+  // this.game_state.goals.forEach(emitGoals, this);
+  this.emitter.burst(this.x, this.y);
+  var partsToGoal = function(goal) {
+    this.emitter.updateParticles(function(particle) {
+      var seekGoalTween = this.game_state.game.add.tween(particle).to({x:goal.x, y:goal.y}, Phaser.Timer.SECOND);
+      seekGoalTween.onComplete.add(function() {
+        particle.kill();
+      });
+      seekGoalTween.start();
+    })
   }
-  this.game_state.goals.forEach(emitGoals, this);
+  this.game_state.goals.forEach(function(goal) {
+    game.time.events.add(Phaser.Timer.SECOND * 2, partsToGoal, this, goal);
+  }, this);
   this.kill();
   this.shadow.kill();
 }
