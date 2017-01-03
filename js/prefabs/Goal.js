@@ -34,6 +34,9 @@ Unstable.Goal.prototype.emit = function(coin) {
   var partsToGoal = function(goal) {
     goal.emitter.updateParticles(function(particle) {
       var seekGoalTween = this.game_state.game.add.tween(particle).to({x:goal.x, y:goal.y}, Phaser.Timer.SECOND);
+      seekGoalTween.onComplete.add(function() {
+        particle.kill();
+      });
       seekGoalTween.start();
     })
   }
