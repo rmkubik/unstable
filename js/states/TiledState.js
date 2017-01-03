@@ -70,6 +70,9 @@ Unstable.TiledState.prototype.create = function () {
     }
 
     this.coins = 0;
+
+    var key1 = game.input.keyboard.addKey(Phaser.Keyboard.R);
+    key1.onDown.add(this.restart_level, this);
 };
 
 Unstable.TiledState.prototype.update = function() {
