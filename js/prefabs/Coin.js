@@ -47,6 +47,8 @@ Unstable.Coin = function (game_state, position, properties) {
       frequency: 10,
       particleClass: "coin"
     });
+
+    this.spawnpoint = {x: this.x, y: this.y};
 };
 
 Unstable.Coin.prototype = Object.create(Unstable.Prefab.prototype);
