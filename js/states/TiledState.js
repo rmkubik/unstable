@@ -61,7 +61,6 @@ Unstable.TiledState.prototype.create = function () {
 
     this.prefabs = {};
     this.player;
-    this.playerSpawn;
 
     for (object_layer in this.map.objects) {
         if (this.map.objects.hasOwnProperty(object_layer)) {
@@ -90,9 +89,6 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "player":
       prefab = new Unstable.Player(this, position, object.properties);
       this.player = prefab;
-      this.playerSpawn = {};
-      this.playerSpawn.x = prefab.x;
-      this.playerSpawn.y = prefab.y;
       break;
     case "goal":
       prefab = new Unstable.Goal(this, position, object.properties);

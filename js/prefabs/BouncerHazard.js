@@ -47,6 +47,8 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
       frequency: 30,
       particleClass: "fuse"
     });
+
+    this.spawnpoint = {x: this.x, y: this.y};
 };
 
 Unstable.BouncerHazard.prototype = Object.create(Unstable.Hazard.prototype);
@@ -72,5 +74,6 @@ Unstable.BouncerHazard.prototype.die = function() {
   this.kill();
   this.shadow.kill();
   this.emitter.destroy();
-  this.explosionEmitter.burst(this.x, this.y);
+  // this.explosionEmitter.burst(this.x, this.y);
+  this.explosionEmitter.returnToSpawn(this);
 }

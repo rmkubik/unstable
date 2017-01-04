@@ -90,6 +90,21 @@ Unstable.Emitter.prototype.destroy = function() {
   this.emitter.destroy();
 }
 
+Unstable.Emitter.prototype.returnToSpawn = function(prefab) {
+  this.burst(prefab.x, prefab.y);
+  var partsToSpawn = function(spawn) {
+    this.updateParticles(function(particle) {
+      var seekSpawnTween = this.game_state.game.add.tween(particle).to({x:spawn.x, y:spawn.y}, Phaser.Timer.SECOND);
+      seekSpawnTween.onComplete.add(function() {
+        particle.kill();
+        this.game_state.restart_level();
+      }, this);
+      seekSpawnTween.start();
+    })
+  }
+  game.time.events.add(Phaser.Timer.SECOND * 2, partsToSpawn, this, prefab.spawnpoint);
+}
+
 Unstable.FuseParticle = function (game, x, y) {
     Phaser.Particle.call(this, game, x, y, game.cache.getBitmapData('particleFuse'));
 };
