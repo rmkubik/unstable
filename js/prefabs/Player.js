@@ -134,4 +134,15 @@ Unstable.Player.prototype.die = function() {
   this.kill();
   this.shadow.kill();
   this.emitter.burst(this.x, this.y);
+  var partsToSpawn = function(spawn) {
+    this.emitter.updateParticles(function(particle) {
+      var seekSpawnTween = this.game_state.game.add.tween(particle).to({x:spawn.x, y:spawn.y}, Phaser.Timer.SECOND);
+      seekSpawnTween.onComplete.add(function() {
+        particle.kill();
+        this.game_state.restart_level();
+      }, this);
+      seekSpawnTween.start();
+    })
+  }
+  game.time.events.add(Phaser.Timer.SECOND * 2, partsToSpawn, this, this.game_state.playerSpawn);
 }

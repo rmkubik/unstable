@@ -61,6 +61,7 @@ Unstable.TiledState.prototype.create = function () {
 
     this.prefabs = {};
     this.player;
+    this.playerSpawn;
 
     for (object_layer in this.map.objects) {
         if (this.map.objects.hasOwnProperty(object_layer)) {
@@ -71,8 +72,8 @@ Unstable.TiledState.prototype.create = function () {
 
     this.coins = 0;
 
-    var key1 = game.input.keyboard.addKey(Phaser.Keyboard.R);
-    key1.onDown.add(this.restart_level, this);
+    var restart_key = game.input.keyboard.addKey(Phaser.Keyboard.S);
+    restart_key.onDown.add(this.restart_level, this);
 };
 
 Unstable.TiledState.prototype.update = function() {
@@ -89,6 +90,9 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "player":
       prefab = new Unstable.Player(this, position, object.properties);
       this.player = prefab;
+      this.playerSpawn = {};
+      this.playerSpawn.x = prefab.x;
+      this.playerSpawn.y = prefab.y;
       break;
     case "goal":
       prefab = new Unstable.Goal(this, position, object.properties);
@@ -121,5 +125,8 @@ Unstable.TiledState.prototype.create_object = function (object) {
 
 Unstable.TiledState.prototype.restart_level = function () {
     "use strict";
+    if (this.player.alive) {
+      this.player.die();
+    }
     this.game.state.restart(true, false, this.level_data);
 };
