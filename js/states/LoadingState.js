@@ -16,6 +16,9 @@ Unstable.LoadingState.prototype.init = function (level_data) {
 
 Unstable.LoadingState.prototype.preload = function () {
     "use strict";
+    var loadingBar = this.game.add.sprite(200, 200, "loadingBar");
+    this.load.setPreloadSprite(loadingBar);
+
     var assets, asset_loader, asset_key, asset;
     assets = this.level_data.assets;
     for (asset_key in assets) { // load assets according to asset key
@@ -36,6 +39,7 @@ Unstable.LoadingState.prototype.preload = function () {
             }
         }
     }
+    this.load.start();
     //this.game.levelManager = new Unstable.LevelManager(this, this.level_data);
     //this.level_data.map = this.level_data.levels[0];
 };

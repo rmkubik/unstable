@@ -18,6 +18,7 @@ Unstable.BootState.prototype.init = function (level_file) {
 Unstable.BootState.prototype.preload = function () {
     "use strict";
     this.load.text("game_data", this.level_file);
+    this.load.image("loadingBar", "assets/images/loading_bar.png");
 };
 
 Unstable.BootState.prototype.create = function () {
