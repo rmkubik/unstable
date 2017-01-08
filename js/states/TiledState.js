@@ -71,7 +71,7 @@ Unstable.TiledState.prototype.create = function () {
 
     this.coins = 0;
 
-    var restart_key = game.input.keyboard.addKey(Phaser.Keyboard.S);
+    var restart_key = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     restart_key.onDown.add(this.restart_level, this);
 };
 
