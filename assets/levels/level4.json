@@ -71,6 +71,7 @@
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "link":"lvl_hub1",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",

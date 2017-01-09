@@ -47,5 +47,5 @@ Unstable.LoadingState.prototype.preload = function () {
 Unstable.LoadingState.prototype.create = function () {
     "use strict";
     //this.game.levelManager.nextLevel();
-    this.game.state.start("LevelManager", true, false, this.level_data);
+    this.game.state.start("LevelManager", true, false, this.level_data, "lvl_hub1");
 };

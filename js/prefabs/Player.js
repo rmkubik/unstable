@@ -115,7 +115,7 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
   "use strict";
   //this.game_state.restart_level();
   if (goal.ready())
-    this.game.state.start("LevelManager", true, false, this.game_state.level_data);
+    this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink);
 }
 
 Unstable.Player.prototype.coinCollide = function(player, coin) {

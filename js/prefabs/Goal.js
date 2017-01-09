@@ -11,6 +11,7 @@ Unstable.Goal = function (game_state, position, properties) {
 
     this.game_state = game_state;
     this.threshold = properties.threshold;
+    this.levelLink = properties.link;
 };
 
 Unstable.Goal.prototype = Object.create(Unstable.Prefab.prototype);

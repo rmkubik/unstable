@@ -9,9 +9,10 @@ Unstable.LevelManagerState = function () {
 Unstable.prototype = Object.create(Phaser.State.prototype);
 Unstable.LevelManagerState.prototype.constructor = Unstable.LevelManagerState;
 
-Unstable.LevelManagerState.prototype.init = function (game_data) {
+Unstable.LevelManagerState.prototype.init = function (game_data, levelLink) {
   this.levels = game_data.levels;
   this.game_data = game_data;
+  this.levelLink = levelLink;
 }
 
 Unstable.LevelManagerState.prototype.preload = function () {
@@ -23,6 +24,7 @@ Unstable.LevelManagerState.prototype.create = function () {
 }
 
 Unstable.LevelManagerState.prototype.nextLevel = function() {
-  this.game_data.map = this.levels[Unstable.current_level++];
+  // this.game_data.map = this.levels[Unstable.current_level++];
+  this.game_data.map = this.levels[this.levelLink];
   this.game.state.start("GameState", true, false, this.game_data);
 }

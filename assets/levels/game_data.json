@@ -20,6 +20,10 @@
       "type":"tilemap",
       "source":"assets/levels/level5.json"
     },
+    "lvl_hub1": {
+      "type":"tilemap",
+      "source":"assets/levels/hub1.json"
+    },
     "tilesheet": {
       "type": "spritesheet",
       "source": "assets/images/tilesheet.png",
@@ -130,34 +134,39 @@
       "source":"assets/images/bush3.png"
     }
   },
-  "levels": [
-    {
+  "levels": {
+    "lvl_test": {
       "name":"Test Level",
       "key": "lvl_test",
       "tileset": "tilesheet"
     },
-    {
+    "lvl_level2": {
       "name":"Level 2",
       "key": "lvl_level2",
       "tileset": "tilesheet"
     },
-    {
+    "lvl_level5": {
       "name": "Level 5",
       "key": "lvl_level5",
       "tileset": "tilesheet"
     },
-    {
+    "lvl_level3": {
       "name":"Level 3",
       "key":"lvl_level3",
       "tileset":"tilesheet"
     },
-    {
+    "lvl_level4": {
       "name": "Level 4",
       "key": "lvl_level4",
       "tileset": "tilesheet"
+    },
+    "lvl_hub1": {
+      "name": "Hub 1",
+      "key": "lvl_hub1",
+      "tileset": "tilesheet"
     }
 
-  ],
+  },
   "groups": [
     "shadows",
     "objects",
