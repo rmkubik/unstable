@@ -138,32 +138,38 @@
     "lvl_test": {
       "name":"Test Level",
       "key": "lvl_test",
-      "tileset": "tilesheet"
+      "tileset": "tilesheet",
+      "completion":-1
     },
     "lvl_level2": {
       "name":"Level 2",
       "key": "lvl_level2",
-      "tileset": "tilesheet"
+      "tileset": "tilesheet",
+      "completion":-1
     },
     "lvl_level5": {
       "name": "Level 5",
       "key": "lvl_level5",
-      "tileset": "tilesheet"
+      "tileset": "tilesheet",
+      "completion":-1
     },
     "lvl_level3": {
       "name":"Level 3",
       "key":"lvl_level3",
-      "tileset":"tilesheet"
+      "tileset":"tilesheet",
+      "completion":-1
     },
     "lvl_level4": {
       "name": "Level 4",
       "key": "lvl_level4",
-      "tileset": "tilesheet"
+      "tileset": "tilesheet",
+      "completion":-1
     },
     "lvl_hub1": {
       "name": "Hub 1",
       "key": "lvl_hub1",
-      "tileset": "tilesheet"
+      "tileset": "tilesheet",
+      "completion":-1
     }
 
   },
