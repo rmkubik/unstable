@@ -24,7 +24,7 @@ Unstable.MenuState.prototype.create = function () {
       "Unstable", style);
     text.anchor.set(0.5);
     var playButton = game.add.button(game.width / 2 - 100,
-      game.height / 2 - 24, "buttonSheet", this.startGame, this);
+      game.height / 2 - 24, "buttonSheet", this.startGame, this, 0, 0, 1);
     playButton.scale.setTo(2);
 };
 
