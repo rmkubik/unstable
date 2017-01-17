@@ -33,6 +33,8 @@ Unstable.TiledState.prototype.create = function () {
 
     this.goals = [];
 
+    this.coins = 0;
+
     this.groups = {};
     this.groups["colliders"] = this.game.add.group();
 
@@ -68,8 +70,6 @@ Unstable.TiledState.prototype.create = function () {
             this.map.objects[object_layer].forEach(this.create_object, this);
         }
     }
-
-    this.coins = 0;
 
     var restart_key = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     restart_key.onDown.add(this.restart_level, this);

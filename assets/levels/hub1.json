@@ -76,7 +76,6 @@
                      "rgroup":"objects",
                      "texture":"img_objects",
                      "threshold":0,
-                     "levelPrereq":"",
                      "width":"8"
                     },
                  "rotation":0,

@@ -13,10 +13,18 @@ Unstable.Goal = function (game_state, position, properties) {
     this.threshold = properties.threshold;
     this.levelLink = properties.link;
     this.levelPrereq = properties.levelPrereq;
-    if (properties.threshold === 0) {
-      this.ready = true;
+    if (this.levelPrereq === undefined) {
+      this.updateReady();
     } else {
-      this.ready = false;
+      if (Unstable.globals.levels[this.levelPrereq] !== undefined) {
+        if (Unstable.globals.levels[this.levelPrereq].completion > 0) {
+          this.updateReady();
+        } else {
+          console.log("level prereq not completed: " + this.levelPrereq);
+        }
+      } else {
+        console.log("this level prereq does not exist: " + this.levelPrereq);
+      }
     }
 };
 
