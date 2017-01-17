@@ -144,5 +144,6 @@ Unstable.Player.prototype.hazardCollide = function(player, hazard) {
 Unstable.Player.prototype.die = function() {
   this.kill();
   this.shadow.kill();
-  this.emitter.returnToSpawn(this);
+  this.emitter.burst(this.x, this.y);
+  this.emitter.seekParticlesToLocation(this.spawnpoint, this.game_state.restart_level, this.game_state);
 }

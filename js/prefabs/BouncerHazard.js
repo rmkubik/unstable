@@ -75,5 +75,6 @@ Unstable.BouncerHazard.prototype.die = function() {
   this.shadow.kill();
   this.emitter.destroy();
   // this.explosionEmitter.burst(this.x, this.y);
-  this.explosionEmitter.returnToSpawn(this);
+  this.explosionEmitter.burst(this.x, this.y);
+  this.explosionEmitter.seekParticlesToLocation(this.spawnpoint);
 }
