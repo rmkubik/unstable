@@ -13,6 +13,11 @@ Unstable.Goal = function (game_state, position, properties) {
     this.threshold = properties.threshold;
     this.levelLink = properties.link;
     this.levelPrereq = properties.levelPrereq;
+    if (properties.threshold === 0) {
+      this.ready = true;
+    } else {
+      this.ready = false;
+    }
 };
 
 Unstable.Goal.prototype = Object.create(Unstable.Prefab.prototype);
@@ -22,9 +27,11 @@ Unstable.Goal.prototype.emit = function(coin) {
 
 }
 
-Unstable.Goal.prototype.ready = function() {
-  if (this.game_state.coins >= this.threshold)
-    return true;
-  else
-    return false;
-}
+Unstable.Goal.prototype.updateReady = function () {
+  if (this.game_state.coins >= this.threshold) {
+    this.frame = 4;
+    this.ready = true;
+  } else {
+    this.ready = false;
+  }
+};

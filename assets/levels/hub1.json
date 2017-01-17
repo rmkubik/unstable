@@ -75,7 +75,7 @@
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":"0",
+                     "threshold":0,
                      "levelPrereq":"",
                      "width":"8"
                     },
@@ -347,7 +347,7 @@
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":"0",
+                     "threshold":0,
                      "levelPrereq":"lvl_test",
                      "width":"8"
                     },
@@ -372,7 +372,7 @@
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":"0",
+                     "threshold":0,
                      "levelPrereq":"lvl_level2",
                      "width":"8"
                     },
@@ -397,7 +397,7 @@
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":"0",
+                     "threshold":0,
                      "levelPrereq":"lvl_level5",
                      "width":"8"
                     },
@@ -422,7 +422,7 @@
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":"0",
+                     "threshold":0,
                      "levelPrereq":"lvl_level3",
                      "width":"8"
                     },
@@ -447,7 +447,7 @@
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":"0",
+                     "threshold":0,
                      "levelPrereq":"lvl_level4",
                      "width":"8"
                     },

@@ -114,7 +114,7 @@ Unstable.Player.prototype.collideObjects = function(player, object) {
 Unstable.Player.prototype.goalCollide = function(player, goal) {
   "use strict";
   //this.game_state.restart_level();
-  if (goal.ready()) {
+  if (goal.ready) {
     if (goal.levelPrereq === undefined || Unstable.globals.levels[goal.levelPrereq] === undefined || Unstable.globals.levels[goal.levelPrereq].completion > 0) {
       Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
       this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink);
@@ -127,6 +127,12 @@ Unstable.Player.prototype.coinCollide = function(player, coin) {
   coin.die();
   this.score += 1;
   this.game_state.coins += 1;
+  this.game_state.goals.forEach(function(goal) {
+    console.log("goal not ready");
+    if (!goal.ready) {
+      goal.updateReady();
+    }
+  });
   console.log("score: " + this.score);
 }
 
