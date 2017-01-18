@@ -7,4 +7,6 @@ game.state.add("LoadingState", new Unstable.LoadingState());
 game.state.add("MenuState", new Unstable.MenuState());
 game.state.add("LevelManager", new Unstable.LevelManagerState());
 game.state.add("GameState", new Unstable.TiledState());
+game.state.add("SettingsState", new Unstable.SettingsState());
+game.state.add("EndState", new Unstable.EndState());
 game.state.start("BootState", true, false, "assets/levels/game_data.json");
