@@ -77,8 +77,19 @@ Unstable.Coin.prototype.die = function() {
   //   game.time.events.add(Phaser.Timer.SECOND * 2, partsToGoal, this, goal);
   // }, this);
   this.game_state.goals.forEach(function(goal){
-    this.emitter.seekParticlesToLocation({x:goal.x, y:goal.y});
+    this.emitter.seekParticlesToLocation({x:goal.x, y:goal.y}, this.reachedGoal, this);
   }, this);
   this.kill();
   this.shadow.kill();
+}
+
+Unstable.Coin.prototype.reachedGoal = function() {
+  this.game_state.coins += 1;
+  this.game_state.goals.forEach(function(goal) {
+    if (!goal.ready) {
+      console.log("goal not ready");
+      goal.updateReady();
+    }
+    console.log("goal ready state: " + goal.ready);
+  });
 }

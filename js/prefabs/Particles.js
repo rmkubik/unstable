@@ -106,20 +106,23 @@ Unstable.Emitter.prototype.returnToSpawn = function(prefab) {
 }
 
 Unstable.Emitter.prototype.seekParticlesToLocation = function (location, callback, context) {
+  var initialDelay = 1;
+  var travelTime = 0.5;
   var partsToLocation = function(location) {
     this.updateParticles(function(particle) {
       var seekLocationTween = this.game_state.game.add.tween(particle)
-        .to({x:location.x, y:location.y}, 0.5 * Phaser.Timer.SECOND);
+        .to({x:location.x, y:location.y}, travelTime * Phaser.Timer.SECOND);
       seekLocationTween.onComplete.add(function() {
         particle.kill();
-        if (callback !== undefined && callback !== null) {
-          callback.call(context);
-        }
       }, this);
       seekLocationTween.start();
     });
+    if (callback !== undefined && callback !== null) {
+      game.time.events.add(travelTime * Phaser.Timer.SECOND, callback, context);
+      // callback.call(context);
+    }
   }
-  game.time.events.add(Phaser.Timer.SECOND, partsToLocation, this, location);
+  game.time.events.add(initialDelay * Phaser.Timer.SECOND, partsToLocation, this, location);
 };
 
 Unstable.FuseParticle = function (game, x, y) {

@@ -124,14 +124,6 @@ Unstable.Player.prototype.coinCollide = function(player, coin) {
   "use strict";
   coin.die();
   this.score += 1;
-  this.game_state.coins += 1;
-  this.game_state.goals.forEach(function(goal) {
-    if (!goal.ready) {
-      console.log("goal not ready");
-      goal.updateReady();
-    }
-    console.log("goal ready state: " + goal.ready);
-  });
   console.log("score: " + this.score);
 }
 
