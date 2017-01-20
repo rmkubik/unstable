@@ -15,6 +15,10 @@ Unstable.BootState.prototype.init = function (level_file) {
     Unstable.globals = {};
     Unstable.globals.current_level = undefined;
     Unstable.globals.levels = {};
+
+    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    this.scale.pageAlignHorizontally = true;
+    this.scale.pageAlignVertically = true;
 };
 
 Unstable.BootState.prototype.preload = function () {

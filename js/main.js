@@ -1,7 +1,7 @@
 var Unstable = Unstable || {};
 
 // var game = new Phaser.Game("100%", "100%", Phaser.AUTO);
-var game = new Phaser.Game(480, 480, Phaser.AUTO);
+var game = new Phaser.Game(480, 480, Phaser.AUTO, "unstable");
 game.state.add("BootState", new Unstable.BootState());
 game.state.add("LoadingState", new Unstable.LoadingState());
 game.state.add("MenuState", new Unstable.MenuState());
