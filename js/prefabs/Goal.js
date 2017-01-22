@@ -13,6 +13,7 @@ Unstable.Goal = function (game_state, position, properties) {
     this.threshold = properties.threshold;
     this.levelLink = properties.link;
     this.levelPrereq = properties.levelPrereq;
+    this.destGoalId = properties.destGoalId;
     if (this.levelPrereq === undefined) {
       this.updateReady();
     } else {

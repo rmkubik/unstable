@@ -8,9 +8,10 @@ Unstable.TiledState = function () {
 Unstable.TiledState.prototype = Object.create(Phaser.State.prototype);
 Unstable.TiledState.prototype.constructor = Unstable.TiledState;
 
-Unstable.TiledState.prototype.init = function (level_data) {
+Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
     "use strict";
     this.level_data = level_data;
+    this.spawnGoalId = spawnGoalId;
 
     // start physics system
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -89,6 +90,11 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "goal":
       prefab = new Unstable.Goal(this, position, object.properties);
       this.goals.push(prefab);
+      if (this.spawnGoalId !== undefined && object.properties.id === this.spawnGoalId) {
+        console.log(object);
+        this.player.x = object.x + 8;
+        this.player.y = object.y + 8;
+      }
       break;
     case "coin":
       prefab = new Unstable.Coin(this, position, object.properties);

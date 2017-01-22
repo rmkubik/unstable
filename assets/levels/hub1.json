@@ -71,11 +71,12 @@
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "id":0,
                      "link":"lvl_test",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":0,
+                     "threshold":"0",
                      "width":"8"
                     },
                  "rotation":0,
@@ -86,7 +87,7 @@
                  "y":97
                 },
                 {
-                 "gid":16,
+                 "gid":17,
                  "height":48,
                  "id":24,
                  "name":"",
@@ -105,7 +106,7 @@
                  "y":34
                 },
                 {
-                 "gid":16,
+                 "gid":17,
                  "height":48,
                  "id":25,
                  "name":"",
@@ -124,7 +125,7 @@
                  "y":36
                 },
                 {
-                 "gid":16,
+                 "gid":17,
                  "height":48,
                  "id":26,
                  "name":"",
@@ -143,7 +144,7 @@
                  "y":225
                 },
                 {
-                 "gid":16,
+                 "gid":17,
                  "height":48,
                  "id":30,
                  "name":"",
@@ -162,7 +163,7 @@
                  "y":307
                 },
                 {
-                 "gid":17,
+                 "gid":18,
                  "height":48,
                  "id":32,
                  "name":"",
@@ -181,7 +182,7 @@
                  "y":36
                 },
                 {
-                 "gid":17,
+                 "gid":18,
                  "height":48,
                  "id":33,
                  "name":"",
@@ -200,7 +201,7 @@
                  "y":370
                 },
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":48,
                  "id":34,
                  "name":"",
@@ -219,7 +220,7 @@
                  "y":398
                 },
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":48,
                  "id":38,
                  "name":"",
@@ -238,7 +239,7 @@
                  "y":198
                 },
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":48,
                  "id":40,
                  "name":"",
@@ -257,7 +258,7 @@
                  "y":186
                 },
                 {
-                 "gid":20,
+                 "gid":21,
                  "height":24,
                  "id":41,
                  "name":"",
@@ -276,7 +277,7 @@
                  "y":388
                 },
                 {
-                 "gid":20,
+                 "gid":21,
                  "height":24,
                  "id":43,
                  "name":"",
@@ -295,7 +296,7 @@
                  "y":334
                 },
                 {
-                 "gid":20,
+                 "gid":21,
                  "height":24,
                  "id":44,
                  "name":"",
@@ -314,7 +315,7 @@
                  "y":118
                 },
                 {
-                 "gid":22,
+                 "gid":23,
                  "height":24,
                  "id":45,
                  "name":"",
@@ -342,12 +343,13 @@
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "id":1,
+                     "levelPrereq":"lvl_test",
                      "link":"lvl_level2",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":0,
-                     "levelPrereq":"lvl_test",
+                     "threshold":"0",
                      "width":"8"
                     },
                  "rotation":0,
@@ -367,12 +369,13 @@
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "id":2,
+                     "levelPrereq":"lvl_level2",
                      "link":"lvl_level5",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":0,
-                     "levelPrereq":"lvl_level2",
+                     "threshold":"0",
                      "width":"8"
                     },
                  "rotation":0,
@@ -392,12 +395,13 @@
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "id":3,
+                     "levelPrereq":"lvl_level5",
                      "link":"lvl_level3",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":0,
-                     "levelPrereq":"lvl_level5",
+                     "threshold":"0",
                      "width":"8"
                     },
                  "rotation":0,
@@ -417,12 +421,13 @@
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "id":4,
+                     "levelPrereq":"lvl_level3",
                      "link":"lvl_level4",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":0,
-                     "levelPrereq":"lvl_level3",
+                     "threshold":"0",
                      "width":"8"
                     },
                  "rotation":0,
@@ -442,12 +447,13 @@
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "id":5,
+                     "levelPrereq":"lvl_level4",
                      "link":"lvl_hub2",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":0,
-                     "levelPrereq":"lvl_level4",
+                     "threshold":"0",
                      "width":"8"
                     },
                  "rotation":0,
@@ -525,11 +531,11 @@
          "tilewidth":24
         },
         {
-         "columns":4,
+         "columns":5,
          "firstgid":10,
          "image":"..\/images\/object_sheet.png",
          "imageheight":24,
-         "imagewidth":99,
+         "imagewidth":124,
          "margin":0,
          "name":"object_sheet",
          "properties":
@@ -537,13 +543,13 @@
 
             },
          "spacing":1,
-         "tilecount":4,
+         "tilecount":5,
          "tileheight":24,
          "tilewidth":24
         },
         {
          "columns":0,
-         "firstgid":14,
+         "firstgid":15,
          "margin":0,
          "name":"scenery",
          "properties":
@@ -588,7 +594,7 @@
         },
         {
          "columns":3,
-         "firstgid":23,
+         "firstgid":24,
          "image":"..\/images\/enemy_tower.png",
          "imageheight":24,
          "imagewidth":74,

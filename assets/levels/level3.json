@@ -68,15 +68,16 @@
                  "name":"",
                  "properties":
                     {
+                     "destGoalId":3,
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "levelPrereq":"lvl_level3",
                      "link":"lvl_hub1",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
                      "threshold":"6",
-                     "levelPrereq":"lvl_level3",
                      "width":"8"
                     },
                  "rotation":0,
@@ -227,7 +228,7 @@
                  "y":455
                 },
                 {
-                 "gid":21,
+                 "gid":22,
                  "height":24,
                  "id":17,
                  "name":"",
@@ -247,7 +248,7 @@
                  "y":96
                 },
                 {
-                 "gid":26,
+                 "gid":27,
                  "height":24,
                  "id":19,
                  "name":"",
@@ -268,7 +269,7 @@
                  "y":311
                 },
                 {
-                 "gid":17,
+                 "gid":18,
                  "height":48,
                  "id":20,
                  "name":"",
@@ -287,7 +288,7 @@
                  "y":35
                 },
                 {
-                 "gid":20,
+                 "gid":21,
                  "height":48,
                  "id":22,
                  "name":"",
@@ -306,7 +307,7 @@
                  "y":94
                 },
                 {
-                 "gid":15,
+                 "gid":16,
                  "height":24,
                  "id":23,
                  "name":"",
@@ -325,7 +326,7 @@
                  "y":120
                 },
                 {
-                 "gid":14,
+                 "gid":15,
                  "height":24,
                  "id":24,
                  "name":"",
@@ -344,7 +345,7 @@
                  "y":119
                 },
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":48,
                  "id":25,
                  "name":"",
@@ -363,7 +364,7 @@
                  "y":120
                 },
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":48,
                  "id":26,
                  "name":"",
@@ -382,7 +383,7 @@
                  "y":226
                 },
                 {
-                 "gid":20,
+                 "gid":21,
                  "height":48,
                  "id":27,
                  "name":"",
@@ -401,7 +402,7 @@
                  "y":37
                 },
                 {
-                 "gid":21,
+                 "gid":22,
                  "height":24,
                  "id":29,
                  "name":"",
@@ -421,7 +422,7 @@
                  "y":191
                 },
                 {
-                 "gid":21,
+                 "gid":22,
                  "height":24,
                  "id":30,
                  "name":"",
@@ -441,7 +442,7 @@
                  "y":215
                 },
                 {
-                 "gid":26,
+                 "gid":27,
                  "height":24,
                  "id":31,
                  "name":"",
@@ -462,7 +463,7 @@
                  "y":287
                 },
                 {
-                 "gid":26,
+                 "gid":27,
                  "height":24,
                  "id":32,
                  "name":"",
@@ -483,7 +484,7 @@
                  "y":336
                 },
                 {
-                 "gid":26,
+                 "gid":27,
                  "height":24,
                  "id":33,
                  "name":"",
@@ -504,7 +505,7 @@
                  "y":385
                 },
                 {
-                 "gid":26,
+                 "gid":27,
                  "height":24,
                  "id":34,
                  "name":"",
@@ -592,11 +593,11 @@
          "tilewidth":24
         },
         {
-         "columns":4,
+         "columns":5,
          "firstgid":10,
          "image":"..\/images\/object_sheet.png",
          "imageheight":24,
-         "imagewidth":99,
+         "imagewidth":124,
          "margin":0,
          "name":"object_sheet",
          "properties":
@@ -604,13 +605,13 @@
 
             },
          "spacing":0,
-         "tilecount":4,
+         "tilecount":5,
          "tileheight":24,
          "tilewidth":24
         },
         {
          "columns":0,
-         "firstgid":14,
+         "firstgid":15,
          "margin":0,
          "name":"scenery",
          "properties":
@@ -655,7 +656,7 @@
         },
         {
          "columns":5,
-         "firstgid":21,
+         "firstgid":22,
          "image":"..\/images\/enemy_sheet.png",
          "imageheight":24,
          "imagewidth":124,
@@ -672,7 +673,7 @@
         },
         {
          "columns":4,
-         "firstgid":26,
+         "firstgid":27,
          "image":"..\/images\/enemy_bomb.png",
          "imageheight":24,
          "imagewidth":99,

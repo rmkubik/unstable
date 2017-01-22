@@ -68,15 +68,16 @@
                  "name":"",
                  "properties":
                     {
+                     "destGoalId":0,
                      "frame":"3",
                      "group":"goal",
                      "height":"8",
+                     "levelPrereq":"lvl_test",
                      "link":"lvl_hub1",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",
-                     "threshold":7,
-                     "levelPrereq":"lvl_test",
+                     "threshold":"7",
                      "width":"8"
                     },
                  "rotation":0,
@@ -290,7 +291,7 @@
                  "y":88
                 },
                 {
-                 "gid":16,
+                 "gid":17,
                  "height":48,
                  "id":24,
                  "name":"",
@@ -309,7 +310,7 @@
                  "y":59
                 },
                 {
-                 "gid":16,
+                 "gid":17,
                  "height":48,
                  "id":25,
                  "name":"",
@@ -328,7 +329,7 @@
                  "y":54
                 },
                 {
-                 "gid":16,
+                 "gid":17,
                  "height":48,
                  "id":26,
                  "name":"",
@@ -347,7 +348,7 @@
                  "y":257
                 },
                 {
-                 "gid":16,
+                 "gid":17,
                  "height":48,
                  "id":30,
                  "name":"",
@@ -366,7 +367,7 @@
                  "y":307
                 },
                 {
-                 "gid":17,
+                 "gid":18,
                  "height":48,
                  "id":32,
                  "name":"",
@@ -385,7 +386,7 @@
                  "y":60
                 },
                 {
-                 "gid":17,
+                 "gid":18,
                  "height":48,
                  "id":33,
                  "name":"",
@@ -404,7 +405,7 @@
                  "y":372
                 },
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":48,
                  "id":34,
                  "name":"",
@@ -423,7 +424,7 @@
                  "y":351
                 },
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":48,
                  "id":38,
                  "name":"",
@@ -442,7 +443,7 @@
                  "y":211
                 },
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":48,
                  "id":40,
                  "name":"",
@@ -461,7 +462,7 @@
                  "y":186
                 },
                 {
-                 "gid":20,
+                 "gid":21,
                  "height":24,
                  "id":41,
                  "name":"",
@@ -480,7 +481,7 @@
                  "y":359
                 },
                 {
-                 "gid":20,
+                 "gid":21,
                  "height":24,
                  "id":43,
                  "name":"",
@@ -499,7 +500,7 @@
                  "y":359
                 },
                 {
-                 "gid":20,
+                 "gid":21,
                  "height":24,
                  "id":44,
                  "name":"",
@@ -518,7 +519,7 @@
                  "y":95
                 },
                 {
-                 "gid":22,
+                 "gid":23,
                  "height":24,
                  "id":45,
                  "name":"",
@@ -537,7 +538,7 @@
                  "y":407
                 },
                 {
-                 "gid":23,
+                 "gid":24,
                  "height":24,
                  "id":49,
                  "name":"",
@@ -624,11 +625,11 @@
          "tilewidth":24
         },
         {
-         "columns":4,
+         "columns":5,
          "firstgid":10,
          "image":"..\/images\/object_sheet.png",
          "imageheight":24,
-         "imagewidth":99,
+         "imagewidth":124,
          "margin":0,
          "name":"object_sheet",
          "properties":
@@ -636,13 +637,13 @@
 
             },
          "spacing":1,
-         "tilecount":4,
+         "tilecount":5,
          "tileheight":24,
          "tilewidth":24
         },
         {
          "columns":0,
-         "firstgid":14,
+         "firstgid":15,
          "margin":0,
          "name":"scenery",
          "properties":
@@ -687,7 +688,7 @@
         },
         {
          "columns":3,
-         "firstgid":23,
+         "firstgid":24,
          "image":"..\/images\/enemy_tower.png",
          "imageheight":24,
          "imagewidth":74,
