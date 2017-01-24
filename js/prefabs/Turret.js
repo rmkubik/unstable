@@ -6,6 +6,8 @@ Unstable.Turret = function (game_state, position, properties) {
 
     game_state.game.physics.arcade.enable(this);
     this.body.immovable = true;
+    this.anchor.setTo(0.5, 1);
+    this.body.setSize(24, 8, 0, 16);
 
     // this.turret = game.add.sprite(position.x + 12, position.y + 12, properties.texture, 0);
     // this.turret.anchor.setTo(0.5);
@@ -40,16 +42,16 @@ Unstable.Turret.prototype.update = function() {
   if (!this.coolingDown && this.active) {
     // new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
     if (!this.animations.currentAnim.isPlaying) {
-      new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:75, y:0} ,{
+      new Unstable.Projectile(this.game_state, {x:this.position.x, y:this.position.y - 12}, {x:75, y:0} ,{
         group:"hazards", texture:"enemy_sheet", frame:"4", speed:75, rgroup:"objects", pgroup:"hazards"
       });
-      new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:-75, y:0} ,{
+      new Unstable.Projectile(this.game_state, {x:this.position.x, y:this.position.y - 12}, {x:-75, y:0} ,{
         group:"hazards", texture:"enemy_sheet", frame:"4", speed:75, rgroup:"objects", pgroup:"hazards"
       });
-      new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:0, y:75} ,{
+      new Unstable.Projectile(this.game_state, {x:this.position.x, y:this.position.y - 12}, {x:0, y:75} ,{
         group:"hazards", texture:"enemy_sheet", frame:"4", speed:75, rgroup:"objects", pgroup:"hazards"
       });
-      new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {x:0, y:-75} ,{
+      new Unstable.Projectile(this.game_state, {x:this.position.x, y:this.position.y - 12}, {x:0, y:-75} ,{
         group:"hazards", texture:"enemy_sheet", frame:"4", speed:75, rgroup:"objects", pgroup:"hazards"
       });
       this.coolingDown = true;

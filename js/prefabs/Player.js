@@ -13,12 +13,12 @@ Unstable.Player = function(game_state, position, properties) {
   this.game_state.game.physics.arcade.enable(this);
   this.body.collideWorldBounds = true;
 
-  this.anchor.setTo(0.5);
-  this.body.setSize(16, 12, 0, 12);
+  this.anchor.setTo(0.5, 1);
+  this.body.setSize(16, 6, 0, 18);
 
   this.shadowOffset = 2;
   this.shadow = game.add.sprite(-1, this.shadowOffset, "shadow", 1);
-  this.shadow.anchor.setTo(0.5,0.5);
+  this.shadow.anchor.setTo(0.5,1);
   this.shadow.alpha = 0.4;
   this.game_state.groups["shadows"].add(this.shadow);
   //this.addChild(this.shadow);
@@ -31,7 +31,7 @@ Unstable.Player = function(game_state, position, properties) {
   this.cursors = this.game_state.game.input.keyboard.createCursorKeys();
 
   this.emitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
-    offset:{x:-12,y:12},
+    offset:{x: 0, y: -12},
     maxParticles: 30,
     width: 2,
     minParticleSpeed: {x: -40, y: -40},

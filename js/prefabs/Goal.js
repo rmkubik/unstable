@@ -5,8 +5,10 @@ Unstable.Goal = function (game_state, position, properties) {
     Unstable.Prefab.call(this, game_state, position, properties);
     game_state.game.physics.arcade.enable(this);
     this.body.immovable = true;
-    this.body.setSize(properties.width, properties.height,
-      (this.width - properties.width)/2, (this.height - properties.height)/2);
+    // this.body.setSize(properties.width, properties.height,
+      // (this.width - properties.width)/2, (this.height - properties.height)/2);
+    this.body.setSize(20, 6, 2, 18);
+    this.anchor.setTo(0.5, 1);
     //colliderTest.visible = false;
 
     this.game_state = game_state;

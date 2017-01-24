@@ -10,12 +10,12 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
     this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
     this.body.bounce.set(1);
 
-    this.body.setSize(18, 20, 3, 4);
-    this.anchor.setTo(0.5);
+    this.body.setSize(14, 6, 5, 18);
+    this.anchor.setTo(0.5, 1);
 
     this.shadowOffset = 2;
     this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow");
-    this.shadow.anchor.setTo(0.5,0.5);
+    this.shadow.anchor.setTo(0.5, 1);
     this.shadow.alpha = 0.4;
     this.game_state.groups["shadows"].add(this.shadow);
 
@@ -23,7 +23,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
     this.animations.play("bomb_move");
 
     this.emitter = new Unstable.Emitter(game_state,{x:this.x,y:this.y},{
-      offset:{x:10,y:-7},
+      offset:{x: 10,y: -18},
       maxParticles:10,
       width: 2,
       minParticleSpeed: {x: 60, y: -10},
@@ -36,7 +36,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
     });
 
     this.explosionEmitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
-      offset:{x:0,y:0},
+      offset:{x: 0, y: -12},
       maxParticles:30,
       width: 2,
       minParticleSpeed: {x: -40, y: -40},

@@ -5,7 +5,8 @@ Unstable.Coin = function (game_state, position, properties) {
     Unstable.Prefab.call(this, game_state, position, properties);
     game_state.game.physics.arcade.enable(this);
     this.body.immovable = true;
-    this.body.setSize(9, 9, 7.5, 7.5);
+    this.body.setSize(10, 6, 7, 10);
+    this.anchor.setTo(0.5, 1);
     //colliderTest.visible = false;
     //test comment for commit
 
@@ -17,7 +18,7 @@ Unstable.Coin = function (game_state, position, properties) {
 
     this.shadowOffset = -1;
     this.shadow = game.add.sprite(position.x, position.y + this.shadowOffset, "shadow", 1);
-    this.shadow.anchor.setTo(0);
+    this.shadow.anchor.setTo(0.5, 1);
     this.shadow.alpha = 0.4;
     this.game_state.groups["shadows"].add(this.shadow);
 
@@ -36,7 +37,7 @@ Unstable.Coin = function (game_state, position, properties) {
       bounceDownTween.start();
 
     this.emitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
-      offset:{x:-12,y:12},
+      offset:{x: 0, y: -12},
       maxParticles:100,
       width: 2,
       minParticleSpeed: {x: -40, y: -40},

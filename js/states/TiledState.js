@@ -107,7 +107,6 @@ Unstable.TiledState.prototype.create_object = function (object) {
       break;
     case "tree":
       prefab = new Unstable.Scenery(this, position, object.properties);
-      prefab.anchor.setTo(0, 0.5);
       break;
     case "bush":
       prefab = new Unstable.Scenery(this, position, object.properties);
