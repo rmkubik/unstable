@@ -93,7 +93,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
       if (this.spawnGoalId !== undefined && object.properties.id == this.spawnGoalId) {
         console.log(object);
         this.player.x = position.x;
-        this.player.y = position.y + 8;
+        this.player.y = position.y + 12;
       }
       break;
     case "coin":
