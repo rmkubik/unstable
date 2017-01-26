@@ -8,25 +8,38 @@ Unstable.EndState = function () {
 Unstable.prototype = Object.create(Phaser.State.prototype);
 Unstable.prototype.constructor = Unstable.EndState;
 
-Unstable.EndState.prototype.init = function (level_file) {
+Unstable.EndState.prototype.init = function () {
     "use strict";
-    this.level_file = level_file;
-    /* init global vars */
-    Unstable.globals = {};
-    Unstable.globals.current_level = undefined;
-    Unstable.globals.levels = {};
 };
 
 Unstable.EndState.prototype.preload = function () {
     "use strict";
-    this.load.text("game_data", this.level_file);
-    this.load.image("loadingBar", "assets/images/loading_bar.png");
+
 };
 
 Unstable.EndState.prototype.create = function () {
     "use strict";
-    var level_text, level_data;
-    level_text = this.game.cache.getText("game_data");
-    level_data = JSON.parse(level_text);
-    this.game.state.start("LoadingState", true, false, level_data);
+    "use strict";
+    var style = {
+      font: "16px Arial",
+      fill: "#FFFFFF",
+      align: "center"
+    };
+    var text = game.add.text(game.width / 2, game.height / 2 - 100,
+        "You made it across shifting landscapes. ", style);
+    text.anchor.set(0.5);
+    text = game.add.text(game.width / 2, game.height / 2 - 50,
+        "Through countless portals to return.", style);
+    text.anchor.set(0.5);
+    text = game.add.text(game.width / 2, game.height / 2,
+        "Home.", style);
+    text.anchor.set(0.5);
+    var playButton = game.add.button(game.width / 2 - 24,
+      game.height / 2 + 100, "buttonSheet", this.navToMenu, this, 0, 0, 1);
+    playButton.scale.setTo(2);
+};
+
+Unstable.EndState.prototype.navToMenu = function() {
+    Unstable.globals.showIntroduction = false;
+    this.game.state.start("MenuState", true, false, null);
 };

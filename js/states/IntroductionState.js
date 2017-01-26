@@ -39,5 +39,5 @@ Unstable.IntroductionState.prototype.create = function() {
 
 Unstable.IntroductionState.prototype.endIntroduction = function() {
     Unstable.globals.showIntroduction = false;
-    this.game.state.start("LevelManager", true, false, this.game_data, this.levelLink);
+    this.game.state.start("LevelManager", true, false, this.game_data, "victory");
 };
