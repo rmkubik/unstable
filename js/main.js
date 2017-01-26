@@ -6,6 +6,7 @@ game.state.add("BootState", new Unstable.BootState());
 game.state.add("LoadingState", new Unstable.LoadingState());
 game.state.add("MenuState", new Unstable.MenuState());
 game.state.add("LevelManager", new Unstable.LevelManagerState());
+game.state.add("IntroductionState", new Unstable.IntroductionState());
 game.state.add("GameState", new Unstable.TiledState());
 game.state.add("SettingsState", new Unstable.SettingsState());
 game.state.add("EndState", new Unstable.EndState());
