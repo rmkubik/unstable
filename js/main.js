@@ -1,4 +1,11 @@
 var Unstable = Unstable || {};
+Unstable.saveProgress = function() {
+  var saveState = {};
+  saveState.current_level = this.globals.current_level;
+  saveState.levels = this.globals.levels;
+  saveState.showIntroduction = this.globals.showIntroduction
+  localStorage.setItem("com.ryankubik.unstable.saveState", JSON.stringify(saveState));
+}
 
 // var game = new Phaser.Game("100%", "100%", Phaser.AUTO);
 var game = new Phaser.Game(480, 480, Phaser.AUTO, "unstable");

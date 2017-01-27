@@ -12,10 +12,18 @@ Unstable.BootState.prototype.init = function (level_file) {
     "use strict";
     this.level_file = level_file;
     /* init global vars */
+    var saveState = localStorage.getItem("com.ryankubik.unstable.saveState");
     Unstable.globals = {};
-    Unstable.globals.current_level = undefined;
-    Unstable.globals.levels = {};
-    Unstable.globals.showIntroduction = true;
+    if (saveState === null) {
+      Unstable.globals.current_level = undefined;
+      Unstable.globals.levels = null;
+      Unstable.globals.showIntroduction = true;
+    } else {
+      saveState = JSON.parse(saveState);
+      Unstable.globals.current_level = saveState.current_level;
+      Unstable.globals.levels = saveState.levels;
+      Unstable.globals.showIntroduction = saveState.showIntroduction;
+    }
 
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     this.scale.pageAlignHorizontally = true;

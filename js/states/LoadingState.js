@@ -42,7 +42,9 @@ Unstable.LoadingState.prototype.preload = function () {
     this.load.start();
     //this.game.levelManager = new Unstable.LevelManager(this, this.level_data);
     //this.level_data.map = this.level_data.levels[0];
-    Unstable.globals.levels = this.level_data.levels;
+    if (Unstable.globals.levels === null) {
+      Unstable.globals.levels = this.level_data.levels;
+    }
 };
 
 Unstable.LoadingState.prototype.create = function () {

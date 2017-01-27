@@ -116,6 +116,7 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
   //this.game_state.restart_level();
   if (goal.ready === true) {
       Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
+      Unstable.saveProgress();
       this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink, goal.destGoalId);
   }
 }
