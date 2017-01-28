@@ -11,7 +11,6 @@ Unstable.prototype.constructor = Unstable.LoadingState;
 Unstable.LoadingState.prototype.init = function (level_data) {
     "use strict";
     this.level_data = level_data;
-    this.game.stage.backgroundColor = '#2A9A81';
 };
 
 Unstable.LoadingState.prototype.preload = function () {

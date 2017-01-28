@@ -11,6 +11,8 @@ Unstable.prototype.constructor = Unstable.BootState;
 Unstable.BootState.prototype.init = function (level_file) {
     "use strict";
     this.level_file = level_file;
+    this.game.stage.backgroundColor = '#3799B3';//'#2A9A81';
+
     /* init global vars */
     var saveState = localStorage.getItem("com.ryankubik.unstable.saveState");
     Unstable.globals = {};
