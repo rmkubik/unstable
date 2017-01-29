@@ -60,23 +60,7 @@ Unstable.Coin.prototype.update = function() {
 }
 
 Unstable.Coin.prototype.die = function() {
-  // var emitGoals = function(goal) {
-  //   goal.emit(this);
-  // }
-  // this.game_state.goals.forEach(emitGoals, this);
   this.emitter.burst(this.x, this.y);
-  // var partsToGoal = function(goal) {
-  //   this.emitter.updateParticles(function(particle) {
-  //     var seekGoalTween = this.game_state.game.add.tween(particle).to({x:goal.x, y:goal.y}, Phaser.Timer.SECOND);
-  //     seekGoalTween.onComplete.add(function() {
-  //       particle.kill();
-  //     });
-  //     seekGoalTween.start();
-  //   })
-  // }
-  // this.game_state.goals.forEach(function(goal) {
-  //   game.time.events.add(Phaser.Timer.SECOND * 2, partsToGoal, this, goal);
-  // }, this);
   this.game_state.goals.forEach(function(goal){
     this.emitter.seekParticlesToLocation({x:goal.x, y:goal.y}, this.reachedGoal, this);
   }, this);

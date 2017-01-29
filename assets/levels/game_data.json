@@ -141,6 +141,46 @@
     "bush3": {
       "type":"image",
       "source":"assets/images/bush3.png"
+    },
+    "cloud1": {
+      "type":"image",
+      "source":"assets/images/cloud1.png"
+    },
+    "cloud2": {
+      "type":"image",
+      "source":"assets/images/cloud2.png"
+    },
+    "cloud3": {
+      "type":"image",
+      "source":"assets/images/cloud3.png"
+    },
+    "cloud4": {
+      "type":"image",
+      "source":"assets/images/cloud4.png"
+    },
+    "cloud5": {
+      "type":"image",
+      "source":"assets/images/cloud5.png"
+    },
+    "cloud6": {
+      "type":"image",
+      "source":"assets/images/cloud6.png"
+    },
+    "cloud7": {
+      "type":"image",
+      "source":"assets/images/cloud7.png"
+    },
+    "cloud8": {
+      "type":"image",
+      "source":"assets/images/cloud8.png"
+    },
+    "cloud9": {
+      "type":"image",
+      "source":"assets/images/cloud9.png"
+    },
+    "cloud10": {
+      "type":"image",
+      "source":"assets/images/cloud10.png"
     }
   },
   "levels": {
@@ -183,6 +223,7 @@
 
   },
   "groups": [
+    "clouds",
     "shadows",
     "objects",
     "coins",
