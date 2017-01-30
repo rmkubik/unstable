@@ -16,6 +16,9 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
     // start physics system
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
 
+    this.groups = {};
+    this.groups["test"] = this.game.add.group();
+
     // create map and set tilesets
     this.map = this.game.add.tilemap(level_data.map.key);
     this.map.addTilesetImage(this.map.tilesets[1].name, level_data.map.tileset);
@@ -32,7 +35,7 @@ Unstable.TiledState.prototype.create = function () {
 
     this.coins = 0;
 
-    this.groups = {};
+    // this.groups = {};
     this.groups["colliders"] = this.game.add.group();
 
     // create map layers
@@ -70,6 +73,8 @@ Unstable.TiledState.prototype.create = function () {
 
     var restart_key = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     restart_key.onDown.add(this.restart_level, this);
+
+    this.backdropManager = new Unstable.BackdropManager(this);
 };
 
 Unstable.TiledState.prototype.update = function() {
