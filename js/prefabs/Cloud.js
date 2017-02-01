@@ -18,7 +18,7 @@ Unstable.Cloud.prototype.update = function() {
       -this.height/2,
       this.game_state.game.height + this.height/2
     );
-    this.speed = (game_state.game.rnd.frac() * 0.6) + 0.1;
+    this.speed = (this.game_state.game.rnd.frac() * 0.6) + 0.1;
   } else {
     this.x += this.speed;
   }

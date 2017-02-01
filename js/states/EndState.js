@@ -26,13 +26,13 @@ Unstable.EndState.prototype.create = function () {
       align: "center"
     };
     var text = game.add.text(game.width / 2, game.height / 2 - 100,
-        "You made it across shifting landscapes. ", style);
+        "You made it to the end! ", style);
     text.anchor.set(0.5);
     text = game.add.text(game.width / 2, game.height / 2 - 50,
-        "Through countless portals to return.", style);
+        "Thanks for playing this beta version of the game.", style);
     text.anchor.set(0.5);
     text = game.add.text(game.width / 2, game.height / 2,
-        "Home.", style);
+        "Please send any feedback my way!", style);
     text.anchor.set(0.5);
     var playButton = game.add.button(game.width / 2 - 24,
       game.height / 2 + 100, "buttonSheet", this.navToMenu, this, 0, 0, 1);

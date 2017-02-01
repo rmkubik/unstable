@@ -23,10 +23,14 @@ Unstable.MenuState.prototype.create = function () {
     var text = game.add.text(game.width / 2, game.height / 2 - 100,
       "Unstable", style);
     text.anchor.set(0.5);
-    var playButton = game.add.button(game.width / 2 - 100,
+    style.font = "16px Arial";
+    text = game.add.text(game.width / 2, game.height / 2 - 48,
+        "This is a beta version, please send feedback!", style);
+    text.anchor.set(0.5);
+    var playButton = game.add.button(game.width / 2 - 72,
       game.height / 2 - 24, "buttonSheet", this.startGame, this, 0, 0, 1);
     playButton.scale.setTo(2);
-    var optionsButton = game.add.button(game.width/2, game.height/2 - 24, "buttonSheet", this.openOptions, this, 2, 2, 3);
+    var optionsButton = game.add.button(game.width/2 + 24, game.height/2 - 24, "buttonSheet", this.openOptions, this, 2, 2, 3);
     optionsButton.scale.setTo(2);
 };
 
@@ -40,12 +44,3 @@ Unstable.MenuState.prototype.startGame = function() {
 Unstable.MenuState.prototype.openOptions = function() {
   this.game.state.start("SettingsState", true, false, this.level_file);
 }
-
-/*
-  Boot State ->
-  Loading State (loading bar) ->
-////  Title State (press SPACE to start) ->
-  Menu State (Start Game, Controls, Audio Options, Credits)->
-  Level Manager State ->
-  Tiled State
-*/
