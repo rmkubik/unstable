@@ -17,7 +17,7 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
 
     this.groups = {};
-    this.groups["test"] = this.game.add.group();
+    this.groups["clouds"] = this.game.add.group();
 
     // create map and set tilesets
     this.map = this.game.add.tilemap(level_data.map.key);
