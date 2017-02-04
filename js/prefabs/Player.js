@@ -29,6 +29,12 @@ Unstable.Player = function(game_state, position, properties) {
   this.animations.play("player_idle");
 
   this.cursors = this.game_state.game.input.keyboard.createCursorKeys();
+  this.wasd = {
+    up: this.game_state.game.input.keyboard.addKey(Phaser.Keyboard.W),
+    down: this.game_state.game.input.keyboard.addKey(Phaser.Keyboard.S),
+    left: this.game_state.game.input.keyboard.addKey(Phaser.Keyboard.A),
+    right: this.game_state.game.input.keyboard.addKey(Phaser.Keyboard.D),
+  };
 
   this.emitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
     offset:{x: 0, y: -12},
@@ -54,13 +60,13 @@ Unstable.Player.prototype.update = function() {
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders, this.collideColliders, null, this);
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.objects, this.collideObjects, null, this);
 
-  if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
+  if ((this.cursors.right.isDown || this.wasd.right.isDown) && this.body.velocity.x >= 0) {
       // move right
       this.body.velocity.x = this.walking_speed;
       this.shadow.x = this.x + 1;
       this.animations.play("player_run");
       this.scale.setTo(1, 1);
-  } else if (this.cursors.left.isDown && this.body.velocity.x <= 0) {
+  } else if ((this.cursors.left.isDown || this.wasd.left.isDown) && this.body.velocity.x <= 0) {
       // move left
       this.body.velocity.x = -this.walking_speed;
       this.shadow.x = this.x - 1;
@@ -72,12 +78,12 @@ Unstable.Player.prototype.update = function() {
       this.shadow.x = this.x;
   }
 
-  if (this.cursors.down.isDown && this.body.velocity.y >= 0) {
+  if ((this.cursors.down.isDown || this.wasd.down.isDown) && this.body.velocity.y >= 0) {
     //move down
     this.body.velocity.y = this.walking_speed;
     this.shadow.y = this.y + this.shadowOffset * 2;
     this.animations.play("player_run");
-  } else if (this.cursors.up.isDown && this.body.velocity.y <= 0) {
+  } else if ((this.cursors.up.isDown || this.wasd.up.isDown) && this.body.velocity.y <= 0) {
     //move up
     this.body.velocity.y = -this.walking_speed;
     this.shadow.y = this.y;
