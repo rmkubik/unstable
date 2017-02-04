@@ -50,12 +50,9 @@ Unstable.Player.prototype = Object.create(Unstable.Prefab.prototype);
 Unstable.Player.prototype.constructor = Unstable.Player;
 
 Unstable.Player.prototype.update = function() {
-  this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
-  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
+  // this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
+  this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders, this.collideColliders, null, this);
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.objects, this.collideObjects, null, this);
-  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.goal, this.goalCollide, null, this);
-  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.coins, this.coinCollide, null, this);
-  // this.game_state.game.physics.arcade.collide(this, this.game_state.groups.hazards, this.hazardCollide, null, this);
 
   if (this.cursors.right.isDown && this.body.velocity.x >= 0) {
       // move right
@@ -94,6 +91,45 @@ Unstable.Player.prototype.update = function() {
     this.animations.play("player_idle");
   }
 }
+
+Unstable.Player.prototype.locationHitsColliders = function (x, y) {
+  var collision = false;
+  this.game_state.groups.colliders.forEach(function(collider) {
+    if (collider.body.hitTest(x, y)) {
+      collision = true;
+    }
+  });
+  return collision;
+};
+
+Unstable.Player.prototype.collideColliders = function (player, collider) {
+  var magicAdjust = 3;
+  if (player.body.touching.up) {
+    if (!this.locationHitsColliders(player.x + magicAdjust, player.y - 3)) {
+      player.x += magicAdjust;
+    } else if (!this.locationHitsColliders(player.x - magicAdjust, player.y - 3)) {
+      player.x -= magicAdjust;
+    }
+  } else if (player.body.touching.down) {
+    if (!this.locationHitsColliders(player.x + magicAdjust, player.y + 3)) {
+      player.x += magicAdjust;
+    } else if (!this.locationHitsColliders(player.x - magicAdjust, player.y + 3)) {
+      player.x -= magicAdjust;
+    }
+  } else if (player.body.touching.right) {
+    if (!this.locationHitsColliders(player.x + 3, player.y + magicAdjust)) {
+      player.y += magicAdjust;
+    } else if (!this.locationHitsColliders(player.x + 3, player.y - magicAdjust)) {
+      player.y -= magicAdjust;
+    }
+  } else if (player.body.touching.left) {
+    if (!this.locationHitsColliders(player.x - 3, player.y + magicAdjust)) {
+      player.y += magicAdjust;
+    } else if (!this.locationHitsColliders(player.x - 3, player.y - magicAdjust)) {
+      player.y -= magicAdjust;
+    }
+  }
+};
 
 Unstable.Player.prototype.collideObjects = function(player, object) {
   "use strict";
