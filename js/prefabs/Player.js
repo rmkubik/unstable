@@ -109,30 +109,33 @@ Unstable.Player.prototype.locationHitsColliders = function (x, y) {
 };
 
 Unstable.Player.prototype.collideColliders = function (player, collider) {
+  console.log((player.x - collider.x) + " : " + (player.y - collider.y));
   var magicAdjust = 3;
+  var xDiff = player.x - collider.x;
+  var yDiff = player.y - collider.y;
   if (player.body.touching.up) {
-    if (!this.locationHitsColliders(player.x + magicAdjust, player.y - 3)) {
-      player.x += magicAdjust;
-    } else if (!this.locationHitsColliders(player.x - magicAdjust, player.y - 3)) {
-      player.x -= magicAdjust;
+    if (!this.locationHitsColliders(player.x, player.y - player.body.height - 2)) {
+        player.x += magicAdjust;
+    } else if (!this.locationHitsColliders(player.x, player.y - player.body.height - 2)) {
+        player.x -= magicAdjust;
     }
   } else if (player.body.touching.down) {
-    if (!this.locationHitsColliders(player.x + magicAdjust, player.y + 3)) {
+    if (!this.locationHitsColliders(player.x, player.y + 2)) {
       player.x += magicAdjust;
-    } else if (!this.locationHitsColliders(player.x - magicAdjust, player.y + 3)) {
+    } else if (!this.locationHitsColliders(player.x, player.y + 2)) {
       player.x -= magicAdjust;
     }
   } else if (player.body.touching.right) {
-    if (!this.locationHitsColliders(player.x + 3, player.y + magicAdjust)) {
+    if (!this.locationHitsColliders(player.x + 2, player.y + magicAdjust)) {
       player.y += magicAdjust;
-    } else if (!this.locationHitsColliders(player.x + 3, player.y - magicAdjust)) {
-      player.y -= magicAdjust;
+    } else if (!this.locationHitsColliders(player.x + 2, player.y - player.height - magicAdjust)) {
+        player.y -= magicAdjust;
     }
   } else if (player.body.touching.left) {
-    if (!this.locationHitsColliders(player.x - 3, player.y + magicAdjust)) {
+    if (!this.locationHitsColliders(player.x - 2, player.y + magicAdjust)) {
       player.y += magicAdjust;
-    } else if (!this.locationHitsColliders(player.x - 3, player.y - magicAdjust)) {
-      player.y -= magicAdjust;
+    } else if (!this.locationHitsColliders(player.x - 2, player.y - player.height - magicAdjust)) {
+        player.y -= magicAdjust;
     }
   }
 };
