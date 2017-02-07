@@ -64,6 +64,7 @@ Unstable.Coin.prototype.die = function() {
   this.game_state.goals.forEach(function(goal){
     this.emitter.seekParticlesToLocation({x:goal.x, y:goal.y}, this.reachedGoal, this);
   }, this);
+  this.game_state.game.sound.play("sfx_coin");
   this.kill();
   this.shadow.kill();
 }

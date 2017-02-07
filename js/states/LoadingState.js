@@ -35,6 +35,9 @@ Unstable.LoadingState.prototype.preload = function () {
                 break;
             case "imageCollection":
                 //this.load.
+            case "audio":
+                this.load.audio(asset_key, asset.source);
+                break;
             }
         }
     }

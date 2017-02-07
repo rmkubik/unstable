@@ -1,5 +1,45 @@
 {
   "assets": {
+    "sfx_coin": {
+      "type":"audio",
+      "source":"assets/audio/CoinFX.wav"
+    },
+    "sfx_death": {
+      "type":"audio",
+      "source":"assets/audio/Death_FX.wav"
+    },
+    "sfx_step1": {
+      "type":"audio",
+      "source":"assets/audio/Step1_FX.wav"
+    },
+    "sfx_step2": {
+      "type":"audio",
+      "source":"assets/audio/Step2_FX.wav"
+    },
+    "sfx_step3": {
+      "type":"audio",
+      "source":"assets/audio/Step3_FX.wav"
+    },
+    "sfx_tank": {
+      "type":"audio",
+      "source":"assets/audio/Tank_FX(LOOP).wav"
+    },
+    "sfx_teleport": {
+      "type":"audio",
+      "source":"assets/audio/Teleporter_FX.wav"
+    },
+    "sfx_turretLower": {
+      "type":"audio",
+      "source":"assets/audio/TurretLower_FX.wav"
+    },
+    "sfx_turretRaise": {
+      "type":"audio",
+      "source":"assets/audio/TurretRaise_FX.wav"
+    },
+    "sfx_turretShoot": {
+      "type":"audio",
+      "source":"assets/audio/TurretShoot_FX.wav"
+    },
     "lvl_test": {
       "type": "tilemap",
       "source": "assets/levels/test.json"

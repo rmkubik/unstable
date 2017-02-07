@@ -31,10 +31,16 @@ Unstable.Turret.prototype.update = function() {
   // this.turret.rotation = rot;
 
   if (this.game_state.game.physics.arcade.distanceBetween(this, this.game_state.player) < this.range) {
-    if (!this.active) this.animations.play("turret_rise");
+    if (!this.active) {
+      this.animations.play("turret_rise");
+      this.game_state.game.sound.play("sfx_turretRaise");
+    }
     this.active = true;
   } else {
-    if (this.active) this.animations.play("turret_sink");
+    if (this.active) {
+      this.animations.play("turret_sink");
+      this.game_state.game.sound.play("sfx_turretLower");
+    }
     this.active = false;
   }
 
@@ -42,6 +48,7 @@ Unstable.Turret.prototype.update = function() {
   if (!this.coolingDown && this.active) {
     // new Unstable.Projectile(this.game_state, {x:this.position.x + 12, y:this.position.y + 12}, {group:"hazards", texture:"enemy_sheet", frame:"4", speed:75});
     if (!this.animations.currentAnim.isPlaying) {
+      this.game_state.game.sound.play("sfx_turretShoot");
       new Unstable.Projectile(this.game_state, {x:this.position.x, y:this.position.y}, {x:75, y:0} ,{
         group:"hazards", texture:"enemy_sheet", frame:"4", speed:75, rgroup:"objects", pgroup:"hazards"
       });

@@ -211,6 +211,7 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
   "use strict";
   //this.game_state.restart_level();
   if (goal.ready === true) {
+      this.game_state.game.sound.play("sfx_teleport"); //needs to be played globally
       Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
       Unstable.saveProgress();
       this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink, goal.destGoalId);
@@ -235,4 +236,5 @@ Unstable.Player.prototype.die = function() {
   this.shadow.kill();
   this.emitter.burst(this.x, this.y);
   this.emitter.seekParticlesToLocation(this.spawnpoint, this.game_state.restart_level, this.game_state);
+  this.game_state.game.sound.play("sfx_death");
 }
