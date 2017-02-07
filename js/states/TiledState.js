@@ -32,6 +32,7 @@ Unstable.TiledState.prototype.create = function () {
     var group_name, object_layer, collision_tiles;
 
     this.goals = [];
+    this.collisionMap = [];
 
     this.coins = 0;
 
@@ -45,11 +46,16 @@ Unstable.TiledState.prototype.create = function () {
           this.layers[layer.name] = this.map.createLayer(layer.name);
         } else { // collision layer
             layer.data.forEach(function (data_row) { // find tiles used in the layer
+                var row = [];
                 data_row.forEach(function (tile) {
                   if (tile.index > 0) {
+                    row.push(1);
                     new Unstable.Collider(this, {x:tile.x * 24,y:tile.y * 24}, {group:"colliders",texture:"",width:24,height:24});
+                  } else {
+                    row.push(0);
                   }
                 }, this);
+                this.collisionMap.push(row);
             }, this);
         }
     }, this);

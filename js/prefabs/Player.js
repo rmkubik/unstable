@@ -108,34 +108,62 @@ Unstable.Player.prototype.locationHitsColliders = function (x, y) {
   return collision;
 };
 
+Unstable.Player.prototype.isCollisionLocationEmpty = function(row, col) {
+  if (row < 0 || col < 0 || row >= this.game_state.collisionMap.length
+    || col >= this.game_state.collisionMap.length) {
+      return false;
+  }
+  return this.game_state.collisionMap[row][col] == 0;
+}
+
 Unstable.Player.prototype.collideColliders = function (player, collider) {
-  console.log((player.x - collider.x) + " : " + (player.y - collider.y));
-  var magicAdjust = 3;
-  var xDiff = player.x - collider.x;
-  var yDiff = player.y - collider.y;
+  var col = collider.x/24;
+  var row = collider.y/24;
+  var magicAdjust = 6;
+  var magicAdjustX = collider.body.width/2 - magicAdjust;
+  var magicAdjustY = collider.body.height/2 - magicAdjust;
+  var xDiff = player.x - (collider.x + collider.body.width/2);
+  var yDiff = (player.y - player.body.height/2) - (collider.y + collider.body.height/2);
+
   if (player.body.touching.up) {
-    if (!this.locationHitsColliders(player.x, player.y - player.body.height - 2)) {
-        player.x += magicAdjust;
-    } else if (!this.locationHitsColliders(player.x, player.y - player.body.height - 2)) {
-        player.x -= magicAdjust;
+    if (this.isCollisionLocationEmpty(row, col + 1)
+      && this.isCollisionLocationEmpty(row - 1, col + 1)
+      && xDiff > magicAdjustX) {
+        player.x += 1;
+    } else if (this.isCollisionLocationEmpty(row, col - 1)
+      && this.isCollisionLocationEmpty(row - 1, col - 1)
+      && xDiff < -magicAdjustX) {
+        player.x -= 1;
     }
   } else if (player.body.touching.down) {
-    if (!this.locationHitsColliders(player.x, player.y + 2)) {
-      player.x += magicAdjust;
-    } else if (!this.locationHitsColliders(player.x, player.y + 2)) {
-      player.x -= magicAdjust;
+    if (this.isCollisionLocationEmpty(row, col + 1)
+      && this.isCollisionLocationEmpty(row + 1, col + 1)
+      && xDiff > magicAdjustX) {
+        player.x += 1;
+    } else if (this.isCollisionLocationEmpty(row, col - 1)
+      && this.isCollisionLocationEmpty(row + 1, col - 1)
+      && xDiff < -magicAdjustX) {
+        player.x -= 1;
     }
   } else if (player.body.touching.right) {
-    if (!this.locationHitsColliders(player.x + 2, player.y + magicAdjust)) {
-      player.y += magicAdjust;
-    } else if (!this.locationHitsColliders(player.x + 2, player.y - player.height - magicAdjust)) {
-        player.y -= magicAdjust;
+    if (this.isCollisionLocationEmpty(row + 1, col)
+      && this.isCollisionLocationEmpty(row + 1, col + 1)
+      && yDiff > magicAdjustY) {
+        player.y += 1;
+    } else if (this.isCollisionLocationEmpty(row - 1, col)
+      && this.isCollisionLocationEmpty(row - 1, col + 1)
+      && yDiff < -magicAdjustY) {
+        player.y -= 1;
     }
   } else if (player.body.touching.left) {
-    if (!this.locationHitsColliders(player.x - 2, player.y + magicAdjust)) {
-      player.y += magicAdjust;
-    } else if (!this.locationHitsColliders(player.x - 2, player.y - player.height - magicAdjust)) {
-        player.y -= magicAdjust;
+    if (this.isCollisionLocationEmpty(row + 1, col)
+      && this.isCollisionLocationEmpty(row + 1, col - 1)
+      && yDiff > magicAdjustY) {
+        player.y += 1;
+    } else if (this.isCollisionLocationEmpty(row - 1, col)
+      && this.isCollisionLocationEmpty(row - 1, col - 1)
+      && yDiff < -magicAdjustY) {
+        player.y -= 1;
     }
   }
 };
