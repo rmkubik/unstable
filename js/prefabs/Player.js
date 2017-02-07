@@ -98,16 +98,6 @@ Unstable.Player.prototype.update = function() {
   }
 }
 
-Unstable.Player.prototype.locationHitsColliders = function (x, y) {
-  var collision = false;
-  this.game_state.groups.colliders.forEach(function(collider) {
-    if (collider.body.hitTest(x, y)) {
-      collision = true;
-    }
-  });
-  return collision;
-};
-
 Unstable.Player.prototype.isCollisionLocationEmpty = function(row, col) {
   if (row < 0 || col < 0 || row >= this.game_state.collisionMap.length
     || col >= this.game_state.collisionMap.length) {
@@ -181,8 +171,41 @@ Unstable.Player.prototype.collideObjects = function(player, object) {
     case "goals":
       this.goalCollide(player, object);
       break;
+    case "blockers":
+      this.blockerCollide(player, object);
+      break;
   }
 }
+
+Unstable.Player.prototype.blockerCollide = function (player, blocker) {
+  "use strict";
+  var col = Math.floor(blocker.x/24);
+  var row = Math.floor(blocker.y/24);
+  var magicAdjust = 6;
+  var magicAdjustX = blocker.body.width/2 - magicAdjust;
+  var xDiff = player.x - blocker.x;
+  if (player.body.touching.up) {
+    if (this.isCollisionLocationEmpty(row, col + 1)
+      && this.isCollisionLocationEmpty(row - 1, col + 1)
+      && xDiff > magicAdjustX) {
+        player.x += 1;
+    } else if (this.isCollisionLocationEmpty(row, col - 1)
+      && this.isCollisionLocationEmpty(row - 1, col - 1)
+      && xDiff < -magicAdjustX) {
+        player.x -= 1;
+    }
+  } else if (player.body.touching.down) {
+    if (this.isCollisionLocationEmpty(row, col + 1)
+      && this.isCollisionLocationEmpty(row + 1, col + 1)
+      && xDiff > magicAdjustX) {
+        player.x += 1;
+    } else if (this.isCollisionLocationEmpty(row, col - 1)
+      && this.isCollisionLocationEmpty(row + 1, col - 1)
+      && xDiff < -magicAdjustX) {
+        player.x -= 1;
+    }
+  }
+};
 
 Unstable.Player.prototype.goalCollide = function(player, goal) {
   "use strict";
