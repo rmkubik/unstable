@@ -23,7 +23,7 @@ Unstable.Player = function(game_state, position, properties) {
   this.game_state.groups["shadows"].add(this.shadow);
   //this.addChild(this.shadow);
 
-  this.animations.add("player_run", [2, 3, 4, 5], 10, true);
+  this.runAnimation = this.animations.add("player_run", [2, 3, 4, 5], 10, true);
   this.animations.add("player_idle", [0, 1], 1, true);
 
   this.animations.play("player_idle");
@@ -50,6 +50,10 @@ Unstable.Player = function(game_state, position, properties) {
   });
 
   this.spawnpoint = {x: this.x, y: this.y};
+
+  this.stepSound1 = this.game.add.audio("sfx_step1");
+  this.stepSound2 = this.game.add.audio("sfx_step2");
+  this.stepToggle = 1;
 }
 
 Unstable.Player.prototype = Object.create(Unstable.Prefab.prototype);
@@ -95,6 +99,15 @@ Unstable.Player.prototype.update = function() {
   }
   if (this.body.velocity.x == 0 && this.body.velocity.y == 0) {
     this.animations.play("player_idle");
+  }
+  if (this.runAnimation.isPlaying) {
+    if (this.stepToggle === 1) {
+      this.stepSound1.play("", 0, 1, false, false);
+      this.stepToggle = 2;
+    } else if (this.stepToggle === 2) {
+      this.stepSound2.play("", 0, 1, false, false);
+      this.stepToggle = 1;
+    }
   }
 }
 
