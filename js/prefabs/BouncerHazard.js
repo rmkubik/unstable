@@ -50,12 +50,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
 
     this.spawnpoint = {x: this.x, y: this.y};
 
-    var sound = this.game_state.game.sound.play("sfx_tank");
-    sound.loop = true;
-    function playSfx(sound) {
-      sound.play();
-    }
-    sound.onLoop.add(playSfx, this, sound);
+    this.game_state.aliveBombCount++;
 };
 
 Unstable.BouncerHazard.prototype = Object.create(Unstable.Hazard.prototype);
@@ -81,7 +76,7 @@ Unstable.BouncerHazard.prototype.die = function() {
   this.kill();
   this.shadow.kill();
   this.emitter.destroy();
-  // this.explosionEmitter.burst(this.x, this.y);
+  this.game_state.aliveBombCount--;
   this.explosionEmitter.burst(this.x, this.y);
   this.explosionEmitter.seekParticlesToLocation(this.spawnpoint);
 }

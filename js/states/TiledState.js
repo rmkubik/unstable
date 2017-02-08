@@ -24,6 +24,9 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
     this.map.addTilesetImage(this.map.tilesets[1].name, level_data.map.tileset);
     this.map.addTilesetImage(this.map.tilesets[2].name, "collision");
 
+    this.bombSound;
+    this.aliveBombCount = 0;
+
     Unstable.Emitter.init();
 };
 
@@ -85,6 +88,15 @@ Unstable.TiledState.prototype.create = function () {
 
 Unstable.TiledState.prototype.update = function() {
   this.groups["objects"].sort('y', Phaser.Group.SORT_ASCENDING); //depth sorting
+  if (this.bombSound !== undefined) {
+    if (this.aliveBombCount > 0) {
+      if (!this.bombSound.isPlaying) {
+        this.bombSound.play();
+      }
+    } else {
+      this.bombSound.stop();
+    }
+  }
 }
 
 Unstable.TiledState.prototype.create_object = function (object) {
@@ -114,6 +126,11 @@ Unstable.TiledState.prototype.create_object = function (object) {
       prefab = new Unstable.Hazard(this, position, object.properties);
       break;
     case "bouncer":
+      console.log(this.bombSound);
+      if (this.bombSound === undefined) {
+        this.bombSound = this.game.add.sound("sfx_tank");
+        this.bombSound.loop = true;
+      }
       prefab = new Unstable.BouncerHazard(this, position, object.properties);
       break;
     case "tree":
@@ -131,10 +148,19 @@ Unstable.TiledState.prototype.create_object = function (object) {
     this.prefabs[object.name] = prefab;
 };
 
+Unstable.TiledState.prototype.shutdown = function () {
+  if (this.bombSound !== undefined) {
+    this.bombSound.stop();
+  }
+};
+
 Unstable.TiledState.prototype.restart_level = function () {
     "use strict";
     if (this.player.alive) {
       this.player.die();
+    }
+    if (this.bombSound !== undefined) {
+      this.bombSound.stop();
     }
     this.game.state.restart(true, false, this.level_data);
 };
