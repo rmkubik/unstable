@@ -1,10 +1,25 @@
 var Unstable = Unstable || {};
 Unstable.saveProgress = function() {
-  var saveState = {};
-  saveState.current_level = this.globals.current_level;
-  saveState.levels = this.globals.levels;
-  saveState.showIntroduction = this.globals.showIntroduction
-  localStorage.setItem("com.ryankubik.unstable.saveState", JSON.stringify(saveState));
+  if (Unstable.isLocalStorageAvailable()) {
+    var saveState = {};
+    saveState.current_level = this.globals.current_level;
+    saveState.levels = this.globals.levels;
+    saveState.showIntroduction = this.globals.showIntroduction
+    localStorage.setItem("com.ryankubik.unstable.saveState", JSON.stringify(saveState));
+  ) else {
+    console.log("Saving game state failed - local storage is not available");
+  }
+}
+
+Unstable.isLocalStorageAvailable() {
+    var test = 'com.ryankubik.unstable.test';
+    try {
+        localStorage.setItem(test, test);
+        localStorage.removeItem(test);
+        return true;
+    } catch(e) {
+        return false;
+    }
 }
 
 // var game = new Phaser.Game("100%", "100%", Phaser.AUTO);

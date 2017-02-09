@@ -14,7 +14,12 @@ Unstable.BootState.prototype.init = function (level_file) {
     this.game.stage.backgroundColor = '#3799B3';//'#2A9A81';
 
     /* init global vars */
-    var saveState = localStorage.getItem("com.ryankubik.unstable.saveState");
+    var saveState;
+    if(Unstable.isLocalStorageAvailable()) {
+      saveState = localStorage.getItem("com.ryankubik.unstable.saveState");
+    } else {
+      saveState = null;
+    }
     Unstable.globals = {};
     if (saveState === null) {
       Unstable.globals.current_level = undefined;
