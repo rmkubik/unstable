@@ -6,12 +6,12 @@ Unstable.saveProgress = function() {
     saveState.levels = this.globals.levels;
     saveState.showIntroduction = this.globals.showIntroduction
     localStorage.setItem("com.ryankubik.unstable.saveState", JSON.stringify(saveState));
-  ) else {
+  } else {
     console.log("Saving game state failed - local storage is not available");
   }
 }
 
-Unstable.isLocalStorageAvailable() {
+Unstable.isLocalStorageAvailable = function() {
     var test = 'com.ryankubik.unstable.test';
     try {
         localStorage.setItem(test, test);
