@@ -105,9 +105,11 @@ Unstable.Emitter.prototype.returnToSpawn = function(prefab) {
   game.time.events.add(Phaser.Timer.SECOND, partsToSpawn, this, prefab.spawnpoint);
 }
 
-Unstable.Emitter.prototype.seekParticlesToLocation = function (location, callback, context) {
+Unstable.Emitter.prototype.seekParticlesToLocation = function (location, callback, context, param) {
   var initialDelay = 1;
   var travelTime = 0.5;
+  param = param || null;
+  console.log(param);
   var partsToLocation = function(location) {
     this.updateParticles(function(particle) {
       var seekLocationTween = this.game_state.game.add.tween(particle)
@@ -118,7 +120,7 @@ Unstable.Emitter.prototype.seekParticlesToLocation = function (location, callbac
       seekLocationTween.start();
     });
     if (callback !== undefined && callback !== null) {
-      game.time.events.add(travelTime * Phaser.Timer.SECOND, callback, context);
+      game.time.events.add(travelTime * Phaser.Timer.SECOND, callback, context, param);
       // callback.call(context);
     }
   }

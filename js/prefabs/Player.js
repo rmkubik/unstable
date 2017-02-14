@@ -224,11 +224,16 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
   "use strict";
   //this.game_state.restart_level();
   if (goal.ready === true) {
-      this.game_state.game.sound.play("sfx_teleport"); //needs to be played globally
-      Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
-      Unstable.saveProgress();
-      this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink, goal.destGoalId);
+    this.emitter.burst(this.x, this.y);
+    this.emitter.seekParticlesToLocation({x:-50, y:-50}, this.finishLevel, this, goal);
+    this.game_state.game.sound.play("sfx_teleport"); //needs to be played globally
   }
+}
+
+Unstable.Player.prototype.finishLevel = function(goal) {
+  Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
+  Unstable.saveProgress();
+  this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink, goal.destGoalId);
 }
 
 Unstable.Player.prototype.coinCollide = function(player, coin) {
