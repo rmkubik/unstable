@@ -28,6 +28,8 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
     this.aliveBombCount = 0;
 
     Unstable.Emitter.init();
+
+    this.spawnGoalCoords;
 };
 
 Unstable.TiledState.prototype.create = function () {
@@ -84,6 +86,8 @@ Unstable.TiledState.prototype.create = function () {
     restart_key.onDown.add(this.restart_level, this);
 
     this.backdropManager = new Unstable.BackdropManager(this);
+
+    player.respawnEffect(this.spawnGoalCoords.x, this.spawnGoalCoords.y);
 };
 
 Unstable.TiledState.prototype.update = function() {
@@ -107,6 +111,9 @@ Unstable.TiledState.prototype.create_object = function (object) {
     // create object according to its type
     switch (object.type) {
     case "player":
+      if (this.spawnGoalId !== undefined) {
+        object.properties.spawnFromGoal = true;
+      }
       prefab = new Unstable.Player(this, position, object.properties);
       this.player = prefab;
       break;
@@ -114,9 +121,10 @@ Unstable.TiledState.prototype.create_object = function (object) {
       prefab = new Unstable.Goal(this, position, object.properties);
       this.goals.push(prefab);
       if (this.spawnGoalId !== undefined && object.properties.id == this.spawnGoalId) {
-        console.log(object);
-        this.player.x = position.x;
-        this.player.y = position.y + 12;
+        // this.player.x = position.x;
+        // this.player.y = position.y + 12;
+        this.spawnGoalCoords.x = position.x;
+        this.spawnGoalCoords.y = position.y;
       }
       break;
     case "coin":
@@ -126,7 +134,6 @@ Unstable.TiledState.prototype.create_object = function (object) {
       prefab = new Unstable.Hazard(this, position, object.properties);
       break;
     case "bouncer":
-      console.log(this.bombSound);
       if (this.bombSound === undefined) {
         this.bombSound = this.game.add.sound("sfx_tank");
         this.bombSound.loop = true;

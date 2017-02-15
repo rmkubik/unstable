@@ -56,6 +56,11 @@ Unstable.Player = function(game_state, position, properties) {
   this.stepToggle = 1;
 
   this.teleportSound = this.game.add.audio("sfx_teleport");
+
+  if (properties.spawnFromGoal) {
+    this.kill();
+    this.shadow.kill();
+  }
 }
 
 Unstable.Player.prototype = Object.create(Unstable.Prefab.prototype);
@@ -246,6 +251,16 @@ Unstable.Player.prototype.coinCollide = function(player, coin) {
   coin.die();
   this.score += 1;
   console.log("score: " + this.score);
+}
+
+Unstable.Player.prototype.respawnEffect = function(x, y) {
+  this.emitter.burst(x, y);
+  this.emitter.seekParticlesToLocation(this.spawnpoint, this.reset, this);
+}
+
+Unstable.Player.prototype.reset = function() {
+  this.reset(spawnpoint.x, spawnpoint.y);
+  this.shadow.reset(spawnpoint.x, spawnpoint.y);
 }
 
 Unstable.Player.prototype.hazardCollide = function(player, hazard) {
