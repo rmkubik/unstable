@@ -54,6 +54,8 @@ Unstable.Player = function(game_state, position, properties) {
   this.stepSound1 = this.game.add.audio("sfx_step1");
   this.stepSound2 = this.game.add.audio("sfx_step2");
   this.stepToggle = 1;
+
+  this.teleportSound = this.game.add.audio("sfx_teleport");
 }
 
 Unstable.Player.prototype = Object.create(Unstable.Prefab.prototype);
@@ -224,9 +226,12 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
   "use strict";
   //this.game_state.restart_level();
   if (goal.ready === true) {
+    this.kill();
+    this.shadow.kill();
     this.emitter.burst(this.x, this.y);
     this.emitter.seekParticlesToLocation({x:-50, y:-50}, this.finishLevel, this, goal);
-    this.game_state.game.sound.play("sfx_teleport"); //needs to be played globally
+    // this.game_state.game.sound.play("sfx_teleport"); //needs to be played globally
+    this.teleportSound.play("", 0, 1, false, false);
   }
 }
 
