@@ -29,7 +29,7 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
 
     Unstable.Emitter.init();
 
-    this.spawnGoalCoords;
+    this.spawnGoalCoords = {x: 0, y: 0};
 };
 
 Unstable.TiledState.prototype.create = function () {
@@ -87,7 +87,12 @@ Unstable.TiledState.prototype.create = function () {
 
     this.backdropManager = new Unstable.BackdropManager(this);
 
-    player.respawnEffect(this.spawnGoalCoords.x, this.spawnGoalCoords.y);
+    if (this.spawnGoalId !== undefined) {
+      this.player.respawnEffect(this.spawnGoalCoords, {
+        x: this.spawnGoalCoords.x,
+        y: this.spawnGoalCoords.y + 12
+      });
+    }
 };
 
 Unstable.TiledState.prototype.update = function() {
