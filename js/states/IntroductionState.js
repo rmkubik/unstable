@@ -30,7 +30,7 @@ Unstable.IntroductionState.prototype.create = function() {
         "The world is unstable, when you fall you get back up again.", style);
     text.anchor.set(0.5);
     text = game.add.text(game.width / 2, game.height / 2,
-        "Arrow keys to move, collect the coins, get to the goal.", style);
+        "Arrow keys or WASD to move, collect the coins, get to the goal.", style);
     text.anchor.set(0.5);
     var playButton = game.add.button(game.width / 2 - 24,
       game.height / 2 + 100, "buttonSheet", this.endIntroduction, this, 0, 0, 1);
