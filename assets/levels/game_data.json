@@ -305,7 +305,8 @@
       "required_properties": [
         "id",
         "link",
-        "threshold"
+        "threshold",
+        "levelPrereq"
       ]
     },
     "coin": {
