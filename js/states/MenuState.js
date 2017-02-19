@@ -8,9 +8,9 @@ Unstable.MenuState = function () {
 Unstable.prototype = Object.create(Phaser.State.prototype);
 Unstable.prototype.constructor = Unstable.MenuState;
 
-Unstable.MenuState.prototype.init = function (level_file) {
+Unstable.MenuState.prototype.init = function (gameData) {
     "use strict";
-    this.level_file = level_file;
+    this.gameData = gameData;
 };
 
 Unstable.MenuState.prototype.create = function () {
@@ -35,12 +35,9 @@ Unstable.MenuState.prototype.create = function () {
 };
 
 Unstable.MenuState.prototype.startGame = function() {
-  var level_text, level_data;
-  level_text = this.game.cache.getText("game_data");
-  level_data = JSON.parse(level_text);
-  this.game.state.start("LevelManager", true, false, level_data, "lvl_hub1");
+  this.game.state.start("LevelManager", true, false, this.gameData, "lvl_hub1");
 }
 
 Unstable.MenuState.prototype.openOptions = function() {
-  this.game.state.start("SettingsState", true, false, this.level_file);
+  this.game.state.start("SettingsState", true, false, this.gameData);
 }

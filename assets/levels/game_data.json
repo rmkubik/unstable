@@ -285,12 +285,81 @@
   ],
   "prefabs": {
     "player": {
-      "type": "player",
       "properties": {
-        "texture": "img_player",
-        "group": "player"
+        "group":"player",
+        "pgroup":"players",
+        "rgroup":"objects",
+        "texture":"img_player_white"
+      }
+    },
+    "goal": {
+      "properties": {
+        "frame":"3",
+        "group":"goal",
+        "height":"8",
+        "pgroup":"goals",
+        "rgroup":"objects",
+        "texture":"img_objects",
+        "width":"8"
       },
-      "position": {"x": 0, "y": 0}
+      "required_properties": [
+        "id",
+        "link",
+        "threshold"
+      ]
+    },
+    "coin": {
+      "properties": {
+        "frame":"1",
+        "group":"coins",
+        "pgroup":"coins",
+        "rgroup":"objects",
+        "texture":"img_objects"
+      }
+    },
+    "hazard": {
+      "properties": {
+
+      }
+    },
+    "bouncer": {
+      "properties": {
+        "group":"hazards",
+        "pgroup":"hazards",
+        "rgroup":"objects",
+        "texture":"enemy_bomb",
+        "velocityX":0,
+        "velocityY":0
+      }
+    },
+    "tree": {
+      "properties": {
+        "group":"scenery",
+        "pgroup":"blockers",
+        "rgroup":"objects"
+      },
+      "required_properties": [
+        "texture"
+      ]
+    },
+    "bush": {
+      "properties": {
+        "group":"scenery",
+        "pgroup":"blockers",
+        "rgroup":"objects"
+      },
+      "required_properties": [
+        "texture"
+      ]
+    },
+    "turret": {
+      "properties": {
+        "frame":"0",
+        "group":"turrets",
+        "pgroup":"blockers",
+        "rgroup":"objects",
+        "texture":"enemy_sheet"
+      }
     }
   }
 }

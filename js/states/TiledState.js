@@ -108,6 +108,10 @@ Unstable.TiledState.prototype.update = function() {
   }
 }
 
+Unstable.TiledState.prototype.getPrefabProperties = function (type, properties) {
+
+};
+
 Unstable.TiledState.prototype.create_object = function (object) {
     "use strict";
     var position, prefab;
@@ -157,7 +161,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "turret":
       prefab = new Unstable.Turret(this, position, object.properties);
     }
-    this.prefabs[object.name] = prefab;
+    // this.prefabs[object.name] = prefab;
 };
 
 Unstable.TiledState.prototype.shutdown = function () {
