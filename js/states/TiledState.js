@@ -143,7 +143,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
     switch (object.type) {
     case "player":
       if (this.spawnGoalId !== undefined) {
-        object.properties.spawnFromGoal = true;
+        properties.spawnFromGoal = true;
       }
       prefab = new Unstable.Player(this, position, properties);
       this.player = prefab;
