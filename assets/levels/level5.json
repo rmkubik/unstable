@@ -557,7 +557,7 @@
                      "texture":"tree4"
                     },
                  "rotation":0,
-                 "type":"",
+                 "type":"tree",
                  "visible":true,
                  "width":24,
                  "x":431,
@@ -633,7 +633,7 @@
                      "texture":"bush1"
                     },
                  "rotation":0,
-                 "type":"",
+                 "type":"bush",
                  "visible":true,
                  "width":24,
                  "x":334,
@@ -652,7 +652,7 @@
                      "texture":"bush1"
                     },
                  "rotation":0,
-                 "type":"",
+                 "type":"bush",
                  "visible":true,
                  "width":24,
                  "x":216,

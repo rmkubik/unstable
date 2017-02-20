@@ -35,7 +35,7 @@ Unstable.MenuState.prototype.create = function () {
 };
 
 Unstable.MenuState.prototype.startGame = function() {
-  this.game.state.start("LevelManager", true, false, this.gameData, "lvl_hub1");
+  this.game.state.start("LevelManager", true, false, this.gameData, "lvl_hub1", null);
 }
 
 Unstable.MenuState.prototype.openOptions = function() {

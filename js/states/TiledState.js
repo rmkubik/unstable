@@ -87,7 +87,7 @@ Unstable.TiledState.prototype.create = function () {
 
     this.backdropManager = new Unstable.BackdropManager(this);
 
-    if (this.spawnGoalId !== undefined) {
+    if (this.spawnGoalId !== null) {
       this.player.respawnEffect(this.spawnGoalCoords, {
         x: this.spawnGoalCoords.x,
         y: this.spawnGoalCoords.y + 12
@@ -109,8 +109,8 @@ Unstable.TiledState.prototype.update = function() {
 }
 
 Unstable.TiledState.prototype.getPrefabProperties = function (type, properties) {
-  var finalProperties;
-  finalProperties = this.level_data.prefabs[type].properties;
+  var finalProperties = {};
+  Object.assign(finalProperties, this.level_data.prefabs[type].properties);
   Object.getOwnPropertyNames(properties).forEach( function(property) {
     if (properties.hasOwnProperty(property)) {
       if (finalProperties.hasOwnProperty(property) ||
@@ -119,14 +119,14 @@ Unstable.TiledState.prototype.getPrefabProperties = function (type, properties) 
           //override default property
           finalProperties[property] = properties[property];
       } else {
-        console.error("Game data does not contain the property " + property + " for " + type + ".");
+        console.error("Game data does not contain the property [" + property + "] for [" + type + "].");
       }
     }
   }, this);
   if (this.level_data.prefabs[type].hasOwnProperty("required_properties")) {
     this.level_data.prefabs[type].required_properties.forEach( function(requiredProperty) {
-      if (!properties.hasOwnProperty(requiredProperty)) {
-        console.error("Prefab " + type + " does not contain required property " + requiredProperty);
+      if (!finalProperties.hasOwnProperty(requiredProperty)) {
+        console.error("Prefab [" + type + "] does not contain required property [" + requiredProperty + "]");
       }
     }, this);
   }
@@ -142,7 +142,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
     // create object according to its type
     switch (object.type) {
     case "player":
-      if (this.spawnGoalId !== undefined) {
+      if (this.spawnGoalId !== null) {
         properties.spawnFromGoal = true;
       }
       prefab = new Unstable.Player(this, position, properties);
@@ -151,7 +151,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "goal":
       prefab = new Unstable.Goal(this, position, properties);
       this.goals.push(prefab);
-      if (this.spawnGoalId !== undefined && object.properties.id == this.spawnGoalId) {
+      if (this.spawnGoalId !== null && object.properties.id == this.spawnGoalId) {
         // this.player.x = position.x;
         // this.player.y = position.y + 12;
         this.spawnGoalCoords.x = position.x;
