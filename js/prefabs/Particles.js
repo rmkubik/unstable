@@ -109,7 +109,6 @@ Unstable.Emitter.prototype.seekParticlesToLocation = function (location, callbac
   var initialDelay = 1;
   var travelTime = 0.5;
   param = param || null;
-  console.log(param);
   var partsToLocation = function(location) {
     this.updateParticles(function(particle) {
       var seekLocationTween = this.game_state.game.add.tween(particle)

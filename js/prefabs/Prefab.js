@@ -13,7 +13,6 @@ Unstable.Prefab = function (game_state, position, properties) {
 
     this.game_state = game_state;
 
-    console.log(properties.rgroup + ":" + properties.group);
     if (properties.rgroup != null)
       this.game_state.groups[properties.rgroup].add(this);
     else {

@@ -180,7 +180,6 @@ Unstable.Player.prototype.collideColliders = function (player, collider) {
 
 Unstable.Player.prototype.collideObjects = function(player, object) {
   "use strict";
-  console.log(object.pgroup);
   switch(object.pgroup) {
     case "hazards":
       this.hazardCollide(player, object);
@@ -250,7 +249,6 @@ Unstable.Player.prototype.coinCollide = function(player, coin) {
   "use strict";
   coin.die();
   this.score += 1;
-  console.log("score: " + this.score);
 }
 
 Unstable.Player.prototype.respawnEffect = function(init, dest) {
@@ -259,7 +257,6 @@ Unstable.Player.prototype.respawnEffect = function(init, dest) {
 }
 
 Unstable.Player.prototype.resetPlayer = function(dest) {
-  console.log(dest);
   this.reset(dest.x, dest.y);
   this.shadow.reset(dest.x, dest.y);
 }

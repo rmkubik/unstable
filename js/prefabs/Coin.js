@@ -73,9 +73,7 @@ Unstable.Coin.prototype.reachedGoal = function() {
   this.game_state.coins += 1;
   this.game_state.goals.forEach(function(goal) {
     if (!goal.ready) {
-      console.log("goal not ready");
       goal.updateReady();
     }
-    console.log("goal ready state: " + goal.ready);
   });
 }
