@@ -4,8 +4,6 @@ Unstable.Player = function(game_state, position, properties) {
   "use strict";
   Unstable.Prefab.call(this, game_state, position, properties);
 
-  console.log(properties);
-
   this.walking_speed = 150;
   this.jumping_speed = 30;
   this.bouncing = 5;

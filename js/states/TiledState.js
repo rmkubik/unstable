@@ -200,5 +200,5 @@ Unstable.TiledState.prototype.restart_level = function () {
     if (this.bombSound !== undefined) {
       this.bombSound.stop();
     }
-    this.game.state.restart(true, false, this.level_data);
+    this.game.state.restart(true, false, this.level_data, null);
 };
