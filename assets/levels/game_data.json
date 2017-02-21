@@ -64,6 +64,10 @@
       "type":"tilemap",
       "source":"assets/levels/hub1.json"
     },
+    "lvl_h1l1": {
+      "type":"tilemap",
+      "source":"assets/levels/h1l1.json"
+    },
     "buttonSheet": {
       "type": "spritesheet",
       "source":"assets/images/button_sheet.png",
@@ -259,8 +263,13 @@
       "key": "lvl_hub1",
       "tileset": "tilesheet",
       "completion":-1
+    },
+    "lvl_h1l1": {
+      "name": "Level 1",
+      "key": "lvl_h1l1",
+      "tileset": "tilesheet",
+      "completion":-1
     }
-
   },
   "groups": [
     "shadows",

@@ -21,8 +21,8 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
 
     // create map and set tilesets
     this.map = this.game.add.tilemap(level_data.map.key);
-    this.map.addTilesetImage(this.map.tilesets[1].name, level_data.map.tileset);
-    this.map.addTilesetImage(this.map.tilesets[2].name, "collision");
+    this.map.addTilesetImage("base", level_data.map.tileset);
+    this.map.addTilesetImage("collision", "collision");
 
     this.bombSound;
     this.aliveBombCount = 0;
@@ -87,7 +87,7 @@ Unstable.TiledState.prototype.create = function () {
 
     this.backdropManager = new Unstable.BackdropManager(this);
 
-    if (this.spawnGoalId !== null) {
+    if (this.spawnGoalId !== null && this.spawnGoalId !== "") {
       this.player.respawnEffect(this.spawnGoalCoords, {
         x: this.spawnGoalCoords.x,
         y: this.spawnGoalCoords.y + 12
@@ -139,10 +139,11 @@ Unstable.TiledState.prototype.create_object = function (object) {
     // tiled coordinates starts in the bottom left corner
     position = {"x": object.x, "y": object.y - (this.map.tileHeight)};
     properties = this.getPrefabProperties(object.type, object.properties);
+
     // create object according to its type
     switch (object.type) {
     case "player":
-      if (this.spawnGoalId !== null) {
+      if (this.spawnGoalId !== null && this.spawnGoalId !== "") {
         properties.spawnFromGoal = true;
       }
       prefab = new Unstable.Player(this, position, properties);
@@ -151,12 +152,11 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "goal":
       prefab = new Unstable.Goal(this, position, properties);
       this.goals.push(prefab);
-      if (this.spawnGoalId !== null && object.properties.id == this.spawnGoalId) {
-        // this.player.x = position.x;
-        // this.player.y = position.y + 12;
-        this.spawnGoalCoords.x = position.x;
-        this.spawnGoalCoords.y = position.y;
-      }
+      if ((this.spawnGoalId !== null && this.spawnGoalId !== "")
+        && object.properties.id == this.spawnGoalId) {
+          this.spawnGoalCoords.x = position.x;
+          this.spawnGoalCoords.y = position.y;
+        }
       break;
     case "coin":
       prefab = new Unstable.Coin(this, position, properties);

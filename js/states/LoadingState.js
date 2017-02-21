@@ -42,10 +42,17 @@ Unstable.LoadingState.prototype.preload = function () {
         }
     }
     this.load.start();
-    //this.game.levelManager = new Unstable.LevelManager(this, this.gameData);
-    //this.gameData.map = this.gameData.levels[0];
+
     if (Unstable.globals.levels === null) {
       Unstable.globals.levels = this.gameData.levels;
+    } else {
+      //add new levels from gameData if not already in global
+      Object.getOwnPropertyNames(this.gameData.levels).forEach(function(propertyName) {
+        if (this.gameData.levels.hasOwnProperty(propertyName)
+          && !Unstable.globals.levels.hasOwnProperty(propertyName)) {
+            Unstable.globals.levels[propertyName] = this.gameData.levels[propertyName];
+        }
+      }, this);
     }
 };
 

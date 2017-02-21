@@ -16,10 +16,10 @@ Unstable.Goal = function (game_state, position, properties) {
     this.levelLink = properties.link;
     this.levelPrereq = properties.levelPrereq;
     this.destGoalId = properties.destGoalId;
-    if (this.levelPrereq === undefined) {
+    if (this.levelPrereq === null || this.levelPrereq === "") {
       this.updateReady();
     } else {
-      if (Unstable.globals.levels[this.levelPrereq] !== undefined) {
+      if (Unstable.globals.levels[this.levelPrereq] !== null) {
         if (Unstable.globals.levels[this.levelPrereq].completion > 0) {
           this.updateReady();
         } else {
@@ -39,6 +39,7 @@ Unstable.Goal.prototype.emit = function(coin) {
 }
 
 Unstable.Goal.prototype.updateReady = function () {
+  console.log(this.game_state.coins);
   if (this.game_state.coins >= this.threshold) {
     this.frame = 4;
     this.ready = true;
