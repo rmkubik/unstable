@@ -11,6 +11,8 @@ Unstable.Goal = function (game_state, position, properties) {
     this.anchor.setTo(0.5, 1);
     //colliderTest.visible = false;
 
+    this.coinCount = 0;
+
     this.game_state = game_state;
     this.threshold = properties.threshold;
     this.levelLink = properties.link;
@@ -39,8 +41,7 @@ Unstable.Goal.prototype.emit = function(coin) {
 }
 
 Unstable.Goal.prototype.updateReady = function () {
-  console.log(this.game_state.coins);
-  if (this.game_state.coins >= this.threshold) {
+  if (this.coinCount >= this.threshold) {
     this.frame = 4;
     this.ready = true;
   } else {
