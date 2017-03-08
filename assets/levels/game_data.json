@@ -68,6 +68,10 @@
       "type":"tilemap",
       "source":"assets/levels/h1l1.json"
     },
+    "lvl_h1l2": {
+      "type":"tilemap",
+      "source":"assets/levels/h1l2.json"
+    },
     "buttonSheet": {
       "type": "spritesheet",
       "source":"assets/images/button_sheet.png",
@@ -262,13 +266,19 @@
       "name": "Hub 1",
       "key": "lvl_hub1",
       "tileset": "tilesheet",
-      "completion":-1
+      "completion": -1
     },
     "lvl_h1l1": {
       "name": "Level 1",
       "key": "lvl_h1l1",
       "tileset": "tilesheet",
-      "completion":-1
+      "completion": -1
+    },
+    "lvl_h1l2": {
+      "name": "Level 2",
+      "key": "lvl_h1l2",
+      "tileset": "tilesheet",
+      "completion": -1
     }
   },
   "groups": [

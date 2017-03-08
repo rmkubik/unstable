@@ -348,7 +348,7 @@
                      "height":"8",
                      "id":"1",
                      "levelPrereq":"lvl_test",
-                     "link":"lvl_level2",
+                     "link":"lvl_h1l2",
                      "pgroup":"goals",
                      "rgroup":"objects",
                      "texture":"img_objects",

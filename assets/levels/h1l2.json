@@ -1,9 +1,11 @@
 { "height":20,
  "layers":[
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 8, 8, 8, 8, 8, 6, 0, 0, 0, 0, 5, 8, 8, 8, 8, 8, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 8, 6, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 8, 8, 6, 0, 0, 0, 5, 8, 8, 8, 8, 8, 8, 8, 6, 0, 0, 0],
          "height":20,
          "name":"background",
+         "offsetx":0,
+         "offsety":-2,
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -12,7 +14,7 @@
          "y":0
         }, 
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":20,
          "name":"base",
          "opacity":1,
@@ -23,10 +25,14 @@
          "y":0
         }, 
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "data":[9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0, 9, 9, 9, 9, 9, 0, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 9, 0, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 9, 0, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 9, 9, 0, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 0, 9, 9, 9, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 0, 9, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 9, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 0, 0, 0, 0, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 9, 0, 0, 0, 0, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 9, 9, 9, 9, 9, 9, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0],
          "height":20,
          "name":"collision",
          "opacity":1,
+         "properties":
+            {
+             "collision":"true"
+            },
          "type":"tilelayer",
          "visible":true,
          "width":20,
@@ -39,52 +45,487 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":8,
-                 "height":24,
-                 "id":1,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":156,
-                 "y":176
-                }, 
-                {
-                 "gid":8,
-                 "height":24,
-                 "id":2,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":284,
-                 "y":119
-                }, 
-                {
-                 "gid":8,
-                 "height":24,
+                 "gid":1,
+                 "height":32,
                  "id":3,
                  "name":"",
                  "properties":
                     {
-
+                     "group":"player",
+                     "pgroup":"players",
+                     "rgroup":"objects",
+                     "texture":"img_player_white"
                     },
                  "rotation":0,
-                 "type":"",
+                 "type":"player",
+                 "visible":true,
+                 "width":32,
+                 "x":44,
+                 "y":76
+                }, 
+                {
+                 "gid":10,
+                 "height":24,
+                 "id":5,
+                 "name":"",
+                 "properties":
+                    {
+                     "destGoalId":"1",
+                     "frame":"3",
+                     "group":"goal",
+                     "height":"8",
+                     "levelPrereq":"lvl_h1l2",
+                     "link":"lvl_hub1",
+                     "pgroup":"goals",
+                     "rgroup":"objects",
+                     "texture":"img_objects",
+                     "threshold":"6",
+                     "width":"8"
+                    },
+                 "rotation":0,
+                 "type":"goal",
                  "visible":true,
                  "width":24,
-                 "x":262,
-                 "y":399
+                 "x":73,
+                 "y":280
+                }, 
+                {
+                 "gid":11,
+                 "height":24,
+                 "id":8,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "pgroup":"coins",
+                     "rgroup":"objects",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":71,
+                 "y":444
+                }, 
+                {
+                 "gid":11,
+                 "height":24,
+                 "id":10,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "pgroup":"coins",
+                     "rgroup":"objects",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":385,
+                 "y":444
+                }, 
+                {
+                 "gid":11,
+                 "height":24,
+                 "id":12,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "pgroup":"coins",
+                     "rgroup":"objects",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":420,
+                 "y":98
+                }, 
+                {
+                 "gid":11,
+                 "height":24,
+                 "id":13,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "pgroup":"coins",
+                     "rgroup":"objects",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":396,
+                 "y":98
+                }, 
+                {
+                 "gid":11,
+                 "height":24,
+                 "id":14,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "pgroup":"coins",
+                     "rgroup":"objects",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":431.5,
+                 "y":373
+                }, 
+                {
+                 "gid":11,
+                 "height":24,
+                 "id":15,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "pgroup":"coins",
+                     "rgroup":"objects",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":71.5,
+                 "y":468
+                }, 
+                {
+                 "gid":11,
+                 "height":24,
+                 "id":16,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"1",
+                     "group":"coins",
+                     "pgroup":"coins",
+                     "rgroup":"objects",
+                     "texture":"img_objects"
+                    },
+                 "rotation":0,
+                 "type":"coin",
+                 "visible":true,
+                 "width":24,
+                 "x":383.5,
+                 "y":467
+                }, 
+                {
+                 "gid":22,
+                 "height":24,
+                 "id":17,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"0",
+                     "group":"turrets",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"enemy_sheet"
+                    },
+                 "rotation":0,
+                 "type":"turret",
+                 "visible":true,
+                 "width":24,
+                 "x":336,
+                 "y":107
+                }, 
+                {
+                 "gid":27,
+                 "height":24,
+                 "id":19,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"hazards",
+                     "pgroup":"hazards",
+                     "rgroup":"objects",
+                     "texture":"enemy_bomb",
+                     "velocityX":"50",
+                     "velocityY":"50"
+                    },
+                 "rotation":0,
+                 "type":"bouncer",
+                 "visible":true,
+                 "width":24,
+                 "x":376,
+                 "y":319
+                }, 
+                {
+                 "gid":18,
+                 "height":48,
+                 "id":20,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"scenery",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"tree3"
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":438,
+                 "y":58
+                }, 
+                {
+                 "gid":21,
+                 "height":48,
+                 "id":22,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"scenery",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"tree1"
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":417,
+                 "y":117
+                }, 
+                {
+                 "gid":16,
+                 "height":24,
+                 "id":23,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"scenery",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"bush2"
+                    },
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":24,
+                 "x":71,
+                 "y":143
+                }, 
+                {
+                 "gid":15,
+                 "height":24,
+                 "id":24,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"scenery",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"bush3"
+                    },
+                 "rotation":0,
+                 "type":"bush",
+                 "visible":true,
+                 "width":24,
+                 "x":146,
+                 "y":142
+                }, 
+                {
+                 "gid":19,
+                 "height":48,
+                 "id":25,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"scenery",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"tree4"
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":123,
+                 "y":142
+                }, 
+                {
+                 "gid":20,
+                 "height":48,
+                 "id":26,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"scenery",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"tree2"
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":25,
+                 "y":249
+                }, 
+                {
+                 "gid":21,
+                 "height":48,
+                 "id":27,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"scenery",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"tree1"
+                    },
+                 "rotation":0,
+                 "type":"tree",
+                 "visible":true,
+                 "width":24,
+                 "x":338,
+                 "y":60
+                }, 
+                {
+                 "gid":22,
+                 "height":24,
+                 "id":29,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"0",
+                     "group":"turrets",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"enemy_sheet"
+                    },
+                 "rotation":0,
+                 "type":"turret",
+                 "visible":true,
+                 "width":24,
+                 "x":324,
+                 "y":203
+                }, 
+                {
+                 "gid":22,
+                 "height":24,
+                 "id":30,
+                 "name":"",
+                 "properties":
+                    {
+                     "frame":"0",
+                     "group":"turrets",
+                     "pgroup":"blockers",
+                     "rgroup":"objects",
+                     "texture":"enemy_sheet"
+                    },
+                 "rotation":0,
+                 "type":"turret",
+                 "visible":true,
+                 "width":24,
+                 "x":468,
+                 "y":227
+                }, 
+                {
+                 "gid":27,
+                 "height":24,
+                 "id":31,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"hazards",
+                     "pgroup":"hazards",
+                     "rgroup":"objects",
+                     "texture":"enemy_bomb",
+                     "velocityX":"-50",
+                     "velocityY":"0"
+                    },
+                 "rotation":0,
+                 "type":"bouncer",
+                 "visible":true,
+                 "width":24,
+                 "x":107,
+                 "y":299
+                }, 
+                {
+                 "gid":27,
+                 "height":24,
+                 "id":32,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"hazards",
+                     "pgroup":"hazards",
+                     "rgroup":"objects",
+                     "texture":"enemy_bomb",
+                     "velocityX":"50",
+                     "velocityY":"0"
+                    },
+                 "rotation":0,
+                 "type":"bouncer",
+                 "visible":true,
+                 "width":24,
+                 "x":36,
+                 "y":348
+                }, 
+                {
+                 "gid":27,
+                 "height":24,
+                 "id":33,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"hazards",
+                     "pgroup":"hazards",
+                     "rgroup":"objects",
+                     "texture":"enemy_bomb",
+                     "velocityX":"-50",
+                     "velocityY":"0"
+                    },
+                 "rotation":0,
+                 "type":"bouncer",
+                 "visible":true,
+                 "width":24,
+                 "x":107,
+                 "y":397
+                }, 
+                {
+                 "gid":27,
+                 "height":24,
+                 "id":34,
+                 "name":"",
+                 "properties":
+                    {
+                     "group":"hazards",
+                     "pgroup":"hazards",
+                     "rgroup":"objects",
+                     "texture":"enemy_bomb",
+                     "velocityX":"50",
+                     "velocityY":"50"
+                    },
+                 "rotation":0,
+                 "type":"bouncer",
+                 "visible":true,
+                 "width":24,
+                 "x":261,
+                 "y":405
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -93,7 +534,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":4,
+ "nextobjectid":35,
  "orientation":"orthogonal",
  "properties":
     {
@@ -103,8 +544,30 @@
  "tileheight":24,
  "tilesets":[
         {
-         "columns":7,
+         "columns":1,
          "firstgid":1,
+         "image":"..\/images\/player.png",
+         "imageheight":32,
+         "imagewidth":32,
+         "margin":0,
+         "name":"player",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":1,
+         "tileheight":32,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-12
+            },
+         "tilewidth":32
+        }, 
+        {
+         "columns":7,
+         "firstgid":2,
          "image":"..\/images\/tilesheet.png",
          "imageheight":24,
          "imagewidth":174,
@@ -120,8 +583,97 @@
          "tilewidth":24
         }, 
         {
+         "columns":1,
+         "firstgid":9,
+         "image":"..\/images\/collision.png",
+         "imageheight":24,
+         "imagewidth":24,
+         "margin":0,
+         "name":"collision",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":1,
+         "tileheight":24,
+         "tilewidth":24
+        }, 
+        {
          "columns":5,
-         "firstgid":8,
+         "firstgid":10,
+         "image":"..\/images\/object_sheet.png",
+         "imageheight":24,
+         "imagewidth":124,
+         "margin":0,
+         "name":"object_sheet",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":5,
+         "tileheight":24,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-24
+            },
+         "tilewidth":24
+        }, 
+        {
+         "columns":0,
+         "firstgid":15,
+         "margin":0,
+         "name":"scenery",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":7,
+         "tileheight":48,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-24
+            },
+         "tiles":
+            {
+             "0":
+                {
+                 "image":"..\/images\/bush3.png"
+                },
+             "1":
+                {
+                 "image":"..\/images\/bush2.png"
+                },
+             "2":
+                {
+                 "image":"..\/images\/bush1.png"
+                },
+             "3":
+                {
+                 "image":"..\/images\/tree3.png"
+                },
+             "4":
+                {
+                 "image":"..\/images\/tree4.png"
+                },
+             "5":
+                {
+                 "image":"..\/images\/tree2.png"
+                },
+             "6":
+                {
+                 "image":"..\/images\/tree1.png"
+                }
+            },
+         "tilewidth":24
+        }, 
+        {
+         "columns":5,
+         "firstgid":22,
          "image":"..\/images\/enemy_sheet.png",
          "imageheight":24,
          "imagewidth":124,
@@ -134,6 +686,33 @@
          "spacing":1,
          "tilecount":5,
          "tileheight":24,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-12
+            },
+         "tilewidth":24
+        }, 
+        {
+         "columns":4,
+         "firstgid":27,
+         "image":"..\/images\/enemy_bomb.png",
+         "imageheight":24,
+         "imagewidth":99,
+         "margin":0,
+         "name":"enemy_bomb",
+         "properties":
+            {
+
+            },
+         "spacing":1,
+         "tilecount":4,
+         "tileheight":24,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-12
+            },
          "tilewidth":24
         }],
  "tilewidth":24,
