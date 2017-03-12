@@ -69,17 +69,10 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
                      "id":"0",
                      "levelPrereq":"",
                      "link":"lvl_h1l1",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"0",
-                     "width":"8"
+                     "threshold":"0"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -343,17 +336,10 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
                      "id":"1",
-                     "levelPrereq":"lvl_test",
+                     "levelPrereq":"lvl_h1l1",
                      "link":"lvl_h1l2",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"0",
-                     "width":"8"
+                     "threshold":"0"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -369,18 +355,11 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
+                     "destGoalId":"0",
                      "id":"2",
-                     "levelPrereq":"lvl_level2",
-                     "link":"lvl_level5",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"0",
-                     "width":"8"
+                     "levelPrereq":"lvl_h1l2",
+                     "link":"lvl_h1l3",
+                     "threshold":"0"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -396,18 +375,11 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
-                     "id":"3",
-                     "levelPrereq":"lvl_level5",
-                     "link":"lvl_level3",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"0",
-                     "width":"8"
+                     "destGoalId":"0",
+                     "id":"4",
+                     "levelPrereq":"lvl_h1l4",
+                     "link":"lvl_h1l5",
+                     "threshold":"0"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -423,18 +395,11 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
-                     "id":"4",
-                     "levelPrereq":"lvl_level3",
-                     "link":"lvl_level4",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"0",
-                     "width":"8"
+                     "destGoalId":"0",
+                     "id":"5",
+                     "levelPrereq":"lvl_h1l5",
+                     "link":"lvl_h1l6",
+                     "threshold":"0"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -451,17 +416,10 @@
                  "properties":
                     {
                      "destGoalId":"",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
-                     "id":"5",
-                     "levelPrereq":"lvl_level4",
+                     "id":"6",
+                     "levelPrereq":"lvl_h1l6",
                      "link":"victory",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"0",
-                     "width":"8"
+                     "threshold":"0"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -515,18 +473,11 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
+                     "destGoalId":"0",
                      "id":"3",
-                     "levelPrereq":"lvl_level5",
-                     "link":"lvl_level3",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"0",
-                     "width":"8"
+                     "levelPrereq":"lvl_h1l3",
+                     "link":"lvl_h1l4",
+                     "threshold":"0"
                     },
                  "rotation":0,
                  "type":"goal",

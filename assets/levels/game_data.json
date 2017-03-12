@@ -40,37 +40,33 @@
       "type":"audio",
       "source":"assets/audio/TurretShoot_FX.wav"
     },
-    "lvl_test": {
-      "type": "tilemap",
-      "source": "assets/levels/test.json"
-    },
-    "lvl_level2": {
-      "type": "tilemap",
-      "source": "assets/levels/level2.json"
-    },
-    "lvl_level3": {
-      "type":"tilemap",
-      "source":"assets/levels/level3.json"
-    },
-    "lvl_level4": {
-      "type":"tilemap",
-      "source":"assets/levels/level4.json"
-    },
-    "lvl_level5": {
-      "type":"tilemap",
-      "source":"assets/levels/level5.json"
-    },
     "lvl_hub1": {
-      "type":"tilemap",
-      "source":"assets/levels/hub1.json"
+      "type": "tilemap",
+      "source": "assets/levels/hub1.json"
     },
     "lvl_h1l1": {
-      "type":"tilemap",
-      "source":"assets/levels/h1l1.json"
+      "type": "tilemap",
+      "source": "assets/levels/h1l1.json"
     },
     "lvl_h1l2": {
       "type":"tilemap",
       "source":"assets/levels/h1l2.json"
+    },
+    "lvl_h1l3": {
+      "type":"tilemap",
+      "source":"assets/levels/h1l3.json"
+    },
+    "lvl_h1l4": {
+      "type":"tilemap",
+      "source":"assets/levels/h1l4.json"
+    },
+    "lvl_h1l5": {
+      "type":"tilemap",
+      "source":"assets/levels/h1l5.json"
+    },
+    "lvl_h1l6": {
+      "type":"tilemap",
+      "source":"assets/levels/h1l6.json"
     },
     "buttonSheet": {
       "type": "spritesheet",
@@ -232,36 +228,6 @@
     }
   },
   "levels": {
-    "lvl_test": {
-      "name":"Test Level",
-      "key": "lvl_test",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_level2": {
-      "name":"Level 2",
-      "key": "lvl_level2",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_level5": {
-      "name": "Level 5",
-      "key": "lvl_level5",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_level3": {
-      "name":"Level 3",
-      "key":"lvl_level3",
-      "tileset":"tilesheet",
-      "completion":-1
-    },
-    "lvl_level4": {
-      "name": "Level 4",
-      "key": "lvl_level4",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
     "lvl_hub1": {
       "name": "Hub 1",
       "key": "lvl_hub1",
@@ -269,14 +235,38 @@
       "completion": -1
     },
     "lvl_h1l1": {
-      "name": "Level 1",
+      "name":"Level 1",
       "key": "lvl_h1l1",
       "tileset": "tilesheet",
-      "completion": -1
+      "completion":-1
     },
     "lvl_h1l2": {
-      "name": "Level 2",
+      "name":"Level 2",
       "key": "lvl_h1l2",
+      "tileset": "tilesheet",
+      "completion":-1
+    },
+    "lvl_h1l3": {
+      "name": "Level 3",
+      "key": "lvl_h1l3",
+      "tileset": "tilesheet",
+      "completion":-1
+    },
+    "lvl_h1l4": {
+      "name":"Level 4",
+      "key":"lvl_h1l4",
+      "tileset":"tilesheet",
+      "completion":-1
+    },
+    "lvl_h1l5": {
+      "name": "Level 5",
+      "key": "lvl_h1l5",
+      "tileset": "tilesheet",
+      "completion":-1
+    },
+    "lvl_h1l6": {
+      "name": "Level 6",
+      "key": "lvl_h1l6",
       "tileset": "tilesheet",
       "completion": -1
     }
