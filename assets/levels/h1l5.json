@@ -43,42 +43,17 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":1,
-                 "height":32,
-                 "id":3,
-                 "name":"",
-                 "properties":
-                    {
-                     "group":"player",
-                     "pgroup":"players",
-                     "rgroup":"objects",
-                     "texture":"img_player_white"
-                    },
-                 "rotation":0,
-                 "type":"player",
-                 "visible":true,
-                 "width":32,
-                 "x":56,
-                 "y":111
-                }, 
-                {
                  "gid":10,
                  "height":24,
                  "id":5,
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"2",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
-                     "levelPrereq":"lvl_level5",
+                     "destGoalId":"4",
+                     "id":"1",
+                     "levelPrereq":"lvl_h1l5",
                      "link":"lvl_hub1",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"7",
-                     "width":"8"
+                     "threshold":"7"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -676,6 +651,42 @@
                  "width":24,
                  "x":48,
                  "y":143
+                }, 
+                {
+                 "gid":10,
+                 "height":24,
+                 "id":44,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":24,
+                 "x":60,
+                 "y":121
+                }, 
+                {
+                 "gid":13,
+                 "height":24,
+                 "id":46,
+                 "name":"",
+                 "properties":
+                    {
+                     "destGoalId":"4",
+                     "id":"0",
+                     "levelPrereq":"",
+                     "link":"lvl_hub1",
+                     "threshold":"0"
+                    },
+                 "rotation":0,
+                 "type":"goal",
+                 "visible":true,
+                 "width":24,
+                 "x":36,
+                 "y":110
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -684,7 +695,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":44,
+ "nextobjectid":47,
  "orientation":"orthogonal",
  "properties":
     {
@@ -761,7 +772,7 @@
             {
 
             },
-         "spacing":0,
+         "spacing":1,
          "tilecount":5,
          "tileheight":24,
          "tileoffset":
