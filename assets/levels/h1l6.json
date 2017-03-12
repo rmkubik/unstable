@@ -43,42 +43,17 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":1,
-                 "height":32,
-                 "id":3,
-                 "name":"",
-                 "properties":
-                    {
-                     "group":"player",
-                     "pgroup":"players",
-                     "rgroup":"objects",
-                     "texture":"img_player_white"
-                    },
-                 "rotation":0,
-                 "type":"player",
-                 "visible":true,
-                 "width":32,
-                 "x":56,
-                 "y":112
-                }, 
-                {
                  "gid":10,
                  "height":24,
                  "id":5,
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"4",
-                     "frame":"3",
-                     "group":"goal",
-                     "height":"8",
-                     "levelPrereq":"lvl_level4",
+                     "destGoalId":"5",
+                     "id":"1",
+                     "levelPrereq":"lvl_h1l6",
                      "link":"lvl_hub1",
-                     "pgroup":"goals",
-                     "rgroup":"objects",
-                     "texture":"img_objects",
-                     "threshold":"7",
-                     "width":"8"
+                     "threshold":"7"
                     },
                  "rotation":0,
                  "type":"goal",
@@ -524,6 +499,42 @@
                  "width":24,
                  "x":227,
                  "y":130
+                }, 
+                {
+                 "gid":10,
+                 "height":24,
+                 "id":36,
+                 "name":"",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":24,
+                 "x":66,
+                 "y":120
+                }, 
+                {
+                 "gid":13,
+                 "height":24,
+                 "id":38,
+                 "name":"",
+                 "properties":
+                    {
+                     "destGoalId":"5",
+                     "id":"0",
+                     "levelPrereq":"",
+                     "link":"lvl_hub1",
+                     "threshold":"0"
+                    },
+                 "rotation":0,
+                 "type":"goal",
+                 "visible":true,
+                 "width":24,
+                 "x":40,
+                 "y":106
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -532,7 +543,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":35,
+ "nextobjectid":39,
  "orientation":"orthogonal",
  "properties":
     {
