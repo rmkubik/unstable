@@ -68,6 +68,34 @@
       "type":"tilemap",
       "source":"assets/levels/h1l6.json"
     },
+    "lvl_hub2": {
+      "type":"tilemap",
+      "source":"assets/levels/hub2.json"
+    },
+    "lvl_h2l1": {
+      "type": "tilemap",
+      "source": "assets/levels/h2l1.json"
+    },
+    "lvl_h2l2": {
+      "type":"tilemap",
+      "source":"assets/levels/h2l2.json"
+    },
+    "lvl_h2l3": {
+      "type":"tilemap",
+      "source":"assets/levels/h2l3.json"
+    },
+    "lvl_h2l4": {
+      "type":"tilemap",
+      "source":"assets/levels/h2l4.json"
+    },
+    "lvl_h2l5": {
+      "type":"tilemap",
+      "source":"assets/levels/h2l5.json"
+    },
+    "lvl_h2l6": {
+      "type":"tilemap",
+      "source":"assets/levels/h2l6.json"
+    },
     "buttonSheet": {
       "type": "spritesheet",
       "source":"assets/images/button_sheet.png",
@@ -267,6 +295,48 @@
     "lvl_h1l6": {
       "name": "Level 6",
       "key": "lvl_h1l6",
+      "tileset": "tilesheet",
+      "completion": -1
+    },
+    "lvl_hub2": {
+      "name": "Hub 2",
+      "key": "lvl_hub2",
+      "tileset": "tilesheet",
+      "completion": -1
+    },
+    "lvl_h2l1": {
+      "name":"Level 1",
+      "key": "lvl_h2l1",
+      "tileset": "tilesheet",
+      "completion":-1
+    },
+    "lvl_h2l2": {
+      "name":"Level 2",
+      "key": "lvl_h2l2",
+      "tileset": "tilesheet",
+      "completion":-1
+    },
+    "lvl_h2l3": {
+      "name": "Level 3",
+      "key": "lvl_h2l3",
+      "tileset": "tilesheet",
+      "completion":-1
+    },
+    "lvl_h2l4": {
+      "name":"Level 4",
+      "key":"lvl_h2l4",
+      "tileset":"tilesheet",
+      "completion":-1
+    },
+    "lvl_h2l5": {
+      "name": "Level 5",
+      "key": "lvl_h2l5",
+      "tileset": "tilesheet",
+      "completion":-1
+    },
+    "lvl_h2l6": {
+      "name": "Level 6",
+      "key": "lvl_h2l6",
       "tileset": "tilesheet",
       "completion": -1
     }

@@ -415,10 +415,10 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"",
+                     "destGoalId":"0",
                      "id":"6",
                      "levelPrereq":"lvl_h1l6",
-                     "link":"victory",
+                     "link":"lvl_hub2",
                      "threshold":"0"
                     },
                  "rotation":0,
@@ -512,7 +512,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":60,
+ "nextobjectid":61,
  "orientation":"orthogonal",
  "properties":
     {
