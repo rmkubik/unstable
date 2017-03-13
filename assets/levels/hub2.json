@@ -50,7 +50,7 @@
                  "properties":
                     {
                      "destGoalId":"",
-                     "id":"6",
+                     "id":"7",
                      "levelPrereq":"lvl_h2l6",
                      "link":"victory",
                      "threshold":"0"
@@ -70,7 +70,7 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "id":"4",
+                     "id":"5",
                      "levelPrereq":"lvl_h2l4",
                      "link":"lvl_h2l5",
                      "threshold":"0"
@@ -90,7 +90,7 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "id":"5",
+                     "id":"6",
                      "levelPrereq":"lvl_h2l5",
                      "link":"lvl_h2l6",
                      "threshold":"0"
@@ -110,7 +110,7 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "id":"3",
+                     "id":"4",
                      "levelPrereq":"lvl_h2l3",
                      "link":"lvl_h2l4",
                      "threshold":"0"
@@ -130,7 +130,7 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "id":"2",
+                     "id":"3",
                      "levelPrereq":"lvl_h2l2",
                      "link":"lvl_h2l3",
                      "threshold":"0"
@@ -150,7 +150,7 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "id":"1",
+                     "id":"2",
                      "levelPrereq":"lvl_h2l1",
                      "link":"lvl_h2l2",
                      "threshold":"0"
@@ -170,7 +170,7 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "id":"0",
+                     "id":"1",
                      "levelPrereq":"",
                      "link":"lvl_h2l1",
                      "threshold":"0"
