@@ -360,9 +360,20 @@
     "players",
     "hazards",
     "blockers",
-    "goals"
+    "goals",
+    "triggers"
   ],
   "prefabs": {
+    "trigger": {
+      "properties": {
+        "width": 24,
+        "height": 24,
+        "pgroup": "triggers",
+        "rgroup": "objects",
+        "triggerCountAllowed": 1,
+        "triggerFunction": "removeTiles"
+      }
+    },
     "player": {
       "properties": {
         "group":"player",

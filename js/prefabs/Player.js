@@ -193,6 +193,9 @@ Unstable.Player.prototype.collideObjects = function(player, object) {
     case "blockers":
       this.blockerCollide(player, object);
       break;
+    case "triggers":
+      console.error("Trigger collide not implemented!");
+      break;
   }
 }
 
