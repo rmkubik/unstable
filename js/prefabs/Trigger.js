@@ -28,7 +28,7 @@ Unstable.Trigger.prototype.trigger = function () {
 };
 
 Unstable.Trigger.prototype.removeTiles = function () {
-  //create "removeTile" objects in map file
+  // create "removeTile" objects in map file
   // this method will remove all tiles underneath them
   // and spawn any appropriate particles/effects/screenshakes/replacements
 };
