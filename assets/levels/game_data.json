@@ -350,10 +350,12 @@
     "player",
     "scenery",
     "crates",
-    "turrets"
+    "turrets",
+    "triggers"
   ],
   "render_groups": [
-    "objects"
+    "objects",
+    "triggers"
   ],
   "physics_groups": [
     "coins",
@@ -369,7 +371,7 @@
         "width": 24,
         "height": 24,
         "pgroup": "triggers",
-        "rgroup": "objects",
+        "rgroup": "triggers",
         "triggerCountAllowed": 1,
         "triggerFunction": "removeTiles"
       }
