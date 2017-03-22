@@ -351,11 +351,13 @@
     "scenery",
     "crates",
     "turrets",
-    "triggers"
+    "triggers",
+    "tilebreakers"
   ],
   "render_groups": [
     "objects",
-    "triggers"
+    "triggers",
+    "tilebreakers"
   ],
   "physics_groups": [
     "coins",
@@ -366,6 +368,14 @@
     "triggers"
   ],
   "prefabs": {
+    "tilebreaker": {
+      "properties": {
+        "width": 24,
+        "height": 24,
+        "pgroup": "objects",
+        "rgroup": "tilebreakers"
+      }
+    },
     "trigger": {
       "properties": {
         "width": 24,
