@@ -70,7 +70,7 @@ Unstable.Player.prototype.update = function() {
   // this.game_state.game.physics.arcade.collide(this, this.game_state.layers.collision);
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders, this.collideColliders, null, this);
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.objects, this.collideObjects, null, this);
-  this.game_state.game.physics.arcade.overlap(this, this.game_state.groups.triggers, function(){console.log("triggered")}, null, this);
+  this.game_state.game.physics.arcade.overlap(this, this.game_state.groups.triggers, this.triggerCollide, null, this);
 
   if ((this.cursors.right.isDown || this.wasd.right.isDown) && this.body.velocity.x >= 0) {
       // move right
@@ -270,6 +270,11 @@ Unstable.Player.prototype.hazardCollide = function(player, hazard) {
   player.die();
   hazard.die();
 }
+
+Unstable.Player.prototype.triggerCollide = function (player, trigger) {
+  "use strict";
+  trigger.trigger();
+};
 
 Unstable.Player.prototype.die = function() {
   this.kill();

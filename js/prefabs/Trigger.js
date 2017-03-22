@@ -9,7 +9,7 @@ Unstable.Trigger = function(game_state, position, properties) {
   this.game_state = game_state;
   this.timesTriggered = 0;
   this.triggerCountAllowed = properties.triggerCountAllowed;
-  this.triggerMethod = properties.triggerMethod;
+  this.triggerFunction = properties.triggerFunction;
 }
 
 Unstable.Trigger.prototype = Object.create(Unstable.Prefab.prototype);
@@ -25,7 +25,7 @@ Unstable.Trigger.prototype.update = function () {
 Unstable.Trigger.prototype.trigger = function () {
   "use strict";
   if (this.timesTriggered < this.triggerCountAllowed) {
-    this[this.triggerMethod]();
+    this[this.triggerFunction]();
     this.timesTriggered++;
   }
 };
@@ -33,6 +33,9 @@ Unstable.Trigger.prototype.trigger = function () {
 Unstable.Trigger.prototype.removeTiles = function () {
   "use strict";
   console.log("TILES REMOVED!");
+  this.game_state.groups.tilebreakers.forEach(function(tileBreaker) {
+    tileBreaker.breakTiles();
+  } , this);
   // create "removeTile" objects in map file
   // this method will remove all tiles underneath them
   // and spawn any appropriate particles/effects/screenshakes/replacements
