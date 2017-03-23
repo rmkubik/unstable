@@ -34,6 +34,8 @@ Unstable.Trigger.prototype.trigger = function () {
 Unstable.Trigger.prototype.removeTiles = function () {
   "use strict";
   console.log("TILES REMOVED at x:" + this.triggerParams.x + ", y: " + this.triggerParams.y);
+  console.log(this.game_state.layers["base"]);
+  this.game_state.map.putTile(0, this.triggerParams.x, this.triggerParams.y, "base");
   // this.game_state.groups.tilebreakers.forEach(function(tileBreaker) {
   //   tileBreaker.breakTiles();
   // } , this);
