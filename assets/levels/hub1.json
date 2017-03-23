@@ -512,7 +512,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "triggerParams":"{\"x\":15,\"y\":6}"
                     },
                  "rotation":0,
                  "type":"trigger",

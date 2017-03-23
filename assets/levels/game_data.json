@@ -383,7 +383,8 @@
         "pgroup": "triggers",
         "rgroup": "triggers",
         "triggerCountAllowed": 1,
-        "triggerFunction": "removeTiles"
+        "triggerFunction": "removeTiles",
+        "triggerParams": "{}"
       }
     },
     "player": {
