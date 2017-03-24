@@ -24,7 +24,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
 
     this.emitter = new Unstable.Emitter(game_state,{x:this.x,y:this.y},{
       offset:{x: 10,y: -18},
-      maxParticles:10,
+      maxParticles: 10,
       width: 2,
       minParticleSpeed: {x: 60, y: -10},
       maxParticleSpeed: {x: 80, y: -30},
@@ -37,7 +37,7 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
 
     this.explosionEmitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
       offset:{x: 0, y: -12},
-      maxParticles:30,
+      maxParticles: 30,
       width: 2,
       minParticleSpeed: {x: -40, y: -40},
       maxParticleSpeed: {x: 40, y: 40},
