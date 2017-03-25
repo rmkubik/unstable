@@ -51,6 +51,16 @@ Unstable.Trigger.prototype.removeTiles = function () {
   // this.game_state.map.putTile(0, this.triggerParams.x, this.triggerParams.y, "base");
   this.game_state.map.removeTile(this.triggerParams.x, this.triggerParams.y, "base");
   this.explosionEmitter.burst(this.triggerParams.x * 24, this.triggerParams.y * 24);
+  new Unstable.Collider(this.game_state, {
+    x: this.triggerParams.x * 24,
+    y: this.triggerParams.y * 24
+  },
+  {
+    group: "colliders",
+    texture: "",
+    width: 24,
+    height: 24
+  });
   // this.game_state.groups.tilebreakers.forEach(function(tileBreaker) {
   //   tileBreaker.breakTiles();
   // } , this);
