@@ -504,22 +504,6 @@
                  "width":24,
                  "x":100,
                  "y":222
-                }, 
-                {
-                 "gid":18,
-                 "height":24,
-                 "id":61,
-                 "name":"",
-                 "properties":
-                    {
-                     "triggerParams":"{\"x\":15,\"y\":6}"
-                    },
-                 "rotation":0,
-                 "type":"trigger",
-                 "visible":true,
-                 "width":24,
-                 "x":156,
-                 "y":59
                 }],
          "opacity":1,
          "type":"objectgroup",

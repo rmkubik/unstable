@@ -5,6 +5,9 @@ Unstable.Trigger = function(game_state, position, properties) {
   Unstable.Prefab.call(this, game_state, position, properties);
   game_state.game.physics.arcade.enable(this);
   this.body.immovable = true;
+  this.body.setSize(properties.width, properties.height, -properties.width/2 + 12, -properties.height/2 + 12);
+  console.log(this.body);
+  console.log(this);
 
   this.game_state = game_state;
   this.timesTriggered = 0;
@@ -28,13 +31,6 @@ Unstable.Trigger = function(game_state, position, properties) {
 
 Unstable.Trigger.prototype = Object.create(Unstable.Prefab.prototype);
 Unstable.Trigger.prototype.constructor = Unstable.Trigger;
-
-Unstable.Trigger.prototype.update = function () {
-  // if (this.game_state.player)
-  // if player collides with this, then execute trigger
-  // set a flag to prevent trigger again
-  // allow a property to set whether its a repeat trigger or not
-};
 
 Unstable.Trigger.prototype.trigger = function () {
   "use strict";
