@@ -365,17 +365,10 @@
     "hazards",
     "blockers",
     "goals",
-    "triggers"
+    "triggers",
+    "teleporters"
   ],
   "prefabs": {
-    "tilebreaker": {
-      "properties": {
-        "width": 24,
-        "height": 24,
-        "pgroup": "objects",
-        "rgroup": "tilebreakers"
-      }
-    },
     "trigger": {
       "properties": {
         "width": 24,
@@ -386,6 +379,16 @@
         "triggerFunction": "removeTiles",
         "triggerParams": "{}"
       }
+    },
+    "teleporter": {
+      "properties": {
+        "pgroup": "teleporters",
+        "rgroup": "objects"
+      },
+      "required_properties": [
+        "id",
+        "destId"
+      ]
     },
     "player": {
       "properties": {
