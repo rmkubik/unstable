@@ -194,8 +194,8 @@ Unstable.Player.prototype.collideObjects = function(player, object) {
     case "blockers":
       this.blockerCollide(player, object);
       break;
-    case "triggers":
-      console.error("Trigger collide not implemented!");
+    case "teleporters":
+      this.teleporterCollide(player, object);
       break;
   }
 }
@@ -275,6 +275,25 @@ Unstable.Player.prototype.triggerCollide = function (player, trigger) {
   "use strict";
   trigger.trigger();
 };
+
+Unstable.Player.prototype.teleporterCollide = function (player, teleporter) {
+  "use strict";
+  this.kill();
+  this.shadow.kill();
+  this.emitter.burst(this.x, this.y);
+  var dest = {};
+  this.game_state.teleporters.forEach( function(other) {
+    if (teleporter.destId == other.id) {
+      dest.x = other.x;
+      dest.y = other.y + 48; 
+    }
+  }, this);
+  console.log({x: this.x, y: this.y});
+  console.log(dest);
+  this.emitter.seekParticlesToLocation(dest, this.resetPlayer, this, dest);
+};
+
+this.
 
 Unstable.Player.prototype.die = function() {
   this.kill();

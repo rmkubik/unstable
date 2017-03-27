@@ -37,6 +37,7 @@ Unstable.TiledState.prototype.create = function () {
     var group_name, object_layer, collision_tiles;
 
     this.goals = [];
+    this.teleporters = [];
     this.collisionMap = [];
 
     this.coins = 0;
@@ -185,6 +186,10 @@ Unstable.TiledState.prototype.create_object = function (object) {
       break;
     case "trigger":
       prefab = new Unstable.Trigger(this, position, properties);
+      break;
+    case "teleporter":
+      prefab = new Unstable.Teleporter(this, position, properties);
+      this.teleporters.push(prefab);
       break;
     }
     // this.prefabs[object.name] = prefab;

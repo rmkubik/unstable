@@ -383,7 +383,9 @@
     "teleporter": {
       "properties": {
         "pgroup": "teleporters",
-        "rgroup": "objects"
+        "rgroup": "objects",
+        "texture": "img_objects",
+        "frame": 0
       },
       "required_properties": [
         "id",
