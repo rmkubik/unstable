@@ -282,14 +282,8 @@ Unstable.Player.prototype.teleporterCollide = function (player, teleporter) {
   this.shadow.kill();
   this.emitter.burst(this.x, this.y);
   var dest = {};
-  this.game_state.teleporters.forEach( function(other) {
-    if (teleporter.destId == other.id) {
-      dest.x = other.x;
-      dest.y = other.y + 48; 
-    }
-  }, this);
-  console.log({x: this.x, y: this.y});
-  console.log(dest);
+  dest.x = teleporter.targetTile.x * 24;
+  dest.y = teleporter.targetTile.y * 24;
   this.emitter.seekParticlesToLocation(dest, this.resetPlayer, this, dest);
 };
 
