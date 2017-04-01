@@ -5,10 +5,10 @@ Unstable.Teleporter = function(game_state, position, properties) {
   Unstable.Prefab.call(this, game_state, position, properties);
   game_state.game.physics.arcade.enable(this);
   this.body.immovable = true;
+  this.anchor.setTo(0.5, 1);
 
   this.game_state = game_state;
-  this.id = properties.id;
-  this.destId = properties.destId;
+  this.targetTile = JSON.parse(properties.targetTile);
 }
 
 Unstable.Teleporter.prototype = Object.create(Unstable.Prefab.prototype);

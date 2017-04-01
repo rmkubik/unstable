@@ -554,14 +554,31 @@
                  "name":"",
                  "properties":
                     {
-
+                     "triggerParams":"{\"x\":8, \"y\":10}",
+                     "width":"144"
                     },
                  "rotation":0,
                  "type":"trigger",
                  "visible":true,
                  "width":24,
-                 "x":193,
-                 "y":335
+                 "x":192,
+                 "y":323
+                }, 
+                {
+                 "gid":17,
+                 "height":24,
+                 "id":38,
+                 "name":"",
+                 "properties":
+                    {
+                     "targetTile":"{\"x\":13.5,\"y\":3.5}"
+                    },
+                 "rotation":0,
+                 "type":"teleporter",
+                 "visible":true,
+                 "width":24,
+                 "x":408,
+                 "y":276
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -570,7 +587,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":38,
+ "nextobjectid":39,
  "orientation":"orthogonal",
  "properties":
     {

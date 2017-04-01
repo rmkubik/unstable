@@ -388,8 +388,7 @@
         "frame": 0
       },
       "required_properties": [
-        "id",
-        "destId"
+        "targetTile"
       ]
     },
     "player": {
