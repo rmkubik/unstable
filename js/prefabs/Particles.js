@@ -28,6 +28,18 @@ Unstable.Emitter = function (game_state, position, properties) {
 
     this.direction = -1;
 
+    if (properties.scale !== undefined) {
+      this.emitter.setScale(
+        properties.scale.minX,
+        properties.scale.maxX,
+        properties.scale.minY,
+        properties.scale.maxY,
+        properties.scale.rate,
+        properties.scale.ease,
+        properties.scale.yoyo
+      );
+    }
+
     this.emitter.minParticleSpeed.set(this.minParticleSpeed.x, this.minParticleSpeed.y);
     this.emitter.maxParticleSpeed.set(this.maxParticleSpeed.x, this.maxParticleSpeed.y);
 

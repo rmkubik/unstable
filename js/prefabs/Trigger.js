@@ -23,9 +23,18 @@ Unstable.Trigger = function(game_state, position, properties) {
     maxParticleSpeed: {x: 40, y: 40},
     gravity: 0,
     burst: true,
-    lifetime: 0,
+    lifetime: 5000,
     frequency: 30,
-    particleClass: "fuse"
+    particleClass: "fuse",
+    scale: {
+      minX: 1,
+      maxX: 0,
+      minY: 1,
+      maxY: 0,
+      rate: 5000,
+      ease: Phaser.Easing.Exponential.In,
+      yoyo: false
+    }
   });
 }
 
