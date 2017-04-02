@@ -32,7 +32,16 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
       burst: false,
       lifetime: 150,
       frequency: 65,
-      particleClass: "fuse"
+      particleClass: "fuse",
+      scale: {
+        minX: 1,
+        maxX: 0.3,
+        minY: 1,
+        maxY: 0.3,
+        rate: 300,
+        ease: Phaser.Easing.Exponential.In,
+        yoyo: false
+      }
     });
 
     this.explosionEmitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
