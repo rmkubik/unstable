@@ -66,10 +66,5 @@ Unstable.Trigger.prototype.removeTiles = function () {
     width: 24,
     height: 24
   });
-  // this.game_state.groups.tilebreakers.forEach(function(tileBreaker) {
-  //   tileBreaker.breakTiles();
-  // } , this);
-  // create "removeTile" objects in map file
-  // this method will remove all tiles underneath them
-  // and spawn any appropriate particles/effects/screenshakes/replacements
+  this.game_state.game.plugins.screenShake.shake(6);
 };

@@ -43,6 +43,14 @@ Unstable.LoadingState.prototype.preload = function () {
     }
     this.load.start();
 
+    game.plugins.screenShake = game.plugins.add(Phaser.Plugin.ScreenShake);
+    game.plugins.screenShake.setup({
+      shakesCount: 0,
+      shakeX: true,
+      shakeY: true,
+      sensCoef: 1.4
+    });
+
     if (Unstable.globals.levels === null) {
       Unstable.globals.levels = this.gameData.levels;
     } else {
