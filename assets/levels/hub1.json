@@ -386,7 +386,7 @@
                  "visible":true,
                  "width":24,
                  "x":78,
-                 "y":255
+                 "y":260
                 }, 
                 {
                  "gid":19,
@@ -425,7 +425,7 @@
                  "type":"goal",
                  "visible":true,
                  "width":24,
-                 "x":359,
+                 "x":363,
                  "y":458
                 }, 
                 {
@@ -484,7 +484,7 @@
                  "visible":true,
                  "width":24,
                  "x":203,
-                 "y":202
+                 "y":207
                 }, 
                 {
                  "gid":32,
@@ -512,7 +512,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":67,
+ "nextobjectid":69,
  "orientation":"orthogonal",
  "properties":
     {
@@ -595,7 +595,7 @@
          "tileoffset":
             {
              "x":-12,
-             "y":-12
+             "y":-24
             },
          "tilewidth":24
         }, 
