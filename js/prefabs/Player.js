@@ -253,7 +253,7 @@ Unstable.Player.prototype.coinCollide = function(player, coin) {
   "use strict";
   coin.die();
   this.score += 1;
-  this.game_state.game.plugins.screenShake.shake(2);
+  // this.game_state.game.plugins.screenShake.shake(2);
 }
 
 Unstable.Player.prototype.respawnEffect = function(init, dest) {

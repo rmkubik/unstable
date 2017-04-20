@@ -89,7 +89,7 @@
                  "name":"",
                  "properties":
                     {
-                     "targetTile":"{\"x\":0, \"y\":0}"
+                     "targetTile":"{\"x\":17.5, \"y\":6.5}"
                     },
                  "rotation":0,
                  "type":"teleporter",
@@ -105,7 +105,7 @@
                  "name":"",
                  "properties":
                     {
-                     "targetTile":"{\"x\":0, \"y\":0}"
+                     "targetTile":"{\"x\":4.5, \"y\":13.5}"
                     },
                  "rotation":0,
                  "type":"teleporter",
@@ -121,7 +121,7 @@
                  "name":"",
                  "properties":
                     {
-                     "targetTile":"{\"x\":0, \"y\":0}"
+                     "targetTile":"{\"x\":3, \"y\":7}"
                     },
                  "rotation":0,
                  "type":"teleporter",
@@ -137,7 +137,7 @@
                  "name":"",
                  "properties":
                     {
-                     "targetTile":"{\"x\":0, \"y\":0}"
+                     "targetTile":"{\"x\":2, \"y\":3}"
                     },
                  "rotation":0,
                  "type":"teleporter",
@@ -153,7 +153,7 @@
                  "name":"",
                  "properties":
                     {
-                     "targetTile":"{\"x\":0, \"y\":0}"
+                     "targetTile":"{\"x\":17.5, \"y\":6.5}"
                     },
                  "rotation":0,
                  "type":"teleporter",
@@ -169,7 +169,7 @@
                  "name":"",
                  "properties":
                     {
-                     "targetTile":"{\"x\":0, \"y\":0}"
+                     "targetTile":"{\"x\":10, \"y\":7}"
                     },
                  "rotation":0,
                  "type":"teleporter",
@@ -185,7 +185,7 @@
                  "name":"",
                  "properties":
                     {
-                     "targetTile":"{\"x\":0, \"y\":0}"
+                     "targetTile":"{\"x\":2, \"y\":3}"
                     },
                  "rotation":0,
                  "type":"teleporter",
@@ -208,7 +208,7 @@
                  "visible":true,
                  "width":24,
                  "x":430,
-                 "y":334
+                 "y":322
                 }, 
                 {
                  "gid":19,
@@ -320,7 +320,7 @@
                  "visible":true,
                  "width":24,
                  "x":264,
-                 "y":375
+                 "y":363
                 }, 
                 {
                  "gid":23,
@@ -336,7 +336,7 @@
                  "visible":true,
                  "width":24,
                  "x":145,
-                 "y":192
+                 "y":180
                 }, 
                 {
                  "gid":28,
@@ -377,7 +377,8 @@
                  "name":"",
                  "properties":
                     {
-
+                     "velocityX":"50",
+                     "velocityY":"50"
                     },
                  "rotation":0,
                  "type":"bouncer",
@@ -492,7 +493,7 @@
          "tileoffset":
             {
              "x":-12,
-             "y":-24
+             "y":-12
             },
          "tilewidth":24
         }, 
