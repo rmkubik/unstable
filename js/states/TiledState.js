@@ -88,7 +88,7 @@ Unstable.TiledState.prototype.create = function () {
 
     this.backdropManager = new Unstable.BackdropManager(this);
 
-    if (this.spawnGoalId !== null && this.spawnGoalId !== "") {
+    if (this.spawnGoalId) {
       this.player.respawnEffect(this.spawnGoalCoords, {
         x: this.spawnGoalCoords.x,
         y: this.spawnGoalCoords.y + 12
@@ -144,7 +144,7 @@ Unstable.TiledState.prototype.create_object = function (object) {
     // create object according to its type
     switch (object.type) {
     case "player":
-      if (this.spawnGoalId !== null && this.spawnGoalId !== "") {
+      if (this.spawnGoalId) {
         properties.spawnFromGoal = true;
       }
       prefab = new Unstable.Player(this, position, properties);
