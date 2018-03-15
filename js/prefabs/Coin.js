@@ -46,7 +46,16 @@ Unstable.Coin = function (game_state, position, properties) {
       burst: true,
       lifetime: 0, //450
       frequency: 10,
-      particleClass: "coin"
+      particleClass: "coin",
+      scale: {
+        minX: 1,
+        maxX: 0,
+        minY: 1,
+        maxY: 0,
+        rate: 5000,
+        ease: Phaser.Easing.Exponential.In,
+        yoyo: false
+      }
     });
 
     this.spawnpoint = {x: this.x, y: this.y};
