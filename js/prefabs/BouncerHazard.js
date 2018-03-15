@@ -54,7 +54,16 @@ Unstable.BouncerHazard = function (game_state, position, properties) {
       burst: true,
       lifetime: 0,
       frequency: 30,
-      particleClass: "fuse"
+      particleClass: "fuse",
+      scale: {
+        minX: 1,
+        maxX: 0,
+        minY: 1,
+        maxY: 0,
+        rate: 3500,
+        ease: Phaser.Easing.Exponential.In,
+        yoyo: false
+      }
     });
 
     this.spawnpoint = {x: this.x, y: this.y};
