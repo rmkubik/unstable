@@ -244,9 +244,11 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
 }
 
 Unstable.Player.prototype.finishLevel = function(goal) {
-  Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
-  Unstable.saveProgress();
-  this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink, goal.destGoalId);
+  if (goal.ready) {
+      Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
+      Unstable.saveProgress();
+      this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink, goal.destGoalId);
+  }
 }
 
 Unstable.Player.prototype.coinCollide = function(player, coin) {
