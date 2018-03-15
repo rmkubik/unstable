@@ -17,6 +17,9 @@ Unstable.Emitter = function (game_state, position, properties) {
       case "player":
         this.emitter.particleClass = Unstable.PlayerParticle;
         break;
+      case "bridge":
+        this.emitter.particleClass = Unstable.BridgeParticle;
+        break;
       default:
         console.log("invalid particle class");
         break;
@@ -73,6 +76,18 @@ Unstable.Emitter.init = function() {
   bmd3.context.fillRect(0, 0, 4, 4);
   //  Put the bitmapData into the cache
   game.cache.addBitmapData('particlePlayer', bmd3);
+
+  var bmd4 = game.add.bitmapData(8, 8);
+  bmd4.context.fillStyle = "#663C0F";
+  bmd4.context.fillRect(0, 0, 4, 4);
+  //  Put the bitmapData into the cache
+  game.cache.addBitmapData('particleBridgeLight', bmd4);
+
+  var bmd5 = game.add.bitmapData(8, 8);
+  bmd5.context.fillStyle = "#4E3313";
+  bmd5.context.fillRect(0, 0, 4, 4);
+  //  Put the bitmapData into the cache
+  game.cache.addBitmapData('particleBridgeDark', bmd5);
 };
 
 Unstable.Emitter.prototype = Object.create(Unstable.Prefab.prototype);
@@ -137,6 +152,13 @@ Unstable.Emitter.prototype.seekParticlesToLocation = function (location, callbac
   }
   game.time.events.add(initialDelay * Phaser.Timer.SECOND, partsToLocation, this, location);
 };
+
+Unstable.BridgeParticle = function (game, x, y) {
+    Phaser.Particle.call(this, game, x, y, game.cache.getBitmapData('particleBridgeLight'));
+};
+
+Unstable.BridgeParticle.prototype = Object.create(Phaser.Particle.prototype);
+Unstable.BridgeParticle.prototype.constructor = Unstable.BridgeParticle;
 
 Unstable.FuseParticle = function (game, x, y) {
     Phaser.Particle.call(this, game, x, y, game.cache.getBitmapData('particleFuse'));

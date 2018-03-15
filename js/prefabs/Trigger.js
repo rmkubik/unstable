@@ -25,7 +25,7 @@ Unstable.Trigger = function(game_state, position, properties) {
     burst: true,
     lifetime: 5000,
     frequency: 30,
-    particleClass: "fuse",
+    particleClass: "bridge",
     scale: {
       minX: 1,
       maxX: 0,
