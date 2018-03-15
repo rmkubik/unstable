@@ -246,7 +246,27 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
     this.kill();
     this.shadow.kill();
     this.emitter.burst(this.x, this.y);
-    this.emitter.seekParticlesToLocation({x:-50, y:-50}, this.finishLevel, this, goal);
+    var direction = this.game_state.game.rnd.integerInRange(0, 3);
+    var position = {};
+    switch (direction) {
+        case 0:
+            position.x = this.game_state.game.rnd.integerInRange(0, this.game_state.game.width);
+            position.y = -50;
+            break;
+        case 1:
+            position.x = this.game_state.game.rnd.integerInRange(0, this.game_state.game.width);
+            position.y = this.game_state.game.height + 50;
+            break;
+        case 2:
+            position.y = this.game_state.game.rnd.integerInRange(0, this.game_state.game.height);
+            position.x = -50;
+            break;
+        case 3:
+            position.y = this.game_state.game.rnd.integerInRange(0, this.game_state.game.height);
+            position.x = this.game_state.game.width + 50;
+            break;
+    }
+    this.emitter.seekParticlesToLocation(position, this.finishLevel, this, goal);
     // this.game_state.game.sound.play("sfx_teleport"); //needs to be played globally
     this.teleportSound.play("", 0, 1, false, false);
   }
