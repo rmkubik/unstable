@@ -632,54 +632,8 @@
          "tilewidth":24
         }, 
         {
-         "columns":0,
          "firstgid":32,
-         "margin":0,
-         "name":"scenery",
-         "properties":
-            {
-
-            },
-         "spacing":0,
-         "tilecount":7,
-         "tileheight":48,
-         "tileoffset":
-            {
-             "x":-12,
-             "y":-24
-            },
-         "tiles":
-            {
-             "0":
-                {
-                 "image":"..\/images\/bush3.png"
-                },
-             "1":
-                {
-                 "image":"..\/images\/bush2.png"
-                },
-             "2":
-                {
-                 "image":"..\/images\/bush1.png"
-                },
-             "3":
-                {
-                 "image":"..\/images\/tree3.png"
-                },
-             "4":
-                {
-                 "image":"..\/images\/tree4.png"
-                },
-             "5":
-                {
-                 "image":"..\/images\/tree2.png"
-                },
-             "6":
-                {
-                 "image":"..\/images\/tree1.png"
-                }
-            },
-         "tilewidth":24
+         "source":"scenery.tsx"
         }],
  "tilewidth":24,
  "version":1,
