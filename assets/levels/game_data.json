@@ -168,6 +168,15 @@
       "spacing": 1,
       "margin": 0
     },
+    "enemy_tracker": {
+      "type":"spritesheet",
+      "source":"assets/images/enemy_tracker.png",
+      "frame_width": 24,
+      "frame_height": 24,
+      "frames": 4,
+      "spacing": 1,
+      "margin": 0
+    },
     "enemy_sheet": {
       "type":"spritesheet",
       "source":"assets/images/enemy_sheet.png",
@@ -438,6 +447,16 @@
         "pgroup":"hazards",
         "rgroup":"objects",
         "texture":"enemy_bomb",
+        "velocityX":0,
+        "velocityY":0
+      }
+    },
+    "tracker": {
+      "properties": {
+        "group":"hazards",
+        "pgroup":"hazards",
+        "rgroup":"objects",
+        "texture":"enemy_tracker",
         "velocityX":0,
         "velocityY":0
       }
