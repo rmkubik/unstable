@@ -172,6 +172,13 @@ Unstable.TiledState.prototype.create_object = function (object) {
       }
       prefab = new Unstable.BouncerHazard(this, position, properties);
       break;
+    case "tracker":
+        if (this.bombSound === undefined) {
+          this.bombSound = this.game.add.sound("sfx_tank");
+          this.bombSound.loop = true;
+        }
+        prefab = new Unstable.TrackerHazard(this, position, properties);
+        break;
     case "tree":
       prefab = new Unstable.Scenery(this, position, properties);
       break;
