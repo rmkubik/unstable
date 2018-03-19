@@ -6,8 +6,8 @@ Unstable.TrackerHazard = function (game_state, position, properties) {
 
     game_state.game.physics.arcade.enable(this);
 
-    this.speed = properties.speed;
-    this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
+    this.speed = properties.speed || 50;
+    // this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
     this.body.bounce.set(1);
 
     this.body.setSize(14, 6, 5, 18);
@@ -21,6 +21,8 @@ Unstable.TrackerHazard = function (game_state, position, properties) {
 
     this.animations.add("bomb_move", [0, 1, 2, 3], 8, true);
     this.animations.play("bomb_move");
+
+    this.gameState = game_state;
 
     // this.emitter = new Unstable.Emitter(game_state,{x:this.x,y:this.y},{
     //   offset:{x: 10,y: -18},
@@ -76,6 +78,21 @@ Unstable.TrackerHazard.prototype.constructor = Unstable.TrackerHazard;
 
 Unstable.TrackerHazard.prototype.update = function() {
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.colliders);
+
+  var x = 0;
+  var y = 0;
+  if (this.gameState.player.x < this.x) {
+      x = -this.speed;
+  } else {
+      x = this.speed;
+  }
+  if (this.gameState.player.y < this.y) {
+      y = -this.speed;
+  } else {
+      y = this.speed;
+  }
+  this.body.velocity.setTo(x, y);
+
   //this.angle += 4;
   if (this.body.velocity.x > 0) {
     this.scale.x = 1;
