@@ -81,19 +81,28 @@ Unstable.TrackerHazard.prototype.update = function() {
 
   var x = 0;
   var y = 0;
-  if (this.gameState.player.x < this.x) {
+
+  var xDiff = this.gameState.player.x - this.x;
+  if (Math.abs(xDiff) < 2) {
+      x = 0;
+  } else if (xDiff < 0) {
       x = -this.speed;
-  } else {
+  } else if (xDiff > 0) {
       x = this.speed;
   }
-  if (this.gameState.player.y < this.y) {
+
+  var yDiff = this.gameState.player.y - this.y;
+  console.log(xDiff + " : " + yDiff);
+  if (Math.abs(yDiff) < 2) {
+      y = 0;
+  } else if (yDiff < 0) {
       y = -this.speed;
-  } else {
+  } else if (yDiff > 0) {
       y = this.speed;
   }
+
   this.body.velocity.setTo(x, y);
 
-  //this.angle += 4;
   if (this.body.velocity.x > 0) {
     this.scale.x = 1;
     // this.emitter.flipDirection(-1);
