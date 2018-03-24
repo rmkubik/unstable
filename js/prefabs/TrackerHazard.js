@@ -92,7 +92,6 @@ Unstable.TrackerHazard.prototype.update = function() {
   }
 
   var yDiff = this.gameState.player.y - this.y;
-  console.log(xDiff + " : " + yDiff);
   if (Math.abs(yDiff) < 2) {
       y = 0;
   } else if (yDiff < 0) {
