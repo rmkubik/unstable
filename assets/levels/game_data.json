@@ -394,7 +394,7 @@
         "pgroup": "teleporters",
         "rgroup": "objects",
         "texture": "img_objects",
-        "frame": 0
+        "frame": 4
       },
       "required_properties": [
         "targetTile"
