@@ -96,6 +96,10 @@
       "type":"tilemap",
       "source":"assets/levels/h2l6.json"
     },
+    "lvl_forest": {
+        "type":"tilemap",
+        "source":"assets/levels/forest.json"
+    },
     "buttonSheet": {
       "type": "spritesheet",
       "source":"assets/images/button_sheet.png",
