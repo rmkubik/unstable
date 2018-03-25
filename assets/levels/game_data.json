@@ -146,7 +146,7 @@
       "source": "assets/images/object_sheet.png",
       "frame_width": 24,
       "frame_height": 24,
-      "frames": 5,
+      "frames": 10,
       "spacing": 1,
       "margin": 0
     },
@@ -411,7 +411,7 @@
     },
     "goal": {
       "properties": {
-        "frame":"3",
+        "frame":"8",
         "group":"goal",
         "height":"8",
         "pgroup":"goals",
@@ -429,7 +429,7 @@
     },
     "coin": {
       "properties": {
-        "frame":"1",
+        "frame":"6",
         "group":"coins",
         "pgroup":"coins",
         "rgroup":"objects",

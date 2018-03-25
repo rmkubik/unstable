@@ -42,7 +42,7 @@ Unstable.Goal.prototype.emit = function(coin) {
 
 Unstable.Goal.prototype.updateReady = function () {
   if (this.coinCount >= this.threshold) {
-    this.frame = 4;
+    this.frame = 9;
     this.ready = true;
   } else {
     this.ready = false;
