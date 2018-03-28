@@ -1,0 +1,24 @@
+{ "columns":6,
+ "image":"..\/..\/images\/player_sheet_white.png",
+ "imageheight":24,
+ "imagewidth":101,
+ "margin":0,
+ "name":"player",
+ "spacing":1,
+ "tilecount":6,
+ "tileheight":24,
+ "tileoffset":
+    {
+     "x":-12,
+     "y":-12
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "type":"player"
+        }
+    },
+ "tilewidth":16,
+ "type":"tileset"
+}

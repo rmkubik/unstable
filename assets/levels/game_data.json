@@ -42,63 +42,67 @@
     },
     "lvl_hub1": {
       "type": "tilemap",
-      "source": "assets/levels/hub1.json"
+      "source": "assets/levels/build/hub1.json"
     },
     "lvl_h1l1": {
       "type": "tilemap",
-      "source": "assets/levels/h1l1.json"
+      "source": "assets/levels/build/h1l1.json"
     },
     "lvl_h1l2": {
       "type":"tilemap",
-      "source":"assets/levels/h1l2.json"
+      "source":"assets/levels/build/h1l2.json"
     },
     "lvl_h1l3": {
       "type":"tilemap",
-      "source":"assets/levels/h1l3.json"
+      "source":"assets/levels/build/h1l3.json"
     },
     "lvl_h1l4": {
       "type":"tilemap",
-      "source":"assets/levels/h1l4.json"
+      "source":"assets/levels/build/h1l4.json"
     },
     "lvl_h1l5": {
       "type":"tilemap",
-      "source":"assets/levels/h1l5.json"
+      "source":"assets/levels/build/h1l5.json"
     },
     "lvl_h1l6": {
       "type":"tilemap",
-      "source":"assets/levels/h1l6.json"
+      "source":"assets/levels/build/h1l6.json"
     },
     "lvl_hub2": {
       "type":"tilemap",
-      "source":"assets/levels/hub2.json"
+      "source":"assets/levels/build/hub2.json"
     },
     "lvl_h2l1": {
       "type": "tilemap",
-      "source": "assets/levels/h2l1.json"
+      "source": "assets/levels/build/h2l1.json"
     },
     "lvl_h2l2": {
       "type":"tilemap",
-      "source":"assets/levels/h2l2.json"
+      "source":"assets/levels/build/h2l2.json"
     },
     "lvl_h2l3": {
       "type":"tilemap",
-      "source":"assets/levels/h2l3.json"
+      "source":"assets/levels/build/h2l3.json"
     },
     "lvl_h2l4": {
       "type":"tilemap",
-      "source":"assets/levels/h2l4.json"
+      "source":"assets/levels/build/h2l4.json"
     },
     "lvl_h2l5": {
       "type":"tilemap",
-      "source":"assets/levels/h2l5.json"
+      "source":"assets/levels/build/h2l5.json"
     },
     "lvl_h2l6": {
       "type":"tilemap",
-      "source":"assets/levels/h2l6.json"
+      "source":"assets/levels/build/h2l6.json"
     },
     "lvl_forest": {
         "type":"tilemap",
-        "source":"assets/levels/forest.json"
+        "source":"assets/levels/build/forest.json"
+    },
+    "lvl_waffle": {
+        "type":"tilemap",
+        "source":"assets/levels/build/waffle.json"
     },
     "buttonSheet": {
       "type": "spritesheet",
@@ -352,6 +356,18 @@
       "key": "lvl_h2l6",
       "tileset": "tilesheet",
       "completion": -1
+    },
+    "lvl_forest": {
+        "name": "Forest",
+        "key": "lvl_forest",
+        "tileset": "tilesheet",
+        "completion": -1
+    },
+    "lvl_waffle": {
+        "name": "Waffle",
+        "key": "lvl_waffle",
+        "tileset": "tilesheet",
+        "completion": -1
     }
   },
   "groups": [

@@ -1,0 +1,24 @@
+{ "columns":5,
+ "image":"..\/..\/images\/enemy_sheet.png",
+ "imageheight":24,
+ "imagewidth":124,
+ "margin":0,
+ "name":"enemy_sheet",
+ "spacing":1,
+ "tilecount":5,
+ "tileheight":24,
+ "tileoffset":
+    {
+     "x":-12,
+     "y":-12
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "type":"turret"
+        }
+    },
+ "tilewidth":24,
+ "type":"tileset"
+}
