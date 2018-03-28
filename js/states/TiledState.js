@@ -77,6 +77,7 @@ Unstable.TiledState.prototype.create = function () {
     this.player;
 
     for (object_layer in this.map.objects) {
+        // get the type of an object from tiled tilesheet + gid information
         if (this.map.objects.hasOwnProperty(object_layer)) {
             // create layer objects
             this.map.objects[object_layer].forEach(this.create_object, this);
@@ -110,6 +111,14 @@ Unstable.TiledState.prototype.update = function() {
 }
 
 Unstable.TiledState.prototype.getPrefabProperties = function (type, properties) {
+  properties = properties || {};
+  if (this.isBush(type)) {
+      properties.texture = type;
+      type = "bush";
+  } else if (this.isTree(type)) {
+      properties.texture = type;
+      type = "tree";
+  }
   var finalProperties = {};
   Object.assign(finalProperties, this.level_data.prefabs[type].properties);
   Object.getOwnPropertyNames(properties).forEach( function(property) {
@@ -140,6 +149,12 @@ Unstable.TiledState.prototype.create_object = function (object) {
     // tiled coordinates starts in the bottom left corner
     position = {"x": object.x, "y": object.y - (this.map.tileHeight)};
     properties = this.getPrefabProperties(object.type, object.properties);
+
+    if (this.isBush(object.type)) {
+        object.type = "bush";
+    } else if (this.isTree(object.type)) {
+        object.type = "tree";
+    }
 
     // create object according to its type
     switch (object.type) {
@@ -179,10 +194,8 @@ Unstable.TiledState.prototype.create_object = function (object) {
         }
         prefab = new Unstable.TrackerHazard(this, position, properties);
         break;
-    case "tree":
-      prefab = new Unstable.Scenery(this, position, properties);
-      break;
     case "bush":
+    case "tree":
       prefab = new Unstable.Scenery(this, position, properties);
       break;
     case "crate":
@@ -201,6 +214,14 @@ Unstable.TiledState.prototype.create_object = function (object) {
     }
     // this.prefabs[object.name] = prefab;
 };
+
+Unstable.TiledState.prototype.isBush = function(type, properties) {
+    return !!(type === "bush1" || type === "bush2" || type === "bush3");
+}
+
+Unstable.TiledState.prototype.isTree = function(type, properties) {
+    return !!(type === "tree1" || type === "tree2" || type === "tree3" || type === "tree4");
+}
 
 Unstable.TiledState.prototype.shutdown = function () {
   if (this.bombSound !== undefined) {
