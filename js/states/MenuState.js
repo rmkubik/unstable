@@ -34,8 +34,18 @@ Unstable.MenuState.prototype.create = function () {
     optionsButton.scale.setTo(2);
 };
 
+Unstable.MenuState.prototype.parseLevelOverride = function() {
+    var queryParamString = window.location.search;
+    if (queryParamString === "") {
+        return "lvl_hub1";
+    }
+    var params = queryParamString.substr(1).split('&');
+    var levelParam = params[0].split('='); // assume level param is first
+    return 'lvl_' + levelParam[1];
+}
+
 Unstable.MenuState.prototype.startGame = function() {
-  this.game.state.start("LevelManager", true, false, this.gameData, "lvl_hub1", null);
+  this.game.state.start("LevelManager", true, false, this.gameData, this.parseLevelOverride(), null);
 }
 
 Unstable.MenuState.prototype.openOptions = function() {
