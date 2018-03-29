@@ -9,7 +9,6 @@ const buildDir = path.join(levelsDir, 'build');
 
 
 const readdir = util.promisify(fs.readdir);
-const write = util.promisify(fs.write);
 
 async function loadSets() {
     const sets = {};
@@ -18,7 +17,7 @@ async function loadSets() {
         if (path.extname(name) === '.json') {
             const tileset = require('./' + path.join(tilesetsDir, name));
             sets[path.basename(name, '.json')] = tileset;
-            console.log(`loaded set: ${path.basename(name, '.json')}`);
+            // console.log(`loaded set: ${path.basename(name, '.json')}`);
         }
     });
     return sets;
@@ -33,9 +32,13 @@ async function loadMaps() {
             name: path.basename(name, '.json'),
             data
         });
-        console.log(`loaded map: ${path.basename(name, '.json')}`);
+        // console.log(`loaded map: ${path.basename(name, '.json')}`);
     });
     return maps;
+}
+
+async function loadGameData() {
+    return require('./' + path.join(levelsDir, 'game_data.json'))
 }
 
 async function buildMaps() {
@@ -56,7 +59,7 @@ async function buildMaps() {
             );
         });
 
-        console.log('converted external tilesets for: ' + map.name);
+        // console.log('converted external tilesets for: ' + map.name);
 
         const gidSets = {};
         externalTilesets.forEach(set => {
@@ -92,10 +95,14 @@ async function buildMaps() {
             }
         });
 
-        console.log('handled object overrides for: ' + map.name);
+        // console.log('handled object overrides for: ' + map.name);
 
         fs.writeFile(path.join(buildDir, `${map.name}.json`), JSON.stringify(map.data, null, 4), () => {});
     });
+
+    const gameData = await loadGameData();
+    const levels = Object.entries(gameData.assets).filter(asset => asset[1].type === 'tilemap');
+    console.log(levels);
 }
 
 /**
