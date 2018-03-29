@@ -1,5 +1,6 @@
 {
     "height": 20,
+    "infinite": false,
     "layers": [
         {
             "data": [
@@ -1234,6 +1235,9 @@
             "properties": {
                 "collision": "true"
             },
+            "propertytypes": {
+                "collision": "string"
+            },
             "type": "tilelayer",
             "visible": false,
             "width": 20,
@@ -1242,7 +1246,6 @@
         },
         {
             "draworder": "topdown",
-            "height": 20,
             "name": "objects",
             "objects": [
                 {
@@ -1256,6 +1259,13 @@
                         "levelPrereq": "",
                         "link": "lvl_hub2",
                         "threshold": "0"
+                    },
+                    "propertytypes": {
+                        "destGoalId": "string",
+                        "id": "string",
+                        "levelPrereq": "string",
+                        "link": "string",
+                        "threshold": "string"
                     },
                     "rotation": 0,
                     "type": "goal",
@@ -1276,6 +1286,13 @@
                         "link": "lvl_hub2",
                         "threshold": "6"
                     },
+                    "propertytypes": {
+                        "destGoalId": "string",
+                        "id": "string",
+                        "levelPrereq": "string",
+                        "link": "string",
+                        "threshold": "string"
+                    },
                     "rotation": 0,
                     "type": "goal",
                     "visible": true,
@@ -1290,6 +1307,9 @@
                     "name": "",
                     "properties": {
                         "targetTile": "{\"x\":17.5, \"y\":6.5}"
+                    },
+                    "propertytypes": {
+                        "targetTile": "string"
                     },
                     "rotation": 0,
                     "type": "teleporter",
@@ -1306,6 +1326,9 @@
                     "properties": {
                         "targetTile": "{\"x\":4.5, \"y\":13.5}"
                     },
+                    "propertytypes": {
+                        "targetTile": "string"
+                    },
                     "rotation": 0,
                     "type": "teleporter",
                     "visible": true,
@@ -1320,6 +1343,9 @@
                     "name": "",
                     "properties": {
                         "targetTile": "{\"x\":3, \"y\":7}"
+                    },
+                    "propertytypes": {
+                        "targetTile": "string"
                     },
                     "rotation": 0,
                     "type": "teleporter",
@@ -1336,6 +1362,9 @@
                     "properties": {
                         "targetTile": "{\"x\":2, \"y\":3}"
                     },
+                    "propertytypes": {
+                        "targetTile": "string"
+                    },
                     "rotation": 0,
                     "type": "teleporter",
                     "visible": true,
@@ -1350,6 +1379,9 @@
                     "name": "",
                     "properties": {
                         "targetTile": "{\"x\":17.5, \"y\":6.5}"
+                    },
+                    "propertytypes": {
+                        "targetTile": "string"
                     },
                     "rotation": 0,
                     "type": "teleporter",
@@ -1366,6 +1398,9 @@
                     "properties": {
                         "targetTile": "{\"x\":10, \"y\":7}"
                     },
+                    "propertytypes": {
+                        "targetTile": "string"
+                    },
                     "rotation": 0,
                     "type": "teleporter",
                     "visible": true,
@@ -1381,6 +1416,9 @@
                     "properties": {
                         "targetTile": "{\"x\":2, \"y\":3}"
                     },
+                    "propertytypes": {
+                        "targetTile": "string"
+                    },
                     "rotation": 0,
                     "type": "teleporter",
                     "visible": true,
@@ -1389,11 +1427,10 @@
                     "y": 443
                 },
                 {
-                    "gid": 23,
+                    "gid": 28,
                     "height": 24,
                     "id": 10,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "turret",
                     "visible": true,
@@ -1406,7 +1443,6 @@
                     "height": 24,
                     "id": 11,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1419,7 +1455,6 @@
                     "height": 24,
                     "id": 12,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1432,7 +1467,6 @@
                     "height": 24,
                     "id": 13,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1445,7 +1479,6 @@
                     "height": 24,
                     "id": 14,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1458,7 +1491,6 @@
                     "height": 24,
                     "id": 15,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1471,7 +1503,6 @@
                     "height": 24,
                     "id": 16,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1480,11 +1511,10 @@
                     "y": 270
                 },
                 {
-                    "gid": 23,
+                    "gid": 28,
                     "height": 24,
                     "id": 17,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "turret",
                     "visible": true,
@@ -1493,11 +1523,10 @@
                     "y": 363
                 },
                 {
-                    "gid": 23,
+                    "gid": 28,
                     "height": 24,
                     "id": 18,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "turret",
                     "visible": true,
@@ -1506,12 +1535,15 @@
                     "y": 180
                 },
                 {
-                    "gid": 28,
+                    "gid": 33,
                     "height": 24,
                     "id": 19,
                     "name": "",
                     "properties": {
                         "velocityX": "50"
+                    },
+                    "propertytypes": {
+                        "velocityX": "string"
                     },
                     "rotation": 0,
                     "type": "bouncer",
@@ -1521,12 +1553,15 @@
                     "y": 89
                 },
                 {
-                    "gid": 28,
+                    "gid": 33,
                     "height": 24,
                     "id": 20,
                     "name": "",
                     "properties": {
                         "velocityX": "50"
+                    },
+                    "propertytypes": {
+                        "velocityX": "string"
                     },
                     "rotation": 0,
                     "type": "bouncer",
@@ -1536,13 +1571,17 @@
                     "y": 113
                 },
                 {
-                    "gid": 28,
+                    "gid": 33,
                     "height": 24,
                     "id": 21,
                     "name": "",
                     "properties": {
                         "velocityX": "50",
                         "velocityY": "50"
+                    },
+                    "propertytypes": {
+                        "velocityX": "string",
+                        "velocityY": "string"
                     },
                     "rotation": 0,
                     "type": "bouncer",
@@ -1556,7 +1595,6 @@
                     "height": 24,
                     "id": 22,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "player",
                     "visible": true,
@@ -1565,12 +1603,15 @@
                     "y": 92
                 },
                 {
-                    "gid": 35,
+                    "gid": 40,
                     "height": 48,
                     "id": 23,
                     "name": "",
                     "properties": {
                         "texture": "tree3"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1580,12 +1621,15 @@
                     "y": 76
                 },
                 {
-                    "gid": 36,
+                    "gid": 41,
                     "height": 48,
                     "id": 24,
                     "name": "",
                     "properties": {
                         "texture": "tree4"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1595,12 +1639,15 @@
                     "y": 296
                 },
                 {
-                    "gid": 38,
+                    "gid": 43,
                     "height": 48,
                     "id": 25,
                     "name": "",
                     "properties": {
                         "texture": "tree1"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1610,12 +1657,15 @@
                     "y": 345
                 },
                 {
-                    "gid": 33,
+                    "gid": 38,
                     "height": 24,
                     "id": 26,
                     "name": "",
                     "properties": {
                         "texture": "bush2"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1625,12 +1675,15 @@
                     "y": 172
                 },
                 {
-                    "gid": 33,
+                    "gid": 38,
                     "height": 24,
                     "id": 27,
                     "name": "",
                     "properties": {
                         "texture": "bush2"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1640,12 +1693,15 @@
                     "y": 76
                 },
                 {
-                    "gid": 34,
+                    "gid": 39,
                     "height": 24,
                     "id": 28,
                     "name": "",
                     "properties": {
                         "texture": "bush1"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1655,12 +1711,15 @@
                     "y": 455
                 },
                 {
-                    "gid": 32,
+                    "gid": 37,
                     "height": 24,
                     "id": 29,
                     "name": "",
                     "properties": {
                         "texture": "bush3"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1673,29 +1732,27 @@
             "opacity": 1,
             "type": "objectgroup",
             "visible": true,
-            "width": 20,
             "x": 0,
             "y": 0
         }
     ],
     "nextobjectid": 30,
     "orientation": "orthogonal",
-    "properties": {},
     "renderorder": "right-down",
+    "tiledversion": "1.1.2",
     "tileheight": 24,
     "tilesets": [
         {
-            "firstgid": 32
+            "firstgid": 37
         },
         {
             "columns": 1,
             "firstgid": 17,
-            "image": "../images/collision.png",
+            "image": "../../images/collision.png",
             "imageheight": 24,
             "imagewidth": 24,
             "margin": 0,
             "name": "collision",
-            "properties": {},
             "spacing": 1,
             "tilecount": 1,
             "tileheight": 24,
@@ -1704,14 +1761,13 @@
         {
             "columns": 5,
             "firstgid": 18,
-            "image": "../images/object_sheet.png",
-            "imageheight": 24,
+            "image": "../../images/object_sheet.png",
+            "imageheight": 49,
             "imagewidth": 124,
             "margin": 0,
             "name": "object_sheet",
-            "properties": {},
             "spacing": 1,
-            "tilecount": 5,
+            "tilecount": 10,
             "tileheight": 24,
             "tileoffset": {
                 "x": -12,
@@ -1721,13 +1777,12 @@
         },
         {
             "columns": 5,
-            "firstgid": 23,
-            "image": "../images/enemy_sheet.png",
+            "firstgid": 28,
+            "image": "../../images/enemy_sheet.png",
             "imageheight": 24,
             "imagewidth": 124,
             "margin": 0,
             "name": "enemy_sheet",
-            "properties": {},
             "spacing": 1,
             "tilecount": 5,
             "tileheight": 24,
@@ -1739,13 +1794,12 @@
         },
         {
             "columns": 4,
-            "firstgid": 28,
-            "image": "../images/enemy_bomb.png",
+            "firstgid": 33,
+            "image": "../../images/enemy_bomb.png",
             "imageheight": 24,
             "imagewidth": 99,
             "margin": 0,
             "name": "enemy_bomb",
-            "properties": {},
             "spacing": 1,
             "tilecount": 4,
             "tileheight": 24,
@@ -1756,11 +1810,12 @@
             "tilewidth": 24
         },
         {
-            "firstgid": 32,
-            "source": "scenery.tsx"
+            "firstgid": 37,
+            "source": "../tilesets/scenery.tsx"
         }
     ],
     "tilewidth": 24,
+    "type": "map",
     "version": 1,
     "width": 20
 }
