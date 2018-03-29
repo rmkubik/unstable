@@ -207,6 +207,14 @@
             "type": "image",
             "source": "assets/images/cloud10.png"
         },
+        "lvl_U": {
+            "type": "tilemap",
+            "source": "assets/levels/build/U.json"
+        },
+        "lvl_donut": {
+            "type": "tilemap",
+            "source": "assets/levels/build/donut.json"
+        },
         "lvl_forest": {
             "type": "tilemap",
             "source": "assets/levels/build/forest.json"
@@ -376,6 +384,18 @@
         "lvl_sticks": {
             "name": "Sticks",
             "key": "lvl_sticks",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_U": {
+            "name": "U",
+            "key": "lvl_U",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_donut": {
+            "name": "Donut",
+            "key": "lvl_donut",
             "tileset": "tilesheet",
             "completion": -1
         }
