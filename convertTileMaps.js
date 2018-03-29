@@ -7,6 +7,8 @@ const rawDir = path.join(levelsDir, 'raw');
 const tilesetsDir = path.join(levelsDir, 'tilesets');
 const buildDir = path.join(levelsDir, 'build');
 
+const levelKeyPrefix = 'lvl_';
+
 
 const readdir = util.promisify(fs.readdir);
 
@@ -97,12 +99,39 @@ async function buildMaps() {
 
         // console.log('handled object overrides for: ' + map.name);
 
-        fs.writeFile(path.join(buildDir, `${map.name}.json`), JSON.stringify(map.data, null, 4), () => {});
+        fs.writeFile(
+            path.join(buildDir, `${map.name}.json`),
+            JSON.stringify(map.data, null, 4),
+            () => {}
+        );
     });
 
     const gameData = await loadGameData();
-    const levels = Object.entries(gameData.assets).filter(asset => asset[1].type === 'tilemap');
-    console.log(levels);
+    const levels = Object.entries(gameData.assets).filter(
+        asset => asset[1].type === 'tilemap'
+    );
+    // remove old maps
+    levels.forEach(level => {
+        delete gameData.assets[level[0]];
+    });
+    //levelKeyPrefix
+    maps.forEach(map => {
+        gameData.assets[levelKeyPrefix + map.name] = {
+            type: 'tilemap',
+            source: path.join(buildDir, map.name) + '.json'
+        }
+        gameData.levels[levelKeyPrefix + map.name] = {
+            "name": convertCamelToTitle(map.name),
+            "key": levelKeyPrefix + map.name,
+            "tileset": "tilesheet",
+            "completion": -1
+        }
+    });
+    fs.writeFile(
+        path.join(levelsDir, 'game_data.json'),
+        JSON.stringify(gameData, null, 4),
+        () => {}
+    );
 }
 
 /**
@@ -137,6 +166,12 @@ function gidToSet(gid, sets) {
         set,
         index
     });
+}
+
+function convertCamelToTitle(string) {
+    const words = string.split(/(?=[A-Z])/);
+    words[0] = words[0][0].toUpperCase() + words[0].substr(1);
+    return words.join(' ');
 }
 
 buildMaps();
