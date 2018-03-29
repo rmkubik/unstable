@@ -104,6 +104,10 @@
         "type":"tilemap",
         "source":"assets/levels/build/waffle.json"
     },
+    "lvl_sticks": {
+        "type":"tilemap",
+        "source":"assets/levels/build/sticks.json"
+    },
     "buttonSheet": {
       "type": "spritesheet",
       "source":"assets/images/button_sheet.png",
@@ -366,6 +370,12 @@
     "lvl_waffle": {
         "name": "Waffle",
         "key": "lvl_waffle",
+        "tileset": "tilesheet",
+        "completion": -1
+    },
+    "lvl_sticks": {
+        "name": "Sticks",
+        "key": "lvl_sticks",
         "tileset": "tilesheet",
         "completion": -1
     }
