@@ -1,524 +1,522 @@
 {
-  "assets": {
-    "sfx_coin": {
-      "type":"audio",
-      "source":"assets/audio/CoinFX.wav"
+    "assets": {
+        "sfx_coin": {
+            "type": "audio",
+            "source": "assets/audio/CoinFX.wav"
+        },
+        "sfx_death": {
+            "type": "audio",
+            "source": "assets/audio/Death_FX.wav"
+        },
+        "sfx_step1": {
+            "type": "audio",
+            "source": "assets/audio/Step1_FX.wav"
+        },
+        "sfx_step2": {
+            "type": "audio",
+            "source": "assets/audio/Step2_FX.wav"
+        },
+        "sfx_step3": {
+            "type": "audio",
+            "source": "assets/audio/Step3_FX.wav"
+        },
+        "sfx_tank": {
+            "type": "audio",
+            "source": "assets/audio/Tank_FX(LOOP).wav"
+        },
+        "sfx_teleport": {
+            "type": "audio",
+            "source": "assets/audio/Teleporter_FX.wav"
+        },
+        "sfx_turretLower": {
+            "type": "audio",
+            "source": "assets/audio/TurretLower_FX.wav"
+        },
+        "sfx_turretRaise": {
+            "type": "audio",
+            "source": "assets/audio/TurretRaise_FX.wav"
+        },
+        "sfx_turretShoot": {
+            "type": "audio",
+            "source": "assets/audio/TurretShoot_FX.wav"
+        },
+        "buttonSheet": {
+            "type": "spritesheet",
+            "source": "assets/images/button_sheet.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 10,
+            "spacing": 1,
+            "margin": 0
+        },
+        "tilesheet": {
+            "type": "spritesheet",
+            "source": "assets/images/tilesheet.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 7,
+            "spacing": 1,
+            "margin": 0
+        },
+        "collision": {
+            "type": "spritesheet",
+            "source": "assets/images/collision.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 1,
+            "spacing": 0,
+            "margin": 0
+        },
+        "img_player": {
+            "type": "spritesheet",
+            "source": "assets/images/player_sheet.png",
+            "frame_width": 16,
+            "frame_height": 24,
+            "frames": 6,
+            "spacing": 0,
+            "margin": 0
+        },
+        "img_player_white": {
+            "type": "spritesheet",
+            "source": "assets/images/player_sheet_white.png",
+            "frame_width": 16,
+            "frame_height": 24,
+            "frames": 6,
+            "spacing": 1,
+            "margin": 0
+        },
+        "img_objects": {
+            "type": "spritesheet",
+            "source": "assets/images/object_sheet.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 10,
+            "spacing": 1,
+            "margin": 0
+        },
+        "enemy_tower": {
+            "type": "spritesheet",
+            "source": "assets/images/enemy_tower.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 2,
+            "spacing": 1,
+            "margin": 0
+        },
+        "enemy_bomb": {
+            "type": "spritesheet",
+            "source": "assets/images/enemy_bomb.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 4,
+            "spacing": 1,
+            "margin": 0
+        },
+        "enemy_tracker": {
+            "type": "spritesheet",
+            "source": "assets/images/enemy_tracker.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 4,
+            "spacing": 1,
+            "margin": 0
+        },
+        "enemy_sheet": {
+            "type": "spritesheet",
+            "source": "assets/images/enemy_sheet.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 5,
+            "spacing": 1,
+            "margin": 0
+        },
+        "shadow": {
+            "type": "spritesheet",
+            "source": "assets/images/shadow.png",
+            "frame_width": 24,
+            "frame_height": 24,
+            "frames": 3,
+            "spacing": 1,
+            "margin": 0
+        },
+        "tree1": {
+            "type": "image",
+            "source": "assets/images/tree1.png"
+        },
+        "tree2": {
+            "type": "image",
+            "source": "assets/images/tree2.png"
+        },
+        "tree3": {
+            "type": "image",
+            "source": "assets/images/tree3.png"
+        },
+        "tree4": {
+            "type": "image",
+            "source": "assets/images/tree4.png"
+        },
+        "bush1": {
+            "type": "image",
+            "source": "assets/images/bush1.png"
+        },
+        "bush2": {
+            "type": "image",
+            "source": "assets/images/bush2.png"
+        },
+        "bush3": {
+            "type": "image",
+            "source": "assets/images/bush3.png"
+        },
+        "cloud1": {
+            "type": "image",
+            "source": "assets/images/cloud1.png"
+        },
+        "cloud2": {
+            "type": "image",
+            "source": "assets/images/cloud2.png"
+        },
+        "cloud3": {
+            "type": "image",
+            "source": "assets/images/cloud3.png"
+        },
+        "cloud4": {
+            "type": "image",
+            "source": "assets/images/cloud4.png"
+        },
+        "cloud5": {
+            "type": "image",
+            "source": "assets/images/cloud5.png"
+        },
+        "cloud6": {
+            "type": "image",
+            "source": "assets/images/cloud6.png"
+        },
+        "cloud7": {
+            "type": "image",
+            "source": "assets/images/cloud7.png"
+        },
+        "cloud8": {
+            "type": "image",
+            "source": "assets/images/cloud8.png"
+        },
+        "cloud9": {
+            "type": "image",
+            "source": "assets/images/cloud9.png"
+        },
+        "cloud10": {
+            "type": "image",
+            "source": "assets/images/cloud10.png"
+        },
+        "lvl_forest": {
+            "type": "tilemap",
+            "source": "assets/levels/build/forest.json"
+        },
+        "lvl_h1l1": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h1l1.json"
+        },
+        "lvl_h1l2": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h1l2.json"
+        },
+        "lvl_h1l3": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h1l3.json"
+        },
+        "lvl_h1l4": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h1l4.json"
+        },
+        "lvl_h1l5": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h1l5.json"
+        },
+        "lvl_h1l6": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h1l6.json"
+        },
+        "lvl_h2l1": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h2l1.json"
+        },
+        "lvl_h2l2": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h2l2.json"
+        },
+        "lvl_h2l3": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h2l3.json"
+        },
+        "lvl_h2l4": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h2l4.json"
+        },
+        "lvl_h2l5": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h2l5.json"
+        },
+        "lvl_h2l6": {
+            "type": "tilemap",
+            "source": "assets/levels/build/h2l6.json"
+        },
+        "lvl_hub1": {
+            "type": "tilemap",
+            "source": "assets/levels/build/hub1.json"
+        },
+        "lvl_hub2": {
+            "type": "tilemap",
+            "source": "assets/levels/build/hub2.json"
+        },
+        "lvl_sticks": {
+            "type": "tilemap",
+            "source": "assets/levels/build/sticks.json"
+        },
+        "lvl_waffle": {
+            "type": "tilemap",
+            "source": "assets/levels/build/waffle.json"
+        }
     },
-    "sfx_death": {
-      "type":"audio",
-      "source":"assets/audio/Death_FX.wav"
+    "levels": {
+        "lvl_hub1": {
+            "name": "Hub1",
+            "key": "lvl_hub1",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h1l1": {
+            "name": "H1l1",
+            "key": "lvl_h1l1",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h1l2": {
+            "name": "H1l2",
+            "key": "lvl_h1l2",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h1l3": {
+            "name": "H1l3",
+            "key": "lvl_h1l3",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h1l4": {
+            "name": "H1l4",
+            "key": "lvl_h1l4",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h1l5": {
+            "name": "H1l5",
+            "key": "lvl_h1l5",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h1l6": {
+            "name": "H1l6",
+            "key": "lvl_h1l6",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_hub2": {
+            "name": "Hub2",
+            "key": "lvl_hub2",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h2l1": {
+            "name": "H2l1",
+            "key": "lvl_h2l1",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h2l2": {
+            "name": "H2l2",
+            "key": "lvl_h2l2",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h2l3": {
+            "name": "H2l3",
+            "key": "lvl_h2l3",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h2l4": {
+            "name": "H2l4",
+            "key": "lvl_h2l4",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h2l5": {
+            "name": "H2l5",
+            "key": "lvl_h2l5",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_h2l6": {
+            "name": "H2l6",
+            "key": "lvl_h2l6",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_forest": {
+            "name": "Forest",
+            "key": "lvl_forest",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_waffle": {
+            "name": "Waffle",
+            "key": "lvl_waffle",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_sticks": {
+            "name": "Sticks",
+            "key": "lvl_sticks",
+            "tileset": "tilesheet",
+            "completion": -1
+        }
     },
-    "sfx_step1": {
-      "type":"audio",
-      "source":"assets/audio/Step1_FX.wav"
-    },
-    "sfx_step2": {
-      "type":"audio",
-      "source":"assets/audio/Step2_FX.wav"
-    },
-    "sfx_step3": {
-      "type":"audio",
-      "source":"assets/audio/Step3_FX.wav"
-    },
-    "sfx_tank": {
-      "type":"audio",
-      "source":"assets/audio/Tank_FX(LOOP).wav"
-    },
-    "sfx_teleport": {
-      "type":"audio",
-      "source":"assets/audio/Teleporter_FX.wav"
-    },
-    "sfx_turretLower": {
-      "type":"audio",
-      "source":"assets/audio/TurretLower_FX.wav"
-    },
-    "sfx_turretRaise": {
-      "type":"audio",
-      "source":"assets/audio/TurretRaise_FX.wav"
-    },
-    "sfx_turretShoot": {
-      "type":"audio",
-      "source":"assets/audio/TurretShoot_FX.wav"
-    },
-    "lvl_hub1": {
-      "type": "tilemap",
-      "source": "assets/levels/build/hub1.json"
-    },
-    "lvl_h1l1": {
-      "type": "tilemap",
-      "source": "assets/levels/build/h1l1.json"
-    },
-    "lvl_h1l2": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h1l2.json"
-    },
-    "lvl_h1l3": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h1l3.json"
-    },
-    "lvl_h1l4": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h1l4.json"
-    },
-    "lvl_h1l5": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h1l5.json"
-    },
-    "lvl_h1l6": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h1l6.json"
-    },
-    "lvl_hub2": {
-      "type":"tilemap",
-      "source":"assets/levels/build/hub2.json"
-    },
-    "lvl_h2l1": {
-      "type": "tilemap",
-      "source": "assets/levels/build/h2l1.json"
-    },
-    "lvl_h2l2": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h2l2.json"
-    },
-    "lvl_h2l3": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h2l3.json"
-    },
-    "lvl_h2l4": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h2l4.json"
-    },
-    "lvl_h2l5": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h2l5.json"
-    },
-    "lvl_h2l6": {
-      "type":"tilemap",
-      "source":"assets/levels/build/h2l6.json"
-    },
-    "lvl_forest": {
-        "type":"tilemap",
-        "source":"assets/levels/build/forest.json"
-    },
-    "lvl_waffle": {
-        "type":"tilemap",
-        "source":"assets/levels/build/waffle.json"
-    },
-    "lvl_sticks": {
-        "type":"tilemap",
-        "source":"assets/levels/build/sticks.json"
-    },
-    "buttonSheet": {
-      "type": "spritesheet",
-      "source":"assets/images/button_sheet.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 10,
-      "spacing": 1,
-      "margin": 0
-    },
-    "tilesheet": {
-      "type": "spritesheet",
-      "source": "assets/images/tilesheet.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 7,
-      "spacing": 1,
-      "margin": 0
-    },
-    "collision": {
-      "type": "spritesheet",
-      "source": "assets/images/collision.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 1,
-      "spacing": 0,
-      "margin": 0
-    },
-    "img_player": {
-      "type": "spritesheet",
-      "source": "assets/images/player_sheet.png",
-      "frame_width": 16,
-      "frame_height": 24,
-      "frames": 6,
-      "spacing": 0,
-      "margin": 0
-    },
-    "img_player_white": {
-      "type": "spritesheet",
-      "source": "assets/images/player_sheet_white.png",
-      "frame_width": 16,
-      "frame_height": 24,
-      "frames": 6,
-      "spacing": 1,
-      "margin": 0
-    },
-    "img_objects": {
-      "type": "spritesheet",
-      "source": "assets/images/object_sheet.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 10,
-      "spacing": 1,
-      "margin": 0
-    },
-    "enemy_tower": {
-      "type": "spritesheet",
-      "source": "assets/images/enemy_tower.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 2,
-      "spacing": 1,
-      "margin": 0
-    },
-    "enemy_bomb": {
-      "type":"spritesheet",
-      "source":"assets/images/enemy_bomb.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 4,
-      "spacing": 1,
-      "margin": 0
-    },
-    "enemy_tracker": {
-      "type":"spritesheet",
-      "source":"assets/images/enemy_tracker.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 4,
-      "spacing": 1,
-      "margin": 0
-    },
-    "enemy_sheet": {
-      "type":"spritesheet",
-      "source":"assets/images/enemy_sheet.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 5,
-      "spacing": 1,
-      "margin": 0
-    },
-    "shadow": {
-      "type":"spritesheet",
-      "source":"assets/images/shadow.png",
-      "frame_width": 24,
-      "frame_height": 24,
-      "frames": 3,
-      "spacing": 1,
-      "margin": 0
-    },
-    "tree1": {
-      "type":"image",
-      "source":"assets/images/tree1.png"
-    },
-    "tree2": {
-      "type":"image",
-      "source":"assets/images/tree2.png"
-    },
-    "tree3": {
-      "type":"image",
-      "source":"assets/images/tree3.png"
-    },
-    "tree4": {
-      "type":"image",
-      "source":"assets/images/tree4.png"
-    },
-    "bush1": {
-      "type":"image",
-      "source":"assets/images/bush1.png"
-    },
-    "bush2": {
-      "type":"image",
-      "source":"assets/images/bush2.png"
-    },
-    "bush3": {
-      "type":"image",
-      "source":"assets/images/bush3.png"
-    },
-    "cloud1": {
-      "type":"image",
-      "source":"assets/images/cloud1.png"
-    },
-    "cloud2": {
-      "type":"image",
-      "source":"assets/images/cloud2.png"
-    },
-    "cloud3": {
-      "type":"image",
-      "source":"assets/images/cloud3.png"
-    },
-    "cloud4": {
-      "type":"image",
-      "source":"assets/images/cloud4.png"
-    },
-    "cloud5": {
-      "type":"image",
-      "source":"assets/images/cloud5.png"
-    },
-    "cloud6": {
-      "type":"image",
-      "source":"assets/images/cloud6.png"
-    },
-    "cloud7": {
-      "type":"image",
-      "source":"assets/images/cloud7.png"
-    },
-    "cloud8": {
-      "type":"image",
-      "source":"assets/images/cloud8.png"
-    },
-    "cloud9": {
-      "type":"image",
-      "source":"assets/images/cloud9.png"
-    },
-    "cloud10": {
-      "type":"image",
-      "source":"assets/images/cloud10.png"
+    "groups": [
+        "shadows",
+        "objects",
+        "coins",
+        "goal",
+        "hazards",
+        "player",
+        "scenery",
+        "crates",
+        "turrets",
+        "triggers",
+        "tilebreakers"
+    ],
+    "render_groups": [
+        "objects",
+        "triggers",
+        "tilebreakers"
+    ],
+    "physics_groups": [
+        "coins",
+        "players",
+        "hazards",
+        "blockers",
+        "goals",
+        "triggers",
+        "teleporters"
+    ],
+    "prefabs": {
+        "trigger": {
+            "properties": {
+                "width": 24,
+                "height": 24,
+                "pgroup": "triggers",
+                "rgroup": "triggers",
+                "triggerCountAllowed": 1,
+                "triggerFunction": "removeTiles",
+                "triggerParams": "{}"
+            }
+        },
+        "teleporter": {
+            "properties": {
+                "pgroup": "teleporters",
+                "rgroup": "objects",
+                "texture": "img_objects",
+                "frame": 4
+            },
+            "required_properties": [
+                "targetTile"
+            ]
+        },
+        "player": {
+            "properties": {
+                "group": "player",
+                "pgroup": "players",
+                "rgroup": "objects",
+                "texture": "img_player_white",
+                "spawnFromGoal": false
+            }
+        },
+        "goal": {
+            "properties": {
+                "frame": "8",
+                "group": "goal",
+                "height": "8",
+                "pgroup": "goals",
+                "rgroup": "objects",
+                "texture": "img_objects",
+                "width": "8"
+            },
+            "required_properties": [
+                "id",
+                "link",
+                "threshold",
+                "levelPrereq",
+                "destGoalId"
+            ]
+        },
+        "coin": {
+            "properties": {
+                "frame": "6",
+                "group": "coins",
+                "pgroup": "coins",
+                "rgroup": "objects",
+                "texture": "img_objects"
+            }
+        },
+        "hazard": {
+            "properties": {}
+        },
+        "bouncer": {
+            "properties": {
+                "group": "hazards",
+                "pgroup": "hazards",
+                "rgroup": "objects",
+                "texture": "enemy_bomb",
+                "velocityX": 0,
+                "velocityY": 0
+            }
+        },
+        "tracker": {
+            "properties": {
+                "group": "hazards",
+                "pgroup": "hazards",
+                "rgroup": "objects",
+                "texture": "enemy_tracker",
+                "velocityX": 0,
+                "velocityY": 0
+            }
+        },
+        "tree": {
+            "properties": {
+                "group": "scenery",
+                "pgroup": "blockers",
+                "rgroup": "objects"
+            },
+            "required_properties": [
+                "texture"
+            ]
+        },
+        "bush": {
+            "properties": {
+                "group": "scenery",
+                "pgroup": "blockers",
+                "rgroup": "objects"
+            },
+            "required_properties": [
+                "texture"
+            ]
+        },
+        "turret": {
+            "properties": {
+                "frame": "0",
+                "group": "turrets",
+                "pgroup": "blockers",
+                "rgroup": "objects",
+                "texture": "enemy_sheet"
+            }
+        }
     }
-  },
-  "levels": {
-    "lvl_hub1": {
-      "name": "Hub 1",
-      "key": "lvl_hub1",
-      "tileset": "tilesheet",
-      "completion": -1
-    },
-    "lvl_h1l1": {
-      "name":"Level 1",
-      "key": "lvl_h1l1",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_h1l2": {
-      "name":"Level 2",
-      "key": "lvl_h1l2",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_h1l3": {
-      "name": "Level 3",
-      "key": "lvl_h1l3",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_h1l4": {
-      "name":"Level 4",
-      "key":"lvl_h1l4",
-      "tileset":"tilesheet",
-      "completion":-1
-    },
-    "lvl_h1l5": {
-      "name": "Level 5",
-      "key": "lvl_h1l5",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_h1l6": {
-      "name": "Level 6",
-      "key": "lvl_h1l6",
-      "tileset": "tilesheet",
-      "completion": -1
-    },
-    "lvl_hub2": {
-      "name": "Hub 2",
-      "key": "lvl_hub2",
-      "tileset": "tilesheet",
-      "completion": -1
-    },
-    "lvl_h2l1": {
-      "name":"Level 1",
-      "key": "lvl_h2l1",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_h2l2": {
-      "name":"Level 2",
-      "key": "lvl_h2l2",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_h2l3": {
-      "name": "Level 3",
-      "key": "lvl_h2l3",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_h2l4": {
-      "name":"Level 4",
-      "key":"lvl_h2l4",
-      "tileset":"tilesheet",
-      "completion":-1
-    },
-    "lvl_h2l5": {
-      "name": "Level 5",
-      "key": "lvl_h2l5",
-      "tileset": "tilesheet",
-      "completion":-1
-    },
-    "lvl_h2l6": {
-      "name": "Level 6",
-      "key": "lvl_h2l6",
-      "tileset": "tilesheet",
-      "completion": -1
-    },
-    "lvl_forest": {
-        "name": "Forest",
-        "key": "lvl_forest",
-        "tileset": "tilesheet",
-        "completion": -1
-    },
-    "lvl_waffle": {
-        "name": "Waffle",
-        "key": "lvl_waffle",
-        "tileset": "tilesheet",
-        "completion": -1
-    },
-    "lvl_sticks": {
-        "name": "Sticks",
-        "key": "lvl_sticks",
-        "tileset": "tilesheet",
-        "completion": -1
-    }
-  },
-  "groups": [
-    "shadows",
-    "objects",
-    "coins",
-    "goal",
-    "hazards",
-    "player",
-    "scenery",
-    "crates",
-    "turrets",
-    "triggers",
-    "tilebreakers"
-  ],
-  "render_groups": [
-    "objects",
-    "triggers",
-    "tilebreakers"
-  ],
-  "physics_groups": [
-    "coins",
-    "players",
-    "hazards",
-    "blockers",
-    "goals",
-    "triggers",
-    "teleporters"
-  ],
-  "prefabs": {
-    "trigger": {
-      "properties": {
-        "width": 24,
-        "height": 24,
-        "pgroup": "triggers",
-        "rgroup": "triggers",
-        "triggerCountAllowed": 1,
-        "triggerFunction": "removeTiles",
-        "triggerParams": "{}"
-      }
-    },
-    "teleporter": {
-      "properties": {
-        "pgroup": "teleporters",
-        "rgroup": "objects",
-        "texture": "img_objects",
-        "frame": 4
-      },
-      "required_properties": [
-        "targetTile"
-      ]
-    },
-    "player": {
-      "properties": {
-        "group":"player",
-        "pgroup":"players",
-        "rgroup":"objects",
-        "texture":"img_player_white",
-        "spawnFromGoal":false
-      }
-    },
-    "goal": {
-      "properties": {
-        "frame":"8",
-        "group":"goal",
-        "height":"8",
-        "pgroup":"goals",
-        "rgroup":"objects",
-        "texture":"img_objects",
-        "width":"8"
-      },
-      "required_properties": [
-        "id",
-        "link",
-        "threshold",
-        "levelPrereq",
-        "destGoalId"
-      ]
-    },
-    "coin": {
-      "properties": {
-        "frame":"6",
-        "group":"coins",
-        "pgroup":"coins",
-        "rgroup":"objects",
-        "texture":"img_objects"
-      }
-    },
-    "hazard": {
-      "properties": {
-
-      }
-    },
-    "bouncer": {
-      "properties": {
-        "group":"hazards",
-        "pgroup":"hazards",
-        "rgroup":"objects",
-        "texture":"enemy_bomb",
-        "velocityX":0,
-        "velocityY":0
-      }
-    },
-    "tracker": {
-      "properties": {
-        "group":"hazards",
-        "pgroup":"hazards",
-        "rgroup":"objects",
-        "texture":"enemy_tracker",
-        "velocityX":0,
-        "velocityY":0
-      }
-    },
-    "tree": {
-      "properties": {
-        "group":"scenery",
-        "pgroup":"blockers",
-        "rgroup":"objects"
-      },
-      "required_properties": [
-        "texture"
-      ]
-    },
-    "bush": {
-      "properties": {
-        "group":"scenery",
-        "pgroup":"blockers",
-        "rgroup":"objects"
-      },
-      "required_properties": [
-        "texture"
-      ]
-    },
-    "turret": {
-      "properties": {
-        "frame":"0",
-        "group":"turrets",
-        "pgroup":"blockers",
-        "rgroup":"objects",
-        "texture":"enemy_sheet"
-      }
-    }
-  }
 }
