@@ -1389,6 +1389,12 @@
                     "height": 24,
                     "id": 10,
                     "name": "",
+                    "properties": {
+                        "speed": "70"
+                    },
+                    "propertytypes": {
+                        "speed": "string"
+                    },
                     "rotation": 0,
                     "type": "tracker",
                     "visible": true,
