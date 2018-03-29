@@ -6,7 +6,7 @@ Unstable.TrackerHazard = function (game_state, position, properties) {
 
     game_state.game.physics.arcade.enable(this);
 
-    this.speed = properties.speed || 50;
+    this.speed = parseInt(properties.speed) || 50;
     // this.body.velocity.setTo(parseInt(properties.velocityX), parseInt(properties.velocityY));
     this.body.bounce.set(1);
 

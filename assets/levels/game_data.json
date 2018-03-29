@@ -506,7 +506,8 @@
                 "rgroup": "objects",
                 "texture": "enemy_tracker",
                 "velocityX": 0,
-                "velocityY": 0
+                "velocityY": 0,
+                "speed": 50
             }
         },
         "tree": {
