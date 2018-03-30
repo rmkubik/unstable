@@ -1869,6 +1869,9 @@
                 "y": -24
             },
             "tiles": {
+                "3": {
+                    "type": "teleporter"
+                },
                 "6": {
                     "type": "coin"
                 },
