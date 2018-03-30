@@ -211,6 +211,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/U.json"
         },
+        "lvl_cross": {
+            "type": "tilemap",
+            "source": "assets/levels/build/cross.json"
+        },
         "lvl_divide": {
             "type": "tilemap",
             "source": "assets/levels/build/divide.json"
@@ -426,6 +430,12 @@
         "lvl_divide": {
             "name": "Divide",
             "key": "lvl_divide",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_cross": {
+            "name": "Cross",
+            "key": "lvl_cross",
             "tileset": "tilesheet",
             "completion": -1
         }
