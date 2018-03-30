@@ -215,6 +215,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/donut.json"
         },
+        "lvl_flower": {
+            "type": "tilemap",
+            "source": "assets/levels/build/flower.json"
+        },
         "lvl_forest": {
             "type": "tilemap",
             "source": "assets/levels/build/forest.json"
@@ -274,6 +278,10 @@
         "lvl_hub2": {
             "type": "tilemap",
             "source": "assets/levels/build/hub2.json"
+        },
+        "lvl_soclose": {
+            "type": "tilemap",
+            "source": "assets/levels/build/soclose.json"
         },
         "lvl_sticks": {
             "type": "tilemap",
@@ -396,6 +404,18 @@
         "lvl_donut": {
             "name": "Donut",
             "key": "lvl_donut",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_flower": {
+            "name": "Flower",
+            "key": "lvl_flower",
+            "tileset": "tilesheet",
+            "completion": -1
+        },
+        "lvl_soclose": {
+            "name": "Soclose",
+            "key": "lvl_soclose",
             "tileset": "tilesheet",
             "completion": -1
         }
