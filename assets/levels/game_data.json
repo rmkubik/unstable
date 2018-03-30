@@ -279,9 +279,9 @@
             "type": "tilemap",
             "source": "assets/levels/build/hub2.json"
         },
-        "lvl_soclose": {
+        "lvl_soClose": {
             "type": "tilemap",
-            "source": "assets/levels/build/soclose.json"
+            "source": "assets/levels/build/soClose.json"
         },
         "lvl_sticks": {
             "type": "tilemap",
@@ -413,9 +413,9 @@
             "tileset": "tilesheet",
             "completion": -1
         },
-        "lvl_soclose": {
-            "name": "Soclose",
-            "key": "lvl_soclose",
+        "lvl_soClose": {
+            "name": "So Close",
+            "key": "lvl_soClose",
             "tileset": "tilesheet",
             "completion": -1
         }
