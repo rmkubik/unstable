@@ -126,7 +126,7 @@
             "source": "assets/images/enemy_sheet.png",
             "frame_width": 24,
             "frame_height": 24,
-            "frames": 5,
+            "frames": 10,
             "spacing": 1,
             "margin": 0
         },
