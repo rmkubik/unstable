@@ -1786,15 +1786,25 @@
             "firstgid": 1
         },
         {
-            "columns": 1,
+            "columns": 2,
             "image": "../../images/collision.png",
             "imageheight": 24,
-            "imagewidth": 24,
+            "imagewidth": 49,
             "margin": 0,
             "name": "collision",
             "spacing": 1,
-            "tilecount": 1,
+            "tilecount": 2,
             "tileheight": 24,
+            "tileproperties": {
+                "1": {
+                    "type": "enemy_only"
+                }
+            },
+            "tilepropertytypes": {
+                "1": {
+                    "type": "string"
+                }
+            },
             "tilewidth": 24,
             "type": "tileset",
             "firstgid": 17

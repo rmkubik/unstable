@@ -1249,7 +1249,7 @@
             "name": "objects",
             "objects": [
                 {
-                    "gid": 31,
+                    "gid": 32,
                     "height": 24,
                     "id": 1,
                     "name": "",
@@ -1261,7 +1261,7 @@
                     "y": 405
                 },
                 {
-                    "gid": 31,
+                    "gid": 32,
                     "height": 24,
                     "id": 2,
                     "name": "",
@@ -1273,7 +1273,7 @@
                     "y": 120
                 },
                 {
-                    "gid": 31,
+                    "gid": 32,
                     "height": 24,
                     "id": 3,
                     "name": "",
@@ -1285,7 +1285,7 @@
                     "y": 405
                 },
                 {
-                    "gid": 43,
+                    "gid": 44,
                     "height": 24,
                     "id": 4,
                     "name": "",
@@ -1311,7 +1311,7 @@
                     "y": 111
                 },
                 {
-                    "gid": 43,
+                    "gid": 44,
                     "height": 24,
                     "id": 5,
                     "name": "",
@@ -1349,7 +1349,7 @@
                     "y": 116
                 },
                 {
-                    "gid": 41,
+                    "gid": 42,
                     "height": 24,
                     "id": 7,
                     "name": "",
@@ -1361,7 +1361,7 @@
                     "y": 135
                 },
                 {
-                    "gid": 41,
+                    "gid": 42,
                     "height": 24,
                     "id": 8,
                     "name": "",
@@ -1373,7 +1373,7 @@
                     "y": 408
                 },
                 {
-                    "gid": 41,
+                    "gid": 42,
                     "height": 24,
                     "id": 9,
                     "name": "",
@@ -1385,7 +1385,7 @@
                     "y": 322
                 },
                 {
-                    "gid": 41,
+                    "gid": 42,
                     "height": 24,
                     "id": 10,
                     "name": "",
@@ -1397,7 +1397,7 @@
                     "y": 408
                 },
                 {
-                    "gid": 41,
+                    "gid": 42,
                     "height": 24,
                     "id": 11,
                     "name": "",
@@ -1409,7 +1409,7 @@
                     "y": 319
                 },
                 {
-                    "gid": 41,
+                    "gid": 42,
                     "height": 24,
                     "id": 12,
                     "name": "",
@@ -1421,7 +1421,7 @@
                     "y": 227
                 },
                 {
-                    "gid": 41,
+                    "gid": 42,
                     "height": 24,
                     "id": 13,
                     "name": "",
@@ -1433,7 +1433,7 @@
                     "y": 235
                 },
                 {
-                    "gid": 49,
+                    "gid": 50,
                     "height": 24,
                     "id": 14,
                     "name": "",
@@ -1445,7 +1445,7 @@
                     "y": 222
                 },
                 {
-                    "gid": 49,
+                    "gid": 50,
                     "height": 24,
                     "id": 15,
                     "name": "",
@@ -1567,15 +1567,25 @@
             "firstgid": 24
         },
         {
-            "columns": 1,
+            "columns": 2,
             "image": "../../images/collision.png",
             "imageheight": 24,
-            "imagewidth": 24,
+            "imagewidth": 49,
             "margin": 0,
             "name": "collision",
             "spacing": 1,
-            "tilecount": 1,
+            "tilecount": 2,
             "tileheight": 24,
+            "tileproperties": {
+                "1": {
+                    "type": "enemy_only"
+                }
+            },
+            "tilepropertytypes": {
+                "1": {
+                    "type": "string"
+                }
+            },
             "tilewidth": 24,
             "type": "tileset",
             "firstgid": 30
@@ -1601,7 +1611,7 @@
             },
             "tilewidth": 24,
             "type": "tileset",
-            "firstgid": 31
+            "firstgid": 32
         },
         {
             "columns": 5,
@@ -1630,7 +1640,7 @@
             },
             "tilewidth": 24,
             "type": "tileset",
-            "firstgid": 35
+            "firstgid": 36
         },
         {
             "columns": 4,
@@ -1653,7 +1663,7 @@
             },
             "tilewidth": 24,
             "type": "tileset",
-            "firstgid": 45
+            "firstgid": 46
         },
         {
             "columns": 5,
@@ -1676,7 +1686,7 @@
             },
             "tilewidth": 24,
             "type": "tileset",
-            "firstgid": 49
+            "firstgid": 50
         }
     ],
     "tilewidth": 24,
