@@ -1455,6 +1455,18 @@
                     "width": 24,
                     "x": 177,
                     "y": 313
+                },
+                {
+                    "gid": 55,
+                    "height": 24,
+                    "id": 16,
+                    "name": "",
+                    "rotation": 0,
+                    "type": "slider",
+                    "visible": true,
+                    "width": 24,
+                    "x": 31.438011820836,
+                    "y": 214.948088015381
                 }
             ],
             "opacity": 1,
@@ -1464,7 +1476,7 @@
             "y": 0
         }
     ],
-    "nextobjectid": 16,
+    "nextobjectid": 18,
     "orientation": "orthogonal",
     "renderorder": "right-down",
     "tiledversion": "1.1.2",
@@ -1668,12 +1680,12 @@
         {
             "columns": 5,
             "image": "../../images/enemy_sheet.png",
-            "imageheight": 24,
+            "imageheight": 49,
             "imagewidth": 124,
             "margin": 0,
             "name": "enemy_sheet",
             "spacing": 1,
-            "tilecount": 5,
+            "tilecount": 10,
             "tileheight": 24,
             "tileoffset": {
                 "x": -12,
@@ -1682,6 +1694,9 @@
             "tiles": {
                 "0": {
                     "type": "turret"
+                },
+                "5": {
+                    "type": "slider"
                 }
             },
             "tilewidth": 24,
