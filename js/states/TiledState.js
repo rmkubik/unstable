@@ -44,6 +44,8 @@ Unstable.TiledState.prototype.create = function () {
 
     // this.groups = {};
     this.groups["colliders"] = this.game.add.group();
+    this.groups["enemy_colliders"] = this.game.add.group();
+
 
     // create map layers
     this.layers = {};
@@ -55,8 +57,14 @@ Unstable.TiledState.prototype.create = function () {
                 var row = [];
                 data_row.forEach(function (tile) {
                   if (tile.index > 0) {
-                    row.push(1);
-                    new Unstable.Collider(this, {x:tile.x * 24,y:tile.y * 24}, {group:"colliders",texture:"",width:24,height:24});
+                    var groupName;
+                    if (tile.properties.type === 'enemy_only') {
+                        groupName = "enemy_colliders";
+                    } else {
+                        row.push(1);
+                        groupName = "colliders";
+                    }
+                    new Unstable.Collider(this, {x:tile.x * 24,y:tile.y * 24}, {group: groupName,texture:"",width:24,height:24});
                   } else {
                     row.push(0);
                   }
