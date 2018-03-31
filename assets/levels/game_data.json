@@ -578,6 +578,15 @@
                 "rgroup": "objects",
                 "texture": "enemy_sheet"
             }
+        },
+        "slider": {
+            "properties": {
+                "frame": "5",
+                "group": "turrets",
+                "pgroup": "blockers",
+                "rgroup": "objects",
+                "texture": "enemy_sheet"
+            }
         }
     }
 }

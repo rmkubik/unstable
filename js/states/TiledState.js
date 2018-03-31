@@ -209,6 +209,9 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "crate":
       prefab = new Unstable.Scenery(this, position, properties);
       break;
+    case "slider":
+      prefab = new Unstable.SliderEnemy(this, position, properties);
+      break;
     case "turret":
       prefab = new Unstable.Turret(this, position, properties);
       break;

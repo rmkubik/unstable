@@ -1,6 +1,6 @@
 var Unstable = Unstable || {};
 
-Unstable.Slider = function (game_state, position, properties) {
+Unstable.SliderEnemy = function (game_state, position, properties) {
     "use strict";
     Unstable.Prefab.call(this, game_state, position, properties);
 
@@ -11,10 +11,10 @@ Unstable.Slider = function (game_state, position, properties) {
     this.active = false;
 };
 
-Unstable.Slider.prototype = Object.create(Unstable.Prefab.prototype);
-Unstable.Slider.prototype.constructor = Unstable.Slider;
+Unstable.SliderEnemy.prototype = Object.create(Unstable.Prefab.prototype);
+Unstable.SliderEnemy.prototype.constructor = Unstable.SliderEnemy;
 
-Unstable.Slider.prototype.update = function() {
+Unstable.SliderEnemy.prototype.update = function() {
   //shoot Projectile
   if (!this.coolingDown) {
       this.game_state.game.sound.play("sfx_turretShoot");
@@ -26,6 +26,6 @@ Unstable.Slider.prototype.update = function() {
   }
 }
 
-Unstable.Slider.prototype.resetCooldown = function() {
+Unstable.SliderEnemy.prototype.resetCooldown = function() {
   this.coolingDown = false;
 }
