@@ -583,7 +583,6 @@
             "properties": {
                 "frame": "5",
                 "group": "turrets",
-                "pgroup": "blockers",
                 "rgroup": "objects",
                 "texture": "enemy_sheet",
                 "axis": "y"
