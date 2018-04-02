@@ -319,8 +319,6 @@ Unstable.Player.prototype.teleporterCollide = function (player, teleporter) {
   this.emitter.seekParticlesToLocation(dest, this.resetPlayer, this, dest);
 };
 
-this.
-
 Unstable.Player.prototype.die = function() {
   this.kill();
   this.shadow.kill();
