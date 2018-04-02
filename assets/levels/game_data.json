@@ -451,12 +451,14 @@
         "crates",
         "turrets",
         "triggers",
-        "tilebreakers"
+        "tilebreakers",
+        "nonColide"
     ],
     "render_groups": [
         "objects",
         "triggers",
-        "tilebreakers"
+        "tilebreakers",
+        "nonColide"
     ],
     "physics_groups": [
         "coins",
@@ -465,7 +467,8 @@
         "blockers",
         "goals",
         "triggers",
-        "teleporters"
+        "teleporters",
+        "nonCollide"
     ],
     "prefabs": {
         "trigger": {
@@ -582,8 +585,7 @@
         "slider": {
             "properties": {
                 "frame": "5",
-                "group": "turrets",
-                "rgroup": "objects",
+                "rgroup": "nonColide",
                 "texture": "enemy_sheet",
                 "axis": "y"
             }
