@@ -12,7 +12,7 @@ Unstable.SliderEnemy = function (game_state, position, properties) {
     this.coolingDown = false;
     this.axis = 'x';
     this.firingOffsetTolerance = 10;
-    this.prevDirection = 0;
+    this.prevDirection;
 
 };
 
@@ -49,7 +49,7 @@ Unstable.SliderEnemy.prototype.update = function() {
       var y = 0;
       if (this.prevDirection === Math.sign(diff)) {
           y = Math.sign(diff) * this.speed;
-      } else {
+      } else if (this.prevDirection !== undefined) {
           this.y = this.game_state.player.y;
       }
       this.body.velocity.setTo(x, y);
