@@ -587,7 +587,9 @@
                 "frame": "5",
                 "rgroup": "nonColide",
                 "texture": "enemy_sheet",
-                "axis": "y"
+                "axis": "y",
+                "speed": 90,
+                "minSpeed": 50
             }
         }
     }
