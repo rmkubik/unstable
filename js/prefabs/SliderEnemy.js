@@ -7,7 +7,8 @@ Unstable.SliderEnemy = function (game_state, position, properties) {
     game_state.game.physics.arcade.enable(this);
 
     this.cooldown = 3;
-    this.speed = 90;
+    this.speed = properties.speed;
+    this.minSpeed = properties.minSpeed;
     this.coolingDown = false;
     this.shotSpeed = 75;
 
@@ -89,13 +90,24 @@ Unstable.SliderEnemy.prototype.update = function() {
           y: 0
       }
       if (this.prevDirection === Math.sign(diff)) {
-          pos[this.axis] = Math.sign(diff) * this.speed;
+          pos[this.axis] = this.calculateSpeed(diff);
       } else if (this.prevDirection !== undefined) {
           this[this.axis] = this.game_state.player[this.axis];
       }
       this.body.velocity.setTo(pos.x, pos.y);
       this.prevDirection = Math.sign(diff);
     }
+}
+
+Unstable.SliderEnemy.prototype.calculateSpeed = function(playerDiff) {
+    // console.log(
+    //     Math.sign(playerDiff) * this.minSpeed
+    //         + (this.speed - this.minSpeed)
+    //         * (Math.abs(playerDiff) / 100)
+    // );
+    return Math.sign(playerDiff) * this.minSpeed
+                + (this.speed - this.minSpeed)
+                * (playerDiff / 100);
 }
 
 Unstable.SliderEnemy.prototype.resetCooldown = function() {
