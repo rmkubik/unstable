@@ -47,7 +47,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":21,
+                 "gid":22,
                  "height":24,
                  "id":1,
                  "name":"",
@@ -75,7 +75,7 @@
                  "y":64
                 }, 
                 {
-                 "gid":21,
+                 "gid":22,
                  "height":24,
                  "id":2,
                  "name":"",
@@ -103,7 +103,7 @@
                  "y":442
                 }, 
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":24,
                  "id":3,
                  "name":"",
@@ -123,7 +123,7 @@
                  "y":104
                 }, 
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":24,
                  "id":4,
                  "name":"",
@@ -143,7 +143,7 @@
                  "y":252
                 }, 
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":24,
                  "id":5,
                  "name":"",
@@ -163,7 +163,7 @@
                  "y":180
                 }, 
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":24,
                  "id":6,
                  "name":"",
@@ -183,7 +183,7 @@
                  "y":251
                 }, 
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":24,
                  "id":7,
                  "name":"",
@@ -203,7 +203,7 @@
                  "y":333
                 }, 
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":24,
                  "id":8,
                  "name":"",
@@ -223,7 +223,7 @@
                  "y":255
                 }, 
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":24,
                  "id":9,
                  "name":"",
@@ -243,7 +243,7 @@
                  "y":443
                 }, 
                 {
-                 "gid":28,
+                 "gid":29,
                  "height":24,
                  "id":10,
                  "name":"",
@@ -255,7 +255,7 @@
                  "y":322
                 }, 
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":24,
                  "id":11,
                  "name":"",
@@ -267,7 +267,7 @@
                  "y":351
                 }, 
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":24,
                  "id":12,
                  "name":"",
@@ -279,7 +279,7 @@
                  "y":297
                 }, 
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":24,
                  "id":13,
                  "name":"",
@@ -291,7 +291,7 @@
                  "y":324
                 }, 
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":24,
                  "id":14,
                  "name":"",
@@ -303,7 +303,7 @@
                  "y":254
                 }, 
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":24,
                  "id":15,
                  "name":"",
@@ -315,7 +315,7 @@
                  "y":255
                 }, 
                 {
-                 "gid":19,
+                 "gid":20,
                  "height":24,
                  "id":16,
                  "name":"",
@@ -327,7 +327,7 @@
                  "y":270
                 }, 
                 {
-                 "gid":28,
+                 "gid":29,
                  "height":24,
                  "id":17,
                  "name":"",
@@ -339,7 +339,7 @@
                  "y":363
                 }, 
                 {
-                 "gid":28,
+                 "gid":29,
                  "height":24,
                  "id":18,
                  "name":"",
@@ -351,7 +351,7 @@
                  "y":180
                 }, 
                 {
-                 "gid":33,
+                 "gid":39,
                  "height":24,
                  "id":19,
                  "name":"",
@@ -371,7 +371,7 @@
                  "y":89
                 }, 
                 {
-                 "gid":33,
+                 "gid":39,
                  "height":24,
                  "id":20,
                  "name":"",
@@ -391,7 +391,7 @@
                  "y":113
                 }, 
                 {
-                 "gid":33,
+                 "gid":39,
                  "height":24,
                  "id":21,
                  "name":"",
@@ -413,7 +413,7 @@
                  "y":369
                 }, 
                 {
-                 "gid":18,
+                 "gid":19,
                  "height":24,
                  "id":22,
                  "name":"",
@@ -425,7 +425,7 @@
                  "y":92
                 }, 
                 {
-                 "gid":40,
+                 "gid":46,
                  "height":48,
                  "id":23,
                  "name":"",
@@ -445,7 +445,7 @@
                  "y":76
                 }, 
                 {
-                 "gid":41,
+                 "gid":47,
                  "height":48,
                  "id":24,
                  "name":"",
@@ -465,7 +465,7 @@
                  "y":296
                 }, 
                 {
-                 "gid":43,
+                 "gid":49,
                  "height":48,
                  "id":25,
                  "name":"",
@@ -485,7 +485,7 @@
                  "y":345
                 }, 
                 {
-                 "gid":38,
+                 "gid":44,
                  "height":24,
                  "id":26,
                  "name":"",
@@ -505,7 +505,7 @@
                  "y":172
                 }, 
                 {
-                 "gid":38,
+                 "gid":44,
                  "height":24,
                  "id":27,
                  "name":"",
@@ -525,7 +525,7 @@
                  "y":76
                 }, 
                 {
-                 "gid":39,
+                 "gid":45,
                  "height":24,
                  "id":28,
                  "name":"",
@@ -545,7 +545,7 @@
                  "y":455
                 }, 
                 {
-                 "gid":37,
+                 "gid":43,
                  "height":24,
                  "id":29,
                  "name":"",
@@ -590,21 +590,21 @@
          "tilewidth":24
         }, 
         {
-         "columns":1,
+         "columns":2,
          "firstgid":17,
          "image":"..\/..\/images\/collision.png",
          "imageheight":24,
-         "imagewidth":24,
+         "imagewidth":49,
          "margin":0,
          "name":"collision",
          "spacing":1,
-         "tilecount":1,
+         "tilecount":2,
          "tileheight":24,
          "tilewidth":24
         }, 
         {
          "columns":5,
-         "firstgid":18,
+         "firstgid":19,
          "image":"..\/..\/images\/object_sheet.png",
          "imageheight":49,
          "imagewidth":124,
@@ -622,14 +622,14 @@
         }, 
         {
          "columns":5,
-         "firstgid":28,
+         "firstgid":29,
          "image":"..\/..\/images\/enemy_sheet.png",
-         "imageheight":24,
+         "imageheight":49,
          "imagewidth":124,
          "margin":0,
          "name":"enemy_sheet",
          "spacing":1,
-         "tilecount":5,
+         "tilecount":10,
          "tileheight":24,
          "tileoffset":
             {
@@ -640,7 +640,7 @@
         }, 
         {
          "columns":4,
-         "firstgid":33,
+         "firstgid":39,
          "image":"..\/..\/images\/enemy_bomb.png",
          "imageheight":24,
          "imagewidth":99,
@@ -657,8 +657,64 @@
          "tilewidth":24
         }, 
         {
-         "firstgid":37,
-         "source":"..\/tilesets\/scenery.tsx"
+         "columns":0,
+         "firstgid":43,
+         "margin":0,
+         "name":"scenery",
+         "spacing":0,
+         "tilecount":7,
+         "tileheight":48,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-24
+            },
+         "tiles":
+            {
+             "0":
+                {
+                 "image":"..\/..\/images\/bush3.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "1":
+                {
+                 "image":"..\/..\/images\/bush2.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "2":
+                {
+                 "image":"..\/..\/images\/bush1.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "3":
+                {
+                 "image":"..\/..\/images\/tree3.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "4":
+                {
+                 "image":"..\/..\/images\/tree4.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "5":
+                {
+                 "image":"..\/..\/images\/tree2.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "6":
+                {
+                 "image":"..\/..\/images\/tree1.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                }
+            },
+         "tilewidth":24
         }],
  "tilewidth":24,
  "type":"map",
