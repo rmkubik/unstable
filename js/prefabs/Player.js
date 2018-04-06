@@ -246,6 +246,7 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
     this.kill();
     this.shadow.kill();
     this.emitter.burst(this.x, this.y);
+    this.game_state.timer.pause();
     var direction = this.game_state.game.rnd.integerInRange(0, 3);
     var position = {};
     switch (direction) {

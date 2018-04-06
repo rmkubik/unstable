@@ -16,6 +16,7 @@ Unstable.Timer = function (game_state, position, properties) {
     // this.body.setSize(properties.width, properties.height, 0, 0);
 
     this.game_state = game_state;
+    this.paused = false;
 
     this.startTime = this.game_state.game.time.totalElapsedSeconds();
 };
@@ -24,6 +25,12 @@ Unstable.Timer = function (game_state, position, properties) {
 Unstable.Timer.prototype.constructor = Unstable.Timer;
 
 Unstable.Timer.prototype.update = function() {
-    var time = this.game_state.game.time.totalElapsedSeconds() - this.startTime;
-    this.text.setText(time.toFixed(3));
+    if (!this.paused) {
+        var time = this.game_state.game.time.totalElapsedSeconds() - this.startTime;
+        this.text.setText(time.toFixed(3));
+    }
+}
+
+Unstable.Timer.prototype.pause = function() {
+    this.paused = true;
 }
