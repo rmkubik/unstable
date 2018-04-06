@@ -1273,7 +1273,7 @@
                     "y": 101
                 },
                 {
-                    "gid": 19,
+                    "gid": 20,
                     "height": 24,
                     "id": 5,
                     "name": "",
@@ -1299,7 +1299,7 @@
                     "y": 121
                 },
                 {
-                    "gid": 31,
+                    "gid": 32,
                     "height": 48,
                     "id": 24,
                     "name": "",
@@ -1323,7 +1323,7 @@
                     "y": 139
                 },
                 {
-                    "gid": 31,
+                    "gid": 32,
                     "height": 48,
                     "id": 25,
                     "name": "",
@@ -1347,7 +1347,7 @@
                     "y": 250
                 },
                 {
-                    "gid": 31,
+                    "gid": 32,
                     "height": 48,
                     "id": 26,
                     "name": "",
@@ -1371,7 +1371,7 @@
                     "y": 247
                 },
                 {
-                    "gid": 31,
+                    "gid": 32,
                     "height": 48,
                     "id": 30,
                     "name": "",
@@ -1395,7 +1395,7 @@
                     "y": 333
                 },
                 {
-                    "gid": 32,
+                    "gid": 33,
                     "height": 48,
                     "id": 32,
                     "name": "",
@@ -1419,7 +1419,7 @@
                     "y": 82
                 },
                 {
-                    "gid": 32,
+                    "gid": 33,
                     "height": 48,
                     "id": 33,
                     "name": "",
@@ -1443,7 +1443,7 @@
                     "y": 394
                 },
                 {
-                    "gid": 33,
+                    "gid": 34,
                     "height": 48,
                     "id": 34,
                     "name": "",
@@ -1467,7 +1467,7 @@
                     "y": 422
                 },
                 {
-                    "gid": 33,
+                    "gid": 34,
                     "height": 48,
                     "id": 38,
                     "name": "",
@@ -1491,7 +1491,7 @@
                     "y": 223
                 },
                 {
-                    "gid": 34,
+                    "gid": 35,
                     "height": 48,
                     "id": 40,
                     "name": "",
@@ -1515,7 +1515,7 @@
                     "y": 65
                 },
                 {
-                    "gid": 35,
+                    "gid": 36,
                     "height": 24,
                     "id": 41,
                     "name": "",
@@ -1539,7 +1539,7 @@
                     "y": 412
                 },
                 {
-                    "gid": 35,
+                    "gid": 36,
                     "height": 24,
                     "id": 43,
                     "name": "",
@@ -1563,7 +1563,7 @@
                     "y": 359
                 },
                 {
-                    "gid": 35,
+                    "gid": 36,
                     "height": 24,
                     "id": 44,
                     "name": "",
@@ -1587,7 +1587,7 @@
                     "y": 54
                 },
                 {
-                    "gid": 37,
+                    "gid": 38,
                     "height": 24,
                     "id": 45,
                     "name": "",
@@ -1611,7 +1611,7 @@
                     "y": 479
                 },
                 {
-                    "gid": 19,
+                    "gid": 20,
                     "height": 24,
                     "id": 50,
                     "name": "",
@@ -1637,14 +1637,14 @@
                     "y": 96
                 },
                 {
-                    "gid": 19,
+                    "gid": 20,
                     "height": 24,
                     "id": 51,
                     "name": "",
                     "properties": {
                         "destGoalId": "0",
                         "id": "2",
-                        "levelPrereq": "lvl_h1l2",
+                        "levelPrereq": "lvl_forest",
                         "link": "lvl_h1l3",
                         "threshold": "0"
                     },
@@ -1663,7 +1663,7 @@
                     "y": 338
                 },
                 {
-                    "gid": 19,
+                    "gid": 20,
                     "height": 24,
                     "id": 52,
                     "name": "",
@@ -1689,7 +1689,7 @@
                     "y": 260
                 },
                 {
-                    "gid": 19,
+                    "gid": 20,
                     "height": 24,
                     "id": 53,
                     "name": "",
@@ -1715,7 +1715,7 @@
                     "y": 432
                 },
                 {
-                    "gid": 19,
+                    "gid": 20,
                     "height": 24,
                     "id": 54,
                     "name": "",
@@ -1741,7 +1741,7 @@
                     "y": 458
                 },
                 {
-                    "gid": 35,
+                    "gid": 36,
                     "height": 24,
                     "id": 55,
                     "name": "",
@@ -1765,7 +1765,7 @@
                     "y": 53
                 },
                 {
-                    "gid": 32,
+                    "gid": 33,
                     "height": 48,
                     "id": 56,
                     "name": "",
@@ -1789,7 +1789,7 @@
                     "y": 77
                 },
                 {
-                    "gid": 19,
+                    "gid": 20,
                     "height": 24,
                     "id": 58,
                     "name": "",
@@ -1815,7 +1815,7 @@
                     "y": 207
                 },
                 {
-                    "gid": 37,
+                    "gid": 38,
                     "height": 24,
                     "id": 59,
                     "name": "",
@@ -1855,7 +1855,7 @@
         {
             "columns": 1,
             "firstgid": 1,
-            "image": "../images/player.png",
+            "image": "../../images/player.png",
             "imageheight": 32,
             "imagewidth": 32,
             "margin": 0,
@@ -1872,7 +1872,7 @@
         {
             "columns": 8,
             "firstgid": 2,
-            "image": "../images/tilesheet.png",
+            "image": "../../images/tilesheet.png",
             "imageheight": 49,
             "imagewidth": 199,
             "margin": 0,
@@ -1883,22 +1883,22 @@
             "tilewidth": 24
         },
         {
-            "columns": 1,
+            "columns": 2,
             "firstgid": 18,
-            "image": "../images/collision.png",
+            "image": "../../images/collision.png",
             "imageheight": 24,
-            "imagewidth": 24,
+            "imagewidth": 49,
             "margin": 0,
             "name": "collision",
             "spacing": 0,
-            "tilecount": 1,
+            "tilecount": 2,
             "tileheight": 24,
             "tilewidth": 24
         },
         {
             "columns": 5,
-            "firstgid": 19,
-            "image": "../images/object_sheet.png",
+            "firstgid": 20,
+            "image": "../../images/object_sheet.png",
             "imageheight": 49,
             "imagewidth": 124,
             "margin": 0,
@@ -1914,7 +1914,7 @@
         },
         {
             "columns": 0,
-            "firstgid": 29,
+            "firstgid": 30,
             "margin": 0,
             "name": "scenery",
             "spacing": 0,
@@ -1926,37 +1926,37 @@
             },
             "tiles": {
                 "2": {
-                    "image": "../images/tree1.png",
+                    "image": "../../images/tree1.png",
                     "imageheight": 48,
                     "imagewidth": 24
                 },
                 "3": {
-                    "image": "../images/tree2.png",
+                    "image": "../../images/tree2.png",
                     "imageheight": 48,
                     "imagewidth": 24
                 },
                 "4": {
-                    "image": "../images/tree3.png",
+                    "image": "../../images/tree3.png",
                     "imageheight": 48,
                     "imagewidth": 24
                 },
                 "5": {
-                    "image": "../images/tree4.png",
+                    "image": "../../images/tree4.png",
                     "imageheight": 48,
                     "imagewidth": 24
                 },
                 "6": {
-                    "image": "../images/bush1.png",
+                    "image": "../../images/bush1.png",
                     "imageheight": 24,
                     "imagewidth": 24
                 },
                 "7": {
-                    "image": "../images/bush2.png",
+                    "image": "../../images/bush2.png",
                     "imageheight": 24,
                     "imagewidth": 24
                 },
                 "8": {
-                    "image": "../images/bush3.png",
+                    "image": "../../images/bush3.png",
                     "imageheight": 24,
                     "imagewidth": 24
                 }
@@ -1965,8 +1965,8 @@
         },
         {
             "columns": 3,
-            "firstgid": 38,
-            "image": "../images/enemy_tower.png",
+            "firstgid": 39,
+            "image": "../../images/enemy_tower.png",
             "imageheight": 24,
             "imagewidth": 74,
             "margin": 0,
