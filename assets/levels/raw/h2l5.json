@@ -1,4 +1,5 @@
 { "height":20,
+ "infinite":false,
  "layers":[
         {
          "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -23,13 +24,17 @@
          "y":0
         }, 
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 22, 22, 22, 22, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 22, 22, 22, 22, 22, 22, 22, 0, 0, 22, 22, 22, 22, 22, 22, 22, 0, 0, 0, 0, 22, 22, 0, 0, 0, 0, 22, 22, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 22, 0, 0, 0, 22, 22, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 22, 0, 0, 0, 22, 22, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 22, 22, 0, 22, 22, 22, 22, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 22, 0, 22, 0, 0, 0, 0, 22, 22, 22, 22, 22, 0, 0, 0, 0, 0, 0, 22, 22, 22, 0, 22, 22, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 22, 22, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 22, 22, 22, 22, 22, 22, 22, 22, 22, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 22, 22, 22, 22, 22, 22, 0],
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 27, 27, 27, 27, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 27, 27, 27, 27, 27, 27, 27, 0, 0, 27, 27, 27, 27, 27, 27, 27, 0, 0, 0, 0, 27, 27, 0, 0, 0, 0, 27, 27, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 27, 0, 0, 0, 27, 27, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 27, 0, 0, 0, 27, 27, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 27, 27, 0, 27, 27, 27, 27, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 27, 0, 27, 0, 0, 0, 0, 27, 27, 27, 27, 27, 0, 0, 0, 0, 0, 0, 27, 27, 27, 0, 27, 27, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 27, 27, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 27, 27, 27, 27, 27, 27, 27, 27, 27, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 27, 27, 27, 27, 27, 27, 0],
          "height":20,
          "name":"collision",
          "opacity":1,
          "properties":
             {
              "collision":"true"
+            },
+         "propertytypes":
+            {
+             "collision":"string"
             },
          "type":"tilelayer",
          "visible":true,
@@ -39,7 +44,6 @@
         }, 
         {
          "draworder":"topdown",
-         "height":20,
          "name":"objects",
          "objects":[
                 {
@@ -55,6 +59,14 @@
                      "link":"lvl_hub2",
                      "threshold":"7"
                     },
+                 "propertytypes":
+                    {
+                     "destGoalId":"string",
+                     "id":"string",
+                     "levelPrereq":"string",
+                     "link":"string",
+                     "threshold":"string"
+                    },
                  "rotation":0,
                  "type":"goal",
                  "visible":true,
@@ -67,10 +79,6 @@
                  "height":24,
                  "id":4,
                  "name":"",
-                 "properties":
-                    {
-
-                    },
                  "rotation":0,
                  "type":"player",
                  "visible":true,
@@ -91,6 +99,14 @@
                      "link":"lvl_hub2",
                      "threshold":"0"
                     },
+                 "propertytypes":
+                    {
+                     "destGoalId":"string",
+                     "id":"string",
+                     "levelPrereq":"string",
+                     "link":"string",
+                     "threshold":"string"
+                    },
                  "rotation":0,
                  "type":"goal",
                  "visible":true,
@@ -99,14 +115,10 @@
                  "y":443
                 }, 
                 {
-                 "gid":23,
+                 "gid":29,
                  "height":24,
                  "id":6,
                  "name":"",
-                 "properties":
-                    {
-
-                    },
                  "rotation":0,
                  "type":"tracker",
                  "visible":true,
@@ -117,31 +129,23 @@
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":20,
          "x":0,
          "y":0
         }],
  "nextobjectid":7,
  "orientation":"orthogonal",
- "properties":
-    {
-
-    },
  "renderorder":"right-down",
+ "tiledversion":"1.1.2",
  "tileheight":24,
  "tilesets":[
         {
          "columns":8,
          "firstgid":1,
-         "image":"..\/images\/tilesheet.png",
+         "image":"..\/..\/images\/tilesheet.png",
          "imageheight":49,
          "imagewidth":199,
          "margin":0,
          "name":"base",
-         "properties":
-            {
-
-            },
          "spacing":1,
          "tilecount":16,
          "tileheight":24,
@@ -150,17 +154,13 @@
         {
          "columns":5,
          "firstgid":17,
-         "image":"..\/images\/object_sheet.png",
-         "imageheight":24,
+         "image":"..\/..\/images\/object_sheet.png",
+         "imageheight":49,
          "imagewidth":124,
          "margin":0,
          "name":"object_sheet",
-         "properties":
-            {
-
-            },
          "spacing":1,
-         "tilecount":5,
+         "tilecount":10,
          "tileheight":24,
          "tileoffset":
             {
@@ -170,27 +170,230 @@
          "tilewidth":24
         }, 
         {
-         "columns":1,
-         "firstgid":22,
-         "image":"..\/images\/collision.png",
+         "columns":2,
+         "firstgid":27,
+         "image":"..\/..\/images\/collision.png",
          "imageheight":24,
-         "imagewidth":24,
+         "imagewidth":49,
          "margin":0,
          "name":"collision",
-         "properties":
-            {
-
-            },
          "spacing":1,
-         "tilecount":1,
+         "tilecount":2,
          "tileheight":24,
          "tilewidth":24
         }, 
         {
-         "firstgid":23,
-         "source":"enemy_bomb.tsx"
+         "columns":4,
+         "firstgid":29,
+         "image":"..\/..\/images\/enemy_bomb.png",
+         "imageheight":24,
+         "imagewidth":99,
+         "margin":0,
+         "name":"enemy_bomb",
+         "spacing":1,
+         "tilecount":4,
+         "tileheight":24,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-24
+            },
+         "tilewidth":24
+        }, 
+        {
+         "columns":0,
+         "firstgid":33,
+         "margin":0,
+         "name":"scenery",
+         "spacing":0,
+         "tilecount":7,
+         "tileheight":48,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-24
+            },
+         "tiles":
+            {
+             "0":
+                {
+                 "image":"..\/..\/images\/bush3.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "1":
+                {
+                 "image":"..\/..\/images\/bush2.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "2":
+                {
+                 "image":"..\/..\/images\/bush1.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "3":
+                {
+                 "image":"..\/..\/images\/tree3.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "4":
+                {
+                 "image":"..\/..\/images\/tree4.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "5":
+                {
+                 "image":"..\/..\/images\/tree2.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "6":
+                {
+                 "image":"..\/..\/images\/tree1.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                }
+            },
+         "tilewidth":24
+        }, 
+        {
+         "columns":5,
+         "firstgid":40,
+         "image":"..\/..\/images\/enemy_sheet.png",
+         "imageheight":49,
+         "imagewidth":124,
+         "margin":0,
+         "name":"enemy_sheet",
+         "spacing":1,
+         "tilecount":10,
+         "tileheight":24,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-12
+            },
+         "tilewidth":24
+        }, 
+        {
+         "columns":4,
+         "firstgid":50,
+         "image":"..\/..\/images\/enemy_tracker.png",
+         "imageheight":24,
+         "imagewidth":99,
+         "margin":0,
+         "name":"enemy_tracker",
+         "spacing":1,
+         "tilecount":4,
+         "tileheight":24,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-12
+            },
+         "tilewidth":24
+        }, 
+        {
+         "columns":5,
+         "firstgid":54,
+         "image":"..\/..\/images\/object_sheet.png",
+         "imageheight":49,
+         "imagewidth":124,
+         "margin":0,
+         "name":"object_sheet",
+         "spacing":1,
+         "tilecount":10,
+         "tileheight":24,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-24
+            },
+         "tilewidth":24
+        }, 
+        {
+         "columns":6,
+         "firstgid":64,
+         "image":"..\/..\/images\/player_sheet_white.png",
+         "imageheight":24,
+         "imagewidth":101,
+         "margin":0,
+         "name":"player",
+         "spacing":1,
+         "tilecount":6,
+         "tileheight":24,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-12
+            },
+         "tilewidth":16
+        }, 
+        {
+         "columns":0,
+         "firstgid":70,
+         "margin":0,
+         "name":"scenery",
+         "spacing":0,
+         "tilecount":7,
+         "tileheight":48,
+         "tileoffset":
+            {
+             "x":-12,
+             "y":-24
+            },
+         "tiles":
+            {
+             "0":
+                {
+                 "image":"..\/..\/images\/bush3.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "1":
+                {
+                 "image":"..\/..\/images\/bush2.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "2":
+                {
+                 "image":"..\/..\/images\/bush1.png",
+                 "imageheight":24,
+                 "imagewidth":24
+                },
+             "3":
+                {
+                 "image":"..\/..\/images\/tree3.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "4":
+                {
+                 "image":"..\/..\/images\/tree4.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "5":
+                {
+                 "image":"..\/..\/images\/tree2.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                },
+             "6":
+                {
+                 "image":"..\/..\/images\/tree1.png",
+                 "imageheight":48,
+                 "imagewidth":24
+                }
+            },
+         "tilewidth":24
         }],
  "tilewidth":24,
+ "type":"map",
  "version":1,
  "width":20
 }
