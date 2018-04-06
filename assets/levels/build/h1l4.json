@@ -1306,14 +1306,12 @@
                     "id": 8,
                     "name": "",
                     "properties": {
-                        "frame": "1",
                         "group": "coins",
                         "pgroup": "coins",
                         "rgroup": "objects",
                         "texture": "img_objects"
                     },
                     "propertytypes": {
-                        "frame": "string",
                         "group": "string",
                         "pgroup": "string",
                         "rgroup": "string",
@@ -1332,14 +1330,12 @@
                     "id": 10,
                     "name": "",
                     "properties": {
-                        "frame": "1",
                         "group": "coins",
                         "pgroup": "coins",
                         "rgroup": "objects",
                         "texture": "img_objects"
                     },
                     "propertytypes": {
-                        "frame": "string",
                         "group": "string",
                         "pgroup": "string",
                         "rgroup": "string",
@@ -1358,14 +1354,12 @@
                     "id": 12,
                     "name": "",
                     "properties": {
-                        "frame": "1",
                         "group": "coins",
                         "pgroup": "coins",
                         "rgroup": "objects",
                         "texture": "img_objects"
                     },
                     "propertytypes": {
-                        "frame": "string",
                         "group": "string",
                         "pgroup": "string",
                         "rgroup": "string",
@@ -1384,14 +1378,12 @@
                     "id": 13,
                     "name": "",
                     "properties": {
-                        "frame": "1",
                         "group": "coins",
                         "pgroup": "coins",
                         "rgroup": "objects",
                         "texture": "img_objects"
                     },
                     "propertytypes": {
-                        "frame": "string",
                         "group": "string",
                         "pgroup": "string",
                         "rgroup": "string",
@@ -1410,14 +1402,12 @@
                     "id": 14,
                     "name": "",
                     "properties": {
-                        "frame": "1",
                         "group": "coins",
                         "pgroup": "coins",
                         "rgroup": "objects",
                         "texture": "img_objects"
                     },
                     "propertytypes": {
-                        "frame": "string",
                         "group": "string",
                         "pgroup": "string",
                         "rgroup": "string",
@@ -1436,14 +1426,12 @@
                     "id": 15,
                     "name": "",
                     "properties": {
-                        "frame": "1",
                         "group": "coins",
                         "pgroup": "coins",
                         "rgroup": "objects",
                         "texture": "img_objects"
                     },
                     "propertytypes": {
-                        "frame": "string",
                         "group": "string",
                         "pgroup": "string",
                         "rgroup": "string",
@@ -1462,14 +1450,12 @@
                     "id": 16,
                     "name": "",
                     "properties": {
-                        "frame": "1",
                         "group": "coins",
                         "pgroup": "coins",
                         "rgroup": "objects",
                         "texture": "img_objects"
                     },
                     "propertytypes": {
-                        "frame": "string",
                         "group": "string",
                         "pgroup": "string",
                         "rgroup": "string",
