@@ -124,7 +124,8 @@ async function buildMaps() {
             "name": convertCamelToTitle(map.name),
             "key": levelKeyPrefix + map.name,
             "tileset": "tilesheet",
-            "completion": -1
+            "completion": -1,
+            "times": []
         }
     });
     fs.writeFile(
