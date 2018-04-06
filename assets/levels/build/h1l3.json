@@ -1653,7 +1653,7 @@
         {
             "columns": 1,
             "firstgid": 1,
-            "image": "../images/player.png",
+            "image": "../../images/player.png",
             "imageheight": 32,
             "imagewidth": 32,
             "margin": 0,
@@ -1671,7 +1671,7 @@
         {
             "columns": 7,
             "firstgid": 2,
-            "image": "../images/tilesheet.png",
+            "image": "../../images/tilesheet.png",
             "imageheight": 24,
             "imagewidth": 174,
             "margin": 0,
@@ -1685,7 +1685,7 @@
         {
             "columns": 1,
             "firstgid": 9,
-            "image": "../images/collision.png",
+            "image": "../../images/collision.png",
             "imageheight": 24,
             "imagewidth": 24,
             "margin": 0,
@@ -1699,7 +1699,7 @@
         {
             "columns": 5,
             "firstgid": 10,
-            "image": "../images/object_sheet.png",
+            "image": "../../images/object_sheet.png",
             "imageheight": 24,
             "imagewidth": 124,
             "margin": 0,
@@ -1729,25 +1729,25 @@
             },
             "tiles": {
                 "0": {
-                    "image": "../images/bush3.png"
+                    "image": "../../images/bush3.png"
                 },
                 "1": {
-                    "image": "../images/bush2.png"
+                    "image": "../../images/bush2.png"
                 },
                 "2": {
-                    "image": "../images/bush1.png"
+                    "image": "../../images/bush1.png"
                 },
                 "3": {
-                    "image": "../images/tree3.png"
+                    "image": "../../images/tree3.png"
                 },
                 "4": {
-                    "image": "../images/tree4.png"
+                    "image": "../../images/tree4.png"
                 },
                 "5": {
-                    "image": "../images/tree2.png"
+                    "image": "../../images/tree2.png"
                 },
                 "6": {
-                    "image": "../images/tree1.png"
+                    "image": "../../images/tree1.png"
                 }
             },
             "tilewidth": 24
@@ -1755,7 +1755,7 @@
         {
             "columns": 5,
             "firstgid": 22,
-            "image": "../images/enemy_sheet.png",
+            "image": "../../images/enemy_sheet.png",
             "imageheight": 24,
             "imagewidth": 124,
             "margin": 0,
@@ -1773,7 +1773,7 @@
         {
             "columns": 4,
             "firstgid": 27,
-            "image": "../images/enemy_bomb.png",
+            "image": "../../images/enemy_bomb.png",
             "imageheight": 24,
             "imagewidth": 99,
             "margin": 0,
