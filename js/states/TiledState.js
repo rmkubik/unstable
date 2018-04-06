@@ -30,6 +30,8 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
     Unstable.Emitter.init();
 
     this.spawnGoalCoords = {x: 0, y: 0};
+
+    this.timer = new Unstable.Timer(this, {x: 8, y: 8});
 };
 
 Unstable.TiledState.prototype.create = function () {
@@ -107,6 +109,7 @@ Unstable.TiledState.prototype.create = function () {
 
 Unstable.TiledState.prototype.update = function() {
   this.groups["objects"].sort('y', Phaser.Group.SORT_ASCENDING); //depth sorting
+  
   if (this.bombSound !== undefined) {
     if (this.aliveBombCount > 0) {
       if (!this.bombSound.isPlaying) {
@@ -116,6 +119,8 @@ Unstable.TiledState.prototype.update = function() {
       this.bombSound.stop();
     }
   }
+
+  this.timer.update();
 }
 
 Unstable.TiledState.prototype.getPrefabProperties = function (type, properties) {
