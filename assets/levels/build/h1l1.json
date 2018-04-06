@@ -1,5 +1,6 @@
 {
     "height": 20,
+    "infinite": false,
     "layers": [
         {
             "data": [
@@ -868,27 +869,27 @@
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
@@ -904,11 +905,11 @@
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
@@ -924,11 +925,11 @@
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
@@ -944,11 +945,11 @@
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
@@ -964,27 +965,27 @@
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
                 0,
                 0,
@@ -998,13 +999,13 @@
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
                 0,
                 0,
@@ -1018,13 +1019,13 @@
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
@@ -1038,13 +1039,13 @@
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
@@ -1054,61 +1055,61 @@
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
+                48,
+                48,
                 0,
-                38,
+                48,
                 0,
-                38,
+                48,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
                 0,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
@@ -1124,47 +1125,47 @@
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
                 0,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
+                48,
+                48,
                 0,
-                38,
+                48,
                 0,
-                38,
+                48,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
                 0,
                 0,
-                38,
+                48,
                 0,
                 0,
                 0,
@@ -1174,17 +1175,17 @@
                 0,
                 0,
                 0,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
                 0,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
-                38,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
+                48,
                 0,
                 0,
                 0,
@@ -1234,6 +1235,9 @@
             "properties": {
                 "collision": "true"
             },
+            "propertytypes": {
+                "collision": "string"
+            },
             "type": "tilelayer",
             "visible": true,
             "width": 20,
@@ -1242,7 +1246,6 @@
         },
         {
             "draworder": "topdown",
-            "height": 20,
             "name": "objects",
             "objects": [
                 {
@@ -1256,6 +1259,13 @@
                         "levelPrereq": "",
                         "link": "lvl_hub1",
                         "threshold": "0"
+                    },
+                    "propertytypes": {
+                        "destGoalId": "string",
+                        "id": "string",
+                        "levelPrereq": "string",
+                        "link": "string",
+                        "threshold": "string"
                     },
                     "rotation": 0,
                     "type": "goal",
@@ -1276,6 +1286,13 @@
                         "link": "lvl_hub1",
                         "threshold": "7"
                     },
+                    "propertytypes": {
+                        "destGoalId": "string",
+                        "id": "string",
+                        "levelPrereq": "string",
+                        "link": "string",
+                        "threshold": "string"
+                    },
                     "rotation": 0,
                     "type": "goal",
                     "visible": true,
@@ -1284,12 +1301,15 @@
                     "y": 383
                 },
                 {
-                    "gid": 22,
+                    "gid": 27,
                     "height": 24,
                     "id": 8,
                     "name": "",
                     "properties": {
                         "velocityY": "50"
+                    },
+                    "propertytypes": {
+                        "velocityY": "string"
                     },
                     "rotation": 0,
                     "type": "bouncer",
@@ -1299,12 +1319,15 @@
                     "y": 121
                 },
                 {
-                    "gid": 22,
+                    "gid": 27,
                     "height": 24,
                     "id": 9,
                     "name": "",
                     "properties": {
                         "velocityY": "-50"
+                    },
+                    "propertytypes": {
+                        "velocityY": "string"
                     },
                     "rotation": 0,
                     "type": "bouncer",
@@ -1314,12 +1337,15 @@
                     "y": 179
                 },
                 {
-                    "gid": 22,
+                    "gid": 27,
                     "height": 24,
                     "id": 10,
                     "name": "",
                     "properties": {
                         "velocityY": "50"
+                    },
+                    "propertytypes": {
+                        "velocityY": "string"
                     },
                     "rotation": 0,
                     "type": "bouncer",
@@ -1329,12 +1355,15 @@
                     "y": 345
                 },
                 {
-                    "gid": 22,
+                    "gid": 27,
                     "height": 24,
                     "id": 11,
                     "name": "",
                     "properties": {
                         "velocityX": "50"
+                    },
+                    "propertytypes": {
+                        "velocityX": "string"
                     },
                     "rotation": 0,
                     "type": "bouncer",
@@ -1344,12 +1373,15 @@
                     "y": 287
                 },
                 {
-                    "gid": 22,
+                    "gid": 27,
                     "height": 24,
                     "id": 12,
                     "name": "",
                     "properties": {
                         "velocityX": "50"
+                    },
+                    "propertytypes": {
+                        "velocityX": "string"
                     },
                     "rotation": 0,
                     "type": "bouncer",
@@ -1363,7 +1395,6 @@
                     "height": 24,
                     "id": 13,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "player",
                     "visible": true,
@@ -1376,7 +1407,6 @@
                     "height": 24,
                     "id": 14,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1389,7 +1419,6 @@
                     "height": 24,
                     "id": 15,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1402,7 +1431,6 @@
                     "height": 24,
                     "id": 16,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1415,7 +1443,6 @@
                     "height": 24,
                     "id": 17,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1428,7 +1455,6 @@
                     "height": 24,
                     "id": 18,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1441,7 +1467,6 @@
                     "height": 24,
                     "id": 19,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1454,7 +1479,6 @@
                     "height": 24,
                     "id": 20,
                     "name": "",
-                    "properties": {},
                     "rotation": 0,
                     "type": "coin",
                     "visible": true,
@@ -1463,12 +1487,15 @@
                     "y": 180
                 },
                 {
-                    "gid": 34,
+                    "gid": 44,
                     "height": 48,
                     "id": 21,
                     "name": "",
                     "properties": {
                         "texture": "tree3"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1478,12 +1505,15 @@
                     "y": 106
                 },
                 {
-                    "gid": 34,
+                    "gid": 44,
                     "height": 48,
                     "id": 22,
                     "name": "",
                     "properties": {
                         "texture": "tree3"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1493,12 +1523,15 @@
                     "y": 250
                 },
                 {
-                    "gid": 35,
+                    "gid": 45,
                     "height": 48,
                     "id": 23,
                     "name": "",
                     "properties": {
                         "texture": "tree4"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1508,12 +1541,15 @@
                     "y": 106
                 },
                 {
-                    "gid": 35,
+                    "gid": 45,
                     "height": 48,
                     "id": 24,
                     "name": "",
                     "properties": {
                         "texture": "tree4"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1523,12 +1559,15 @@
                     "y": 317
                 },
                 {
-                    "gid": 36,
+                    "gid": 46,
                     "height": 48,
                     "id": 25,
                     "name": "",
                     "properties": {
                         "texture": "tree2"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1538,12 +1577,15 @@
                     "y": 344
                 },
                 {
-                    "gid": 37,
+                    "gid": 47,
                     "height": 48,
                     "id": 26,
                     "name": "",
                     "properties": {
                         "texture": "tree1"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1553,12 +1595,15 @@
                     "y": 250
                 },
                 {
-                    "gid": 37,
+                    "gid": 47,
                     "height": 48,
                     "id": 27,
                     "name": "",
                     "properties": {
                         "texture": "tree1"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "tree",
@@ -1568,12 +1613,15 @@
                     "y": 429
                 },
                 {
-                    "gid": 32,
+                    "gid": 42,
                     "height": 24,
                     "id": 30,
                     "name": "",
                     "properties": {
                         "texture": "bush2"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1583,12 +1631,15 @@
                     "y": 100
                 },
                 {
-                    "gid": 32,
+                    "gid": 42,
                     "height": 24,
                     "id": 31,
                     "name": "",
                     "properties": {
                         "texture": "bush2"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1598,12 +1649,15 @@
                     "y": 191
                 },
                 {
-                    "gid": 33,
+                    "gid": 43,
                     "height": 24,
                     "id": 32,
                     "name": "",
                     "properties": {
                         "texture": "bush1"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1613,12 +1667,15 @@
                     "y": 339
                 },
                 {
-                    "gid": 31,
+                    "gid": 41,
                     "height": 24,
                     "id": 33,
                     "name": "",
                     "properties": {
                         "texture": "bush3"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1628,12 +1685,15 @@
                     "y": 408
                 },
                 {
-                    "gid": 31,
+                    "gid": 41,
                     "height": 24,
                     "id": 34,
                     "name": "",
                     "properties": {
                         "texture": "bush3"
+                    },
+                    "propertytypes": {
+                        "texture": "string"
                     },
                     "rotation": 0,
                     "type": "bush",
@@ -1646,26 +1706,24 @@
             "opacity": 1,
             "type": "objectgroup",
             "visible": true,
-            "width": 20,
             "x": 0,
             "y": 0
         }
     ],
     "nextobjectid": 35,
     "orientation": "orthogonal",
-    "properties": {},
     "renderorder": "right-down",
+    "tiledversion": "1.1.2",
     "tileheight": 24,
     "tilesets": [
         {
             "columns": 8,
             "firstgid": 1,
-            "image": "../images/tilesheet.png",
+            "image": "../../images/tilesheet.png",
             "imageheight": 49,
             "imagewidth": 199,
             "margin": 0,
             "name": "base",
-            "properties": {},
             "spacing": 1,
             "tilecount": 16,
             "tileheight": 24,
@@ -1674,14 +1732,13 @@
         {
             "columns": 5,
             "firstgid": 17,
-            "image": "../images/object_sheet.png",
-            "imageheight": 24,
+            "image": "../../images/object_sheet.png",
+            "imageheight": 49,
             "imagewidth": 124,
             "margin": 0,
             "name": "object_sheet",
-            "properties": {},
             "spacing": 1,
-            "tilecount": 5,
+            "tilecount": 10,
             "tileheight": 24,
             "tileoffset": {
                 "x": -12,
@@ -1691,13 +1748,12 @@
         },
         {
             "columns": 4,
-            "firstgid": 22,
-            "image": "../images/enemy_bomb.png",
+            "firstgid": 27,
+            "image": "../../images/enemy_bomb.png",
             "imageheight": 24,
             "imagewidth": 99,
             "margin": 0,
             "name": "enemy_bomb",
-            "properties": {},
             "spacing": 1,
             "tilecount": 4,
             "tileheight": 24,
@@ -1709,15 +1765,14 @@
         },
         {
             "columns": 5,
-            "firstgid": 26,
-            "image": "../images/enemy_sheet.png",
-            "imageheight": 24,
+            "firstgid": 31,
+            "image": "../../images/enemy_sheet.png",
+            "imageheight": 49,
             "imagewidth": 124,
             "margin": 0,
             "name": "enemy_sheet",
-            "properties": {},
             "spacing": 1,
-            "tilecount": 5,
+            "tilecount": 10,
             "tileheight": 24,
             "tileoffset": {
                 "x": -12,
@@ -1727,10 +1782,9 @@
         },
         {
             "columns": 0,
-            "firstgid": 31,
+            "firstgid": 41,
             "margin": 0,
             "name": "scenery",
-            "properties": {},
             "spacing": 0,
             "tilecount": 7,
             "tileheight": 48,
@@ -1740,45 +1794,59 @@
             },
             "tiles": {
                 "0": {
-                    "image": "../images/bush3.png"
+                    "image": "../../images/bush3.png",
+                    "imageheight": 24,
+                    "imagewidth": 24
                 },
                 "1": {
-                    "image": "../images/bush2.png"
+                    "image": "../../images/bush2.png",
+                    "imageheight": 24,
+                    "imagewidth": 24
                 },
                 "2": {
-                    "image": "../images/bush1.png"
+                    "image": "../../images/bush1.png",
+                    "imageheight": 24,
+                    "imagewidth": 24
                 },
                 "3": {
-                    "image": "../images/tree3.png"
+                    "image": "../../images/tree3.png",
+                    "imageheight": 48,
+                    "imagewidth": 24
                 },
                 "4": {
-                    "image": "../images/tree4.png"
+                    "image": "../../images/tree4.png",
+                    "imageheight": 48,
+                    "imagewidth": 24
                 },
                 "5": {
-                    "image": "../images/tree2.png"
+                    "image": "../../images/tree2.png",
+                    "imageheight": 48,
+                    "imagewidth": 24
                 },
                 "6": {
-                    "image": "../images/tree1.png"
+                    "image": "../../images/tree1.png",
+                    "imageheight": 48,
+                    "imagewidth": 24
                 }
             },
             "tilewidth": 24
         },
         {
-            "columns": 1,
-            "firstgid": 38,
-            "image": "../images/collision.png",
+            "columns": 2,
+            "firstgid": 48,
+            "image": "../../images/collision.png",
             "imageheight": 24,
-            "imagewidth": 24,
+            "imagewidth": 49,
             "margin": 0,
             "name": "collision",
-            "properties": {},
             "spacing": 1,
-            "tilecount": 1,
+            "tilecount": 2,
             "tileheight": 24,
             "tilewidth": 24
         }
     ],
     "tilewidth": 24,
+    "type": "map",
     "version": 1,
     "width": 20
 }
