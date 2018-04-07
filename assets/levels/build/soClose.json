@@ -1254,7 +1254,7 @@
                     "id": 1,
                     "name": "",
                     "properties": {
-                        "destGoalId": "1",
+                        "destGoalId": "5",
                         "id": "0",
                         "levelPrereq": "",
                         "link": "lvl_hub2",
@@ -1280,9 +1280,9 @@
                     "id": 2,
                     "name": "",
                     "properties": {
-                        "destGoalId": "1",
+                        "destGoalId": "5",
                         "id": "1",
-                        "levelPrereq": "lvl_soclose",
+                        "levelPrereq": "lvl_soClose",
                         "link": "lvl_hub2",
                         "threshold": "7"
                     },
@@ -1483,7 +1483,7 @@
                     "y": 218
                 },
                 {
-                    "gid": 36,
+                    "gid": 37,
                     "height": 24,
                     "id": 15,
                     "name": "",
@@ -1495,7 +1495,7 @@
                     "y": 404
                 },
                 {
-                    "gid": 42,
+                    "gid": 43,
                     "height": 24,
                     "id": 16,
                     "name": "",
@@ -1507,7 +1507,7 @@
                     "y": 252
                 },
                 {
-                    "gid": 50,
+                    "gid": 56,
                     "height": 48,
                     "id": 17,
                     "name": "",
@@ -1522,7 +1522,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 50,
+                    "gid": 56,
                     "height": 48,
                     "id": 18,
                     "name": "",
@@ -1537,7 +1537,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 50,
+                    "gid": 56,
                     "height": 48,
                     "id": 19,
                     "name": "",
@@ -1552,7 +1552,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 52,
+                    "gid": 58,
                     "height": 48,
                     "id": 20,
                     "name": "",
@@ -1567,7 +1567,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 53,
+                    "gid": 59,
                     "height": 48,
                     "id": 21,
                     "name": "",
@@ -1582,7 +1582,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 47,
+                    "gid": 53,
                     "height": 24,
                     "id": 22,
                     "name": "",
@@ -1597,7 +1597,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 48,
+                    "gid": 54,
                     "height": 24,
                     "id": 23,
                     "name": "",
@@ -1612,7 +1612,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 49,
+                    "gid": 55,
                     "height": 24,
                     "id": 24,
                     "name": "",
@@ -1627,7 +1627,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 51,
+                    "gid": 57,
                     "height": 48,
                     "id": 25,
                     "name": "",
@@ -1642,7 +1642,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 47,
+                    "gid": 53,
                     "height": 24,
                     "id": 26,
                     "name": "",
@@ -1657,7 +1657,7 @@
                     "imagewidth": 24
                 },
                 {
-                    "gid": 42,
+                    "gid": 43,
                     "height": 24,
                     "id": 28,
                     "name": "",
@@ -1816,7 +1816,7 @@
             },
             "tilewidth": 16,
             "type": "tileset",
-            "firstgid": 36
+            "firstgid": 37
         },
         {
             "columns": 5,
@@ -1842,7 +1842,7 @@
             },
             "tilewidth": 24,
             "type": "tileset",
-            "firstgid": 42
+            "firstgid": 43
         },
         {
             "columns": 0,
@@ -1901,7 +1901,7 @@
             },
             "tilewidth": 24,
             "type": "tileset",
-            "firstgid": 47
+            "firstgid": 53
         }
     ],
     "tilewidth": 24,

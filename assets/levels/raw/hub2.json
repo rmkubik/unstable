@@ -54,7 +54,7 @@
                     {
                      "destGoalId":"",
                      "id":"7",
-                     "levelPrereq":"lvl_h2l6",
+                     "levelPrereq":"lvl_sticks",
                      "link":"victory",
                      "threshold":"0"
                     },
@@ -81,8 +81,8 @@
                     {
                      "destGoalId":"0",
                      "id":"5",
-                     "levelPrereq":"lvl_h2l4",
-                     "link":"lvl_h2l5",
+                     "levelPrereq":"lvl_waffle",
+                     "link":"lvl_soClose",
                      "threshold":"0"
                     },
                  "propertytypes":
@@ -108,8 +108,8 @@
                     {
                      "destGoalId":"0",
                      "id":"6",
-                     "levelPrereq":"lvl_h2l5",
-                     "link":"lvl_h2l6",
+                     "levelPrereq":"lvl_soClose",
+                     "link":"lvl_sticks",
                      "threshold":"0"
                     },
                  "propertytypes":
@@ -162,7 +162,7 @@
                     {
                      "destGoalId":"0",
                      "id":"3",
-                     "levelPrereq":"lvl_h2l2",
+                     "levelPrereq":"lvl_cross",
                      "link":"lvl_h2l3",
                      "threshold":"0"
                     },
@@ -190,7 +190,7 @@
                      "destGoalId":"0",
                      "id":"2",
                      "levelPrereq":"lvl_h2l1",
-                     "link":"lvl_h2l2",
+                     "link":"lvl_cross",
                      "threshold":"0"
                     },
                  "propertytypes":
@@ -274,7 +274,7 @@
                  "y":316
                 }, 
                 {
-                 "gid":31,
+                 "gid":32,
                  "height":48,
                  "id":10,
                  "name":"",
@@ -294,7 +294,7 @@
                  "y":77
                 }, 
                 {
-                 "gid":33,
+                 "gid":34,
                  "height":48,
                  "id":11,
                  "name":"",
@@ -314,7 +314,7 @@
                  "y":417
                 }, 
                 {
-                 "gid":33,
+                 "gid":34,
                  "height":48,
                  "id":13,
                  "name":"",
@@ -334,7 +334,7 @@
                  "y":212
                 }, 
                 {
-                 "gid":34,
+                 "gid":35,
                  "height":48,
                  "id":14,
                  "name":"",
@@ -354,7 +354,7 @@
                  "y":439
                 }, 
                 {
-                 "gid":34,
+                 "gid":35,
                  "height":48,
                  "id":16,
                  "name":"",
@@ -374,7 +374,7 @@
                  "y":81
                 }, 
                 {
-                 "gid":34,
+                 "gid":35,
                  "height":48,
                  "id":17,
                  "name":"",
@@ -394,7 +394,7 @@
                  "y":441
                 }, 
                 {
-                 "gid":29,
+                 "gid":30,
                  "height":24,
                  "id":18,
                  "name":"",
@@ -414,7 +414,7 @@
                  "y":359
                 }, 
                 {
-                 "gid":29,
+                 "gid":30,
                  "height":24,
                  "id":19,
                  "name":"",
@@ -434,7 +434,7 @@
                  "y":222
                 }, 
                 {
-                 "gid":29,
+                 "gid":30,
                  "height":24,
                  "id":20,
                  "name":"",
@@ -454,7 +454,7 @@
                  "y":359
                 }, 
                 {
-                 "gid":30,
+                 "gid":31,
                  "height":24,
                  "id":21,
                  "name":"",
@@ -474,7 +474,7 @@
                  "y":143
                 }, 
                 {
-                 "gid":30,
+                 "gid":31,
                  "height":24,
                  "id":22,
                  "name":"",
@@ -537,15 +537,15 @@
          "tilewidth":24
         }, 
         {
-         "columns":1,
+         "columns":2,
          "firstgid":27,
          "image":"..\/..\/images\/collision.png",
          "imageheight":24,
-         "imagewidth":24,
+         "imagewidth":49,
          "margin":0,
          "name":"collision",
          "spacing":1,
-         "tilecount":1,
+         "tilecount":2,
          "tileheight":24,
          "tileproperties":
             {
@@ -565,7 +565,7 @@
         }, 
         {
          "columns":0,
-         "firstgid":28,
+         "firstgid":29,
          "margin":0,
          "name":"scenery",
          "spacing":0,

@@ -65,7 +65,7 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"1",
+                     "destGoalId":"6",
                      "id":"0",
                      "levelPrereq":"",
                      "link":"lvl_hub2",
@@ -93,7 +93,7 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"0",
+                     "destGoalId":"6",
                      "id":"1",
                      "levelPrereq":"lvl_sticks",
                      "link":"lvl_hub2",
