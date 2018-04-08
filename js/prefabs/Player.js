@@ -278,7 +278,13 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
 }
 
 Unstable.Player.prototype.finishLevel = function(goal) {
-  if (goal.ready && goal.threshold > 0) {
+  if (
+      goal.ready
+      || (
+          goal.ready
+          && ( goal.levelPrereq === null || goal.levelPrereq === "" )
+      )
+  ) {
       Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
       Unstable.saveProgress();
   }
