@@ -211,6 +211,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/U.json"
         },
+        "lvl_bobAndWeave": {
+            "type": "tilemap",
+            "source": "assets/levels/build/bobAndWeave.json"
+        },
         "lvl_cross": {
             "type": "tilemap",
             "source": "assets/levels/build/cross.json"
@@ -286,6 +290,10 @@
         "lvl_hub2": {
             "type": "tilemap",
             "source": "assets/levels/build/hub2.json"
+        },
+        "lvl_hub3": {
+            "type": "tilemap",
+            "source": "assets/levels/build/hub3.json"
         },
         "lvl_soClose": {
             "type": "tilemap",
@@ -458,6 +466,20 @@
         "lvl_cross": {
             "name": "Cross",
             "key": "lvl_cross",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_bobAndWeave": {
+            "name": "Bob And Weave",
+            "key": "lvl_bobAndWeave",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_hub3": {
+            "name": "Hub3",
+            "key": "lvl_hub3",
             "tileset": "tilesheet",
             "completion": -1,
             "times": []

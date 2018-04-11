@@ -1797,6 +1797,24 @@
                 "x": -12,
                 "y": -24
             },
+            "tileproperties": {
+                "8": {
+                    "destGoalId": "0",
+                    "id": "0",
+                    "levelPrereq": "lvl_hub1",
+                    "link": "lvl_hub1",
+                    "threshold": "0"
+                }
+            },
+            "tilepropertytypes": {
+                "8": {
+                    "destGoalId": "string",
+                    "id": "string",
+                    "levelPrereq": "string",
+                    "link": "string",
+                    "threshold": "string"
+                }
+            },
             "tiles": {
                 "3": {
                     "type": "teleporter"
