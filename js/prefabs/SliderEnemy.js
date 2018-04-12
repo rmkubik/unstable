@@ -39,11 +39,16 @@ Unstable.SliderEnemy.prototype.update = function() {
         x: 0,
         y: 0
     }
+    var projPosition = {
+        x: this.position.x,
+        y: this.position.y - this.body.height/2
+    }
     switch (this.axis) {
         case 'x':
             if (this.y < this.game_state.player.y) {
                 this.scale.x = 1;
                 projVelocity.y = this.shotSpeed;
+                projPosition.y = this.position.y + Unstable.Projectile.prototype.yBodyOffset;
             } else {
                 this.scale.x = -1;
                 projVelocity.y = -this.shotSpeed;
@@ -68,10 +73,7 @@ Unstable.SliderEnemy.prototype.update = function() {
         this.game_state.game.sound.play("sfx_turretShoot");
         new Unstable.Projectile(
           this.game_state,
-          {
-              x: this.position.x,
-              y: this.position.y - this.body.height/2
-          },
+          projPosition,
           projVelocity,
           {
               group: "hazards",
