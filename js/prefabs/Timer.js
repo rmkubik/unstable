@@ -55,6 +55,10 @@ Unstable.Timer.prototype.play = function() {
     this.state.action('play');
 }
 
+Unstable.Timer.prototype.playerMoved = function() {
+    this.state.action('playerMoved');
+}
+
 Unstable.Timer.prototype.saveTime = function(levelKey) {
     var times = Unstable.globals.levels[levelKey].times.slice();
     times.push(this.game_state.game.time.totalElapsedSeconds() - this.startTime);
