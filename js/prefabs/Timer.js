@@ -2,7 +2,9 @@ var Unstable = Unstable || {};
 
 Unstable.Timer = function (game_state, position, properties) {
     "use strict";
-    // Unstable.Prefab.call(this, game_state, position, properties);
+    if (!properties) {
+        properties = {};
+    }
 
     var style = {
       font: "16px Arial",
@@ -11,17 +13,12 @@ Unstable.Timer = function (game_state, position, properties) {
     };
     this.text = game.add.text(position.x, position.y, "0.000", style);
 
-    // game_state.game.physics.arcade.enable(this);
-    // this.body.immovable = true;
-    // this.body.setSize(properties.width, properties.height, 0, 0);
-
     this.game_state = game_state;
-    this.paused = false;
+    this.paused = properties.paused || false;
 
     this.startTime = this.game_state.game.time.totalElapsedSeconds();
 };
 
-// Unstable.Timer.prototype = Object.create(Unstable.Prefab.prototype);
 Unstable.Timer.prototype.constructor = Unstable.Timer;
 
 Unstable.Timer.prototype.update = function() {
