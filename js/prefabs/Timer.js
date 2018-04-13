@@ -34,7 +34,7 @@ Unstable.Timer = function (game_state, position, properties) {
                 }.bind(this)
             }
         },
-        properties.paused ? 'paused' : 'playing'
+        properties.paused ? 'playerUnmoved' : 'playing'
     );
 };
 
