@@ -126,6 +126,9 @@ Unstable.Player.prototype.update = function() {
       this.stepToggle = 1;
     }
   }
+  if (this.body.velocity.x !== 0 || this.body.velocity.y !== 0) {
+      this.game_state.timer.playerMoved();
+  }
 }
 
 Unstable.Player.prototype.isCollisionLocationEmpty = function(row, col) {
