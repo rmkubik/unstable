@@ -15,7 +15,9 @@ function fsm(states, initialState) {
 
     return {
         action: function(action) {
-            states[this.currentState][action]();
+            if (states[this.currentState][action]) {
+                states[this.currentState][action]();
+            }
         },
 
         transition: function(state) {
