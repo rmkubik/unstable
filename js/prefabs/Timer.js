@@ -18,6 +18,11 @@ Unstable.Timer = function (game_state, position, properties) {
     this.startTime = this.game_state.game.time.totalElapsedSeconds();
     this.state = fsm(
         {
+            playerUnmoved: {
+                playerMoved: function() {
+                    this.state.transition('playing');
+                }.bind(this)
+            },
             paused: {
                 play: function() {
                     this.state.transition('playing');
