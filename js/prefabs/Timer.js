@@ -14,26 +14,40 @@ Unstable.Timer = function (game_state, position, properties) {
     this.text = game.add.text(position.x, position.y, "0.000", style);
 
     this.game_state = game_state;
-    this.paused = properties.paused || false;
 
     this.startTime = this.game_state.game.time.totalElapsedSeconds();
+    this.state = fsm(
+        {
+            paused: {
+                play: function() {
+                    this.state.transition('playing');
+                }.bind(this)
+            },
+            playing: {
+                pause: function() {
+                    this.state.transition('paused');
+                }.bind(this)
+            }
+        },
+        properties.paused ? 'paused' : 'playing'
+    );
 };
 
 Unstable.Timer.prototype.constructor = Unstable.Timer;
 
 Unstable.Timer.prototype.update = function() {
-    if (!this.paused) {
+    if (this.state.currentState === 'playing') {
         var time = this.game_state.game.time.totalElapsedSeconds() - this.startTime;
         this.text.setText(time.toFixed(3));
     }
 }
 
 Unstable.Timer.prototype.pause = function() {
-    this.paused = true;
+    this.state.action('pause');
 }
 
 Unstable.Timer.prototype.play = function() {
-    this.paused = false;
+    this.state.action('play');
 }
 
 Unstable.Timer.prototype.saveTime = function(levelKey) {
