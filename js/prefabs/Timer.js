@@ -32,6 +32,10 @@ Unstable.Timer.prototype.pause = function() {
     this.paused = true;
 }
 
+Unstable.Timer.prototype.play = function() {
+    this.paused = false;
+}
+
 Unstable.Timer.prototype.saveTime = function(levelKey) {
     var times = Unstable.globals.levels[levelKey].times.slice();
     times.push(this.game_state.game.time.totalElapsedSeconds() - this.startTime);
