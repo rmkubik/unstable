@@ -105,7 +105,7 @@ Unstable.TiledState.prototype.create = function () {
     }
 
     if (this.coins > 0) {
-        this.timer = new Unstable.Timer(this, {x: 8, y: 8});
+        this.timer = new Unstable.Timer(this, {x: 8, y: 8}, { paused: true });
     }
 };
 
