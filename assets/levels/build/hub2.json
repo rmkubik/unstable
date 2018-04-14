@@ -1457,7 +1457,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 242,
-                    "y": 316
+                    "y": 316,
+                    "properties": {}
                 },
                 {
                     "gid": 40,

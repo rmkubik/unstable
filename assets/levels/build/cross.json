@@ -1310,7 +1310,8 @@
                     "visible": true,
                     "width": 16,
                     "x": 220,
-                    "y": 426
+                    "y": 426,
+                    "properties": {}
                 },
                 {
                     "gid": 40,
@@ -1322,7 +1323,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 49,
-                    "y": 252
+                    "y": 252,
+                    "properties": {}
                 },
                 {
                     "gid": 40,
@@ -1334,7 +1336,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 48,
-                    "y": 193
+                    "y": 193,
+                    "properties": {}
                 },
                 {
                     "gid": 40,
@@ -1346,7 +1349,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 49,
-                    "y": 136
+                    "y": 136,
+                    "properties": {}
                 },
                 {
                     "gid": 40,
@@ -1358,7 +1362,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 314,
-                    "y": 85
+                    "y": 85,
+                    "properties": {}
                 },
                 {
                     "gid": 40,
@@ -1370,7 +1375,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 279,
-                    "y": 85
+                    "y": 85,
+                    "properties": {}
                 },
                 {
                     "gid": 40,
@@ -1382,7 +1388,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 253,
-                    "y": 251
+                    "y": 251,
+                    "properties": {}
                 },
                 {
                     "gid": 40,
@@ -1394,7 +1401,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 414,
-                    "y": 303
+                    "y": 303,
+                    "properties": {}
                 },
                 {
                     "gid": 50,
@@ -1567,6 +1575,7 @@
                     "width": 24,
                     "x": 244,
                     "y": 61,
+                    "properties": {},
                     "image": "../../images/tree3.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1582,6 +1591,7 @@
                     "width": 24,
                     "x": 313,
                     "y": 59,
+                    "properties": {},
                     "image": "../../images/tree4.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1597,6 +1607,7 @@
                     "width": 24,
                     "x": 285,
                     "y": 52,
+                    "properties": {},
                     "image": "../../images/bush1.png",
                     "imageheight": 24,
                     "imagewidth": 24
@@ -1612,6 +1623,7 @@
                     "width": 24,
                     "x": 179,
                     "y": 418,
+                    "properties": {},
                     "image": "../../images/tree1.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1627,6 +1639,7 @@
                     "width": 24,
                     "x": 379,
                     "y": 399,
+                    "properties": {},
                     "image": "../../images/tree2.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1642,6 +1655,7 @@
                     "width": 24,
                     "x": 103,
                     "y": 180,
+                    "properties": {},
                     "image": "../../images/tree2.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1657,6 +1671,7 @@
                     "width": 24,
                     "x": 80,
                     "y": 181,
+                    "properties": {},
                     "image": "../../images/tree3.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1672,6 +1687,7 @@
                     "width": 24,
                     "x": 38,
                     "y": 102,
+                    "properties": {},
                     "image": "../../images/tree3.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1687,6 +1703,7 @@
                     "width": 24,
                     "x": 419,
                     "y": 312,
+                    "properties": {},
                     "image": "../../images/bush1.png",
                     "imageheight": 24,
                     "imagewidth": 24
@@ -1702,6 +1719,7 @@
                     "width": 24,
                     "x": 373,
                     "y": 456,
+                    "properties": {},
                     "image": "../../images/bush3.png",
                     "imageheight": 24,
                     "imagewidth": 24
@@ -1717,6 +1735,7 @@
                     "width": 24,
                     "x": 323.793357933579,
                     "y": 169.749077490775,
+                    "properties": {},
                     "image": "../../images/metal_sensor.png",
                     "imageheight": 24,
                     "imagewidth": 24
@@ -1732,6 +1751,7 @@
                     "width": 24,
                     "x": 179.881918819188,
                     "y": 146.686346863469,
+                    "properties": {},
                     "image": "../../images/metal_sensor.png",
                     "imageheight": 24,
                     "imagewidth": 24
@@ -1747,6 +1767,7 @@
                     "width": 24,
                     "x": 250.915129151292,
                     "y": 335.80073800738,
+                    "properties": {},
                     "image": "../../images/metal_sensor.png",
                     "imageheight": 24,
                     "imagewidth": 24

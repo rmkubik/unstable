@@ -1284,7 +1284,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 379,
-                    "y": 443
+                    "y": 443,
+                    "properties": {}
                 },
                 {
                     "gid": 20,
@@ -1322,7 +1323,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 60,
-                    "y": 166
+                    "y": 166,
+                    "properties": {}
                 }
             ],
             "opacity": 1,

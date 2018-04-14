@@ -1346,7 +1346,8 @@
                     "visible": true,
                     "width": 16,
                     "x": 53,
-                    "y": 279
+                    "y": 279,
+                    "properties": {}
                 },
                 {
                     "gid": 24,
@@ -1358,7 +1359,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 192,
-                    "y": 444
+                    "y": 444,
+                    "properties": {}
                 },
                 {
                     "gid": 24,
@@ -1370,7 +1372,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 240,
-                    "y": 445
+                    "y": 445,
+                    "properties": {}
                 },
                 {
                     "gid": 24,
@@ -1382,7 +1385,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 289,
-                    "y": 444
+                    "y": 444,
+                    "properties": {}
                 },
                 {
                     "gid": 24,
@@ -1394,7 +1398,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 168,
-                    "y": 181
+                    "y": 181,
+                    "properties": {}
                 },
                 {
                     "gid": 24,
@@ -1406,7 +1411,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 168,
-                    "y": 83
+                    "y": 83,
+                    "properties": {}
                 },
                 {
                     "gid": 24,
@@ -1418,7 +1424,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 143,
-                    "y": 347
+                    "y": 347,
+                    "properties": {}
                 },
                 {
                     "gid": 24,
@@ -1430,7 +1437,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 360,
-                    "y": 350
+                    "y": 350,
+                    "properties": {}
                 },
                 {
                     "gid": 38,
@@ -1442,7 +1450,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 385,
-                    "y": 287
+                    "y": 287,
+                    "properties": {}
                 },
                 {
                     "gid": 38,
@@ -1454,7 +1463,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 253,
-                    "y": 167
+                    "y": 167,
+                    "properties": {}
                 },
                 {
                     "gid": 43,
@@ -1544,7 +1554,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 168,
-                    "y": 282
+                    "y": 282,
+                    "properties": {}
                 },
                 {
                     "gid": 43,
@@ -1633,6 +1644,7 @@
                     "width": 24,
                     "x": 239,
                     "y": 53,
+                    "properties": {},
                     "image": "../../images/bush1.png",
                     "imageheight": 24,
                     "imagewidth": 24
@@ -1648,6 +1660,7 @@
                     "width": 24,
                     "x": 314,
                     "y": 457,
+                    "properties": {},
                     "image": "../../images/bush1.png",
                     "imageheight": 24,
                     "imagewidth": 24
@@ -1663,6 +1676,7 @@
                     "width": 24,
                     "x": 237,
                     "y": 367,
+                    "properties": {},
                     "image": "../../images/tree2.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1678,6 +1692,7 @@
                     "width": 24,
                     "x": 405,
                     "y": 253,
+                    "properties": {},
                     "image": "../../images/tree1.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1693,6 +1708,7 @@
                     "width": 24,
                     "x": 292,
                     "y": 83,
+                    "properties": {},
                     "image": "../../images/tree3.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1708,6 +1724,7 @@
                     "width": 24,
                     "x": 230,
                     "y": 211,
+                    "properties": {},
                     "image": "../../images/tree3.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1723,6 +1740,7 @@
                     "width": 24,
                     "x": 99,
                     "y": 222,
+                    "properties": {},
                     "image": "../../images/tree4.png",
                     "imageheight": 48,
                     "imagewidth": 24
@@ -1738,6 +1756,7 @@
                     "width": 24,
                     "x": 117,
                     "y": 222,
+                    "properties": {},
                     "image": "../../images/bush3.png",
                     "imageheight": 24,
                     "imagewidth": 24
@@ -1753,6 +1772,7 @@
                     "width": 24,
                     "x": 77,
                     "y": 378,
+                    "properties": {},
                     "image": "../../images/tree1.png",
                     "imageheight": 48,
                     "imagewidth": 24

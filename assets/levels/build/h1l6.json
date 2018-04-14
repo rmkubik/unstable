@@ -1838,7 +1838,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 66,
-                    "y": 120
+                    "y": 120,
+                    "properties": {}
                 },
                 {
                     "gid": 23,

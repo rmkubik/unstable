@@ -1436,7 +1436,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 430,
-                    "y": 322
+                    "y": 322,
+                    "properties": {}
                 },
                 {
                     "gid": 20,
@@ -1448,7 +1449,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 232,
-                    "y": 351
+                    "y": 351,
+                    "properties": {}
                 },
                 {
                     "gid": 20,
@@ -1460,7 +1462,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 233,
-                    "y": 297
+                    "y": 297,
+                    "properties": {}
                 },
                 {
                     "gid": 20,
@@ -1472,7 +1475,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 233,
-                    "y": 324
+                    "y": 324,
+                    "properties": {}
                 },
                 {
                     "gid": 20,
@@ -1484,7 +1488,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 44,
-                    "y": 254
+                    "y": 254,
+                    "properties": {}
                 },
                 {
                     "gid": 20,
@@ -1496,7 +1501,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 72,
-                    "y": 255
+                    "y": 255,
+                    "properties": {}
                 },
                 {
                     "gid": 20,
@@ -1508,7 +1514,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 231,
-                    "y": 270
+                    "y": 270,
+                    "properties": {}
                 },
                 {
                     "gid": 29,
@@ -1520,7 +1527,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 264,
-                    "y": 363
+                    "y": 363,
+                    "properties": {}
                 },
                 {
                     "gid": 29,
@@ -1532,7 +1540,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 145,
-                    "y": 180
+                    "y": 180,
+                    "properties": {}
                 },
                 {
                     "gid": 39,
@@ -1600,7 +1609,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 94,
-                    "y": 92
+                    "y": 92,
+                    "properties": {}
                 },
                 {
                     "gid": 46,

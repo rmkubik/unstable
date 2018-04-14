@@ -2030,7 +2030,8 @@
                     "visible": true,
                     "width": 24,
                     "x": 60,
-                    "y": 121
+                    "y": 121,
+                    "properties": {}
                 },
                 {
                     "gid": 23,
