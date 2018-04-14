@@ -1232,6 +1232,12 @@
             "height": 20,
             "name": "collision",
             "opacity": 1,
+            "properties": {
+                "collision": "true"
+            },
+            "propertytypes": {
+                "collision": "string"
+            },
             "type": "tilelayer",
             "visible": false,
             "width": 20,
@@ -1422,8 +1428,8 @@
                     "type": "player",
                     "visible": true,
                     "width": 16,
-                    "x": 85,
-                    "y": 102,
+                    "x": 84,
+                    "y": 373,
                     "properties": {}
                 }
             ],
