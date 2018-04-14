@@ -76,6 +76,20 @@ async function buildMaps() {
                 const newObjs = [];
                 objects.forEach(obj => {
                     const objSet = gidToSet(obj.gid, gidSets);
+                    // add in default properties from tileset
+                    defaultProps = {};
+                    if (objSet.set && objSet.set.tileproperties) {
+                        if (objSet.set.tileproperties[objSet.index]) {
+                            defaultProps = objSet.set.tileproperties[objSet.index];
+                        }
+                    }
+                    const props = Object.assign(
+                        {},
+                        defaultProps,
+                        obj.properties
+                    );
+                    obj.properties = props;
+
                     // do overrides exist on this tileset
                     let overrides = {};
                     if (objSet.set && objSet.set.tiles) {
