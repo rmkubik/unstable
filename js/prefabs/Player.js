@@ -127,7 +127,7 @@ Unstable.Player.prototype.update = function() {
     }
   }
   if (this.body.velocity.x !== 0 || this.body.velocity.y !== 0) {
-      this.game_state.timer.playerMoved();
+      this.game_state.timer && this.game_state.timer.playerMoved();
   }
 }
 
