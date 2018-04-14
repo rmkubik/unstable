@@ -1699,12 +1699,12 @@
         {
             "columns": 8,
             "image": "../../images/tilesheet.png",
-            "imageheight": 49,
+            "imageheight": 74,
             "imagewidth": 199,
             "margin": 0,
             "name": "base",
             "spacing": 1,
-            "tilecount": 16,
+            "tilecount": 24,
             "tileheight": 24,
             "tilewidth": 24,
             "type": "tileset",
@@ -1858,7 +1858,7 @@
             "margin": 0,
             "name": "scenery",
             "spacing": 0,
-            "tilecount": 7,
+            "tilecount": 8,
             "tileheight": 48,
             "tileoffset": {
                 "x": -12,
@@ -1906,6 +1906,12 @@
                     "imageheight": 48,
                     "imagewidth": 24,
                     "type": "tree1"
+                },
+                "8": {
+                    "image": "../../images/metal_sensor.png",
+                    "imageheight": 24,
+                    "imagewidth": 24,
+                    "type": "sensor"
                 }
             },
             "tilewidth": 24,
