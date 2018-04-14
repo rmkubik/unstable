@@ -167,6 +167,10 @@
             "type": "image",
             "source": "assets/images/bush3.png"
         },
+        "sensor": {
+            "type": "image",
+            "source": "assets/images/sensor.png"
+        },
         "cloud1": {
             "type": "image",
             "source": "assets/images/cloud1.png"
@@ -609,6 +613,16 @@
             ]
         },
         "bush": {
+            "properties": {
+                "group": "scenery",
+                "pgroup": "blockers",
+                "rgroup": "objects"
+            },
+            "required_properties": [
+                "texture"
+            ]
+        },
+        "sensor": {
             "properties": {
                 "group": "scenery",
                 "pgroup": "blockers",

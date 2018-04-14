@@ -2,7 +2,7 @@
  "margin":0,
  "name":"scenery",
  "spacing":0,
- "tilecount":7,
+ "tilecount":8,
  "tileheight":48,
  "tileoffset":
     {
@@ -59,6 +59,13 @@
          "imageheight":48,
          "imagewidth":24,
          "type":"tree1"
+        },
+     "8":
+        {
+         "image":"..\/..\/images\/metal_sensor.png",
+         "imageheight":24,
+         "imagewidth":24,
+         "type":"sensor"
         }
     },
  "tilewidth":24,

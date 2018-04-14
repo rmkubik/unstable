@@ -24,7 +24,9 @@ Unstable.Scenery = function (game_state, position, properties) {
       this.body.setSize(24, 4, 0, 20);
     } else if (properties.texture == "bush3") {
       this.body.setSize(24, 4, 0, 20);
-    }
+  } else if (properties.texture == "sensor") {
+      this.body.setSize(24, 4, 0, 20);
+  }
 
 };
 
