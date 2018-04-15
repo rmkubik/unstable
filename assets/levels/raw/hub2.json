@@ -52,10 +52,10 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"",
+                     "destGoalId":"0",
                      "id":"7",
                      "levelPrereq":"lvl_sticks",
-                     "link":"victory",
+                     "link":"lvl_hub3",
                      "threshold":"0"
                     },
                  "propertytypes":

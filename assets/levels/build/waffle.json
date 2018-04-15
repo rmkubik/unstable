@@ -1502,7 +1502,7 @@
             "margin": 0,
             "name": "scenery",
             "spacing": 0,
-            "tilecount": 8,
+            "tilecount": 10,
             "tileheight": 48,
             "tileoffset": {
                 "x": -12,
@@ -1556,6 +1556,18 @@
                     "imageheight": 24,
                     "imagewidth": 24,
                     "type": "sensor"
+                },
+                "10": {
+                    "image": "../../images/signal.png",
+                    "imageheight": 48,
+                    "imagewidth": 24,
+                    "type": "signal"
+                },
+                "11": {
+                    "image": "../../images/antenna.png",
+                    "imageheight": 48,
+                    "imagewidth": 24,
+                    "type": "antenna"
                 }
             },
             "tilewidth": 24,
