@@ -135,6 +135,10 @@ Unstable.TiledState.prototype.getPrefabProperties = function (type, properties) 
       type = "tree";
   } else if (type == "sensor") {
       properties.texture = "sensor";
+  } else if (type == "signal") {
+      properties.texture = "signal";
+  } else if (type == "antenna") {
+      properties.texture = "antenna";
   }
   var finalProperties = {};
   Object.assign(finalProperties, this.level_data.prefabs[type].properties);
@@ -212,6 +216,8 @@ Unstable.TiledState.prototype.create_object = function (object) {
         }
         prefab = new Unstable.TrackerHazard(this, position, properties);
         break;
+    case "antenna":
+    case "signal":
     case "sensor":
     case "bush":
     case "tree":

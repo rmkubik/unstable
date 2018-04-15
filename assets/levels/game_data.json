@@ -171,6 +171,14 @@
             "type": "image",
             "source": "assets/images/sensor.png"
         },
+        "signal": {
+            "type": "image",
+            "source": "assets/images/signal.png"
+        },
+        "antenna": {
+            "type": "image",
+            "source": "assets/images/antenna.png"
+        },
         "cloud1": {
             "type": "image",
             "source": "assets/images/cloud1.png"
@@ -623,6 +631,26 @@
             ]
         },
         "sensor": {
+            "properties": {
+                "group": "scenery",
+                "pgroup": "blockers",
+                "rgroup": "objects"
+            },
+            "required_properties": [
+                "texture"
+            ]
+        },
+        "signal": {
+            "properties": {
+                "group": "scenery",
+                "pgroup": "blockers",
+                "rgroup": "objects"
+            },
+            "required_properties": [
+                "texture"
+            ]
+        },
+        "antenna": {
             "properties": {
                 "group": "scenery",
                 "pgroup": "blockers",
