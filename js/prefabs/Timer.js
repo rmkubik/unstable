@@ -81,6 +81,15 @@ Unstable.Timer.prototype.playerMoved = function() {
 Unstable.Timer.prototype.blink = function() {
     var blinkSpeed = 0.3 * Phaser.Timer.SECOND;
 
+    this.text.setStyle({
+        font: "24px Arial",
+        fill: "#FFFFFF",
+        stroke: "#000000",
+        strokeThickness: 1,
+        align: "left"
+    });
+    this.text.setShadow(0, 0, 'rgba(0, 0, 0, 1)', 3);
+
     this.timer = game.time.create(false);
     this.timer.loop(blinkSpeed, function() {
         this.text.visible = !this.text.visible;
