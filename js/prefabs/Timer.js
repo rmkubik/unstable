@@ -9,13 +9,19 @@ Unstable.Timer = function (game_state, position, properties) {
     var style = {
       font: "16px Arial",
       fill: "#FFFFFF",
+      stroke: "#000000",
+      strokeThickness: 1,
       align: "left"
     };
     this.text = game.add.text(position.x, position.y, "0.000", style);
+    this.text.setShadow(0, 0, 'rgba(0, 0, 0, 1)', 3);
     this.highScores = [];
-    this.highScores[0] = game.add.text(position.x + 60, position.y, "0.000", style);
-    this.highScores[1] = game.add.text(position.x + 120, position.y, "0.000", style);
-    this.highScores[2] = game.add.text(position.x + 180, position.y, "0.000", style);
+    this.highScores[0] = game.add.text(position.x + 120, position.y, "0.000", style);
+    this.highScores[1] = game.add.text(position.x + 180, position.y, "0.000", style);
+    this.highScores[2] = game.add.text(position.x + 240, position.y, "0.000", style);
+    this.highScores.forEach(function(highScore) {
+        highScore.setShadow(0, 0, 'rgba(0, 0, 0, 1)', 3);
+    });
 
     this.drawHighScores();
 
