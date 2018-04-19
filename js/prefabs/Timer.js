@@ -12,6 +12,12 @@ Unstable.Timer = function (game_state, position, properties) {
       align: "left"
     };
     this.text = game.add.text(position.x, position.y, "0.000", style);
+    this.highScores = [];
+    this.highScores[0] = game.add.text(position.x + 60, position.y, "0.000", style);
+    this.highScores[1] = game.add.text(position.x + 120, position.y, "0.000", style);
+    this.highScores[2] = game.add.text(position.x + 180, position.y, "0.000", style);
+
+    this.drawHighScores();
 
     this.game_state = game_state;
 
@@ -45,6 +51,13 @@ Unstable.Timer.prototype.update = function() {
         var time = this.game_state.game.time.totalElapsedSeconds() - this.startTime;
         this.text.setText(time.toFixed(3));
     }
+}
+
+Unstable.Timer.prototype.drawHighScores = function() {
+    this.times = Unstable.globals.levels[Unstable.globals.current_level].times;
+    this.times.forEach(function(time, index) {
+        this.highScores[index].setText(time.toFixed(3));
+    }.bind(this));
 }
 
 Unstable.Timer.prototype.pause = function() {
