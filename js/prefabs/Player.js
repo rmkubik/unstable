@@ -249,7 +249,7 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
     this.kill();
     this.shadow.kill();
     this.emitter.burst(this.x, this.y);
-    if (this.game_state.timer) {
+    if (this.game_state.timer && goal.threshold > 0) {
         this.game_state.timer.pause();
         this.game_state.timer.saveTime(Unstable.globals.current_level);
     }
