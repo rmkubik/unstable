@@ -103,6 +103,9 @@ Unstable.Timer.prototype.saveTime = function(levelKey) {
     this.newHighScore = times.some(function(time) {
         return newTime < time;
     });
+    if (times.length < 3) {
+        this.newHighScore = true;
+    }
     this.highestScore = newTime < times[0];
 
     if (this.newHighScore) {
