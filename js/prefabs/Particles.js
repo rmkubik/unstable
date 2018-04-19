@@ -132,8 +132,8 @@ Unstable.Emitter.prototype.returnToSpawn = function(prefab) {
   game.time.events.add(Phaser.Timer.SECOND, partsToSpawn, this, prefab.spawnpoint);
 }
 
-Unstable.Emitter.prototype.seekParticlesToLocation = function (location, callback, context, param) {
-  var initialDelay = 1;
+Unstable.Emitter.prototype.seekParticlesToLocation = function (location, callback, context, param, initialDelay) {
+  initialDelay = initialDelay || 1;
   var travelTime = 0.5;
   param = param || null;
   var partsToLocation = function(location) {
