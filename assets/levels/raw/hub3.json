@@ -75,6 +75,14 @@
                  "height":24,
                  "id":2,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"1"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -87,6 +95,14 @@
                  "height":24,
                  "id":3,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"2"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -99,6 +115,14 @@
                  "height":24,
                  "id":4,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"3"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -111,6 +135,14 @@
                  "height":24,
                  "id":5,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -123,6 +155,14 @@
                  "height":24,
                  "id":6,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"5"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -135,6 +175,14 @@
                  "height":24,
                  "id":7,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"6"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -147,6 +195,14 @@
                  "height":24,
                  "id":8,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"7"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -159,6 +215,18 @@
                  "height":24,
                  "id":9,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"8",
+                     "levelPrereq":"lvl_hub3",
+                     "link":"victory"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string",
+                     "levelPrereq":"string",
+                     "link":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
