@@ -35,6 +35,9 @@ Unstable.Player = function(game_state, position, properties) {
     left: this.game_state.game.input.keyboard.addKey(Phaser.Keyboard.A),
     right: this.game_state.game.input.keyboard.addKey(Phaser.Keyboard.D),
   };
+  game.input.gamepad.start();
+  this.pad1 = game.input.gamepad.pad1;
+
 
   this.emitter = new Unstable.Emitter(game_state, {x:this.x, y:this.y},{
     offset:{x: 0, y: -12},
@@ -81,13 +84,20 @@ Unstable.Player.prototype.update = function() {
   this.game_state.game.physics.arcade.collide(this, this.game_state.groups.objects, this.collideObjects, null, this);
   this.game_state.game.physics.arcade.overlap(this, this.game_state.groups.triggers, this.triggerCollide, null, this);
 
-  if ((this.cursors.right.isDown || this.wasd.right.isDown) && this.body.velocity.x >= 0) {
+  if (
+      this.pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_LEFT)
+        || this.pad1.axis(Phaser.Gamepad.XBOX360_STICK_LEFT_X) < -0.1
+    ) {
+        console.log('button press');
+    }
+
+  if (this.isRightDown() && this.body.velocity.x >= 0) {
       // move right
       this.body.velocity.x = this.walking_speed;
       this.shadow.x = this.x + 1;
       this.animations.play("player_run");
       this.scale.setTo(1, 1);
-  } else if ((this.cursors.left.isDown || this.wasd.left.isDown) && this.body.velocity.x <= 0) {
+  } else if (this.isLeftDown() && this.body.velocity.x <= 0) {
       // move left
       this.body.velocity.x = -this.walking_speed;
       this.shadow.x = this.x - 1;
@@ -99,12 +109,12 @@ Unstable.Player.prototype.update = function() {
       this.shadow.x = this.x;
   }
 
-  if ((this.cursors.down.isDown || this.wasd.down.isDown) && this.body.velocity.y >= 0) {
+  if (this.isDownDown() && this.body.velocity.y >= 0) {
     //move down
     this.body.velocity.y = this.walking_speed;
     this.shadow.y = this.y + this.shadowOffset * 2;
     this.animations.play("player_run");
-  } else if ((this.cursors.up.isDown || this.wasd.up.isDown) && this.body.velocity.y <= 0) {
+  } else if (this.isUpDown() && this.body.velocity.y <= 0) {
     //move up
     this.body.velocity.y = -this.walking_speed;
     this.shadow.y = this.y;
@@ -137,6 +147,41 @@ Unstable.Player.prototype.isCollisionLocationEmpty = function(row, col) {
       return false;
   }
   return this.game_state.collisionMap[row][col] == 0;
+}
+
+Unstable.Player.prototype.isRightDown = function() {
+    return (
+        this.cursors.right.isDown
+            || this.wasd.right.isDown
+            || this.pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_RIGHT)
+            || this.pad1.axis(Phaser.Gamepad.XBOX360_STICK_LEFT_X) > 0.1
+        );
+}
+
+Unstable.Player.prototype.isUpDown = function() {
+    return (
+        this.cursors.up.isDown
+            || this.wasd.up.isDown
+            || this.pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_UP)
+            || this.pad1.axis(Phaser.Gamepad.XBOX360_STICK_LEFT_Y) < -0.1
+        );}
+
+Unstable.Player.prototype.isLeftDown = function() {
+    return (
+        this.cursors.left.isDown
+            || this.wasd.left.isDown
+            || this.pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_LEFT)
+            || this.pad1.axis(Phaser.Gamepad.XBOX360_STICK_LEFT_X) < -0.1
+    );
+}
+
+Unstable.Player.prototype.isDownDown = function() {
+    return (
+        this.cursors.down.isDown
+            || this.wasd.down.isDown
+            || this.pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_DOWN)
+            || this.pad1.axis(Phaser.Gamepad.XBOX360_STICK_LEFT_Y) > 0.1
+        );
 }
 
 Unstable.Player.prototype.collideColliders = function (player, collider) {
