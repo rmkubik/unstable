@@ -6,6 +6,8 @@ Unstable.Timer = function (game_state, position, properties) {
         properties = {};
     }
 
+    this.game_state = game_state;
+
     var style = {
       font: "16px Arial",
       fill: "#FFFFFF",
@@ -24,8 +26,6 @@ Unstable.Timer = function (game_state, position, properties) {
     });
 
     this.drawHighScores();
-
-    this.game_state = game_state;
 
     this.state = fsm(
         {
@@ -78,9 +78,29 @@ Unstable.Timer.prototype.playerMoved = function() {
     this.state.action('playerMoved');
 }
 
+Unstable.Timer.prototype.blink = function() {
+    var blinkSpeed = 0.3 * Phaser.Timer.SECOND;
+
+    this.timer = game.time.create(false);
+    this.timer.loop(blinkSpeed, function() {
+        this.text.visible = !this.text.visible;
+    }, this);
+    this.timer.start();
+}
+
 Unstable.Timer.prototype.saveTime = function(levelKey) {
+    var newTime = this.game_state.game.time.totalElapsedSeconds() - this.startTime;
     var times = Unstable.globals.levels[levelKey].times.slice();
-    times.push(this.game_state.game.time.totalElapsedSeconds() - this.startTime);
+    this.newHighScore = times.some(function(time) {
+        return newTime < time;
+    });
+    this.highestScore = newTime < times[0];
+
+    if (this.newHighScore) {
+        this.blink();
+    }
+
+    times.push(newTime);
     times.sort(function(a, b) {
         return a - b;
     });

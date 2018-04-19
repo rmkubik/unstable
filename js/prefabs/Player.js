@@ -294,9 +294,13 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
     this.kill();
     this.shadow.kill();
     this.emitter.burst(this.x, this.y);
+    var initialDelay = null;
     if (this.game_state.timer && goal.threshold > 0) {
         this.game_state.timer.pause();
         this.game_state.timer.saveTime(Unstable.globals.current_level);
+        if (this.game_state.timer.newHighScore) {
+            initialDelay = 3;
+        }
     }
 
     var direction = this.game_state.game.rnd.integerInRange(0, 3);
@@ -319,7 +323,7 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
             position.x = this.game_state.game.width + 50;
             break;
     }
-    this.emitter.seekParticlesToLocation(position, this.finishLevel, this, goal);
+    this.emitter.seekParticlesToLocation(position, this.finishLevel, this, goal, initialDelay);
     // this.game_state.game.sound.play("sfx_teleport"); //needs to be played globally
     this.teleportSound.play("", 0, 1, false, false);
   }
