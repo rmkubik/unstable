@@ -75,7 +75,9 @@ Unstable.Timer.prototype.playerMoved = function() {
 Unstable.Timer.prototype.saveTime = function(levelKey) {
     var times = Unstable.globals.levels[levelKey].times.slice();
     times.push(this.game_state.game.time.totalElapsedSeconds() - this.startTime);
-    times.sort();
+    times.sort(function(a, b) {
+        return a - b;
+    });
     Unstable.globals.levels[levelKey].times = times.slice(0, 3);
     Unstable.saveProgress();
 }
