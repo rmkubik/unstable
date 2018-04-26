@@ -1389,6 +1389,32 @@
                     "x": 299,
                     "y": 141,
                     "properties": {}
+                },
+                {
+                    "gid": 28,
+                    "height": 24,
+                    "id": 11,
+                    "name": "",
+                    "rotation": 0,
+                    "type": "teleporter",
+                    "visible": true,
+                    "width": 24,
+                    "x": 121,
+                    "y": 179,
+                    "properties": {}
+                },
+                {
+                    "gid": 29,
+                    "height": 24,
+                    "id": 12,
+                    "name": "",
+                    "rotation": 0,
+                    "type": "teleporterTarget",
+                    "visible": true,
+                    "width": 24,
+                    "x": 263,
+                    "y": 110,
+                    "properties": {}
                 }
             ],
             "opacity": 1,
@@ -1398,7 +1424,7 @@
             "y": 0
         }
     ],
-    "nextobjectid": 11,
+    "nextobjectid": 13,
     "orientation": "orthogonal",
     "renderorder": "right-down",
     "tiledversion": "1.1.2",
