@@ -24,9 +24,13 @@ Unstable.Scenery = function (game_state, position, properties) {
       this.body.setSize(24, 4, 0, 20);
     } else if (properties.texture == "bush3") {
       this.body.setSize(24, 4, 0, 20);
-  } else if (properties.texture == "sensor") {
+    } else if (properties.texture == "sensor") {
       this.body.setSize(24, 4, 0, 20);
-  }
+    } else if (properties.texture == "antenna") {
+      this.body.setSize(4, 6, 14, 42);
+    } else if (properties.texture == "signal") {
+      this.body.setSize(4, 6, 14, 42);
+    }
 
 };
 
