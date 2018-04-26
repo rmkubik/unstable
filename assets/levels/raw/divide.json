@@ -93,7 +93,7 @@
                  "name":"",
                  "properties":
                     {
-                     "destGoalId":"1",
+                     "destGoalId":"2",
                      "id":"2",
                      "levelPrereq":"lvl_divide",
                      "link":"lvl_hub3",
