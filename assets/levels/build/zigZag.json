@@ -1395,26 +1395,36 @@
                     "height": 24,
                     "id": 11,
                     "name": "",
+                    "properties": {
+                        "targetId": "0"
+                    },
+                    "propertytypes": {
+                        "targetId": "string"
+                    },
                     "rotation": 0,
                     "type": "teleporter",
                     "visible": true,
                     "width": 24,
                     "x": 121,
-                    "y": 179,
-                    "properties": {}
+                    "y": 179
                 },
                 {
                     "gid": 29,
                     "height": 24,
                     "id": 12,
                     "name": "",
+                    "properties": {
+                        "id": "0"
+                    },
+                    "propertytypes": {
+                        "id": "string"
+                    },
                     "rotation": 0,
                     "type": "teleporterTarget",
                     "visible": true,
                     "width": 24,
                     "x": 263,
-                    "y": 110,
-                    "properties": {}
+                    "y": 110
                 }
             ],
             "opacity": 1,
@@ -1424,7 +1434,7 @@
             "y": 0
         }
     ],
-    "nextobjectid": 13,
+    "nextobjectid": 14,
     "orientation": "orthogonal",
     "renderorder": "right-down",
     "tiledversion": "1.1.2",
