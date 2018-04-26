@@ -307,6 +307,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/hub3.json"
         },
+        "lvl_keepMoving": {
+            "type": "tilemap",
+            "source": "assets/levels/build/keepMoving.json"
+        },
         "lvl_soClose": {
             "type": "tilemap",
             "source": "assets/levels/build/soClose.json"
@@ -492,6 +496,13 @@
         "lvl_hub3": {
             "name": "Hub3",
             "key": "lvl_hub3",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_keepMoving": {
+            "name": "Keep Moving",
+            "key": "lvl_keepMoving",
             "tileset": "tilesheet",
             "completion": -1,
             "times": []
