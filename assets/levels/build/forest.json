@@ -1953,6 +1953,9 @@
                 "3": {
                     "type": "teleporter"
                 },
+                "4": {
+                    "type": "teleporterTarget"
+                },
                 "6": {
                     "type": "coin"
                 },
