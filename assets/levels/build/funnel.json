@@ -1307,12 +1307,14 @@
                     "properties": {
                         "axis": "y",
                         "cooldown": "0.5",
+                        "firingOffsetTolerance": "80",
                         "minSpeed": "40",
                         "speed": "40"
                     },
                     "propertytypes": {
                         "axis": "string",
                         "cooldown": "string",
+                        "firingOffsetTolerance": "string",
                         "minSpeed": "string",
                         "speed": "string"
                     },
@@ -1413,6 +1415,32 @@
                     "x": 169,
                     "y": 179,
                     "properties": {}
+                },
+                {
+                    "gid": 58,
+                    "height": 24,
+                    "id": 16,
+                    "name": "",
+                    "properties": {
+                        "axis": "y",
+                        "cooldown": "0.5",
+                        "firingOffsetTolerance": "80",
+                        "minSpeed": "40",
+                        "speed": "40"
+                    },
+                    "propertytypes": {
+                        "axis": "string",
+                        "cooldown": "string",
+                        "firingOffsetTolerance": "string",
+                        "minSpeed": "string",
+                        "speed": "string"
+                    },
+                    "rotation": 0,
+                    "type": "slider",
+                    "visible": true,
+                    "width": 24,
+                    "x": 26,
+                    "y": 406
                 }
             ],
             "opacity": 1,
@@ -1422,7 +1450,7 @@
             "y": 0
         }
     ],
-    "nextobjectid": 16,
+    "nextobjectid": 17,
     "orientation": "orthogonal",
     "renderorder": "right-down",
     "tiledversion": "1.1.2",
