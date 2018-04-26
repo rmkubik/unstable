@@ -9,6 +9,9 @@ Unstable.Teleporter = function(game_state, position, properties) {
 
   this.game_state = game_state;
   this.targetTile = JSON.parse(properties.targetTile);
+  if (properties.targetId > -1) {
+      this.targetId = properties.targetId;
+  }
 }
 
 Unstable.Teleporter.prototype = Object.create(Unstable.Prefab.prototype);

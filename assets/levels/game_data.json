@@ -589,14 +589,18 @@
                 "rgroup": "objects",
                 "texture": "img_objects",
                 "frame": 4,
-                "targetTile": "{\"x\":0,\"y\":0}"
+                "targetTile": "{\"x\":0,\"y\":0}",
+                "targetId": -1
             }
         },
         "teleporterTarget": {
             "properties": {
                 "pgroup": "teleporters",
                 "rgroup": "objects"
-            }
+            },
+            "required_properties": [
+                "id"
+            ]
         },
         "player": {
             "properties": {

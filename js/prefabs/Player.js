@@ -378,7 +378,12 @@ Unstable.Player.prototype.teleporterCollide = function (player, teleporter) {
   this.emitter.burst(this.x, this.y);
   var dest = {};
   if (teleporter.targetId) {
-    
+      //TODO: CANIUSE .FIND???
+    var target = this.game_state.teleporterTargets.find(function(target) {
+        return target.id == teleporter.targetId;
+    });
+    dest.x = target.x;
+    dest.y = target.y;
   } else {
     dest.x = teleporter.targetTile.x * 24;
     dest.y = teleporter.targetTile.y * 24;
