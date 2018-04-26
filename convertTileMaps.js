@@ -53,12 +53,14 @@ async function buildMaps() {
         const externalTilesets = tilesets.filter(set => {
             return set.source !== undefined;
         });
-        externalTilesets.forEach((set, index) => {
-            map.data.tilesets[index] = Object.assign(
-                {},
-                sets[path.basename(set.source, '.json')],
-                { 'firstgid': set.firstgid }
-            );
+        map.data.tilesets.forEach((set, index) => {
+            if (set.source !== undefined) {
+                map.data.tilesets[index] = Object.assign(
+                    {},
+                    sets[path.basename(set.source, '.json')],
+                    { 'firstgid': set.firstgid }
+                );
+            }
         });
 
         // console.log('converted external tilesets for: ' + map.name);
