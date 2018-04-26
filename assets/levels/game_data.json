@@ -721,7 +721,8 @@
                 "axis": "y",
                 "speed": 90,
                 "minSpeed": 50,
-                "cooldown": 3
+                "cooldown": 3,
+                "firingOffsetTolerance": 10
             }
         }
     }

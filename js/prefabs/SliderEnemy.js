@@ -13,7 +13,7 @@ Unstable.SliderEnemy = function (game_state, position, properties) {
     this.shotSpeed = 75;
 
     this.axis = properties.axis;
-    this.firingOffsetTolerance = 10;
+    this.firingOffsetTolerance = properties.firingOffsetTolerance; 
     this.prevDirection;
 
     switch (this.axis) {
