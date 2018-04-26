@@ -247,6 +247,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/forest.json"
         },
+        "lvl_funnel": {
+            "type": "tilemap",
+            "source": "assets/levels/build/funnel.json"
+        },
         "lvl_h1l1": {
             "type": "tilemap",
             "source": "assets/levels/build/h1l1.json"
@@ -311,6 +315,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/keepMoving.json"
         },
+        "lvl_sentries": {
+            "type": "tilemap",
+            "source": "assets/levels/build/sentries.json"
+        },
         "lvl_soClose": {
             "type": "tilemap",
             "source": "assets/levels/build/soClose.json"
@@ -322,6 +330,10 @@
         "lvl_waffle": {
             "type": "tilemap",
             "source": "assets/levels/build/waffle.json"
+        },
+        "lvl_zigZag": {
+            "type": "tilemap",
+            "source": "assets/levels/build/zigZag.json"
         }
     },
     "levels": {
@@ -506,6 +518,27 @@
             "tileset": "tilesheet",
             "completion": -1,
             "times": []
+        },
+        "lvl_funnel": {
+            "name": "Funnel",
+            "key": "lvl_funnel",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_zigZag": {
+            "name": "Zig Zag",
+            "key": "lvl_zigZag",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_sentries": {
+            "name": "Sentries",
+            "key": "lvl_sentries",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
         }
     },
     "groups": [
@@ -687,7 +720,8 @@
                 "texture": "enemy_sheet",
                 "axis": "y",
                 "speed": 90,
-                "minSpeed": 50
+                "minSpeed": 50,
+                "cooldown": 3
             }
         }
     }

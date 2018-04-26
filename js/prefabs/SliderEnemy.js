@@ -6,7 +6,7 @@ Unstable.SliderEnemy = function (game_state, position, properties) {
 
     game_state.game.physics.arcade.enable(this);
 
-    this.cooldown = 3;
+    this.cooldown = properties.cooldown;
     this.speed = properties.speed;
     this.minSpeed = properties.minSpeed;
     this.coolingDown = false;
