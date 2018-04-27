@@ -315,6 +315,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/keepMoving.json"
         },
+        "lvl_patience": {
+            "type": "tilemap",
+            "source": "assets/levels/build/patience.json"
+        },
         "lvl_sentries": {
             "type": "tilemap",
             "source": "assets/levels/build/sentries.json"
@@ -326,6 +330,10 @@
         "lvl_sticks": {
             "type": "tilemap",
             "source": "assets/levels/build/sticks.json"
+        },
+        "lvl_twoQuarters": {
+            "type": "tilemap",
+            "source": "assets/levels/build/twoQuarters.json"
         },
         "lvl_waffle": {
             "type": "tilemap",
@@ -536,6 +544,20 @@
         "lvl_sentries": {
             "name": "Sentries",
             "key": "lvl_sentries",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_patience": {
+            "name": "Patience",
+            "key": "lvl_patience",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_twoQuarters": {
+            "name": "Two Quarters",
+            "key": "lvl_twoQuarters",
             "tileset": "tilesheet",
             "completion": -1,
             "times": []

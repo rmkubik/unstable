@@ -200,11 +200,15 @@
                  "properties":
                     {
                      "id":"6",
-                     "threshold":"1"
+                     "levelPrereq":"lvl_keepMoving",
+                     "link":"lvl_sentries",
+                     "threshold":"0"
                     },
                  "propertytypes":
                     {
                      "id":"string",
+                     "levelPrereq":"string",
+                     "link":"string",
                      "threshold":"string"
                     },
                  "rotation":0,
@@ -221,12 +225,18 @@
                  "name":"",
                  "properties":
                     {
+                     "destGoalId":"0",
                      "id":"7",
-                     "threshold":"1"
+                     "levelPrereq":"lvl_sentries",
+                     "link":"lvl_zigZag",
+                     "threshold":"0"
                     },
                  "propertytypes":
                     {
+                     "destGoalId":"string",
                      "id":"string",
+                     "levelPrereq":"string",
+                     "link":"string",
                      "threshold":"string"
                     },
                  "rotation":0,
