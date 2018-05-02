@@ -42,23 +42,26 @@ Unstable.Goal.prototype.emit = function(coin) {
 
 }
 
-Unstable.Goal.prototype.createTrophies = function() {
-    // victory
-    this.trophy = game.add.sprite(this.x - 6, this.y - this.height / 2 - 16, "img_objects", 0);
-    this.trophy.anchor.setTo(0.5, 1);
-    this.trophy.scale.setTo(0.5, 0.5);
+Unstable.Goal.prototype.createTrophies = function(state) {
+    this.trophy = this.createTrophy(0, 0);
     this.bounceTrophy(this.trophy, true);
 
-    // time trial on the leaderboard and quickest time trial
-    this.trophy2 = game.add.sprite(this.x + 6, this.y - this.height / 2 - 16, "img_objects", 5);
-    this.trophy2.anchor.setTo(0.5, 1);
-    this.trophy2.scale.setTo(0.5, 0.5);
-    this.bounceTrophy(this.trophy2, false);
+    this.trophy2 = this.createTrophy(1, 5);
+    this.bounceTrophy(this.trophy, false);
+}
 
-    // //
-    // this.trophy3 = game.add.sprite(this.x + 12, this.y - this.height / 2 - 16, "img_objects", 7);
-    // this.trophy3.anchor.setTo(0.5, 1);
-    // this.trophy3.scale.setTo(0.5, 0.5);
+Unstable.Goal.prototype.createTrophy = function(slot, frame) {
+    var x = this.x + (slot === 0 ? -6 : 6);
+
+    var trophy = game.add.sprite(
+        x,
+        this.y - this.height / 2 - 16,
+        "img_objects",
+        frame
+    );
+    trophy.anchor.setTo(0.5, 1);
+    trophy.scale.setTo(0.5, 0.5);
+    return trophy;
 }
 
 Unstable.Goal.prototype.bounceTrophy = function(trophy, startBouncingUp) {
