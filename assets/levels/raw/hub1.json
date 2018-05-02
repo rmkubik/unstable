@@ -24,7 +24,7 @@
          "y":0
         }, 
         {
-         "data":[18, 18, 18, 18, 18, 18, 18, 18, 18, 0, 18, 18, 18, 18, 18, 18, 18, 18, 18, 0, 18, 0, 0, 0, 0, 0, 0, 0, 18, 18, 18, 0, 0, 0, 0, 0, 0, 0, 18, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 18, 0, 0, 0, 0, 0, 0, 0, 18, 18, 18, 0, 0, 0, 0, 0, 0, 0, 18, 0, 18, 0, 0, 0, 0, 0, 0, 18, 18, 0, 18, 18, 0, 0, 0, 0, 0, 0, 18, 0, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 0, 18, 18, 18, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 18, 0, 0, 18, 18, 0, 18, 18, 0, 0, 0, 18, 18, 18, 18, 18, 18, 0, 0, 0, 18, 0, 0, 18, 0, 0, 0, 18, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 18, 18, 0, 0, 0, 18, 18, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 18, 18, 18, 18, 0, 0, 0, 0, 0, 18, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 18, 18, 18, 0, 0, 0, 0, 0, 0, 18, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 18, 18, 0, 0, 0, 0, 0, 0, 18, 18, 18, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 18, 0, 0, 0, 18, 18, 18, 18, 0, 18, 18, 0, 0, 0, 0, 0, 18, 0, 18, 18, 18, 0, 0, 0, 18, 0, 0, 0, 0, 0, 18, 18, 18, 18, 18, 18, 18, 0, 18, 0, 0, 0, 0, 0, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 18, 18, 0, 0, 0, 0, 0, 0, 18, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 18, 18, 18, 0, 0, 0, 0, 0, 0, 18, 18, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 0, 0],
+         "data":[26, 26, 26, 26, 26, 26, 26, 26, 26, 0, 26, 26, 26, 26, 26, 26, 26, 26, 26, 0, 26, 0, 0, 0, 0, 0, 0, 0, 26, 26, 26, 0, 0, 0, 0, 0, 0, 0, 26, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 26, 0, 0, 0, 0, 0, 0, 0, 26, 26, 26, 0, 0, 0, 0, 0, 0, 0, 26, 0, 26, 0, 0, 0, 0, 0, 0, 26, 26, 0, 26, 26, 0, 0, 0, 0, 0, 0, 26, 0, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 0, 26, 26, 26, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 26, 0, 0, 26, 26, 0, 26, 26, 0, 0, 0, 26, 26, 26, 26, 26, 26, 0, 0, 0, 26, 0, 0, 26, 0, 0, 0, 26, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 26, 26, 0, 0, 0, 26, 26, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 26, 26, 26, 26, 0, 0, 0, 0, 0, 26, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 26, 26, 26, 0, 0, 0, 0, 0, 0, 26, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 26, 26, 0, 0, 0, 0, 0, 0, 26, 26, 26, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 26, 0, 0, 0, 26, 26, 26, 26, 0, 26, 26, 0, 0, 0, 0, 0, 26, 0, 26, 26, 26, 0, 0, 0, 26, 0, 0, 0, 0, 0, 26, 26, 26, 26, 26, 26, 26, 0, 26, 0, 0, 0, 0, 0, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 26, 26, 0, 0, 0, 0, 0, 0, 26, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 26, 26, 26, 0, 0, 0, 0, 0, 0, 26, 26, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 0, 0],
          "height":20,
          "name":"collision",
          "opacity":1,
@@ -73,13 +73,14 @@
                  "y":101
                 }, 
                 {
-                 "gid":20,
+                 "gid":28,
                  "height":24,
                  "id":5,
                  "name":"",
                  "properties":
                     {
                      "destGoalId":"0",
+                     "displayTrophies":"true",
                      "id":"0",
                      "levelPrereq":"",
                      "link":"lvl_h1l1",
@@ -88,6 +89,7 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
+                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
@@ -101,7 +103,7 @@
                  "y":121
                 }, 
                 {
-                 "gid":32,
+                 "gid":40,
                  "height":48,
                  "id":24,
                  "name":"",
@@ -127,7 +129,7 @@
                  "y":139
                 }, 
                 {
-                 "gid":32,
+                 "gid":40,
                  "height":48,
                  "id":25,
                  "name":"",
@@ -153,7 +155,7 @@
                  "y":250
                 }, 
                 {
-                 "gid":32,
+                 "gid":40,
                  "height":48,
                  "id":26,
                  "name":"",
@@ -179,7 +181,7 @@
                  "y":247
                 }, 
                 {
-                 "gid":32,
+                 "gid":40,
                  "height":48,
                  "id":30,
                  "name":"",
@@ -205,7 +207,7 @@
                  "y":333
                 }, 
                 {
-                 "gid":33,
+                 "gid":41,
                  "height":48,
                  "id":32,
                  "name":"",
@@ -231,7 +233,7 @@
                  "y":82
                 }, 
                 {
-                 "gid":33,
+                 "gid":41,
                  "height":48,
                  "id":33,
                  "name":"",
@@ -257,7 +259,7 @@
                  "y":394
                 }, 
                 {
-                 "gid":34,
+                 "gid":42,
                  "height":48,
                  "id":34,
                  "name":"",
@@ -283,7 +285,7 @@
                  "y":422
                 }, 
                 {
-                 "gid":34,
+                 "gid":42,
                  "height":48,
                  "id":38,
                  "name":"",
@@ -309,7 +311,7 @@
                  "y":223
                 }, 
                 {
-                 "gid":35,
+                 "gid":43,
                  "height":48,
                  "id":40,
                  "name":"",
@@ -335,7 +337,7 @@
                  "y":65
                 }, 
                 {
-                 "gid":36,
+                 "gid":44,
                  "height":24,
                  "id":41,
                  "name":"",
@@ -361,7 +363,7 @@
                  "y":412
                 }, 
                 {
-                 "gid":36,
+                 "gid":44,
                  "height":24,
                  "id":43,
                  "name":"",
@@ -387,7 +389,7 @@
                  "y":359
                 }, 
                 {
-                 "gid":36,
+                 "gid":44,
                  "height":24,
                  "id":44,
                  "name":"",
@@ -413,7 +415,7 @@
                  "y":54
                 }, 
                 {
-                 "gid":38,
+                 "gid":46,
                  "height":24,
                  "id":45,
                  "name":"",
@@ -439,13 +441,14 @@
                  "y":479
                 }, 
                 {
-                 "gid":20,
+                 "gid":28,
                  "height":24,
                  "id":50,
                  "name":"",
                  "properties":
                     {
                      "destGoalId":"0",
+                     "displayTrophies":"true",
                      "id":"1",
                      "levelPrereq":"lvl_h1l1",
                      "link":"lvl_forest",
@@ -454,6 +457,7 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
+                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
@@ -467,13 +471,14 @@
                  "y":96
                 }, 
                 {
-                 "gid":20,
+                 "gid":28,
                  "height":24,
                  "id":51,
                  "name":"",
                  "properties":
                     {
                      "destGoalId":"0",
+                     "displayTrophies":"true",
                      "id":"2",
                      "levelPrereq":"lvl_forest",
                      "link":"lvl_h1l3",
@@ -482,6 +487,7 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
+                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
@@ -495,13 +501,14 @@
                  "y":338
                 }, 
                 {
-                 "gid":20,
+                 "gid":28,
                  "height":24,
                  "id":52,
                  "name":"",
                  "properties":
                     {
                      "destGoalId":"0",
+                     "displayTrophies":"true",
                      "id":"4",
                      "levelPrereq":"lvl_h1l4",
                      "link":"lvl_h1l5",
@@ -510,6 +517,7 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
+                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
@@ -523,13 +531,14 @@
                  "y":260
                 }, 
                 {
-                 "gid":20,
+                 "gid":28,
                  "height":24,
                  "id":53,
                  "name":"",
                  "properties":
                     {
                      "destGoalId":"0",
+                     "displayTrophies":"true",
                      "id":"5",
                      "levelPrereq":"lvl_h1l5",
                      "link":"lvl_h1l6",
@@ -538,6 +547,7 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
+                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
@@ -551,13 +561,14 @@
                  "y":432
                 }, 
                 {
-                 "gid":20,
+                 "gid":28,
                  "height":24,
                  "id":54,
                  "name":"",
                  "properties":
                     {
                      "destGoalId":"0",
+                     "displayTrophies":"true",
                      "id":"6",
                      "levelPrereq":"lvl_h1l6",
                      "link":"lvl_hub2",
@@ -566,6 +577,7 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
+                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
@@ -579,7 +591,7 @@
                  "y":458
                 }, 
                 {
-                 "gid":36,
+                 "gid":44,
                  "height":24,
                  "id":55,
                  "name":"",
@@ -605,7 +617,7 @@
                  "y":53
                 }, 
                 {
-                 "gid":33,
+                 "gid":41,
                  "height":48,
                  "id":56,
                  "name":"",
@@ -631,13 +643,14 @@
                  "y":77
                 }, 
                 {
-                 "gid":20,
+                 "gid":28,
                  "height":24,
                  "id":58,
                  "name":"",
                  "properties":
                     {
                      "destGoalId":"0",
+                     "displayTrophies":"true",
                      "id":"3",
                      "levelPrereq":"lvl_h1l3",
                      "link":"lvl_h1l4",
@@ -646,6 +659,7 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
+                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
@@ -659,7 +673,7 @@
                  "y":207
                 }, 
                 {
-                 "gid":38,
+                 "gid":46,
                  "height":24,
                  "id":59,
                  "name":"",
@@ -718,18 +732,18 @@
          "columns":8,
          "firstgid":2,
          "image":"..\/..\/images\/tilesheet.png",
-         "imageheight":49,
+         "imageheight":74,
          "imagewidth":199,
          "margin":0,
          "name":"base",
          "spacing":1,
-         "tilecount":16,
+         "tilecount":24,
          "tileheight":24,
          "tilewidth":24
         }, 
         {
          "columns":2,
-         "firstgid":18,
+         "firstgid":26,
          "image":"..\/..\/images\/collision.png",
          "imageheight":24,
          "imagewidth":49,
@@ -742,7 +756,7 @@
         }, 
         {
          "columns":5,
-         "firstgid":20,
+         "firstgid":28,
          "image":"..\/..\/images\/object_sheet.png",
          "imageheight":49,
          "imagewidth":124,
@@ -760,7 +774,7 @@
         }, 
         {
          "columns":0,
-         "firstgid":30,
+         "firstgid":38,
          "margin":0,
          "name":"scenery",
          "spacing":0,
@@ -820,7 +834,7 @@
         }, 
         {
          "columns":3,
-         "firstgid":39,
+         "firstgid":47,
          "image":"..\/..\/images\/enemy_tower.png",
          "imageheight":24,
          "imagewidth":74,

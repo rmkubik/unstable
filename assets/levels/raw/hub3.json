@@ -400,6 +400,14 @@
         }],
  "nextobjectid":24,
  "orientation":"orthogonal",
+ "properties":
+    {
+     "displayTrophies":"true"
+    },
+ "propertytypes":
+    {
+     "displayTrophies":"string"
+    },
  "renderorder":"right-down",
  "tiledversion":"1.1.2",
  "tileheight":24,

@@ -1254,6 +1254,7 @@
                     "name": "",
                     "properties": {
                         "destGoalId": "0",
+                        "displayTrophies": "true",
                         "id": "7",
                         "levelPrereq": "lvl_sticks",
                         "link": "lvl_hub3",
@@ -1261,6 +1262,7 @@
                     },
                     "propertytypes": {
                         "destGoalId": "string",
+                        "displayTrophies": "string",
                         "id": "string",
                         "levelPrereq": "string",
                         "link": "string",
@@ -1279,6 +1281,7 @@
                     "name": "",
                     "properties": {
                         "destGoalId": "0",
+                        "displayTrophies": "true",
                         "id": "5",
                         "levelPrereq": "lvl_waffle",
                         "link": "lvl_soClose",
@@ -1286,6 +1289,7 @@
                     },
                     "propertytypes": {
                         "destGoalId": "string",
+                        "displayTrophies": "string",
                         "id": "string",
                         "levelPrereq": "string",
                         "link": "string",
@@ -1304,6 +1308,7 @@
                     "name": "",
                     "properties": {
                         "destGoalId": "0",
+                        "displayTrophies": "true",
                         "id": "6",
                         "levelPrereq": "lvl_soClose",
                         "link": "lvl_sticks",
@@ -1311,6 +1316,7 @@
                     },
                     "propertytypes": {
                         "destGoalId": "string",
+                        "displayTrophies": "string",
                         "id": "string",
                         "levelPrereq": "string",
                         "link": "string",
@@ -1329,6 +1335,7 @@
                     "name": "",
                     "properties": {
                         "destGoalId": "0",
+                        "displayTrophies": "true",
                         "id": "4",
                         "levelPrereq": "lvl_h2l3",
                         "link": "lvl_waffle",
@@ -1336,6 +1343,7 @@
                     },
                     "propertytypes": {
                         "destGoalId": "string",
+                        "displayTrophies": "string",
                         "id": "string",
                         "levelPrereq": "string",
                         "link": "string",
@@ -1354,6 +1362,7 @@
                     "name": "",
                     "properties": {
                         "destGoalId": "0",
+                        "displayTrophies": "true",
                         "id": "3",
                         "levelPrereq": "lvl_cross",
                         "link": "lvl_h2l3",
@@ -1361,6 +1370,7 @@
                     },
                     "propertytypes": {
                         "destGoalId": "string",
+                        "displayTrophies": "string",
                         "id": "string",
                         "levelPrereq": "string",
                         "link": "string",
@@ -1379,6 +1389,7 @@
                     "name": "",
                     "properties": {
                         "destGoalId": "0",
+                        "displayTrophies": "true",
                         "id": "2",
                         "levelPrereq": "lvl_h2l1",
                         "link": "lvl_cross",
@@ -1386,6 +1397,7 @@
                     },
                     "propertytypes": {
                         "destGoalId": "string",
+                        "displayTrophies": "string",
                         "id": "string",
                         "levelPrereq": "string",
                         "link": "string",
@@ -1404,6 +1416,7 @@
                     "name": "",
                     "properties": {
                         "destGoalId": "0",
+                        "displayTrophies": "true",
                         "id": "1",
                         "levelPrereq": "",
                         "link": "lvl_h2l1",
@@ -1411,6 +1424,7 @@
                     },
                     "propertytypes": {
                         "destGoalId": "string",
+                        "displayTrophies": "string",
                         "id": "string",
                         "levelPrereq": "string",
                         "link": "string",
@@ -1429,6 +1443,7 @@
                     "name": "",
                     "properties": {
                         "destGoalId": "6",
+                        "displayTrophies": "true",
                         "id": "0",
                         "levelPrereq": "lvl_hub1",
                         "link": "lvl_hub1",
@@ -1436,6 +1451,7 @@
                     },
                     "propertytypes": {
                         "destGoalId": "string",
+                        "displayTrophies": "string",
                         "id": "string",
                         "levelPrereq": "string",
                         "link": "string",
