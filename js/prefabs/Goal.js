@@ -46,6 +46,7 @@ Unstable.Goal.prototype.emit = function(coin) {
 }
 
 Unstable.Goal.prototype.createTrophies = function(state) {
+    //TODO: need a medal or trophy for this
     if (state.completion === 1) {
         this.trophy = this.createTrophy(0, 0);
         this.bounceTrophy(this.trophy, true);
@@ -53,6 +54,9 @@ Unstable.Goal.prototype.createTrophies = function(state) {
         this.trophy = this.createTrophy(0, 7);
     }
 
+    //TODO: need related trophies for this
+    //TODO: need game state to indicate time made top times
+    //TODO: need game state to indicate player got high score
     if (state.times.length > 0) {
         this.trophy2 = this.createTrophy(1, 5);
         this.bounceTrophy(this.trophy2, false);
