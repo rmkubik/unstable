@@ -32,7 +32,7 @@ Unstable.Goal = function (game_state, position, properties) {
       }
     }
 
-    this.createTrophies();
+    this.createTrophies(Unstable.globals.levels[Unstable.globals.current_level]);
 };
 
 Unstable.Goal.prototype = Object.create(Unstable.Prefab.prototype);
@@ -43,11 +43,19 @@ Unstable.Goal.prototype.emit = function(coin) {
 }
 
 Unstable.Goal.prototype.createTrophies = function(state) {
-    this.trophy = this.createTrophy(0, 0);
-    this.bounceTrophy(this.trophy, true);
+    if (state.completion === 1) {
+        this.trophy = this.createTrophy(0, 0);
+        this.bounceTrophy(this.trophy, true);
+    } else {
+        this.trophy = this.createTrophy(0, 7);
+    }
 
-    this.trophy2 = this.createTrophy(1, 5);
-    this.bounceTrophy(this.trophy, false);
+    if (state.times.length > 0) {
+        this.trophy2 = this.createTrophy(1, 5);
+        this.bounceTrophy(this.trophy2, false);
+    } else {
+        this.trophy2 = this.createTrophy(1, 7);
+    }
 }
 
 Unstable.Goal.prototype.createTrophy = function(slot, frame) {
