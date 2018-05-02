@@ -315,10 +315,6 @@
             "type": "tilemap",
             "source": "assets/levels/build/keepMoving.json"
         },
-        "lvl_patience": {
-            "type": "tilemap",
-            "source": "assets/levels/build/patience.json"
-        },
         "lvl_sentries": {
             "type": "tilemap",
             "source": "assets/levels/build/sentries.json"
@@ -641,7 +637,8 @@
                 "pgroup": "goals",
                 "rgroup": "objects",
                 "texture": "img_objects",
-                "width": "8"
+                "width": "8",
+                "displayTrophies": false
             },
             "required_properties": [
                 "id",
