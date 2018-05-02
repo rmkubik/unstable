@@ -32,7 +32,7 @@ Unstable.Goal = function (game_state, position, properties) {
       }
     }
 
-    this.createTrophies(Unstable.globals.levels[Unstable.globals.current_level]);
+    this.createTrophies(Unstable.globals.levels[this.levelLink]);
 };
 
 Unstable.Goal.prototype = Object.create(Unstable.Prefab.prototype);
