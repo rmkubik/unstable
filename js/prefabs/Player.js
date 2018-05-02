@@ -301,6 +301,8 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
         if (this.game_state.timer.newHighScore) {
             initialDelay = 3;
         }
+        Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
+        Unstable.saveProgress();
     }
 
     var direction = this.game_state.game.rnd.integerInRange(0, 3);
@@ -330,16 +332,6 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
 }
 
 Unstable.Player.prototype.finishLevel = function(goal) {
-  if (
-      goal.ready
-      || (
-          goal.ready
-          && ( goal.levelPrereq === null || goal.levelPrereq === "" )
-      )
-  ) {
-      Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
-      Unstable.saveProgress();
-  }
   this.game.state.start("LevelManager", true, false, this.game_state.level_data, goal.levelLink, goal.destGoalId);
 }
 
