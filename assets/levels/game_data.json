@@ -90,7 +90,7 @@
             "source": "assets/images/object_sheet.png",
             "frame_width": 24,
             "frame_height": 24,
-            "frames": 10,
+            "frames": 15,
             "spacing": 1,
             "margin": 0
         },
