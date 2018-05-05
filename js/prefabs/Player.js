@@ -303,6 +303,9 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
         }
         Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
         Unstable.saveProgress();
+    } else if (!this.game_state.timer && goal.threshold == 0) {
+        Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
+        Unstable.saveProgress();
     }
 
     var direction = this.game_state.game.rnd.integerInRange(0, 3);
