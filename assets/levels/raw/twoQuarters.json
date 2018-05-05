@@ -171,6 +171,16 @@
                  "height":24,
                  "id":7,
                  "name":"",
+                 "properties":
+                    {
+                     "levelPrereq":"",
+                     "link":"lvl_hub1"
+                    },
+                 "propertytypes":
+                    {
+                     "levelPrereq":"string",
+                     "link":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -183,6 +193,18 @@
                  "height":24,
                  "id":8,
                  "name":"",
+                 "properties":
+                    {
+                     "id":"1",
+                     "levelPrereq":"lvl_twoQuarters",
+                     "threshold":"7"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string",
+                     "levelPrereq":"string",
+                     "threshold":"string"
+                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
