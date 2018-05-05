@@ -1,4 +1,4 @@
-function TrophyManager(state) {
+function TrophyManager() {
     // var initiallyCompleted = state.completion === 1;
     // var times = state.times;
 
