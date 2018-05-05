@@ -568,7 +568,6 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "displayTrophies":"true",
                      "id":"6",
                      "levelPrereq":"lvl_h1l6",
                      "link":"lvl_hub2",
@@ -577,7 +576,6 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
-                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",

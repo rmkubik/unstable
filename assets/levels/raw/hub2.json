@@ -53,7 +53,6 @@
                  "properties":
                     {
                      "destGoalId":"0",
-                     "displayTrophies":"true",
                      "id":"7",
                      "levelPrereq":"lvl_sticks",
                      "link":"lvl_hub3",
@@ -62,7 +61,6 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
-                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
@@ -256,7 +254,6 @@
                  "properties":
                     {
                      "destGoalId":"6",
-                     "displayTrophies":"true",
                      "id":"0",
                      "levelPrereq":"lvl_hub1",
                      "link":"lvl_hub1",
@@ -265,7 +262,6 @@
                  "propertytypes":
                     {
                      "destGoalId":"string",
-                     "displayTrophies":"string",
                      "id":"string",
                      "levelPrereq":"string",
                      "link":"string",
