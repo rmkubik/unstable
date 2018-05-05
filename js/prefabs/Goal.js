@@ -46,22 +46,31 @@ Unstable.Goal.prototype.emit = function(coin) {
 }
 
 Unstable.Goal.prototype.createTrophies = function(state) {
-    //TODO: need a medal or trophy for this
+    var placeholderSprite = 7;
+    var victorySprite = 0;
+    var firstTimeSprite = 2;
+    var secondTimeSprite = 5;
+
     if (state.completion === 1) {
-        this.trophy = this.createTrophy(0, 0);
+        this.trophy = this.createTrophy(0, victorySprite);
         this.bounceTrophy(this.trophy, true);
     } else {
-        this.trophy = this.createTrophy(0, 7);
+        this.trophy = this.createTrophy(0, placeholderSprite);
     }
 
-    //TODO: need related trophies for this
-    //TODO: need game state to indicate time made top times
-    //TODO: need game state to indicate player got high score
-    if (state.times.length > 0) {
-        this.trophy2 = this.createTrophy(1, 5);
+    var sprite = placeholderSprite;
+    if (state.times.length > 0 && state.times.some(function(time) {
+        return time.player;
+    })) {
+        sprite = firstTimeSprite;
+    }
+    if (state.times.length > 0 && state.times[0].player) {
+        sprite = secondTimeSprite;
+    }
+    this.trophy2 = this.createTrophy(1, sprite);
+    
+    if (sprite === firstTimeSprite || sprite === secondTimeSprite) {
         this.bounceTrophy(this.trophy2, false);
-    } else {
-        this.trophy2 = this.createTrophy(1, 7);
     }
 }
 

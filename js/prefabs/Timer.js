@@ -62,7 +62,7 @@ Unstable.Timer.prototype.update = function() {
 Unstable.Timer.prototype.drawHighScores = function() {
     this.times = Unstable.globals.levels[Unstable.globals.current_level].times;
     this.times.forEach(function(time, index) {
-        this.highScores[index].setText(time.toFixed(3));
+        this.highScores[index].setText(time.time.toFixed(3));
     }.bind(this));
 }
 
@@ -98,15 +98,23 @@ Unstable.Timer.prototype.blink = function() {
 }
 
 Unstable.Timer.prototype.saveTime = function(levelKey) {
-    var newTime = this.game_state.game.time.totalElapsedSeconds() - this.startTime;
+    var newTime = {
+        time: this.game_state.game.time.totalElapsedSeconds() - this.startTime,
+        name: "player",
+        player: true
+    };
     var times = Unstable.globals.levels[levelKey].times.slice();
     this.newHighScore = times.some(function(time) {
-        return newTime < time;
-    });
-    if (times.length < 3) {
+        return newTime.time < time.time;
+    }); // TODO: update this logic 
+    if (times.length < 3) { // TODO: Update this logic
         this.newHighScore = true;
     }
-    this.highestScore = newTime < times[0];
+    if (times.length > 0) {
+        this.highestScore = newTime.time < times[0].time;
+    } else {
+        this.highestScore = true;
+    }
 
     if (this.newHighScore) {
         this.blink();
@@ -114,7 +122,7 @@ Unstable.Timer.prototype.saveTime = function(levelKey) {
 
     times.push(newTime);
     times.sort(function(a, b) {
-        return a - b;
+        return a.time - b.time;
     });
     Unstable.globals.levels[levelKey].times = times.slice(0, 3);
     Unstable.saveProgress();

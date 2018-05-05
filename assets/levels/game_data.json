@@ -353,7 +353,13 @@
             "key": "lvl_h1l1",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": []
+            "times": [
+                {
+                    "time": 3,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_h1l2": {
             "name": "H1l2",
@@ -556,7 +562,13 @@
             "key": "lvl_twoQuarters",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": []
+            "times": [
+                {
+                    "time": 10,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         }
     },
     "groups": [

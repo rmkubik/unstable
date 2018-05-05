@@ -141,7 +141,8 @@ async function buildMaps() {
             "key": levelKeyPrefix + map.name,
             "tileset": "tilesheet",
             "completion": -1,
-            "times": []
+            "times": [],
+            ...gameData.levels[levelKeyPrefix + map.name]
         }
     });
     fs.writeFile(
