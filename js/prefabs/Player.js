@@ -74,11 +74,7 @@ Unstable.Player = function(game_state, position, properties) {
     this.shadow.kill();
   }
 
-  this.trophyManager = new TrophyManager();
-  this.completionTrophy = this.trophyManager.calcCompletionTrophy(
-      Unstable.globals.levels[Unstable.globals.current_level]
-  );
-  this.timeTrialTrophy = this.trophyManager.calcTimeTrialTrophy(
+  this.trophyManager = new TrophyManager(
       Unstable.globals.levels[Unstable.globals.current_level]
   );
 }
@@ -306,30 +302,38 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
         this.game_state.timer.pause();
         this.game_state.timer.saveTime(Unstable.globals.current_level);
 
-        var newCompletionTrophy = this.trophyManager.calcCompletionTrophy(
+        Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
+
+        // var newCompletionTrophy = this.trophyManager.calcCompletionTrophy(
+        //     Unstable.globals.levels[Unstable.globals.current_level]
+        // );
+        // var newTimeTrialTrophy = this.trophyManager.calcTimeTrialTrophy(
+        //     Unstable.globals.levels[Unstable.globals.current_level]
+        // );
+
+        var newTrophies = this.trophyManager.calcNewTrophies(
             Unstable.globals.levels[Unstable.globals.current_level]
         );
-        var newTimeTrialTrophy = this.trophyManager.calcTimeTrialTrophy(
-            Unstable.globals.levels[Unstable.globals.current_level]
-        );
 
-        if (newCompletionTrophy > this.completionTrophy) {
-            Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
+        if (newTrophies.count > 0) {
             initialDelay = 3;
 
-            // TODO: Display trophy award
-        }
-        if (newTimeTrialTrophy > this.timeTrialTrophy) {
-            initialDelay = 3;
+            if (newTrophies.completion) {
 
-            // TODO: Display new trophy award
+            }
+
+            if (newTrophies.timeTrialTrophy) {
+
+            }
+
+            // TODO: Display trophy awards
         }
+
         if (this.game_state.timer.newHighScore) {
-            initialDelay = 3;
-
             // TODO: still need to display if a new high score made it into
             // the top 3, even if it doesn't award a new level of trophy
         }
+
         Unstable.saveProgress();
     } else if (!this.game_state.timer && goal.threshold == 0) {
         Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
