@@ -5,6 +5,31 @@ function TrophyManager(state) {
         initialCompletionTier = calcCompletionTrophy(state);
         initialTimeTrialTier = calcTimeTrialTrophy(state);
     }
+    // var emitter = new Unstable.Emitter(game_state, {x: 100, y: 100},{
+    //   offset:{x: 0, y: -12},
+    //   maxParticles: 100,
+    //   width: 2,
+    //   minParticleSpeed: {x: -40, y: -40},
+    //   maxParticleSpeed: {x: 40, y: 40},
+    //   gravity: 0,
+    //   burst: true,
+    //   lifetime: 0, //450
+    //   frequency: 30,
+    //   particleClass: "coin",
+    //   scale: {
+    //     minX: 1,
+    //     maxX: 0,
+    //     minY: 1,
+    //     maxY: 0,
+    //     rate: 4500,
+    //     ease: Phaser.Easing.Exponential.In,
+    //     yoyo: false
+    //   }
+    // });
+    var sprites = {
+        completion: [7, 0],
+        timeTrial: [7, 10, 2, 5]
+    }
 
     function calcTimeTrialTrophy(state) {
         var trophyTier = 0;
@@ -45,6 +70,10 @@ function TrophyManager(state) {
             return newTrophies;
         },
         calcTimeTrialTrophy: calcTimeTrialTrophy,
-        calcCompletionTrophy: calcCompletionTrophy
+        calcCompletionTrophy: calcCompletionTrophy,
+        displayTrophies: function(trophies) {
+            trophies[0];
+        },
+        sprites: sprites
     }
 }

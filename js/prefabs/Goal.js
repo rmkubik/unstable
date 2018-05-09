@@ -46,18 +46,18 @@ Unstable.Goal.prototype.emit = function(coin) {
 }
 
 Unstable.Goal.prototype.createTrophies = function(state) {
-    var completionSprites = [7, 0];
-    var timeTrialSprites = [7, 10, 2, 5];
+    // var completionSprites = [7, 0];
+    // var timeTrialSprites = [7, 10, 2, 5];
     var trophyManager = new TrophyManager();
 
     var completionTier = trophyManager.calcCompletionTrophy(state);
-    this.trophy = this.createTrophy(0, completionSprites[completionTier]);
+    this.trophy = this.createTrophy(0, trophyManager.sprites.completion[completionTier]);
     if (completionTier > 0) {
         this.bounceTrophy(this.trophy, true);
     }
 
     var timeTrialTier = trophyManager.calcTimeTrialTrophy(state);
-    this.trophy2 = this.createTrophy(1, timeTrialSprites[timeTrialTier]);
+    this.trophy2 = this.createTrophy(1, trophyManager.sprites.timeTrial[timeTrialTier]);
     if (timeTrialTier > 0) {
         this.bounceTrophy(this.trophy2, false);
     }
