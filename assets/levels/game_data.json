@@ -544,13 +544,6 @@
             "completion": -1,
             "times": []
         },
-        "lvl_patience": {
-            "name": "Patience",
-            "key": "lvl_patience",
-            "tileset": "tilesheet",
-            "completion": -1,
-            "times": []
-        },
         "lvl_twoQuarters": {
             "name": "Two Quarters",
             "key": "lvl_twoQuarters",
