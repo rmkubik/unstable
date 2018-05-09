@@ -46,8 +46,6 @@ Unstable.Goal.prototype.emit = function(coin) {
 }
 
 Unstable.Goal.prototype.createTrophies = function(state) {
-    // var completionSprites = [7, 0];
-    // var timeTrialSprites = [7, 10, 2, 5];
     var trophyManager = new TrophyManager();
 
     var completionTier = trophyManager.calcCompletionTrophy(state);

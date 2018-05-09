@@ -75,7 +75,8 @@ Unstable.Player = function(game_state, position, properties) {
   }
 
   this.trophyManager = new TrophyManager(
-      Unstable.globals.levels[Unstable.globals.current_level]
+      Unstable.globals.levels[Unstable.globals.current_level],
+      this.game_state
   );
 }
 
@@ -304,13 +305,6 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
 
         Unstable.globals.levels[Unstable.globals.current_level].completion = 1;
 
-        // var newCompletionTrophy = this.trophyManager.calcCompletionTrophy(
-        //     Unstable.globals.levels[Unstable.globals.current_level]
-        // );
-        // var newTimeTrialTrophy = this.trophyManager.calcTimeTrialTrophy(
-        //     Unstable.globals.levels[Unstable.globals.current_level]
-        // );
-
         var newTrophies = this.trophyManager.calcNewTrophies(
             Unstable.globals.levels[Unstable.globals.current_level]
         );
@@ -327,6 +321,7 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
             }
 
             // TODO: Display trophy awards
+            this.trophyManager.displayTrophies(newTrophies, goal);
         }
 
         if (this.game_state.timer.newHighScore) {
