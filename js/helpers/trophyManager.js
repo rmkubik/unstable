@@ -5,11 +5,11 @@ function TrophyManager(state, gameState) {
         initialCompletionTier = calcCompletionTrophy(state);
         initialTimeTrialTier = calcTimeTrialTrophy(state);
         var emitter = new Unstable.Emitter(gameState, {x: 100, y: 100},{
-          offset:{x: 0, y: -12},
+          offset: {x: 0, y: 0},
           maxParticles: 100,
           width: 2,
-          minParticleSpeed: {x: -60, y: -60},
-          maxParticleSpeed: {x: 60, y: 60},
+          minParticleSpeed: {x: -40, y: -40},
+          maxParticleSpeed: {x: 40, y: 40},
           gravity: 0,
           burst: true,
           lifetime: 0, //450
@@ -50,6 +50,33 @@ function TrophyManager(state, gameState) {
         return state.completion === 1 ? 1 : 0;
     }
 
+    function tweenTrophy(trophy, goal) {
+        var originalHeight = trophy.height;
+        var originalWidth = trophy.width;
+        trophy.height = 0;
+        trophy.width = 0;
+        var tweenIn = gameState.game.add.tween(trophy).to(
+            {
+                width: originalWidth,
+                height: originalHeight
+            },
+            0.25 * Phaser.Timer.SECOND,
+            Phaser.Easing.Linear.In
+        );
+        var tweenOut = gameState.game.add.tween(trophy).to(
+            {
+                x: goal.x,
+                y: goal.y,
+                width: 0,
+                height: 0
+            },
+            2.75 * Phaser.Timer.SECOND,
+            Phaser.Easing.Exponential.In
+        );
+        tweenIn.chain(tweenOut);
+        tweenIn.start();
+    }
+
     return {
         calcNewTrophies: function(newState) {
             var newTrophies = {
@@ -80,20 +107,9 @@ function TrophyManager(state, gameState) {
                     "img_objects",
                     sprites.completion[trophies.completion]
                 );
-                trophy.anchor.setTo(0.5, 1);
-                gameState.game.add.tween(trophy).to(
-                    {
-                        x: goal.x,
-                        y: goal.y,
-                        width: 0,
-                        height: 0
-                    },
-                    3 * Phaser.Timer.SECOND,
-                    Phaser.Easing.Exponential.In,
-                    true
-                );
-
-
+                trophy.anchor.setTo(0.5, 0.5);
+                tweenTrophy(trophy, goal);
+                
                 emitter.burst(goal.x - 25, goal.y - 50);
             }
             if (trophies.timeTrial) {
@@ -103,18 +119,8 @@ function TrophyManager(state, gameState) {
                     "img_objects",
                     sprites.timeTrial[trophies.timeTrial]
                 );
-                trophy.anchor.setTo(0.5, 1);
-                gameState.game.add.tween(trophy).to(
-                    {
-                        x: goal.x,
-                        y: goal.y,
-                        width: 0,
-                        height: 0
-                    },
-                    3 * Phaser.Timer.SECOND,
-                    Phaser.Easing.Exponential.In,
-                    true
-                );
+                trophy.anchor.setTo(0.5, 0.5);
+                tweenTrophy(trophy, goal);
 
                 emitter.burst(goal.x + 25, goal.y - 50);
             }
