@@ -13,12 +13,15 @@ Unstable.LoadingState.prototype.init = function (gameData) {
     this.gameData = gameData;
 };
 
+var audioAssets = [];
+var assets;
+
 Unstable.LoadingState.prototype.preload = function () {
     "use strict";
     var loadingBar = this.game.add.sprite(200, 200, "loadingBar");
     this.load.setPreloadSprite(loadingBar);
 
-    var assets, asset_loader, asset_key, asset;
+    var asset_loader, asset_key, asset;
     assets = this.gameData.assets;
     for (asset_key in assets) { // load assets according to asset key
         if (assets.hasOwnProperty(asset_key)) {
@@ -37,6 +40,7 @@ Unstable.LoadingState.prototype.preload = function () {
                 //this.load.
             case "audio":
                 this.load.audio(asset_key, asset.source);
+                audioAssets.push(asset_key);
                 break;
             }
         }
@@ -66,6 +70,15 @@ Unstable.LoadingState.prototype.preload = function () {
 
 Unstable.LoadingState.prototype.create = function () {
     "use strict";
+    audioAssets.forEach(function(asset_key) {
+        // take of sfx_ prefix with substring
+        if (assets[asset_key].track) {
+            Unstable.globals.audio.addTrack(asset_key.substring(4), asset_key);
+        } else {
+            Unstable.globals.audio.addSfx(asset_key.substring(4), asset_key);
+        }
+    });
+
     //this.game.levelManager.nextLevel();
     // this.game.state.start("LevelManager", true, false, this.gameData, "lvl_hub1");
     this.game.state.start("MenuState", true, false, this.gameData);

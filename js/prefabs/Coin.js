@@ -66,7 +66,7 @@ Unstable.Coin.prototype.die = function() {
         this.emitter.seekParticlesToLocation({x:goal.x, y:goal.y}, this.reachedGoal, this, goal);
     }
   }, this);
-  this.game_state.game.sound.play("sfx_coin");
+  Unstable.globals.audio.sfx.coin.play();
   this.kill();
   this.shadow.kill();
 }

@@ -24,7 +24,7 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
     this.map.addTilesetImage("base", level_data.map.tileset);
     this.map.addTilesetImage("collision", "collision");
 
-    this.bombSound;
+    Unstable.globals.audio.sfx.tank.loop = true;
     this.aliveBombCount = 0;
 
     Unstable.Emitter.init();
@@ -113,15 +113,13 @@ Unstable.TiledState.prototype.create = function () {
 Unstable.TiledState.prototype.update = function() {
   this.groups["objects"].sort('y', Phaser.Group.SORT_ASCENDING); //depth sorting
 
-  if (this.bombSound !== undefined) {
     if (this.aliveBombCount > 0) {
-      if (!this.bombSound.isPlaying) {
-        this.bombSound.play();
+      if (!Unstable.globals.audio.sfx.tank.isPlaying) {
+        Unstable.globals.audio.sfx.tank.play();
       }
     } else {
-      this.bombSound.stop();
+        Unstable.globals.audio.sfx.tank.stop();
     }
-  }
 
   this.timer && this.timer.update();
 }
@@ -204,17 +202,9 @@ Unstable.TiledState.prototype.create_object = function (object) {
       prefab = new Unstable.Hazard(this, position, properties);
       break;
     case "bouncer":
-      if (this.bombSound === undefined) {
-        this.bombSound = this.game.add.sound("sfx_tank");
-        this.bombSound.loop = true;
-      }
       prefab = new Unstable.BouncerHazard(this, position, properties);
       break;
     case "tracker":
-        if (this.bombSound === undefined) {
-          this.bombSound = this.game.add.sound("sfx_tank");
-          this.bombSound.loop = true;
-        }
         prefab = new Unstable.TrackerHazard(this, position, properties);
         break;
     case "antenna":
@@ -257,8 +247,8 @@ Unstable.TiledState.prototype.isTree = function(type, properties) {
 }
 
 Unstable.TiledState.prototype.shutdown = function () {
-  if (this.bombSound !== undefined) {
-    this.bombSound.stop();
+  if (this.aliveBombCount > 0) {
+    Unstable.globals.audio.sfx.tank.stop();
   }
 };
 
@@ -267,8 +257,8 @@ Unstable.TiledState.prototype.restart_level = function () {
     if (this.player.alive) {
       this.player.die();
     }
-    if (this.bombSound !== undefined) {
-      this.bombSound.stop();
+    if (this.aliveBombCount > 0) {
+        Unstable.globals.audio.sfx.tank.stop();
     }
     this.game.state.restart(true, false, this.level_data, null);
 };

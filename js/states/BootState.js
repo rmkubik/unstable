@@ -31,6 +31,7 @@ Unstable.BootState.prototype.init = function (gameDataFile) {
       Unstable.globals.levels = saveState.levels;
       Unstable.globals.showIntroduction = saveState.showIntroduction;
     }
+    Unstable.globals.audio = new VolumeManager(game);
 
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     this.scale.pageAlignHorizontally = true;

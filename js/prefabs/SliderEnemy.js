@@ -13,7 +13,7 @@ Unstable.SliderEnemy = function (game_state, position, properties) {
     this.shotSpeed = 75;
 
     this.axis = properties.axis;
-    this.firingOffsetTolerance = properties.firingOffsetTolerance; 
+    this.firingOffsetTolerance = properties.firingOffsetTolerance;
     this.prevDirection;
 
     switch (this.axis) {
@@ -70,7 +70,7 @@ Unstable.SliderEnemy.prototype.update = function() {
 
     var diff = this.game_state.player[this.axis] - this[this.axis];
     if (Math.abs(diff) <= this.firingOffsetTolerance && !this.coolingDown) {
-        this.game_state.game.sound.play("sfx_turretShoot");
+        Unstable.globals.audio.sfx.turretShoot.play();
         new Unstable.Projectile(
           this.game_state,
           projPosition,

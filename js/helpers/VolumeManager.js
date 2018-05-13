@@ -1,24 +1,26 @@
-function VolumeManager(gameState) {
-    this.sfx = {};
-    this.tracks = {};
+function VolumeManager(game) {
+    var sfx = {};
+    var tracks = {};
 
     return {
+        sfx: sfx,
+        tracks: tracks,
         addSfx: function(key, soundFileKey) {
-            this.sfx[key] = this.game.add.sound(soundFileKey);
+            sfx[key] = game.add.sound(soundFileKey);
         },
         addTrack: function(key, trackFileKey) {
-            this.tracks[key] = this.game.add.sound(trackFileKey);
+            tracks[key] = game.add.sound(trackFileKey);
         },
         setSfxVolume: function(vol) {
-            var sfxKeys = Object.keys(this.sfx);
+            var sfxKeys = Object.keys(sfx);
             sfxKeys.forEach(function(sound) {
-                this.sfx[sound].volume = vol;
+                sfx[sound].volume = vol;
             });
         },
         setMusicVolume: function(vol) {
-            var trackKeys = Object.keys(this.tracks);
+            var trackKeys = Object.keys(tracks);
             trackKeys.forEach(function(track) {
-                this.tracks[track].volume = vol;
+                tracks[track].volume = vol;
             });
         }
     }

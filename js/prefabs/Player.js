@@ -63,11 +63,7 @@ Unstable.Player = function(game_state, position, properties) {
 
   this.spawnpoint = {x: this.x, y: this.y};
 
-  this.stepSound1 = this.game.add.audio("sfx_step1");
-  this.stepSound2 = this.game.add.audio("sfx_step2");
   this.stepToggle = 1;
-
-  this.teleportSound = this.game.add.audio("sfx_teleport");
 
   if (properties.spawnFromGoal) {
     this.kill();
@@ -134,10 +130,10 @@ Unstable.Player.prototype.update = function() {
   }
   if (this.runAnimation.isPlaying) {
     if (this.stepToggle === 1) {
-      this.stepSound1.play("", 0, 1, false, false);
+      Unstable.globals.audio.sfx.step1.play("", 0, undefined, false, false);
       this.stepToggle = 2;
     } else if (this.stepToggle === 2) {
-      this.stepSound2.play("", 0, 1, false, false);
+      Unstable.globals.audio.sfx.step2.play("", 0, undefined, false, false);
       this.stepToggle = 1;
     }
   }
@@ -356,8 +352,7 @@ Unstable.Player.prototype.goalCollide = function(player, goal) {
             break;
     }
     this.emitter.seekParticlesToLocation(position, this.finishLevel, this, goal, initialDelay);
-    // this.game_state.game.sound.play("sfx_teleport"); //needs to be played globally
-    this.teleportSound.play("", 0, 1, false, false);
+    Unstable.globals.audio.sfx.teleport.play("", 0, undefined, false, false);
   }
 }
 
@@ -418,6 +413,6 @@ Unstable.Player.prototype.die = function() {
   this.shadow.kill();
   this.emitter.burst(this.x, this.y);
   this.emitter.seekParticlesToLocation(this.spawnpoint, this.game_state.restart_level, this.game_state);
-  this.game_state.game.sound.play("sfx_death");
+  Unstable.globals.audio.sfx.death.play();
   this.game_state.game.plugins.screenShake.shake(6);
 }
