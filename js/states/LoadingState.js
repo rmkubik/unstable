@@ -79,6 +79,12 @@ Unstable.LoadingState.prototype.create = function () {
         }
     });
 
+    if (game.sound.usingWebAudio &&
+    game.sound.context.state === 'suspended')
+    {
+      game.input.onTap.addOnce(game.sound.context.resume, game.sound.context);
+    }
+
     //this.game.levelManager.nextLevel();
     // this.game.state.start("LevelManager", true, false, this.gameData, "lvl_hub1");
     this.game.state.start("MenuState", true, false, this.gameData);
