@@ -11,6 +11,7 @@ Unstable.prototype.constructor = Unstable.MenuState;
 Unstable.MenuState.prototype.init = function (gameData) {
     "use strict";
     this.gameData = gameData;
+    Unstable.globals.audio.resumeAudioContext();
 };
 
 Unstable.MenuState.prototype.create = function () {
