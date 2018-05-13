@@ -22,6 +22,13 @@ function VolumeManager(game) {
             trackKeys.forEach(function(track) {
                 tracks[track].volume = vol;
             });
+        },
+        resumeAudioContext: function() {
+            if (game.sound.usingWebAudio &&
+            game.sound.context.state === 'suspended')
+            {
+              game.input.onTap.addOnce(game.sound.context.resume, game.sound.context);
+            }
         }
     }
 }
