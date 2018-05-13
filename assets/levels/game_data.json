@@ -229,6 +229,10 @@
             "type": "image",
             "source": "assets/images/cloud10.png"
         },
+        "logo1": {
+            "type": "image",
+            "source": "assets/images/logo1.png"
+        },
         "lvl_U": {
             "type": "tilemap",
             "source": "assets/levels/build/U.json"

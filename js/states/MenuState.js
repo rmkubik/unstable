@@ -16,18 +16,22 @@ Unstable.MenuState.prototype.init = function (gameData) {
 
 Unstable.MenuState.prototype.create = function () {
     "use strict";
-    var style = {
-      font: "64px Arial",
-      fill: "#FFFFFF",
-      align: "center"
-    };
-    var text = game.add.text(game.width / 2, game.height / 2 - 100,
-      "Unstable", style);
-    text.anchor.set(0.5);
-    style.font = "16px Arial";
-    text = game.add.text(game.width / 2, game.height / 2 - 48,
-        "This is a beta version, please send feedback!", style);
-    text.anchor.set(0.5);
+    // var style = {
+    //   font: "64px Arial",
+    //   fill: "#FFFFFF",
+    //   align: "center"
+    // };
+    // var text = game.add.text(game.width / 2, game.height / 2 - 100,
+    //   "Unstable", style);
+    // text.anchor.set(0.5);
+    // style.font = "16px Arial";
+    // text = game.add.text(game.width / 2, game.height / 2 - 48,
+    //     "This is a beta version, please send feedback!", style);
+    // text.anchor.set(0.5);
+    var logo = game.add.image(game.width / 2, game.height / 2 - 100, "logo1");
+    logo.anchor.set(0.5);
+    logo.scale.setTo(0.65);
+
     var playButton = game.add.button(game.width / 2 - 72,
       game.height / 2 - 24, "buttonSheet", this.startGame, this, 0, 0, 1);
     playButton.scale.setTo(2);
