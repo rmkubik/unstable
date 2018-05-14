@@ -36,6 +36,22 @@ Unstable.Goal = function (game_state, position, properties) {
     if (this.displayTrophies) {
         this.createTrophies(Unstable.globals.levels[this.levelLink]);
     }
+
+    // Make sure level exists (so not Victory or Empty)
+    if (Unstable.globals.levels[this.levelLink]) {
+        var style = {
+          font: "8px Arial",
+          fill: "#FFFFFF",
+          align: "center"
+        };
+        var text = game.add.text(
+            this.x,
+            this.y + 10,
+            Unstable.globals.levels[this.levelLink].name,
+            style
+        );
+        text.anchor.set(0.5);
+    }
 };
 
 Unstable.Goal.prototype = Object.create(Unstable.Prefab.prototype);
