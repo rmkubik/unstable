@@ -79,7 +79,7 @@
                     {
                      "displayTrophies":"true",
                      "id":"1",
-                     "levelPrereq":"lvl_hub2",
+                     "levelPrereq":"",
                      "link":"lvl_donut"
                     },
                  "propertytypes":
