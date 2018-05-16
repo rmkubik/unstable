@@ -55,7 +55,7 @@
             "source": "assets/images/button_sheet.png",
             "frame_width": 24,
             "frame_height": 24,
-            "frames": 10,
+            "frames": 16,
             "spacing": 1,
             "margin": 0
         },

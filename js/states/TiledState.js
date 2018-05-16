@@ -108,6 +108,56 @@ Unstable.TiledState.prototype.create = function () {
     if (this.coins > 0) {
         this.timer = new Unstable.Timer(this, {x: 8, y: 8}, { paused: true });
     }
+
+    var menuButton = game.add.button(
+        game.width - 24,
+        0,
+        "buttonSheet",
+        function() {
+            console.log('open menu');
+        },
+        this,
+        10,
+        10,
+        11,
+        10
+    );
+
+    var unmutedFrames = [12, 12, 13, 12];
+    var mutedFrames = [14, 14, 15, 14];
+    var initialFrames = unmutedFrames;
+    if (Unstable.globals.audio.isMuted()) {
+        initialFrames = mutedFrames;
+    }
+    var muteButton = game.add.button(
+        game.width - 24,
+        24,
+        "buttonSheet",
+        function() {
+            if (Unstable.globals.audio.isMuted()) {
+                Unstable.globals.audio.unMute();
+                muteButton.setFrames(
+                    unmutedFrames[0],
+                    unmutedFrames[1],
+                    unmutedFrames[2],
+                    unmutedFrames[3]
+                );
+            } else {
+                Unstable.globals.audio.mute();
+                muteButton.setFrames(
+                    mutedFrames[0],
+                    mutedFrames[1],
+                    mutedFrames[2],
+                    mutedFrames[3]
+                );
+            }
+        },
+        this,
+        initialFrames[0],
+        initialFrames[1],
+        initialFrames[2],
+        initialFrames[3]
+    );
 };
 
 Unstable.TiledState.prototype.update = function() {
