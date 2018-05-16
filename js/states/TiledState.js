@@ -131,7 +131,7 @@ Unstable.TiledState.prototype.create = function () {
         initialFrames = mutedFrames;
     }
     var muteButton = game.add.button(
-        game.width - 24,
+        game.width - 24 - 2,
         24,
         "buttonSheet",
         function() {
