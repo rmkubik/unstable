@@ -55,6 +55,9 @@ function VolumeManager(game) {
             muted = false;
             setAllSfxVolume(sfxVol);
             setAllMusicVolume(tracksVol);
+        },
+        playSong: function(name) {
+            tracks[name].loopFull();
         }
     }
 }

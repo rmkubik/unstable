@@ -37,6 +37,8 @@ Unstable.MenuState.prototype.create = function () {
     playButton.scale.setTo(2);
     var optionsButton = game.add.button(game.width/2 + 24, game.height/2 - 24, "buttonSheet", this.openOptions, this, 2, 2, 3);
     optionsButton.scale.setTo(2);
+
+    Unstable.globals.audio.tracks.notChill.loopFull();
 };
 
 Unstable.MenuState.prototype.parseLevelOverride = function() {
