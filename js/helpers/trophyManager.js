@@ -35,11 +35,11 @@ function TrophyManager(state, gameState) {
     function calcTimeTrialTrophy(state) {
         var trophyTier = 0;
         if (state.times.length > 0) {
-            if (state.times[0].player) {
+            if (state.times[0] && state.times[0].player) {
                 trophyTier = 3;
-            } else if (state.times[1].player) {
+            } else if (state.times[1] && state.times[1].player) {
                 trophyTier = 2;
-            } else if (state.times[2].player) {
+            } else if (state.times[2] && state.times[2].player) {
                 trophyTier = 1;
             }
         }
@@ -109,7 +109,7 @@ function TrophyManager(state, gameState) {
                 );
                 trophy.anchor.setTo(0.5, 0.5);
                 tweenTrophy(trophy, goal);
-                
+
                 emitter.burst(goal.x - 25, goal.y - 50);
             }
             if (trophies.timeTrial) {
