@@ -1,0 +1,415 @@
+{
+    "current_level": "lvl_h1l4",
+    "levels": {
+        "lvl_hub1": {
+            "name": "Hub1",
+            "key": "lvl_hub1",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": []
+        },
+        "lvl_h1l1": {
+            "name": "H1l1",
+            "key": "lvl_h1l1",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 9.184,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 9.601000000000003,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 10.001999999999995,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_h1l2": {
+            "name": "H1l2",
+            "key": "lvl_h1l2",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 13.251999999999953,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 13.811000000000007,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 15.351999999999997,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_h1l3": {
+            "name": "H1l3",
+            "key": "lvl_h1l3",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 6.6839999999999975,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 6.756,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 7.268999999999998,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_h1l4": {
+            "name": "H1l4",
+            "key": "lvl_h1l4",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 10.134999999999991,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 10.286000000000001,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 10.332999999999998,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_h1l5": {
+            "name": "H1l5",
+            "key": "lvl_h1l5",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 8.677999999999997,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 10.886000000000024,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_h1l6": {
+            "name": "H1l6",
+            "key": "lvl_h1l6",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 7.849999999999994,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 8.393,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_hub2": {
+            "name": "Hub2",
+            "key": "lvl_hub2",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": []
+        },
+        "lvl_h2l1": {
+            "name": "H2l1",
+            "key": "lvl_h2l1",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 9.278999999999996,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 10.800000000000011,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_h2l2": {
+            "name": "H2l2",
+            "key": "lvl_h2l2",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_h2l3": {
+            "name": "H2l3",
+            "key": "lvl_h2l3",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 11.487000000000023,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 11.801999999999964,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_h2l4": {
+            "name": "H2l4",
+            "key": "lvl_h2l4",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_h2l5": {
+            "name": "H2l5",
+            "key": "lvl_h2l5",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_h2l6": {
+            "name": "H2l6",
+            "key": "lvl_h2l6",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_forest": {
+            "name": "Forest",
+            "key": "lvl_forest",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 8.433999999999997,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 8.692999999999998,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 8.933999999999969,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_waffle": {
+            "name": "Waffle",
+            "key": "lvl_waffle",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 8.617999999998574,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 9.184999999999999,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 9.279,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_sticks": {
+            "name": "Sticks",
+            "key": "lvl_sticks",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 29.535999999999945,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_U": {
+            "name": "U",
+            "key": "lvl_U",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_donut": {
+            "name": "Donut",
+            "key": "lvl_donut",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 8.585000000000008,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 10.551999999999992,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 11.638000000000005,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_flower": {
+            "name": "Flower",
+            "key": "lvl_flower",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_soClose": {
+            "name": "So Close",
+            "key": "lvl_soClose",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 13.360000000000014,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 13.619000000000028,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 13.902999999999999,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_divide": {
+            "name": "Divide",
+            "key": "lvl_divide",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 11.15100000000001,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 13.643999999999991,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_cross": {
+            "name": "Cross",
+            "key": "lvl_cross",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 11.051999999999964,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 11.519000000000005,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_bobAndWeave": {
+            "name": "Bob And Weave",
+            "key": "lvl_bobAndWeave",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 13.85899999999998,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 15.085000000000008,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_hub3": {
+            "name": "Hub3",
+            "key": "lvl_hub3",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": []
+        },
+        "lvl_keepMoving": {
+            "name": "Keep Moving",
+            "key": "lvl_keepMoving",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 9.017999999999972,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 9.781999999999982,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 11.452999999999996,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_funnel": {
+            "name": "Funnel",
+            "key": "lvl_funnel",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_zigZag": {
+            "name": "Zig Zag",
+            "key": "lvl_zigZag",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 8.918000000000006,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 9.067000000000007,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 10.267000000000003,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_sentries": {
+            "name": "Sentries",
+            "key": "lvl_sentries",
+            "tileset": "tilesheet",
+            "completion": 1,
+            "times": [{
+                "time": 5.9339999999999975,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 6.435000000000002,
+                "name": "player",
+                "player": true
+            }, {
+                "time": 7.272999999999996,
+                "name": "player",
+                "player": true
+            }]
+        },
+        "lvl_patience": {
+            "name": "Patience",
+            "key": "lvl_patience",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_twoQuarters": {
+            "name": "Two Quarters",
+            "key": "lvl_twoQuarters",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        }
+    },
+    "showIntroduction": false
+}
