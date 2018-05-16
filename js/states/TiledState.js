@@ -126,6 +126,7 @@ Unstable.TiledState.prototype.create = function () {
     var unmutedFrames = [12, 12, 13, 12];
     var mutedFrames = [14, 14, 15, 14];
     var initialFrames = unmutedFrames;
+
     if (Unstable.globals.audio.isMuted()) {
         initialFrames = mutedFrames;
     }
@@ -158,6 +159,38 @@ Unstable.TiledState.prototype.create = function () {
         initialFrames[2],
         initialFrames[3]
     );
+
+    var upButton = game.add.button(
+        game.width - 24 + 12,
+        48 + 12,
+        "buttonSheet",
+        function() {
+            Unstable.globals.audio.volumeUp(true);
+        },
+        this,
+        8,
+        8,
+        9,
+        8
+    );
+    upButton.anchor.setTo(0.5, 0.5);
+    upButton.angle = 270;
+
+    var downButton = game.add.button(
+        game.width - 24 + 10,
+        72 + 8,
+        "buttonSheet",
+        function() {
+            Unstable.globals.audio.volumeDown(true);
+        },
+        this,
+        8,
+        8,
+        9,
+        8
+    );
+    downButton.anchor.setTo(0.5, 0.5);
+    downButton.angle = 90;
 };
 
 Unstable.TiledState.prototype.update = function() {

@@ -19,6 +19,20 @@ function VolumeManager(game) {
         });
     }
 
+    function setSfxVolume(vol) {
+        sfxVol = vol;
+        if (!muted) {
+            setAllSfxVolume(vol);
+        }
+    }
+
+    function setMusicVolume(vol) {
+        tracksVol = vol;
+        if (!muted) {
+            setAllMusicVolume(vol);
+        }
+    }
+
     return {
         sfx: sfx,
         tracks: tracks,
@@ -28,14 +42,8 @@ function VolumeManager(game) {
         addTrack: function(key, trackFileKey) {
             tracks[key] = game.add.sound(trackFileKey);
         },
-        setSfxVolume: function(vol) {
-            sfxVol = vol;
-            setAllSfxVolume(vol);
-        },
-        setMusicVolume: function(vol) {
-            tracksVol = vol;
-            setAllMusicVolume(vol);
-        },
+        setSfxVolume: setSfxVolume,
+        setMusicVolume: setMusicVolume,
         resumeAudioContext: function() {
             if (game.sound.usingWebAudio &&
             game.sound.context.state === 'suspended')
@@ -58,6 +66,20 @@ function VolumeManager(game) {
         },
         playSong: function(name) {
             tracks[name].loopFull();
+        },
+        volumeUp: function(sfx) {
+            if (sfx) {
+                setSfxVolume(sfxVol += 0.1);
+            } else {
+                setMusicVolume(tracksVol += 0.1);
+            }
+        },
+        volumeDown: function(sfx) {
+            if (sfx) {
+                setSfxVolume(sfxVol -= 0.1);
+            } else {
+                setMusicVolume(tracksVol -= 0.1);
+            }
         }
     }
 }

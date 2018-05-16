@@ -33,10 +33,11 @@ Unstable.MenuState.prototype.create = function () {
     logo.scale.setTo(0.65);
 
     var playButton = game.add.button(game.width / 2 - 72,
-      game.height / 2 - 24, "buttonSheet", this.startGame, this, 0, 0, 1);
+      game.height / 2 - 24, "buttonSheet", this.startGame, this, 8, 8, 9);
     playButton.scale.setTo(2);
-    var optionsButton = game.add.button(game.width/2 + 24, game.height/2 - 24, "buttonSheet", this.openOptions, this, 2, 2, 3);
-    optionsButton.scale.setTo(2);
+
+    // var optionsButton = game.add.button(game.width/2 + 24, game.height/2 - 24, "buttonSheet", this.openOptions, this, 2, 2, 3);
+    // optionsButton.scale.setTo(2);
 
     Unstable.globals.audio.tracks.notChill.loopFull();
 };
