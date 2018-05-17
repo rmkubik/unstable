@@ -47,7 +47,7 @@
         },
         "sng_notChill": {
             "type": "audio",
-            "source": "assets/audio/2018-05-10 Unstable - Not Chill.mp3",
+            "source": "assets/audio/2018-05-10 Unstable - Not Chill - Adjusted Ending.mp3",
             "track": true
         },
         "buttonSheet": {
@@ -285,10 +285,6 @@
             "type": "tilemap",
             "source": "assets/levels/build/h1l5.json"
         },
-        "lvl_h1l6": {
-            "type": "tilemap",
-            "source": "assets/levels/build/h1l6.json"
-        },
         "lvl_h2l1": {
             "type": "tilemap",
             "source": "assets/levels/build/h2l1.json"
@@ -341,6 +337,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/sticks.json"
         },
+        "lvl_tight": {
+            "type": "tilemap",
+            "source": "assets/levels/build/tight.json"
+        },
         "lvl_twoQuarters": {
             "type": "tilemap",
             "source": "assets/levels/build/twoQuarters.json"
@@ -360,90 +360,106 @@
             "key": "lvl_hub1",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 9,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 9,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_h1l1": {
             "name": "H1l1",
             "key": "lvl_h1l1",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 13,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 13,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_h1l2": {
             "name": "H1l2",
             "key": "lvl_h1l2",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 11.5,
-                "name": "comp",
-                "player": false
-            },
-            {
-                "time": 12,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 11.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 12,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_h1l3": {
             "name": "H1l3",
             "key": "lvl_h1l3",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 6,
-                "name": "comp",
-                "player": false
-            }, {
-                "time": 9,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 6,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 9,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_h1l4": {
             "name": "H1l4",
             "key": "lvl_h1l4",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 10,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 10,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_h1l5": {
             "name": "H1l5",
             "key": "lvl_h1l5",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 8.5,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 8.5,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
-        "lvl_h1l6": {
-            "name": "H1l6",
-            "key": "lvl_h1l6",
+        "lvl_tight": {
+            "name": "Tight",
+            "key": "lvl_tight",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 6,
-                "name": "comp",
-                "player": false
-            }, {
-                "time": 8,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 6,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 8,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_hub2": {
             "name": "Hub2",
@@ -457,11 +473,13 @@
             "key": "lvl_h2l1",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 9,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 9,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_h2l2": {
             "name": "H2l2",
@@ -475,11 +493,13 @@
             "key": "lvl_h2l3",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 11.5,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 11.5,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_h2l4": {
             "name": "H2l4",
@@ -507,37 +527,44 @@
             "key": "lvl_forest",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 8.5,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 8.5,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_waffle": {
             "name": "Waffle",
             "key": "lvl_waffle",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 8.5,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 8.5,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_sticks": {
             "name": "Sticks",
             "key": "lvl_sticks",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 18,
-                "name": "comp",
-                "player": false
-            }, {
-                "time": 29,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 18,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 29,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_U": {
             "name": "U",
@@ -551,11 +578,13 @@
             "key": "lvl_donut",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 8.5,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 8.5,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_flower": {
             "name": "Flower",
@@ -569,52 +598,62 @@
             "key": "lvl_soClose",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 13,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 13,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_divide": {
             "name": "Divide",
             "key": "lvl_divide",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 9,
-                "name": "comp",
-                "player": false
-            }, {
-                "time": 11,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 9,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 11,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_cross": {
             "name": "Cross",
             "key": "lvl_cross",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 11,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 11,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_bobAndWeave": {
             "name": "Bob And Weave",
             "key": "lvl_bobAndWeave",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 12,
-                "name": "comp",
-                "player": false
-            }, {
-                "time": 13.5,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 12,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 13.5,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_hub3": {
             "name": "Hub3",
@@ -628,15 +667,18 @@
             "key": "lvl_keepMoving",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 8,
-                "name": "comp",
-                "player": false
-            }, {
-                "time": 9,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 8,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 9,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_funnel": {
             "name": "Funnel",
@@ -650,26 +692,44 @@
             "key": "lvl_zigZag",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 9,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 9,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_sentries": {
             "name": "Sentries",
             "key": "lvl_sentries",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": [{
-                "time": 6,
-                "name": "comp",
-                "player": false
-            }]
+            "times": [
+                {
+                    "time": 6,
+                    "name": "comp",
+                    "player": false
+                }
+            ]
         },
         "lvl_twoQuarters": {
             "name": "Two Quarters",
             "key": "lvl_twoQuarters",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_h1l6": {
+            "name": "H1l6",
+            "key": "lvl_h1l6",
+            "tileset": "tilesheet",
+            "completion": -1,
+            "times": []
+        },
+        "lvl_right": {
+            "name": "Right",
+            "key": "lvl_right",
             "tileset": "tilesheet",
             "completion": -1,
             "times": []

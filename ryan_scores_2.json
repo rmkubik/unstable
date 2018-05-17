@@ -83,9 +83,9 @@
                 "player": true
             }]
         },
-        "lvl_h1l6": {
+        "lvl_tight": {
             "name": "H1l6",
-            "key": "lvl_h1l6",
+            "key": "lvl_tight",
             "tileset": "tilesheet",
             "completion": 1,
             "times": [{

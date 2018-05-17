@@ -541,7 +541,7 @@
                      "displayTrophies":"true",
                      "id":"5",
                      "levelPrereq":"lvl_h1l5",
-                     "link":"lvl_h1l6",
+                     "link":"lvl_tight",
                      "threshold":"0"
                     },
                  "propertytypes":
@@ -569,7 +569,7 @@
                     {
                      "destGoalId":"0",
                      "id":"6",
-                     "levelPrereq":"lvl_h1l6",
+                     "levelPrereq":"lvl_tight",
                      "link":"lvl_hub2",
                      "threshold":"0"
                     },
