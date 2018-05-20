@@ -63,11 +63,12 @@ Unstable.Timer.prototype.drawHighScores = function() {
     this.times = Unstable.globals.levels[Unstable.globals.current_level].times;
     this.times.forEach(function(time, index) {
         this.highScores[index].setText(time.time.toFixed(3));
-        if (index === 0) {
+        var state = Unstable.globals.levels[Unstable.globals.current_level];
+        if (time.time <= state.timeTrialTiers.gold) {
             this.highScores[index].addColor('#E7CE2F', 0);
-        } else if (index === 1) {
+        } else if (time.time <= state.timeTrialTiers.silver) {
             this.highScores[index].addColor('#D6D6FE', 0);
-        } else {
+        } else if (time.time <= state.timeTrialTiers.bronze) {
             this.highScores[index].addColor('#E99353', 0);
         }
     }.bind(this));

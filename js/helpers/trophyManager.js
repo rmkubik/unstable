@@ -33,17 +33,6 @@ function TrophyManager(state, gameState) {
     }
 
     function calcTimeTrialTrophy(state) {
-        // var trophyTier = 0;
-        // if (state.times.length > 0) {
-        //     if (state.times[0] && state.times[0].player) {
-        //         trophyTier = 3;
-        //     } else if (state.times[1] && state.times[1].player) {
-        //         trophyTier = 2;
-        //     } else if (state.times[2] && state.times[2].player) {
-        //         trophyTier = 1;
-        //     }
-        // }
-
         var lowestScore;
         // find lowest human highScore
         for (var i = 0; i < state.times.length; i++) {
@@ -56,11 +45,11 @@ function TrophyManager(state, gameState) {
         var trophyTier = 0;
         // if any human score exists
         if (lowestScore) {
-            if (lowestScore.time < state.timeTrialTiers.gold) {
+            if (lowestScore.time <= state.timeTrialTiers.gold) {
                 trophyTier = 3;
-            } else if (lowestScore.time < state.timeTrialTiers.silver) {
+            } else if (lowestScore.time <= state.timeTrialTiers.silver) {
                 trophyTier = 2;
-            } else if (lowestScore.time < state.timeTrialTiers.bronze) {
+            } else if (lowestScore.time <= state.timeTrialTiers.bronze) {
                 trophyTier = 1;
             }
         }
