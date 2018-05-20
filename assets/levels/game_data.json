@@ -360,6 +360,11 @@
             "key": "lvl_hub1",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 9,
+                "silver": 10,
+                "bronze": 11
+            },
             "times": [
                 {
                     "time": 9,
@@ -373,6 +378,11 @@
             "key": "lvl_h1l1",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 13,
+                "silver": 14,
+                "bronze": 15
+            },
             "times": [
                 {
                     "time": 13,
@@ -386,6 +396,11 @@
             "key": "lvl_h1l2",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 11.5,
+                "silver": 12,
+                "bronze": 13
+            },
             "times": [
                 {
                     "time": 11.5,
@@ -404,6 +419,11 @@
             "key": "lvl_h1l3",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 6,
+                "silver": 9,
+                "bronze": 10
+            },
             "times": [
                 {
                     "time": 6,
@@ -422,6 +442,11 @@
             "key": "lvl_h1l4",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 10,
+                "silver": 11,
+                "bronze": 12
+            },
             "times": [
                 {
                     "time": 10,
@@ -435,6 +460,11 @@
             "key": "lvl_h1l5",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 8.5,
+                "silver": 9,
+                "bronze": 10
+            },
             "times": [
                 {
                     "time": 8.5,
@@ -448,6 +478,11 @@
             "key": "lvl_tight",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 6,
+                "silver": 8,
+                "bronze": 10
+            },
             "times": [
                 {
                     "time": 6,
@@ -467,6 +502,11 @@
             "tileset": "tilesheet",
             "completion": -1,
             "times": []
+        },
+        "timeTrialTiers": {
+            "gold": 9,
+            "silver": 10,
+            "bronze": 11
         },
         "lvl_h2l1": {
             "name": "H2l1",
@@ -493,6 +533,11 @@
             "key": "lvl_h2l3",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 11.5,
+                "silver": 12.5,
+                "bronze": 14
+            },
             "times": [
                 {
                     "time": 11.5,
@@ -527,6 +572,11 @@
             "key": "lvl_forest",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 8.5,
+                "silver": 9.5,
+                "bronze": 11
+            },
             "times": [
                 {
                     "time": 8.5,
@@ -540,6 +590,11 @@
             "key": "lvl_waffle",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 8.5,
+                "silver": 9.5,
+                "bronze": 12
+            },
             "times": [
                 {
                     "time": 8.5,
@@ -553,6 +608,11 @@
             "key": "lvl_sticks",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 18,
+                "silver": 29,
+                "bronze": 35
+            },
             "times": [
                 {
                     "time": 18,
@@ -578,6 +638,11 @@
             "key": "lvl_donut",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 8.5,
+                "silver": 9.5,
+                "bronze": 12
+            },
             "times": [
                 {
                     "time": 8.5,
@@ -598,6 +663,11 @@
             "key": "lvl_soClose",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 13,
+                "silver": 14,
+                "bronze": 15
+            },
             "times": [
                 {
                     "time": 13,
@@ -611,6 +681,11 @@
             "key": "lvl_divide",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 9,
+                "silver": 11,
+                "bronze": 14
+            },
             "times": [
                 {
                     "time": 9,
@@ -629,6 +704,11 @@
             "key": "lvl_cross",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 11,
+                "silver": 12,
+                "bronze": 13
+            },
             "times": [
                 {
                     "time": 11,
@@ -642,6 +722,11 @@
             "key": "lvl_bobAndWeave",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 12,
+                "silver": 13.5,
+                "bronze": 15
+            },
             "times": [
                 {
                     "time": 12,
@@ -667,6 +752,11 @@
             "key": "lvl_keepMoving",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 8,
+                "silver": 9,
+                "bronze": 10
+            },
             "times": [
                 {
                     "time": 8,
@@ -692,6 +782,11 @@
             "key": "lvl_zigZag",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 9,
+                "silver": 10,
+                "bronze": 11
+            },
             "times": [
                 {
                     "time": 9,
@@ -705,6 +800,11 @@
             "key": "lvl_sentries",
             "tileset": "tilesheet",
             "completion": -1,
+            "timeTrialTiers": {
+                "gold": 6,
+                "silver": 7,
+                "bronze": 8
+            },
             "times": [
                 {
                     "time": 6,

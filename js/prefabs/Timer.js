@@ -63,6 +63,13 @@ Unstable.Timer.prototype.drawHighScores = function() {
     this.times = Unstable.globals.levels[Unstable.globals.current_level].times;
     this.times.forEach(function(time, index) {
         this.highScores[index].setText(time.time.toFixed(3));
+        if (index === 0) {
+            this.highScores[index].addColor('#E7CE2F', 0);
+        } else if (index === 1) {
+            this.highScores[index].addColor('#D6D6FE', 0);
+        } else {
+            this.highScores[index].addColor('#E99353', 0);
+        }
     }.bind(this));
 }
 
@@ -106,7 +113,7 @@ Unstable.Timer.prototype.saveTime = function(levelKey) {
     var times = Unstable.globals.levels[levelKey].times.slice();
     this.newHighScore = times.some(function(time) {
         return newTime.time < time.time;
-    }); // TODO: update this logic 
+    }); // TODO: update this logic
     if (times.length < 3) { // TODO: Update this logic
         this.newHighScore = true;
     }
