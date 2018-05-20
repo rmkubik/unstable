@@ -370,6 +370,16 @@
                     "time": 9,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 10,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 11,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -386,6 +396,16 @@
             "times": [
                 {
                     "time": 13,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 14,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 15,
                     "name": "comp",
                     "player": false
                 }
@@ -411,6 +431,11 @@
                     "time": 12,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 13,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -434,6 +459,11 @@
                     "time": 9,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 10,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -452,6 +482,16 @@
                     "time": 10,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 11,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 12,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -468,6 +508,16 @@
             "times": [
                 {
                     "time": 8.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 9,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 10,
                     "name": "comp",
                     "player": false
                 }
@@ -491,6 +541,11 @@
                 },
                 {
                     "time": 8,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 10,
                     "name": "comp",
                     "player": false
                 }
@@ -518,6 +573,16 @@
                     "time": 9,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 10,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 11,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -541,6 +606,16 @@
             "times": [
                 {
                     "time": 11.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 12.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 14,
                     "name": "comp",
                     "player": false
                 }
@@ -582,6 +657,16 @@
                     "time": 8.5,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 9.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 11,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -598,6 +683,16 @@
             "times": [
                 {
                     "time": 8.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 9.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 12,
                     "name": "comp",
                     "player": false
                 }
@@ -621,6 +716,11 @@
                 },
                 {
                     "time": 29,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 35,
                     "name": "comp",
                     "player": false
                 }
@@ -648,6 +748,16 @@
                     "time": 8.5,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 9.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 12,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -673,6 +783,16 @@
                     "time": 13,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 14,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 15,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -696,6 +816,11 @@
                     "time": 11,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 14,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -712,6 +837,16 @@
             "times": [
                 {
                     "time": 11,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 12,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 13,
                     "name": "comp",
                     "player": false
                 }
@@ -735,6 +870,11 @@
                 },
                 {
                     "time": 13.5,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 15,
                     "name": "comp",
                     "player": false
                 }
@@ -767,6 +907,11 @@
                     "time": 9,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 10,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -792,6 +937,16 @@
                     "time": 9,
                     "name": "comp",
                     "player": false
+                },
+                {
+                    "time": 10,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 11,
+                    "name": "comp",
+                    "player": false
                 }
             ]
         },
@@ -808,6 +963,16 @@
             "times": [
                 {
                     "time": 6,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 7,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 8,
                     "name": "comp",
                     "player": false
                 }
