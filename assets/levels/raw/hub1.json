@@ -103,7 +103,7 @@
                  "y":121
                 }, 
                 {
-                 "gid":40,
+                 "gid":45,
                  "height":48,
                  "id":24,
                  "name":"",
@@ -129,7 +129,7 @@
                  "y":139
                 }, 
                 {
-                 "gid":40,
+                 "gid":45,
                  "height":48,
                  "id":25,
                  "name":"",
@@ -155,7 +155,7 @@
                  "y":250
                 }, 
                 {
-                 "gid":40,
+                 "gid":45,
                  "height":48,
                  "id":26,
                  "name":"",
@@ -181,7 +181,7 @@
                  "y":247
                 }, 
                 {
-                 "gid":40,
+                 "gid":45,
                  "height":48,
                  "id":30,
                  "name":"",
@@ -207,7 +207,7 @@
                  "y":333
                 }, 
                 {
-                 "gid":41,
+                 "gid":46,
                  "height":48,
                  "id":32,
                  "name":"",
@@ -233,7 +233,7 @@
                  "y":82
                 }, 
                 {
-                 "gid":41,
+                 "gid":46,
                  "height":48,
                  "id":33,
                  "name":"",
@@ -259,7 +259,7 @@
                  "y":394
                 }, 
                 {
-                 "gid":42,
+                 "gid":47,
                  "height":48,
                  "id":34,
                  "name":"",
@@ -285,7 +285,7 @@
                  "y":422
                 }, 
                 {
-                 "gid":42,
+                 "gid":47,
                  "height":48,
                  "id":38,
                  "name":"",
@@ -311,7 +311,7 @@
                  "y":223
                 }, 
                 {
-                 "gid":43,
+                 "gid":48,
                  "height":48,
                  "id":40,
                  "name":"",
@@ -337,7 +337,7 @@
                  "y":65
                 }, 
                 {
-                 "gid":44,
+                 "gid":49,
                  "height":24,
                  "id":41,
                  "name":"",
@@ -363,7 +363,7 @@
                  "y":412
                 }, 
                 {
-                 "gid":44,
+                 "gid":49,
                  "height":24,
                  "id":43,
                  "name":"",
@@ -389,7 +389,7 @@
                  "y":359
                 }, 
                 {
-                 "gid":44,
+                 "gid":49,
                  "height":24,
                  "id":44,
                  "name":"",
@@ -415,7 +415,7 @@
                  "y":54
                 }, 
                 {
-                 "gid":46,
+                 "gid":51,
                  "height":24,
                  "id":45,
                  "name":"",
@@ -589,7 +589,7 @@
                  "y":458
                 }, 
                 {
-                 "gid":44,
+                 "gid":49,
                  "height":24,
                  "id":55,
                  "name":"",
@@ -615,7 +615,7 @@
                  "y":53
                 }, 
                 {
-                 "gid":41,
+                 "gid":46,
                  "height":48,
                  "id":56,
                  "name":"",
@@ -671,7 +671,7 @@
                  "y":207
                 }, 
                 {
-                 "gid":46,
+                 "gid":51,
                  "height":24,
                  "id":59,
                  "name":"",
@@ -695,6 +695,146 @@
                  "width":24,
                  "x":100,
                  "y":222
+                }, 
+                {
+                 "height":0,
+                 "id":121,
+                 "name":"",
+                 "point":true,
+                 "properties":
+                    {
+                     "id":"0"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
+                 "rotation":0,
+                 "type":"goalTarget",
+                 "visible":true,
+                 "width":0,
+                 "x":140,
+                 "y":87
+                }, 
+                {
+                 "height":0,
+                 "id":123,
+                 "name":"",
+                 "point":true,
+                 "properties":
+                    {
+                     "id":"1"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
+                 "rotation":0,
+                 "type":"goalTarget",
+                 "visible":true,
+                 "width":0,
+                 "x":358,
+                 "y":99
+                }, 
+                {
+                 "height":0,
+                 "id":124,
+                 "name":"",
+                 "point":true,
+                 "properties":
+                    {
+                     "id":"3"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
+                 "rotation":0,
+                 "type":"goalTarget",
+                 "visible":true,
+                 "width":0,
+                 "x":190,
+                 "y":229
+                }, 
+                {
+                 "height":0,
+                 "id":125,
+                 "name":"",
+                 "point":true,
+                 "properties":
+                    {
+                     "id":"2"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
+                 "rotation":0,
+                 "type":"goalTarget",
+                 "visible":true,
+                 "width":0,
+                 "x":363,
+                 "y":305
+                }, 
+                {
+                 "height":0,
+                 "id":126,
+                 "name":"",
+                 "point":true,
+                 "properties":
+                    {
+                     "id":"4"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
+                 "rotation":0,
+                 "type":"goalTarget",
+                 "visible":true,
+                 "width":0,
+                 "x":102,
+                 "y":273
+                }, 
+                {
+                 "height":0,
+                 "id":127,
+                 "name":"",
+                 "point":true,
+                 "properties":
+                    {
+                     "id":"5"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
+                 "rotation":0,
+                 "type":"goalTarget",
+                 "visible":true,
+                 "width":0,
+                 "x":78,
+                 "y":430
+                }, 
+                {
+                 "height":0,
+                 "id":128,
+                 "name":"",
+                 "point":true,
+                 "properties":
+                    {
+                     "id":"6"
+                    },
+                 "propertytypes":
+                    {
+                     "id":"string"
+                    },
+                 "rotation":0,
+                 "type":"goalTarget",
+                 "visible":true,
+                 "width":0,
+                 "x":332,
+                 "y":447
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -702,7 +842,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":69,
+ "nextobjectid":129,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.2",
@@ -756,12 +896,12 @@
          "columns":5,
          "firstgid":28,
          "image":"..\/..\/images\/object_sheet.png",
-         "imageheight":49,
+         "imageheight":74,
          "imagewidth":124,
          "margin":0,
          "name":"object_sheet",
          "spacing":1,
-         "tilecount":10,
+         "tilecount":15,
          "tileheight":24,
          "tileoffset":
             {
@@ -772,7 +912,7 @@
         }, 
         {
          "columns":0,
-         "firstgid":38,
+         "firstgid":43,
          "margin":0,
          "name":"scenery",
          "spacing":0,
@@ -832,7 +972,7 @@
         }, 
         {
          "columns":3,
-         "firstgid":47,
+         "firstgid":52,
          "image":"..\/..\/images\/enemy_tower.png",
          "imageheight":24,
          "imagewidth":74,
