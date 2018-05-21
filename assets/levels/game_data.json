@@ -390,25 +390,25 @@
             "completion": -1,
             "times": [
                 {
-                    "time": 13,
+                    "time": 10,
                     "name": "comp",
                     "player": false
                 },
                 {
-                    "time": 14,
+                    "time": 11,
                     "name": "comp",
                     "player": false
                 },
                 {
-                    "time": 15,
+                    "time": 12,
                     "name": "comp",
                     "player": false
                 }
             ],
             "timeTrialTiers": {
-                "gold": 13,
-                "silver": 14,
-                "bronze": 15
+                "gold": 10,
+                "silver": 11,
+                "bronze": 12
             }
         },
         "lvl_h1l2": {
