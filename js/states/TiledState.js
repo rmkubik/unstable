@@ -37,6 +37,7 @@ Unstable.TiledState.prototype.create = function () {
     var group_name, object_layer, collision_tiles;
 
     this.goals = [];
+    this.goalTargets = [];
     this.teleporters = [];
     this.teleporterTargets = [];
     this.collisionMap = [];
@@ -99,9 +100,21 @@ Unstable.TiledState.prototype.create = function () {
     this.backdropManager = new Unstable.BackdropManager(this);
 
     if (this.spawnGoalId) {
+        var x = this.player.x;
+        var y = this.player.y;
+
+        // TODO: CANIUSE .FIND???
+        var target = this.goalTargets.find(function(target) {
+          return target.id == this.spawnGoalId;
+      }.bind(this));
+        if (target) {
+            x = target.position.x;
+            y = target.position.y;
+        }
+
       this.player.respawnEffect(this.spawnGoalCoords, {
-        x: this.spawnGoalCoords.x,
-        y: this.spawnGoalCoords.y + 12
+        x: x,
+        y: y
       });
     }
 
@@ -297,9 +310,6 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "tree":
       prefab = new Unstable.Scenery(this, position, properties);
       break;
-    case "crate":
-      prefab = new Unstable.Scenery(this, position, properties);
-      break;
     case "slider":
       prefab = new Unstable.SliderEnemy(this, position, properties);
       break;
@@ -316,6 +326,12 @@ Unstable.TiledState.prototype.create_object = function (object) {
     case "teleporterTarget":
         prefab = new Unstable.TeleporterTarget(this, position, properties);
         this.teleporterTargets.push(prefab);
+        break;
+    case "goalTarget":
+        this.goalTargets.push({
+            position: position,
+            id: properties.id
+        });
         break;
     }
     // this.prefabs[object.name] = prefab;
