@@ -126,9 +126,7 @@ Unstable.TiledState.prototype.create = function () {
         game.width - 24,
         0,
         "buttonSheet",
-        function() {
-            console.log('open menu');
-        },
+        this.openSettings,
         this,
         10,
         10,
@@ -136,74 +134,74 @@ Unstable.TiledState.prototype.create = function () {
         10
     );
 
-    var unmutedFrames = [12, 12, 13, 12];
-    var mutedFrames = [14, 14, 15, 14];
-    var initialFrames = unmutedFrames;
-
-    if (Unstable.globals.audio.isMuted()) {
-        initialFrames = mutedFrames;
-    }
-    var muteButton = game.add.button(
-        game.width - 24 - 2,
-        24,
-        "buttonSheet",
-        function() {
-            if (Unstable.globals.audio.isMuted()) {
-                Unstable.globals.audio.unMute();
-                muteButton.setFrames(
-                    unmutedFrames[0],
-                    unmutedFrames[1],
-                    unmutedFrames[2],
-                    unmutedFrames[3]
-                );
-            } else {
-                Unstable.globals.audio.mute();
-                muteButton.setFrames(
-                    mutedFrames[0],
-                    mutedFrames[1],
-                    mutedFrames[2],
-                    mutedFrames[3]
-                );
-            }
-        },
-        this,
-        initialFrames[0],
-        initialFrames[1],
-        initialFrames[2],
-        initialFrames[3]
-    );
-
-    var upButton = game.add.button(
-        game.width - 24 + 12,
-        48 + 12,
-        "buttonSheet",
-        function() {
-            Unstable.globals.audio.volumeUp(true);
-        },
-        this,
-        8,
-        8,
-        9,
-        8
-    );
-    upButton.anchor.setTo(0.5, 0.5);
-    upButton.angle = 270;
-
-    var downButton = game.add.button(
-        game.width - 24 + 10,
-        72 + 8,
-        "buttonSheet",
-        function() {
-            Unstable.globals.audio.volumeDown(true);
-        },
-        this,
-        8,
-        8,
-        9,
-        8
-    );
-    downButton.anchor.setTo(0.5, 0.5);
-    downButton.angle = 90;
+    // var unmutedFrames = [12, 12, 13, 12];
+    // var mutedFrames = [14, 14, 15, 14];
+    // var initialFrames = unmutedFrames;
+    //
+    // if (Unstable.globals.audio.isMuted()) {
+    //     initialFrames = mutedFrames;
+    // }
+    // var muteButton = game.add.button(
+    //     game.width - 24 - 2,
+    //     24,
+    //     "buttonSheet",
+    //     function() {
+    //         if (Unstable.globals.audio.isMuted()) {
+    //             Unstable.globals.audio.unMute();
+    //             muteButton.setFrames(
+    //                 unmutedFrames[0],
+    //                 unmutedFrames[1],
+    //                 unmutedFrames[2],
+    //                 unmutedFrames[3]
+    //             );
+    //         } else {
+    //             Unstable.globals.audio.mute();
+    //             muteButton.setFrames(
+    //                 mutedFrames[0],
+    //                 mutedFrames[1],
+    //                 mutedFrames[2],
+    //                 mutedFrames[3]
+    //             );
+    //         }
+    //     },
+    //     this,
+    //     initialFrames[0],
+    //     initialFrames[1],
+    //     initialFrames[2],
+    //     initialFrames[3]
+    // );
+    //
+    // var upButton = game.add.button(
+    //     game.width - 24 + 12,
+    //     48 + 12,
+    //     "buttonSheet",
+    //     function() {
+    //         Unstable.globals.audio.volumeUp(true);
+    //     },
+    //     this,
+    //     8,
+    //     8,
+    //     9,
+    //     8
+    // );
+    // upButton.anchor.setTo(0.5, 0.5);
+    // upButton.angle = 270;
+    //
+    // var downButton = game.add.button(
+    //     game.width - 24 + 10,
+    //     72 + 8,
+    //     "buttonSheet",
+    //     function() {
+    //         Unstable.globals.audio.volumeDown(true);
+    //     },
+    //     this,
+    //     8,
+    //     8,
+    //     9,
+    //     8
+    // );
+    // downButton.anchor.setTo(0.5, 0.5);
+    // downButton.angle = 90;
 };
 
 Unstable.TiledState.prototype.update = function() {
@@ -336,6 +334,11 @@ Unstable.TiledState.prototype.create_object = function (object) {
     }
     // this.prefabs[object.name] = prefab;
 };
+
+Unstable.TiledState.prototype.openSettings = function() {
+  // this.game.state.start("MenuState", true, false, this.level_data);
+  this.game.state.start("SettingsState", true, false, this.level_data);
+}
 
 Unstable.TiledState.prototype.isBush = function(type, properties) {
     return !!(type === "bush1" || type === "bush2" || type === "bush3");
