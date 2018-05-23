@@ -133,6 +133,18 @@ Unstable.TiledState.prototype.create = function () {
         11,
         10
     );
+    var style = {
+      font: "8px Arial",
+      fill: "#FFFFFF",
+      align: "center"
+    };
+    var text = game.add.text(
+        game.width - 24,
+        24,
+        'Menu',
+        style
+    );
+    // text.anchor.set(0.5);
 
     // var unmutedFrames = [12, 12, 13, 12];
     // var mutedFrames = [14, 14, 15, 14];
