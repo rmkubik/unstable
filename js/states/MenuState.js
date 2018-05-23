@@ -16,29 +16,18 @@ Unstable.MenuState.prototype.init = function (gameData) {
 
 Unstable.MenuState.prototype.create = function () {
     "use strict";
-    // var style = {
-    //   font: "64px Arial",
-    //   fill: "#FFFFFF",
-    //   align: "center"
-    // };
-    // var text = game.add.text(game.width / 2, game.height / 2 - 100,
-    //   "Unstable", style);
-    // text.anchor.set(0.5);
-    // style.font = "16px Arial";
-    // text = game.add.text(game.width / 2, game.height / 2 - 48,
-    //     "This is a beta version, please send feedback!", style);
-    // text.anchor.set(0.5);
-    var logo = game.add.image(game.width / 2, game.height / 2 - 100, "logo1");
+    this.groups = {};
+    this.groups["clouds"] = this.game.add.group();
+    this.backdropManager = new Unstable.BackdropManager(this);
+
+    var logo = game.add.image(game.width / 2, game.height / 2 - 60, "logo1");
     logo.anchor.set(0.5);
     logo.scale.setTo(0.65);
 
     var playButton = game.add.button(game.width / 2,
-      game.height / 2 - 24 + 12, "buttonSheet", this.startGame, this, 8, 8, 9);
+      game.height / 2 + 24, "buttonSheet", this.startGame, this, 8, 8, 9);
     playButton.anchor.set(0.5);
     playButton.scale.setTo(3);
-
-    // var optionsButton = game.add.button(game.width/2 + 24, game.height/2 - 24, "buttonSheet", this.openOptions, this, 2, 2, 3);
-    // optionsButton.scale.setTo(2);
 
     Unstable.globals.audio.tracks.notChill.loopFull();
 };
