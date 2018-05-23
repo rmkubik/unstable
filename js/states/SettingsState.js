@@ -190,12 +190,12 @@ Unstable.SettingsState.prototype.create = function () {
     // downButton.scale.setTo(2);
     downButton2.angle = 90;
 
-    var volumeDownText = game.add.text(game.width / 2 + 32,
+    var completionText = game.add.text(game.width / 2 + 32,
       game.height / 2 + 108,
-      "Volume Down", style);
-    volumeDownText.anchor.set(1, 0.5);
+      "Completion Percentage: 100%", style);
+    completionText.anchor.set(1, 0.5);
 
-    var downButton = game.add.button(
+    var resetButton = game.add.button(
         game.width / 2 + 32 + 16,
         game.height / 2 + 108,
         "buttonSheet",
@@ -208,9 +208,9 @@ Unstable.SettingsState.prototype.create = function () {
         9,
         8
     );
-    downButton.anchor.setTo(0.5, 0.5);
+    resetButton.anchor.setTo(0.5, 0.5);
     // downButton.scale.setTo(2);
-    downButton.angle = 90;
+    resetButton.angle = 90;
 
     // var menuButton = game.add.button(game.width / 2 - 100,
     //   game.height / 2 - 24, "buttonSheet", this.openMenu, this, 4, 4, 5);
