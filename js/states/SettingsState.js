@@ -21,7 +21,7 @@ Unstable.SettingsState.prototype.create = function () {
       align: "center"
     };
     var text = game.add.text(game.width / 2, game.height / 2 - 100,
-      "Settings", style);
+      "Menu", style);
     text.anchor.set(0.5);
 
     style.font = "16px Arial";
@@ -38,10 +38,10 @@ Unstable.SettingsState.prototype.create = function () {
     // playButton.scale.setTo(2);
 
 
-    var muteText = game.add.text(game.width / 2 + 32,
+    var songText = game.add.text(game.width / 2 + 32,
       game.height / 2 + 36,
-      "Mute All Audio", style);
-    muteText.anchor.set(1, 0.5);
+      "Music Volume", style);
+    songText.anchor.set(1, 0.5);
 
     var unmutedFrames = [12, 12, 13, 12];
     var mutedFrames = [14, 14, 15, 14];
@@ -82,13 +82,82 @@ Unstable.SettingsState.prototype.create = function () {
     muteButton.anchor.set(0.5);
     // muteButton.scale.setTo(2);
 
-    var volumeUpText = game.add.text(game.width / 2 + 32,
-      game.height / 2 + 72,
-      "Volume Up", style);
-    volumeUpText.anchor.set(1, 0.5);
-
     var upButton = game.add.button(
+        game.width / 2 + 16 + 32 + 24,
+        game.height / 2 + 36,
+        "buttonSheet",
+        function() {
+            Unstable.globals.audio.volumeUp();
+        },
+        this,
+        8,
+        8,
+        9,
+        8
+    );
+    upButton.anchor.setTo(0.5, 0.5);
+    // upButton.scale.setTo(2);
+    upButton.angle = 270;
+
+    var downButton = game.add.button(
+        game.width / 2 + 16 + 32 + 24 + 24,
+        game.height / 2 + 36,
+        "buttonSheet",
+        function() {
+            Unstable.globals.audio.volumeDown();
+        },
+        this,
+        8,
+        8,
+        9,
+        8
+    );
+    downButton.anchor.setTo(0.5, 0.5);
+    // downButton.scale.setTo(2);
+    downButton.angle = 90;
+
+    var sfxText = game.add.text(game.width / 2 + 32,
+      game.height / 2 + 72,
+      "SFX Volume", style);
+    sfxText.anchor.set(1, 0.5);
+
+    if (Unstable.globals.audio.isMuted()) {
+        initialFrames = mutedFrames;
+    }
+    var muteButton2 = game.add.button(
         game.width / 2 + 16 + 32,
+        game.height / 2 + 72,
+        "buttonSheet",
+        function() {
+            if (Unstable.globals.audio.isMuted()) {
+                Unstable.globals.audio.unMute();
+                muteButton2.setFrames(
+                    unmutedFrames[0],
+                    unmutedFrames[1],
+                    unmutedFrames[2],
+                    unmutedFrames[3]
+                );
+            } else {
+                Unstable.globals.audio.mute();
+                muteButton2.setFrames(
+                    mutedFrames[0],
+                    mutedFrames[1],
+                    mutedFrames[2],
+                    mutedFrames[3]
+                );
+            }
+        },
+        this,
+        initialFrames[0],
+        initialFrames[1],
+        initialFrames[2],
+        initialFrames[3]
+    );
+    muteButton2.anchor.set(0.5);
+    // muteButton.scale.setTo(2);
+
+    var upButton2 = game.add.button(
+        game.width / 2 + 16 + 32 + 24,
         game.height / 2 + 72,
         "buttonSheet",
         function() {
@@ -100,9 +169,26 @@ Unstable.SettingsState.prototype.create = function () {
         9,
         8
     );
-    upButton.anchor.setTo(0.5, 0.5);
+    upButton2.anchor.setTo(0.5, 0.5);
     // upButton.scale.setTo(2);
-    upButton.angle = 270;
+    upButton2.angle = 270;
+
+    var downButton2 = game.add.button(
+        game.width / 2 + 16 + 32 + 24 + 24,
+        game.height / 2 + 72,
+        "buttonSheet",
+        function() {
+            Unstable.globals.audio.volumeDown(true);
+        },
+        this,
+        8,
+        8,
+        9,
+        8
+    );
+    downButton2.anchor.setTo(0.5, 0.5);
+    // downButton.scale.setTo(2);
+    downButton2.angle = 90;
 
     var volumeDownText = game.add.text(game.width / 2 + 32,
       game.height / 2 + 108,
