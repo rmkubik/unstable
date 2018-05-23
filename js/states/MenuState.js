@@ -24,8 +24,8 @@ Unstable.MenuState.prototype.create = function () {
     logo.anchor.set(0.5);
     logo.scale.setTo(0.65);
 
-    var playButton = game.add.button(game.width / 2,
-      game.height / 2 + 24, "buttonSheet", this.startGame, this, 8, 8, 9);
+    var playButton = game.add.button(game.width / 2 - 4,
+      game.height / 2 + 36, "buttonSheet", this.startGame, this, 8, 8, 9);
     playButton.anchor.set(0.5);
     playButton.scale.setTo(3);
 
