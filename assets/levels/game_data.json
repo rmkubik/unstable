@@ -50,6 +50,11 @@
             "source": "assets/audio/2018-05-10 Unstable - Not Chill - Adjusted Ending.mp3",
             "track": true
         },
+        "sng_ambient": {
+            "type": "audio",
+            "source": "assets/audio/2018-05-10 Unstable - Not Chill - Ambient.mp3",
+            "track": true
+        },
         "buttonSheet": {
             "type": "spritesheet",
             "source": "assets/images/button_sheet.png",
@@ -232,6 +237,10 @@
         "logo1": {
             "type": "image",
             "source": "assets/images/logo1.png"
+        },
+        "logo2": {
+            "type": "image",
+            "source": "assets/images/logo2.png"
         },
         "lvl_U": {
             "type": "tilemap",
