@@ -269,8 +269,8 @@
                     {
                      "id":"8",
                      "levelPrereq":"lvl_hub3",
-                     "link":"victory",
-                     "threshold":"1"
+                     "link":"lvl_finalCountdown",
+                     "threshold":"0"
                     },
                  "propertytypes":
                     {

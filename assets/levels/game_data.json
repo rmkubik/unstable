@@ -262,6 +262,10 @@
             "type": "tilemap",
             "source": "assets/levels/build/donut.json"
         },
+        "lvl_finalCountdown": {
+            "type": "tilemap",
+            "source": "assets/levels/build/finalCountdown.json"
+        },
         "lvl_flower": {
             "type": "tilemap",
             "source": "assets/levels/build/flower.json"
@@ -1006,12 +1010,33 @@
             "completion": -1,
             "times": []
         },
-        "lvl_right": {
-            "name": "Right",
-            "key": "lvl_right",
+        "lvl_finalCountdown": {
+            "name": "Final Countdown",
+            "key": "lvl_finalCountdown",
             "tileset": "tilesheet",
             "completion": -1,
-            "times": []
+            "times": [
+                {
+                    "time": 10,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 13,
+                    "name": "comp",
+                    "player": false
+                },
+                {
+                    "time": 16,
+                    "name": "comp",
+                    "player": false
+                }
+            ],
+            "timeTrialTiers": {
+                "gold": 12,
+                "silver": 14,
+                "bronze": 16
+            }
         }
     },
     "groups": [
