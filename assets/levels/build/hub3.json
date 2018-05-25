@@ -1466,7 +1466,7 @@
                     "properties": {
                         "destGoalId": "0",
                         "id": "8",
-                        "levelPrereq": "lvl_hub3",
+                        "levelPrereq": "lvl_zigZag",
                         "link": "lvl_finalCountdown",
                         "threshold": "0"
                     },
