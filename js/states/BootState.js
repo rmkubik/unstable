@@ -36,6 +36,8 @@ Unstable.BootState.prototype.init = function (gameDataFile) {
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     this.scale.pageAlignHorizontally = true;
     this.scale.pageAlignVertically = true;
+
+    this.game.renderer.renderSession.roundPixels = true
 };
 
 Unstable.BootState.prototype.preload = function () {
