@@ -425,7 +425,7 @@
             }
         },
         "lvl_h1l2": {
-            "name": "Synchronized",
+            "name": "Rhythm",
             "key": "lvl_h1l2",
             "tileset": "tilesheet",
             "completion": -1,
@@ -481,7 +481,7 @@
             }
         },
         "lvl_h1l4": {
-            "name": "Missed One",
+            "name": "Missing",
             "key": "lvl_h1l4",
             "tileset": "tilesheet",
             "completion": -1,
@@ -612,7 +612,7 @@
             "times": []
         },
         "lvl_h2l3": {
-            "name": "Around",
+            "name": "Go Around",
             "key": "lvl_h2l3",
             "tileset": "tilesheet",
             "completion": -1,
@@ -871,7 +871,7 @@
             }
         },
         "lvl_bobAndWeave": {
-            "name": "Bob And Weave",
+            "name": "Weave",
             "key": "lvl_bobAndWeave",
             "tileset": "tilesheet",
             "completion": -1,
