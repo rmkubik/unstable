@@ -50,7 +50,14 @@ Unstable.Goal = function (game_state, position, properties) {
             Unstable.globals.levels[this.levelLink].name,
             style
         );
-        text.anchor.set(0.5);
+        // Setting text.anchor to (0.5, 0.5) causes blurring
+        // when width of text object is an odd value.
+        // https://github.com/photonstorm/phaser/issues/2370
+        // Instead manually offset the position of the text object
+        // and round it to an integer value.
+        text.x -= Math.round(text.width/2);
+        text.y -= Math.round(text.height/2);
+        // text.anchor.set(0.5);
     }
 };
 
