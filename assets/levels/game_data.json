@@ -397,7 +397,7 @@
             }
         },
         "lvl_h1l1": {
-            "name": "H1l1",
+            "name": "Intro",
             "key": "lvl_h1l1",
             "tileset": "tilesheet",
             "completion": -1,
@@ -425,7 +425,7 @@
             }
         },
         "lvl_h1l2": {
-            "name": "H1l2",
+            "name": "Synchronized",
             "key": "lvl_h1l2",
             "tileset": "tilesheet",
             "completion": -1,
@@ -453,7 +453,7 @@
             }
         },
         "lvl_h1l3": {
-            "name": "H1l3",
+            "name": "Timing",
             "key": "lvl_h1l3",
             "tileset": "tilesheet",
             "completion": -1,
@@ -481,7 +481,7 @@
             }
         },
         "lvl_h1l4": {
-            "name": "H1l4",
+            "name": "Missed One",
             "key": "lvl_h1l4",
             "tileset": "tilesheet",
             "completion": -1,
@@ -509,7 +509,7 @@
             }
         },
         "lvl_h1l5": {
-            "name": "H1l5",
+            "name": "Islands",
             "key": "lvl_h1l5",
             "tileset": "tilesheet",
             "completion": -1,
@@ -577,7 +577,7 @@
             "bronze": 11
         },
         "lvl_h2l1": {
-            "name": "H2l1",
+            "name": "Teleport",
             "key": "lvl_h2l1",
             "tileset": "tilesheet",
             "completion": -1,
@@ -612,7 +612,7 @@
             "times": []
         },
         "lvl_h2l3": {
-            "name": "H2l3",
+            "name": "Around",
             "key": "lvl_h2l3",
             "tileset": "tilesheet",
             "completion": -1,
