@@ -5,6 +5,8 @@ function VolumeManager(game) {
     var tracksVol = 1;
     var muted = false;
     var playingSong;
+    var sfxMuted = false;
+    var trackMuted = false;
 
     function setAllSfxVolume(vol) {
         var sfxKeys = Object.keys(sfx);
@@ -22,14 +24,14 @@ function VolumeManager(game) {
 
     function setSfxVolume(vol) {
         sfxVol = vol;
-        if (!muted) {
+        if (!muted && !sfxMuted) {
             setAllSfxVolume(vol);
         }
     }
 
     function setMusicVolume(vol) {
         tracksVol = vol;
-        if (!muted) {
+        if (!muted && !trackMuted) {
             setAllMusicVolume(vol);
         }
     }
@@ -55,15 +57,37 @@ function VolumeManager(game) {
         isMuted: function() {
             return muted;
         },
-        mute: function() {
-            muted = true;
-            setAllSfxVolume(0);
-            setAllMusicVolume(0);
+        isTrackMuted: function() {
+            return muted || trackMuted;
         },
-        unMute: function() {
-            muted = false;
-            setAllSfxVolume(sfxVol);
-            setAllMusicVolume(tracksVol);
+        isSfxMuted: function() {
+            return muted || sfxMuted;
+        },
+        mute: function(type) {
+            if (!type) {
+                muted = true;
+                setAllSfxVolume(0);
+                setAllMusicVolume(0);
+            } else if (type === 'track') {
+                trackMuted = true;
+                setAllMusicVolume(0);
+            } else if (type === 'sfx') {
+                sfxMuted = true;
+                setAllSfxVolume(0);
+            }
+        },
+        unMute: function(type) {
+            if (!type) {
+                muted = false;
+                setAllSfxVolume(sfxVol);
+                setAllMusicVolume(tracksVol);
+            } else if (type === 'track') {
+                trackMuted = false;
+                setAllMusicVolume(tracksVol);
+            } else if (type === 'sfx') {
+                sfxMuted = false;
+                setAllSfxVolume(sfxVol);
+            }
         },
         playSong: function(name) {
             if (
