@@ -42,7 +42,7 @@ Unstable.SettingsState.prototype.create = function () {
 
     var songText = game.add.text(game.width / 2 + 32,
       game.height / 2 + 36,
-      "Music Volume", style);
+      this.getVolumeText(), style);
     songText.anchor.set(1, 0.5);
 
     var unmutedFrames = [12, 12, 13, 12];
@@ -90,6 +90,7 @@ Unstable.SettingsState.prototype.create = function () {
         "buttonSheet",
         function() {
             Unstable.globals.audio.volumeUp();
+            songText.text = this.getVolumeText();
         },
         this,
         8,
@@ -107,6 +108,7 @@ Unstable.SettingsState.prototype.create = function () {
         "buttonSheet",
         function() {
             Unstable.globals.audio.volumeDown();
+            songText.text = this.getVolumeText();
         },
         this,
         8,
@@ -120,7 +122,7 @@ Unstable.SettingsState.prototype.create = function () {
 
     var sfxText = game.add.text(game.width / 2 + 32,
       game.height / 2 + 72,
-      "SFX Volume", style);
+      this.getSfxText(), style);
     sfxText.anchor.set(1, 0.5);
 
     if (Unstable.globals.audio.isSfxMuted()) {
@@ -164,6 +166,7 @@ Unstable.SettingsState.prototype.create = function () {
         "buttonSheet",
         function() {
             Unstable.globals.audio.volumeUp(true);
+            sfxText.text = this.getSfxText();
         },
         this,
         8,
@@ -181,6 +184,7 @@ Unstable.SettingsState.prototype.create = function () {
         "buttonSheet",
         function() {
             Unstable.globals.audio.volumeDown(true);
+            sfxText.text = this.getSfxText();
         },
         this,
         8,
@@ -220,6 +224,14 @@ Unstable.SettingsState.prototype.create = function () {
     // var soundButton = game.add.button(game.width/2, game.height/2 - 24, "buttonSheet", null, this, 6, 6, 9);
     // soundButton.scale.setTo(2);
 };
+
+Unstable.SettingsState.prototype.getVolumeText = function() {
+    return "Music Volume: " + Math.trunc(Unstable.globals.audio.getVolume() * 10);
+}
+
+Unstable.SettingsState.prototype.getSfxText = function() {
+    return "SFX Volume: " + Math.trunc(Unstable.globals.audio.getVolume(true) * 10);
+}
 
 Unstable.SettingsState.prototype.startGame = function() {
   // this.game.state.start("LevelManager", true, false, this.level_file);

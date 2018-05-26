@@ -108,6 +108,13 @@ function VolumeManager(game) {
                 playingSong = name;
             }
         },
+        getVolume: function(sfx) {
+            if (sfx) {
+                return sfxVol;
+            } else {
+                return tracksVol;
+            }
+        },
         volumeUp: function(sfx) {
             if (sfx) {
                 setSfxVolume(sfxVol += 0.1);
