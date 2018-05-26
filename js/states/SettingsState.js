@@ -22,7 +22,9 @@ Unstable.SettingsState.prototype.create = function () {
     };
     var text = game.add.text(game.width / 2, game.height / 2 - 100,
       "Menu", style);
-    text.anchor.set(0.5);
+      text.x -= Math.round(text.width/2);
+      text.y -= Math.round(text.height/2);
+      
 
     style.font = "16px Arial";
     // style.align = "right";
