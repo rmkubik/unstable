@@ -24,7 +24,7 @@ Unstable.SettingsState.prototype.create = function () {
       "Menu", style);
       text.x -= Math.round(text.width/2);
       text.y -= Math.round(text.height/2);
-      
+
 
     style.font = "16px Arial";
     // style.align = "right";
@@ -49,7 +49,7 @@ Unstable.SettingsState.prototype.create = function () {
     var mutedFrames = [14, 14, 15, 14];
     var initialFrames = unmutedFrames;
 
-    if (Unstable.globals.audio.isMuted()) {
+    if (Unstable.globals.audio.isTrackMuted()) {
         initialFrames = mutedFrames;
     }
     var muteButton = game.add.button(
@@ -57,8 +57,8 @@ Unstable.SettingsState.prototype.create = function () {
         game.height / 2 + 36,
         "buttonSheet",
         function() {
-            if (Unstable.globals.audio.isMuted()) {
-                Unstable.globals.audio.unMute();
+            if (Unstable.globals.audio.isTrackMuted()) {
+                Unstable.globals.audio.unMute('track');
                 muteButton.setFrames(
                     unmutedFrames[0],
                     unmutedFrames[1],
@@ -66,7 +66,7 @@ Unstable.SettingsState.prototype.create = function () {
                     unmutedFrames[3]
                 );
             } else {
-                Unstable.globals.audio.mute();
+                Unstable.globals.audio.mute('track');
                 muteButton.setFrames(
                     mutedFrames[0],
                     mutedFrames[1],
@@ -123,7 +123,7 @@ Unstable.SettingsState.prototype.create = function () {
       "SFX Volume", style);
     sfxText.anchor.set(1, 0.5);
 
-    if (Unstable.globals.audio.isMuted()) {
+    if (Unstable.globals.audio.isSfxMuted()) {
         initialFrames = mutedFrames;
     }
     var muteButton2 = game.add.button(
@@ -131,8 +131,8 @@ Unstable.SettingsState.prototype.create = function () {
         game.height / 2 + 72,
         "buttonSheet",
         function() {
-            if (Unstable.globals.audio.isMuted()) {
-                Unstable.globals.audio.unMute();
+            if (Unstable.globals.audio.isSfxMuted()) {
+                Unstable.globals.audio.unMute('sfx');
                 muteButton2.setFrames(
                     unmutedFrames[0],
                     unmutedFrames[1],
@@ -140,7 +140,7 @@ Unstable.SettingsState.prototype.create = function () {
                     unmutedFrames[3]
                 );
             } else {
-                Unstable.globals.audio.mute();
+                Unstable.globals.audio.mute('sfx');
                 muteButton2.setFrames(
                     mutedFrames[0],
                     mutedFrames[1],

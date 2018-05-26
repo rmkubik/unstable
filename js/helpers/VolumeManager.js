@@ -58,10 +58,10 @@ function VolumeManager(game) {
             return muted;
         },
         isTrackMuted: function() {
-            return muted || trackMuted;
+            return trackMuted;
         },
         isSfxMuted: function() {
-            return muted || sfxMuted;
+            return sfxMuted;
         },
         mute: function(type) {
             if (!type) {
