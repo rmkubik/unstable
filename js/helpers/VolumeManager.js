@@ -4,6 +4,7 @@ function VolumeManager(game) {
     var sfxVol = 1;
     var tracksVol = 1;
     var muted = false;
+    var playingSong;
 
     function setAllSfxVolume(vol) {
         var sfxKeys = Object.keys(sfx);
@@ -65,7 +66,23 @@ function VolumeManager(game) {
             setAllMusicVolume(tracksVol);
         },
         playSong: function(name) {
-            tracks[name].loopFull();
+            if (
+                name != playingSong
+                && Unstable.globals.current_level !== 'lvl_hub1'
+                && Unstable.globals.current_level !== 'lvl_h1l1'
+                && Unstable.globals.current_level !== 'lvl_forest'
+                && Unstable.globals.current_level !== 'lvl_h1l3'
+                && Unstable.globals.current_level !== 'lvl_h1l4'
+                && Unstable.globals.current_level !== 'lvl_h1l5'
+                && Unstable.globals.current_level !== 'lvl_hub2'
+                && Unstable.globals.current_level !== 'lvl_hub3'
+            ) {
+                if (playingSong) {
+                    tracks[playingSong].pause();
+                }
+                tracks[name].loopFull();
+                playingSong = name;
+            }
         },
         volumeUp: function(sfx) {
             if (sfx) {

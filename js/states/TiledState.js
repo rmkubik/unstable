@@ -30,6 +30,8 @@ Unstable.TiledState.prototype.init = function (level_data, spawnGoalId) {
     Unstable.Emitter.init();
 
     this.spawnGoalCoords = {x: 0, y: 0};
+
+    Unstable.globals.audio.playSong('notChill');
 };
 
 Unstable.TiledState.prototype.create = function () {

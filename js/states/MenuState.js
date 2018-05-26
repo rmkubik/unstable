@@ -29,7 +29,7 @@ Unstable.MenuState.prototype.create = function () {
     playButton.anchor.set(0.5);
     playButton.scale.setTo(3);
 
-    Unstable.globals.audio.tracks.notChill.loopFull();
+    Unstable.globals.audio.playSong('ambient');
 };
 
 Unstable.MenuState.prototype.parseLevelOverride = function() {
