@@ -27,13 +27,23 @@ Unstable.IntroductionState.prototype.create = function() {
       align: "center"
     };
     var text = game.add.text(game.width / 2, game.height / 2 - 100,
-        "The world is unstable, when you fall you get back up again.", style);
+        "You are unstable, when you fall you get back up again.", style);
     text.anchor.set(0.5);
-    text = game.add.text(game.width / 2, game.height / 2,
-        "Arrow keys or WASD to move, collect the coins, get to the goal.", style);
+
+    text = game.add.text(game.width / 2, game.height / 2 - 25,
+        "Arrow keys or WASD to move.", style);
     text.anchor.set(0.5);
+
+    text = game.add.text(game.width / 2, game.height / 2 + 10,
+        "Collect all the coins.", style);
+    text.anchor.set(0.5);
+
+    text = game.add.text(game.width / 2, game.height / 2 + 45,
+        "Get to the goal.", style);
+    text.anchor.set(0.5);
+
     var playButton = game.add.button(game.width / 2 - 24,
-      game.height / 2 + 100, "buttonSheet", this.endIntroduction, this, 0, 0, 1);
+      game.height / 2 + 100, "buttonSheet", this.endIntroduction, this, 8, 8, 9);
     playButton.scale.setTo(2);
 };
 

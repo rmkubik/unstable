@@ -35,7 +35,7 @@ Unstable.EndState.prototype.create = function () {
         "Please send any feedback my way!", style);
     text.anchor.set(0.5);
     var playButton = game.add.button(game.width / 2 - 24,
-      game.height / 2 + 100, "buttonSheet", this.navToMenu, this, 0, 0, 1);
+      game.height / 2 + 100, "buttonSheet", this.navToMenu, this, 8, 8, 9);
     playButton.scale.setTo(2);
 };
 
