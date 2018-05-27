@@ -117,11 +117,11 @@ function VolumeManager(game) {
         },
         volumeUp: function(sfx) {
             if (sfx) {
-                if (sfxVol < 10) {
+                if (sfxVol < 1) {
                     setSfxVolume(sfxVol += 0.1);
                 }
             } else {
-                if (tracksVol < 10) {
+                if (tracksVol < 1) {
                     setMusicVolume(tracksVol += 0.1);
                 }
             }
