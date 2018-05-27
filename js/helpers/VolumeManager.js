@@ -7,6 +7,16 @@ function VolumeManager(game) {
     var playingSong;
     var sfxMuted = false;
     var trackMuted = false;
+    var notChillLevelExceptions = [
+        'lvl_hub1',
+        'lvl_h1l1',
+        'lvl_forest',
+        'lvl_h1l3',
+        'lvl_h1l4',
+        'lvl_h1l5',
+        'lvl_hub2',
+        'lvl_hub3',
+    ];
 
     function setAllSfxVolume(vol) {
         var sfxKeys = Object.keys(sfx);
@@ -51,7 +61,10 @@ function VolumeManager(game) {
             if (game.sound.usingWebAudio &&
             game.sound.context.state === 'suspended')
             {
-              game.input.onTap.addOnce(game.sound.context.resume, game.sound.context);
+              game.input.onTap.addOnce(
+                  game.sound.context.resume,
+                  game.sound.context
+              );
             }
         },
         isMuted: function() {
@@ -92,14 +105,9 @@ function VolumeManager(game) {
         playSong: function(name) {
             if (
                 name != playingSong
-                && Unstable.globals.current_level !== 'lvl_hub1'
-                && Unstable.globals.current_level !== 'lvl_h1l1'
-                && Unstable.globals.current_level !== 'lvl_forest'
-                && Unstable.globals.current_level !== 'lvl_h1l3'
-                && Unstable.globals.current_level !== 'lvl_h1l4'
-                && Unstable.globals.current_level !== 'lvl_h1l5'
-                && Unstable.globals.current_level !== 'lvl_hub2'
-                && Unstable.globals.current_level !== 'lvl_hub3'
+                && (name != 'notChill' || !notChillLevelExceptions.some(function(level) {
+                    return Unstable.globals.current_level == level;
+                }))
             ) {
                 if (playingSong) {
                     tracks[playingSong].pause();

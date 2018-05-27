@@ -11,7 +11,9 @@ Unstable.prototype.constructor = Unstable.MenuState;
 Unstable.MenuState.prototype.init = function (gameData) {
     "use strict";
     this.gameData = gameData;
-    Unstable.globals.audio.resumeAudioContext();
+    Unstable.globals.audio.resumeAudioContext(function() {
+        Unstable.globals.audio.playSong('ambient');
+    });
 };
 
 Unstable.MenuState.prototype.create = function () {
@@ -28,7 +30,7 @@ Unstable.MenuState.prototype.create = function () {
       game.height / 2 + 36, "buttonSheet", this.startGame, this, 8, 8, 9);
     playButton.anchor.set(0.5);
     playButton.scale.setTo(3);
-
+    
     Unstable.globals.audio.playSong('ambient');
 };
 
@@ -43,6 +45,8 @@ Unstable.MenuState.prototype.parseLevelOverride = function() {
 }
 
 Unstable.MenuState.prototype.startGame = function() {
+    game.sound.context.resume();
+    Unstable.globals.audio.playSong('ambient');
   this.game.state.start("LevelManager", true, false, this.gameData, this.parseLevelOverride(), null);
 }
 
