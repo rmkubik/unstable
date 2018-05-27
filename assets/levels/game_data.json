@@ -571,11 +571,6 @@
             "completion": -1,
             "times": []
         },
-        "timeTrialTiers": {
-            "gold": 9,
-            "silver": 10,
-            "bronze": 11
-        },
         "lvl_h2l1": {
             "name": "Teleport",
             "key": "lvl_h2l1",

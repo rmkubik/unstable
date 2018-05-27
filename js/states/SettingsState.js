@@ -11,6 +11,7 @@ Unstable.prototype.constructor = Unstable.SettingsState;
 Unstable.SettingsState.prototype.init = function (level_file) {
     "use strict";
     this.level_file = level_file;
+    this.trophyManager = new TrophyManager();
 };
 
 Unstable.SettingsState.prototype.create = function () {
@@ -198,7 +199,7 @@ Unstable.SettingsState.prototype.create = function () {
 
     var completionText = game.add.text(game.width / 2 + 32,
       game.height / 2 + 108,
-      "Completion Percentage: 100%", style);
+      "Completion Percentage: " + this.trophyManager.getCompletionPercentage(Unstable.globals.levels) + "%", style);
     completionText.anchor.set(1, 0.5);
 
     var resetButton = game.add.button(

@@ -135,6 +135,16 @@ function TrophyManager(state, gameState) {
                 emitter.burst(goal.x + 25, goal.y - 50);
             }
         },
-        sprites: sprites
+        sprites: sprites,
+        getCompletionPercentage: function(levels) {
+            // for each level, total all completion trophies, 3xSpeedrun trophies
+            var total = 0;
+            var achieved = 0;
+            Object.values(levels).forEach(function(levelState) {
+                total += 3 + 1;
+                achieved += calcTimeTrialTrophy(levelState) + calcCompletionTrophy(levelState);
+            });
+            return Math.round((achieved / total) * 100);
+        }
     }
 }
