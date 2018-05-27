@@ -11,6 +11,20 @@ Unstable.saveProgress = function() {
   }
 }
 
+Unstable.resetProgress = function() {
+    if (Unstable.isLocalStorageAvailable()) {
+        var gameDataText = game.cache.getText("game_data");
+        var gameData = JSON.parse(gameDataText);
+
+        this.globals.current_level = 'lvl_hub1';
+        this.globals.levels = gameData.levels;
+        this.globals.showIntroduction = true;
+        Unstable.saveProgress();
+    } else {
+      console.log("Resetting game state failed - local storage is not available");
+    }
+}
+
 Unstable.isLocalStorageAvailable = function() {
     var test = 'com.ryankubik.unstable.test';
     try {

@@ -199,7 +199,7 @@ Unstable.SettingsState.prototype.create = function () {
 
     var completionText = game.add.text(game.width / 2,
       game.height / 2 + 108,
-      "Completion Percentage: " + this.trophyManager.getCompletionPercentage(Unstable.globals.levels) + "%", style);
+      this.getCompletionText(), style);
     completionText.anchor.set(0.5, 0.5);
 
     var resetText = game.add.text(game.width / 2 + 64,
@@ -213,7 +213,8 @@ Unstable.SettingsState.prototype.create = function () {
         game.height / 2 + 142 - 4,
         "buttonSheet",
         function() {
-            Unstable.globals.audio.volumeDown(true);
+            Unstable.resetProgress();
+            completionText.text = this.getCompletionText();
         },
         this,
         4,
@@ -224,6 +225,10 @@ Unstable.SettingsState.prototype.create = function () {
     resetButton.anchor.setTo(0.5, 0.5);
 
 };
+
+Unstable.SettingsState.prototype.getCompletionText = function() {
+    return "Completion Percentage: " + this.trophyManager.getCompletionPercentage(Unstable.globals.levels) + "%";
+}
 
 Unstable.SettingsState.prototype.getVolumeText = function() {
     return "Music Volume: " + Math.trunc(Unstable.globals.audio.getVolume() * 10);

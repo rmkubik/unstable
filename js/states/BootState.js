@@ -15,7 +15,7 @@ Unstable.BootState.prototype.init = function (gameDataFile) {
 
     /* init global vars */
     var saveState;
-    if(Unstable.isLocalStorageAvailable()) {
+    if (Unstable.isLocalStorageAvailable()) {
       saveState = localStorage.getItem("com.ryankubik.unstable.saveState");
     } else {
       saveState = null;
