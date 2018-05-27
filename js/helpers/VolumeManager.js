@@ -117,16 +117,24 @@ function VolumeManager(game) {
         },
         volumeUp: function(sfx) {
             if (sfx) {
-                setSfxVolume(sfxVol += 0.1);
+                if (sfxVol < 10) {
+                    setSfxVolume(sfxVol += 0.1);
+                }
             } else {
-                setMusicVolume(tracksVol += 0.1);
+                if (tracksVol < 10) {
+                    setMusicVolume(tracksVol += 0.1);
+                }
             }
         },
         volumeDown: function(sfx) {
             if (sfx) {
-                setSfxVolume(sfxVol -= 0.1);
+                if (sfxVol > 0) {
+                    setSfxVolume(sfxVol -= 0.1);
+                }
             } else {
-                setMusicVolume(tracksVol -= 0.1);
+                if (tracksVol > 0) {
+                    setMusicVolume(tracksVol -= 0.1);
+                }
             }
         }
     }
