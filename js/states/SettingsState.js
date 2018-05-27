@@ -210,14 +210,12 @@ Unstable.SettingsState.prototype.create = function () {
             Unstable.globals.audio.volumeDown(true);
         },
         this,
-        8,
-        8,
-        9,
-        8
+        4,
+        4,
+        5,
+        4
     );
     resetButton.anchor.setTo(0.5, 0.5);
-    // downButton.scale.setTo(2);
-    resetButton.angle = 90;
 
     // var menuButton = game.add.button(game.width / 2 - 100,
     //   game.height / 2 - 24, "buttonSheet", this.openMenu, this, 4, 4, 5);
