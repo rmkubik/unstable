@@ -137,12 +137,23 @@ function TrophyManager(state, gameState) {
         },
         sprites: sprites,
         getCompletionPercentage: function(levels) {
+            var omittedLevels = [
+                "lvl_hub1",
+                "lvl_hub2",
+                "lvl_hub3",
+            ];
             // for each level, total all completion trophies, 3xSpeedrun trophies
             var total = 0;
             var achieved = 0;
-            Object.values(levels).forEach(function(levelState) {
-                total += 3 + 1;
-                achieved += calcTimeTrialTrophy(levelState) + calcCompletionTrophy(levelState);
+
+            Object.keys(levels).forEach(function(levelKey) {
+                if (!omittedLevels.some(function(level) {
+                    return level === levelKey;
+                })) {
+                    total += 3 + 1;
+                    achieved += calcTimeTrialTrophy(levels[levelKey])
+                    achieved += calcCompletionTrophy(levels[levelKey]);
+                }
             });
             return Math.round((achieved / total) * 100);
         }
