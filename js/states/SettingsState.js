@@ -197,14 +197,20 @@ Unstable.SettingsState.prototype.create = function () {
     // downButton.scale.setTo(2);
     downButton2.angle = 90;
 
-    var completionText = game.add.text(game.width / 2 + 32,
+    var completionText = game.add.text(game.width / 2,
       game.height / 2 + 108,
       "Completion Percentage: " + this.trophyManager.getCompletionPercentage(Unstable.globals.levels) + "%", style);
-    completionText.anchor.set(1, 0.5);
+    completionText.anchor.set(0.5, 0.5);
+
+    var resetText = game.add.text(game.width / 2 + 64,
+    game.height / 2 + 142,
+    "Permanently Reset Progress",
+    style);
+    resetText.anchor.set(1, 0.5);
 
     var resetButton = game.add.button(
-        game.width / 2 + 32 + 16,
-        game.height / 2 + 108,
+        game.width / 2 + 64 + 16,
+        game.height / 2 + 142 - 4,
         "buttonSheet",
         function() {
             Unstable.globals.audio.volumeDown(true);
@@ -217,11 +223,6 @@ Unstable.SettingsState.prototype.create = function () {
     );
     resetButton.anchor.setTo(0.5, 0.5);
 
-    // var menuButton = game.add.button(game.width / 2 - 100,
-    //   game.height / 2 - 24, "buttonSheet", this.openMenu, this, 4, 4, 5);
-    // menuButton.scale.setTo(2);
-    // var soundButton = game.add.button(game.width/2, game.height/2 - 24, "buttonSheet", null, this, 6, 6, 9);
-    // soundButton.scale.setTo(2);
 };
 
 Unstable.SettingsState.prototype.getVolumeText = function() {
