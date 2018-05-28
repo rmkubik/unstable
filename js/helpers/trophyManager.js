@@ -141,6 +141,7 @@ function TrophyManager(state, gameState) {
                 "lvl_hub1",
                 "lvl_hub2",
                 "lvl_hub3",
+                "lvl_twoQuarters",
             ];
             // for each level, total all completion trophies, 3xSpeedrun trophies
             var total = 0;
