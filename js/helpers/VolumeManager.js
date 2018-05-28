@@ -54,6 +54,20 @@ function VolumeManager(game, saveState) {
         }
     }
 
+    function mute(type) {
+        if (!type) {
+            muted = true;
+            setAllSfxVolume(0);
+            setAllMusicVolume(0);
+        } else if (type === 'track') {
+            trackMuted = true;
+            setAllMusicVolume(0);
+        } else if (type === 'sfx') {
+            sfxMuted = true;
+            setAllSfxVolume(0);
+        }
+    }
+
     return {
         sfx: sfx,
         tracks: tracks,
@@ -84,19 +98,7 @@ function VolumeManager(game, saveState) {
         isSfxMuted: function() {
             return sfxMuted;
         },
-        mute: function(type) {
-            if (!type) {
-                muted = true;
-                setAllSfxVolume(0);
-                setAllMusicVolume(0);
-            } else if (type === 'track') {
-                trackMuted = true;
-                setAllMusicVolume(0);
-            } else if (type === 'sfx') {
-                sfxMuted = true;
-                setAllSfxVolume(0);
-            }
-        },
+        mute: mute,
         unMute: function(type) {
             if (!type) {
                 muted = false;
@@ -161,6 +163,24 @@ function VolumeManager(game, saveState) {
                 trackMuted: trackMuted,
                 sfxMuted: sfxMuted,
             }
+        },
+        setVolumeObject: function(volumes) {
+            sfxVol = volumes.sfxVol;
+            tracksVol = volumes.tracksVol;
+            muted: volumes.muted;
+            trackMuted: volumes.trackMuted;
+            sfxMuted: volumes.sfxMuted;
+            if (muted) {
+                mute();
+            }
+            if (trackMuted) {
+                mute('track');
+            }
+            if (sfxMuted) {
+                mute('sfx');
+            }
+            setSfxVolume(sfxVol);
+            setMusicVolume(tracksVol);
         }
     }
 }
