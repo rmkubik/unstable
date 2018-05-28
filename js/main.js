@@ -1,11 +1,10 @@
 var Unstable = Unstable || {};
+
+Unstable.version = "1.0.0";
+
 Unstable.saveProgress = function() {
   if (Unstable.isLocalStorageAvailable()) {
-    var saveState = {};
-    saveState.current_level = this.globals.current_level;
-    saveState.levels = this.globals.levels;
-    saveState.showIntroduction = this.globals.showIntroduction;
-    saveState.volume = this.globals.audio.getVolumeObject();
+    var saveState = Unstable.createSaveState();
     localStorage.setItem("com.ryankubik.unstable.saveState", JSON.stringify(saveState));
   } else {
     console.log("Saving game state failed - local storage is not available");
@@ -24,6 +23,35 @@ Unstable.resetProgress = function() {
     } else {
       console.log("Resetting game state failed - local storage is not available");
     }
+}
+
+Unstable.backupProgress = function() {
+    if (Unstable.isLocalStorageAvailable()) {
+        var saveState = localStorage.getItem("com.ryankubik.unstable.saveState");
+        localStorage.setItem("com.ryankubik.unstable.saveState.backup", saveState);
+    }
+}
+
+Unstable.removeSave = function() {
+    if (Unstable.isLocalStorageAvailable()) {
+        localStorage.removeItem("com.ryankubik.unstable.saveState");
+    }
+}
+
+Unstable.createSaveState = function() {
+    var saveState = {};
+
+    saveState.current_level = this.globals.current_level;
+    saveState.levels = this.globals.levels;
+    saveState.showIntroduction = this.globals.showIntroduction;
+    saveState.volume = this.globals.audio.getVolumeObject();
+    saveState.version = Unstable.version;
+
+    return saveState;
+}
+
+Unstable.isSaveValid = function(saveState) {
+    return saveState.version === Unstable.version;
 }
 
 Unstable.isLocalStorageAvailable = function() {
