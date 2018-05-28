@@ -17,6 +17,12 @@ Unstable.BootState.prototype.init = function (gameDataFile) {
     var saveState;
     if (Unstable.isLocalStorageAvailable()) {
       saveState = localStorage.getItem("com.ryankubik.unstable.saveState");
+      if (saveState !== null && !Unstable.isSaveValid(JSON.parse(saveState))) {
+          saveState = null;
+          Unstable.backupProgress();
+          Unstable.removeSave();
+          console.error('Your save data is invalid or corrupted!');
+      }
     } else {
       saveState = null;
     }
