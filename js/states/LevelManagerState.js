@@ -24,7 +24,7 @@ Unstable.LevelManagerState.prototype.nextLevel = function() {
   if (Unstable.globals.showIntroduction) {
     this.game.state.start("IntroductionState", true, false, this.game_data, this.levelLink);
   } else if (this.levelLink === "victory") {
-    this.game.state.start("EndState", true, false);
+    this.game.state.start("EndState", true, false, this.game_data);
   } else {
     // this.game_data.map = this.levels[Unstable.current_level++];
     this.game_data.map = Unstable.globals.levels[this.levelLink];

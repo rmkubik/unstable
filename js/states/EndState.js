@@ -8,8 +8,9 @@ Unstable.EndState = function () {
 Unstable.prototype = Object.create(Phaser.State.prototype);
 Unstable.prototype.constructor = Unstable.EndState;
 
-Unstable.EndState.prototype.init = function () {
+Unstable.EndState.prototype.init = function (gameData) {
     "use strict";
+    this.gameData = gameData;
 };
 
 Unstable.EndState.prototype.preload = function () {
