@@ -25,13 +25,16 @@ Unstable.BootState.prototype.init = function (gameDataFile) {
       Unstable.globals.current_level = undefined;
       Unstable.globals.levels = null;
       Unstable.globals.showIntroduction = true;
+
+      Unstable.globals.audio = new VolumeManager(game);
     } else {
       saveState = JSON.parse(saveState);
       Unstable.globals.current_level = saveState.current_level;
       Unstable.globals.levels = saveState.levels;
       Unstable.globals.showIntroduction = saveState.showIntroduction;
+
+      Unstable.globals.audio = new VolumeManager(game, saveState.volume);
     }
-    Unstable.globals.audio = new VolumeManager(game);
 
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     this.scale.pageAlignHorizontally = true;

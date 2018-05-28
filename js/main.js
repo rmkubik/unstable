@@ -4,7 +4,8 @@ Unstable.saveProgress = function() {
     var saveState = {};
     saveState.current_level = this.globals.current_level;
     saveState.levels = this.globals.levels;
-    saveState.showIntroduction = this.globals.showIntroduction
+    saveState.showIntroduction = this.globals.showIntroduction;
+    saveState.volume = this.globals.audio.getVolumeObject();
     localStorage.setItem("com.ryankubik.unstable.saveState", JSON.stringify(saveState));
   } else {
     console.log("Saving game state failed - local storage is not available");

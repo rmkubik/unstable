@@ -240,6 +240,7 @@ Unstable.SettingsState.prototype.getSfxText = function() {
 
 Unstable.SettingsState.prototype.startGame = function() {
   // this.game.state.start("LevelManager", true, false, this.level_file);
+  Unstable.saveProgress();
   this.game.state.start("LevelManager", true, false, this.level_file, Unstable.globals.current_level, null);
 }
 

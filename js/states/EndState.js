@@ -41,5 +41,5 @@ Unstable.EndState.prototype.create = function () {
 
 Unstable.EndState.prototype.navToMenu = function() {
     Unstable.globals.showIntroduction = false;
-    this.game.state.start("MenuState", true, false, null);
+    this.game.state.start("MenuState", true, false, this.gameData);
 };
