@@ -242,6 +242,10 @@
             "type": "image",
             "source": "assets/images/logo2.png"
         },
+        "menuTitle": {
+            "type": "image",
+            "source": "assets/images/menu-title.png"
+        },
         "lvl_bobAndWeave": {
             "type": "tilemap",
             "source": "assets/levels/build/bobAndWeave.json"

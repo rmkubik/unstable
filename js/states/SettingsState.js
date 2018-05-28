@@ -17,23 +17,43 @@ Unstable.SettingsState.prototype.init = function (level_file) {
 Unstable.SettingsState.prototype.create = function () {
     "use strict";
     var style = {
-      font: "24px Arial",
+      font: "24px Helvetica",
       fill: "#FFFFFF",
       align: "center"
     };
-    var text = game.add.text(game.width / 2, game.height / 2 - 100,
-      "Menu", style);
-      text.x -= Math.round(text.width/2);
-      text.y -= Math.round(text.height/2);
+    // var text = game.add.text(game.width / 2, game.height / 2 - 100,
+    //   "Menu", style);
+    //   text.x -= Math.round(text.width/2);
+    //   text.y -= Math.round(text.height/2);
+
+    var logo = game.add.image(game.width / 2, game.height / 2 - 100, "menuTitle");
+    logo.anchor.set(0.5);
+    logo.scale.setTo(0.5);
+
+    this.groups = {};
+    this.groups["shadows"] = this.game.add.group();
+    this.groups["objects"] = this.game.add.group();
+    var bouncer = new Unstable.BouncerHazard(this,
+        { x: game.width / 2 - 100, y: game.height / 2 - 96 },
+        {
+            "group": "hazards",
+            "pgroup": "hazards",
+            "rgroup": "objects",
+            "texture": "enemy_bomb",
+            "velocityX": 0,
+            "velocityY": 0
+        }
+    );
 
 
-    style.font = "16px Arial";
+    style.font = "16px Helvetica";
     // style.align = "right";
 
     var playText = game.add.text(game.width / 2 + 32,
       game.height / 2,
       "Resume Game", style);
     playText.anchor.set(1, 0.5);
+    playText.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
 
     var playButton = game.add.button(game.width / 2 + 16 + 32,
       game.height / 2, "buttonSheet", this.startGame, this, 8, 8, 9);
@@ -45,6 +65,7 @@ Unstable.SettingsState.prototype.create = function () {
       game.height / 2 + 36,
       this.getVolumeText(), style);
     songText.anchor.set(1, 0.5);
+    songText.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
 
     var unmutedFrames = [12, 12, 13, 12];
     var mutedFrames = [14, 14, 15, 14];
@@ -125,6 +146,7 @@ Unstable.SettingsState.prototype.create = function () {
       game.height / 2 + 72,
       this.getSfxText(), style);
     sfxText.anchor.set(1, 0.5);
+    sfxText.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
 
     if (Unstable.globals.audio.isSfxMuted()) {
         initialFrames = mutedFrames;
@@ -201,12 +223,14 @@ Unstable.SettingsState.prototype.create = function () {
       game.height / 2 + 108,
       this.getCompletionText(), style);
     completionText.anchor.set(0.5, 0.5);
+    completionText.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
 
     var resetText = game.add.text(game.width / 2 + 64,
     game.height / 2 + 142,
     "Permanently Reset Progress",
     style);
     resetText.anchor.set(1, 0.5);
+    resetText.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
 
     var resetButton = game.add.button(
         game.width / 2 + 64 + 16,
