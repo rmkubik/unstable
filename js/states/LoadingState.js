@@ -79,6 +79,11 @@ Unstable.LoadingState.prototype.create = function () {
         }
     });
 
+    // set initial volumes now that all tracks/sfx are loaded
+    var volumes = Unstable.globals.audio.getVolumeObject();
+    Unstable.globals.audio.setSfxVolume(volumes.sfxVol);
+    Unstable.globals.audio.setMusicVolume(volumes.tracksVol);
+
     //this.game.levelManager.nextLevel();
     // this.game.state.start("LevelManager", true, false, this.gameData, "lvl_hub1");
     this.game.state.start("MenuState", true, false, this.gameData);
