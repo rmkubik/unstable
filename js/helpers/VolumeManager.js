@@ -164,12 +164,7 @@ function VolumeManager(game, saveState) {
                 sfxMuted: sfxMuted,
             }
         },
-        setVolumeObject: function(volumes) {
-            sfxVol = volumes.sfxVol;
-            tracksVol = volumes.tracksVol;
-            muted: volumes.muted;
-            trackMuted: volumes.trackMuted;
-            sfxMuted: volumes.sfxMuted;
+        init: function() {
             if (muted) {
                 mute();
             }

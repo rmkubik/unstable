@@ -148,6 +148,7 @@ Unstable.SettingsState.prototype.create = function () {
     sfxText.anchor.set(1, 0.5);
     sfxText.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
 
+    initialFrames = unmutedFrames;
     if (Unstable.globals.audio.isSfxMuted()) {
         initialFrames = mutedFrames;
     }

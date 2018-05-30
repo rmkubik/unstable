@@ -81,7 +81,7 @@ Unstable.LoadingState.prototype.create = function () {
 
     // set initial volumes now that all tracks/sfx are loaded
     var volumes = Unstable.globals.audio.getVolumeObject();
-    Unstable.globals.audio.setVolumeObject(volumes);
+    Unstable.globals.audio.init();
 
     //this.game.levelManager.nextLevel();
     // this.game.state.start("LevelManager", true, false, this.gameData, "lvl_hub1");
