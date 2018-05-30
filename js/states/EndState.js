@@ -54,8 +54,13 @@ Unstable.EndState.prototype.create = function () {
       }
     });
 
-    game.time.events.repeat(Phaser.Timer.SECOND * 1, 25, function() {
+
+    var explosionEvent = game.time.events.repeat(Phaser.Timer.SECOND * 1, 2, function() {
         // this.game_state.map.removeTile(this.triggerParams.x, this.triggerParams.y, "base");
+
+        // If we continuously set the repeatCount back to 2, it will loop infinitely
+        // Setting repeat count to one will not queue infinitely.
+        explosionEvent.repeatCount = 2;
         this.explosionEmitter.burst(
             game.rnd.integerInRange(0, game.width),
             game.rnd.integerInRange(0, game.height),
@@ -68,14 +73,20 @@ Unstable.EndState.prototype.create = function () {
       align: "center"
     };
     var text = game.add.text(game.width / 2, game.height / 2 - 100,
-        "You made it to the end! ", style);
+        "You beat the final level! Thanks for playing!", style);
     text.anchor.set(0.5);
-    text = game.add.text(game.width / 2, game.height / 2 - 50,
-        "Thanks for playing this beta version of the game.", style);
-    text.anchor.set(0.5);
+    text.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
+
+    // text = game.add.text(game.width / 2, game.height / 2 - 50,
+    //     "Thanks for playing this beta version of the game.", style);
+    // text.anchor.set(0.5);
+    // text.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
+
     text = game.add.text(game.width / 2, game.height / 2,
-        "Please send any feedback my way!", style);
+        "by: Ryan Kubik", style);
     text.anchor.set(0.5);
+    text.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
+
     var playButton = game.add.button(game.width / 2 - 24,
       game.height / 2 + 100, "buttonSheet", this.navToMenu, this, 8, 8, 9);
     playButton.scale.setTo(2);
