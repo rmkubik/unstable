@@ -33,7 +33,7 @@ Unstable.IntroductionState.prototype.create = function() {
       align: "center"
     };
     var text = game.add.text(game.width / 2, game.height / 2 - 100,
-        "You are unstable, when you fall you get back up again.", style);
+        "You are unstable, when you die you get back up again.", style);
     text.anchor.set(0.5);
     text.setShadow(1, 1, 'rgba(0, 0, 0, 1)', 2);
 
