@@ -68,7 +68,7 @@ Unstable.EndState.prototype.create = function () {
     }, this);
 
     var style = {
-      font: "16px Arial",
+      font: "16px Helvetica",
       fill: "#FFFFFF",
       align: "center"
     };
