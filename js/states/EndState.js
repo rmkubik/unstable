@@ -11,6 +11,9 @@ Unstable.prototype.constructor = Unstable.EndState;
 Unstable.EndState.prototype.init = function (gameData) {
     "use strict";
     this.gameData = gameData;
+    this.map = this.game.add.tilemap('lvl_finalCountdown');
+    this.map.addTilesetImage("base", Unstable.globals.levels['lvl_finalCountdown'].tileset);
+    this.map.addTilesetImage("collision", "collision");
 };
 
 Unstable.EndState.prototype.preload = function () {
@@ -20,7 +23,14 @@ Unstable.EndState.prototype.preload = function () {
 
 Unstable.EndState.prototype.create = function () {
     "use strict";
-    "use strict";
+
+    this.layers = {};
+    this.map.layers.forEach(function (layer) {
+        if (!layer.properties.collision) {
+          this.layers[layer.name] = this.map.createLayer(layer.name);
+        }
+    }, this);
+
     var style = {
       font: "16px Arial",
       fill: "#FFFFFF",
