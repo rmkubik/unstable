@@ -31,6 +31,37 @@ Unstable.EndState.prototype.create = function () {
         }
     }, this);
 
+    Unstable.Emitter.init();
+    this.explosionEmitter = new Unstable.Emitter(this, { x: 0, y: 0 }, {
+      offset: { x: -12, y: 12 },
+      maxParticles: 500,
+      width: 2,
+      minParticleSpeed: { x: -40, y: -40 },
+      maxParticleSpeed: { x: 40, y: 40 },
+      gravity: 0,
+      burst: true,
+      lifetime: 5000,
+      frequency: 30,
+      particleClass: "fuse",
+      scale: {
+        minX: 1,
+        maxX: 0,
+        minY: 1,
+        maxY: 0,
+        rate: 5000,
+        ease: Phaser.Easing.Exponential.In,
+        yoyo: false
+      }
+    });
+
+    game.time.events.repeat(Phaser.Timer.SECOND * 1, 25, function() {
+        // this.game_state.map.removeTile(this.triggerParams.x, this.triggerParams.y, "base");
+        this.explosionEmitter.burst(
+            game.rnd.integerInRange(0, game.width),
+            game.rnd.integerInRange(0, game.height),
+        );
+    }, this);
+
     var style = {
       font: "16px Arial",
       fill: "#FFFFFF",
