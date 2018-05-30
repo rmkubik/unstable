@@ -7,9 +7,10 @@ if (!fs.existsSync(buildDir)){
     fs.mkdirSync(buildDir);
 }
 
-// var recursive = require("recursive-readdir"); 
+// var recursive = require("recursive-readdir");
 // fs.createReadStream('test.log').pipe(fs.createWriteStream('newLog.log'));
 
+try {
 concat(
     [
         "js/helpers/fsm.js",
@@ -46,3 +47,6 @@ concat(
     ],
     `${buildDir}/${bundleName}`,
 );
+} catch (e) {
+    console.log(e);
+}
