@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "node convertTileMaps.js buildFile.js",
+    "build": "node convertTileMaps.js && node buildFile.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryan Kubik",
