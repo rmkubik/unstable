@@ -1,6 +1,6 @@
 var Unstable = Unstable || {};
 
-Unstable.MenuState = function () {
+Unstable.MenuState = function() {
     "use strict";
     Phaser.State.call(this);
 };
@@ -8,15 +8,15 @@ Unstable.MenuState = function () {
 Unstable.prototype = Object.create(Phaser.State.prototype);
 Unstable.prototype.constructor = Unstable.MenuState;
 
-Unstable.MenuState.prototype.init = function (gameData) {
+Unstable.MenuState.prototype.init = function(gameData) {
     "use strict";
     this.gameData = gameData;
     Unstable.globals.audio.resumeAudioContext(function() {
-        Unstable.globals.audio.playSong('ambient');
+        Unstable.globals.audio.playSong("ambient");
     });
 };
 
-Unstable.MenuState.prototype.create = function () {
+Unstable.MenuState.prototype.create = function() {
     "use strict";
     this.groups = {};
     this.groups["clouds"] = this.game.add.group();
@@ -26,12 +26,20 @@ Unstable.MenuState.prototype.create = function () {
     logo.anchor.set(0.5);
     logo.scale.setTo(0.65);
 
-    var playButton = game.add.button(game.width / 2 - 4,
-      game.height / 2 + 36, "buttonSheet", this.startGame, this, 8, 8, 9);
+    var playButton = game.add.button(
+        game.width / 2 - 4,
+        game.height / 2 + 36,
+        "buttonSheet",
+        this.startGame,
+        this,
+        8,
+        8,
+        9
+    );
     playButton.anchor.set(0.5);
     playButton.scale.setTo(3);
-    
-    Unstable.globals.audio.playSong('ambient');
+
+    Unstable.globals.audio.playSong("ambient");
 };
 
 Unstable.MenuState.prototype.parseLevelOverride = function() {
@@ -39,17 +47,27 @@ Unstable.MenuState.prototype.parseLevelOverride = function() {
     if (queryParamString === "") {
         return "lvl_hub1";
     }
-    var params = queryParamString.substr(1).split('&');
-    var levelParam = params[0].split('='); // assume level param is first
-    return 'lvl_' + levelParam[1];
-}
+    var params = queryParamString.substr(1).split("&");
+    var levelParam = params[0].split("="); // assume level param is first
+    if (levelParam[0] !== "level") {
+        return "lvl_hub1";
+    }
+    return "lvl_" + levelParam[1];
+};
 
 Unstable.MenuState.prototype.startGame = function() {
     game.sound.context.resume();
-    Unstable.globals.audio.playSong('ambient');
-  this.game.state.start("LevelManager", true, false, this.gameData, this.parseLevelOverride(), null);
-}
+    Unstable.globals.audio.playSong("ambient");
+    this.game.state.start(
+        "LevelManager",
+        true,
+        false,
+        this.gameData,
+        this.parseLevelOverride(),
+        null
+    );
+};
 
 Unstable.MenuState.prototype.openOptions = function() {
-  this.game.state.start("SettingsState", true, false, this.gameData);
-}
+    this.game.state.start("SettingsState", true, false, this.gameData);
+};
