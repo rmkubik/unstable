@@ -14,6 +14,7 @@ Unstable.MenuState.prototype.init = function(gameData) {
     Unstable.globals.audio.resumeAudioContext(function() {
         Unstable.globals.audio.playSong("ambient");
     });
+    kongregate.stats.submit("initialized", 1);
 };
 
 Unstable.MenuState.prototype.create = function() {
