@@ -1,15 +1,16 @@
 {
-  "name": "unstable",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "build": "node convertTileMaps.js && node buildFile.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ryan Kubik",
-  "devDependencies": {
-    "concat": "^1.0.3"
-  },
-  "dependencies": {}
+    "name": "unstable",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "build": "node convertTileMaps.js && node buildFile.js",
+        "deploy": "zip -r unstable-assets build assets js/main.js js/phaser.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ryan Kubik",
+    "devDependencies": {
+        "concat": "^1.0.3"
+    },
+    "dependencies": {}
 }
