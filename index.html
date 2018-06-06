@@ -5,6 +5,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 		<title>Unstable</title>
+        <script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
+
+        <script>
+        kongregateAPI.loadAPI(function() {
+    window.kongregate = kongregateAPI.getAPI();
+});
+</script>
+
 		<script type="text/javascript" src="js/phaser.js"></script>
 
         <script type="text/javascript" src="build/bundle.js"></script>
