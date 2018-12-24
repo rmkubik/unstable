@@ -1,3 +1,4 @@
 build
 node_modules
 unstable-assets.zip
+.DS_STORE
