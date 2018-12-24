@@ -3,11 +3,11 @@ const fs = require('fs');
 const buildDir = 'build';
 const bundleName = 'bundle.js';
 
-if (!fs.existsSync(buildDir)){
+if (!fs.existsSync(buildDir)) {
     fs.mkdirSync(buildDir);
 }
 
-console.log(fs.readdir(__dirname));
+// console.log(fs.readdir(__dirname));
 
 // var recursive = require("recursive-readdir");
 // fs.createReadStream('test.log').pipe(fs.createWriteStream('newLog.log'));
