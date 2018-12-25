@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-		<title>Unstable</title>
-        <script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<title>Unstable</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125634529-3"></script>
+	<script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
 
-        <script>
-        kongregateAPI.loadAPI(function() {
-    window.kongregate = kongregateAPI.getAPI();
-});
-</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-		<script type="text/javascript" src="js/phaser.js"></script>
+		gtag('config', 'UA-125634529-3');
+		kongregateAPI.loadAPI(function () {
+			window.kongregate = kongregateAPI.getAPI();
+		});
+	</script>
 
-        <script type="text/javascript" src="build/bundle.js"></script>
+	<script type="text/javascript" src="js/phaser.js"></script>
 
-        <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="build/bundle.js"></script>
 
-		<style>
-		  body {
-		    padding: 0px;
-		    margin: 0px;
-		    background-color: black;
-		  }
-		  </style>
-	</head>
+	<script type="text/javascript" src="js/main.js"></script>
 
-	<body>
-		<div id="unstable" style="height:100vh">
-		</div>
-	</body>
+	<style>
+		body {
+			padding: 0px;
+			margin: 0px;
+			background-color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="unstable" style="height:100vh">
+	</div>
+</body>
+
 </html>

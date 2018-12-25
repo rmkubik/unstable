@@ -2,7 +2,50 @@ var Unstable = Unstable || {};
 
 Unstable.version = "1.0.0";
 
-Unstable.saveProgress = function() {
+/**
+ * category - LevelName | Volume
+ * action - Start | Finish | Die | Medal | Mute
+ * label - LevelName | Time | Deaths/Level
+ */
+Unstable.track = function (category, action, label, value) {
+    gtag(
+        'event',
+        action,
+        {
+            'event_category': category,
+            'event_label': label,
+            'value': value
+        }
+    );
+}
+
+Unstable.trackLevel = function (level) {
+    if (Unstable.globals.levels.hasOwnProperty(level)) {
+        Unstable.globals.levels[level].times.forEach(function (time) {
+            if (time.player) {
+                Unstable.track('level', 'completed', Unstable.globals.levels[level].key, time.time);
+            }
+        });
+
+        if (level.completion === 1) {
+            if (Unstable.globals.levels[level].key === "lvl_tight") {
+                Unstable.track('level', 'completed', 'lvl_hub1');
+            }
+
+            if (Unstable.globals.levels[level].key === "lvl_sticks") {
+                Unstable.track('level', 'completed', 'lvl_hub2');
+            }
+
+            if (
+                Unstable.globals.levels[level].key === "lvl_finalCountdown"
+            ) {
+                Unstable.track('level', 'completed', 'lvl_hub3');
+            }
+        }
+    }
+}
+
+Unstable.saveProgress = function () {
     Unstable.sendScores();
     if (Unstable.isLocalStorageAvailable()) {
         var saveState = Unstable.createSaveState();
@@ -17,7 +60,7 @@ Unstable.saveProgress = function() {
     }
 };
 
-Unstable.resetProgress = function() {
+Unstable.resetProgress = function () {
     if (Unstable.isLocalStorageAvailable()) {
         var gameDataText = game.cache.getText("game_data");
         var gameData = JSON.parse(gameDataText);
@@ -33,7 +76,7 @@ Unstable.resetProgress = function() {
     }
 };
 
-Unstable.backupProgress = function() {
+Unstable.backupProgress = function () {
     if (Unstable.isLocalStorageAvailable()) {
         var saveState = localStorage.getItem(
             "com.ryankubik.unstable.saveState"
@@ -45,13 +88,13 @@ Unstable.backupProgress = function() {
     }
 };
 
-Unstable.removeSave = function() {
+Unstable.removeSave = function () {
     if (Unstable.isLocalStorageAvailable()) {
         localStorage.removeItem("com.ryankubik.unstable.saveState");
     }
 };
 
-Unstable.createSaveState = function() {
+Unstable.createSaveState = function () {
     var saveState = {};
 
     saveState.current_level = this.globals.current_level;
@@ -63,14 +106,16 @@ Unstable.createSaveState = function() {
     return saveState;
 };
 
-Unstable.sendScores = function() {
+Unstable.sendScores = function () {
     kongregate.stats.submit("initialized", 1);
+
+    Unstable.trackLevel(Unstable.globals.current_level);
 
     var lowestTimeTrialTier = 0;
     var allCompleted = true;
-    Object.keys(Unstable.globals.levels).forEach(function(level) {
+    Object.keys(Unstable.globals.levels).forEach(function (level) {
         if (Unstable.globals.levels.hasOwnProperty(level)) {
-            Unstable.globals.levels[level].times.forEach(function(time) {
+            Unstable.globals.levels[level].times.forEach(function (time) {
                 if (time.player) {
                     kongregate.stats.submit(
                         Unstable.globals.levels[level].key + ".time",
@@ -111,26 +156,32 @@ Unstable.sendScores = function() {
     if (allCompleted) {
         if (lowestTimeTrialTier === 1) {
             kongregate.stats.submit("all_bronze_unlocked", 1);
+            Unstable.track('trophy', 'unlocked', 'all_bronze');
         }
 
         if (lowestTimeTrialTier === 2) {
             kongregate.stats.submit("all_bronze_unlocked", 1);
             kongregate.stats.submit("all_silver_unlocked", 1);
+            Unstable.track('trophy', 'unlocked', 'all_bronze');
+            Unstable.track('trophy', 'unlocked', 'all_silver');
         }
 
         if (lowestTimeTrialTier === 3) {
             kongregate.stats.submit("all_bronze_unlocked", 1);
             kongregate.stats.submit("all_silver_unlocked", 1);
             kongregate.stats.submit("hundred_percented", 1);
+            Unstable.track('trophy', 'unlocked', 'all_bronze');
+            Unstable.track('trophy', 'unlocked', 'all_silver');
+            Unstable.track('trophy', 'unlocked', 'hundred_percented');
         }
     }
 };
 
-Unstable.isSaveValid = function(saveState) {
+Unstable.isSaveValid = function (saveState) {
     return saveState.version === Unstable.version;
 };
 
-Unstable.isLocalStorageAvailable = function() {
+Unstable.isLocalStorageAvailable = function () {
     var test = "com.ryankubik.unstable.test";
     try {
         localStorage.setItem(test, test);

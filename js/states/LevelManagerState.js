@@ -20,7 +20,7 @@ Unstable.LevelManagerState.prototype.create = function () {
   this.nextLevel();
 }
 
-Unstable.LevelManagerState.prototype.nextLevel = function() {
+Unstable.LevelManagerState.prototype.nextLevel = function () {
   if (Unstable.globals.showIntroduction) {
     this.game.state.start("IntroductionState", true, false, this.game_data, this.levelLink);
   } else if (this.levelLink === "victory") {
@@ -29,6 +29,7 @@ Unstable.LevelManagerState.prototype.nextLevel = function() {
     // this.game_data.map = this.levels[Unstable.current_level++];
     this.game_data.map = Unstable.globals.levels[this.levelLink];
     Unstable.globals.current_level = this.levelLink;
+    Unstable.track('level', 'started', Unstable.globals.current_level);
     this.game.state.start("GameState", true, false, this.game_data, this.destGoalId);
   }
 }
